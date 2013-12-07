@@ -1,0 +1,349 @@
+--- 
+layout: post
+title: MacPorts is a monster
+tags: 
+- homebrew
+- imagemagick
+- MAC OS X
+- macports
+- Programing
+- rmagick
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+MacPorts is a monster.. see the log I installed ImageMagick. Anyway, it works for me. but the <a href="http://weblogs.manas.com.ar/mverzilli/2010/05/19/install-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in/">brew solution</a> is not working for me.
+======
+andy@Wang-Andys-MacBook-Pro~/proj.workspace:sudo port install ImageMagick
+--->  Computing dependencies for ImageMagick
+--->  Fetching p5-locale-gettext
+--->  Attempting to fetch gettext-1.05.tar.gz from http://distfiles.macports.org/perl5
+--->  Verifying checksum(s) for p5-locale-gettext
+--->  Extracting p5-locale-gettext
+--->  Applying patches to p5-locale-gettext
+--->  Configuring p5-locale-gettext
+--->  Building p5-locale-gettext
+--->  Staging p5-locale-gettext into destroot
+--->  Installing p5-locale-gettext @1.05_2
+--->  Activating p5-locale-gettext @1.05_2
+--->  Cleaning p5-locale-gettext
+--->  Fetching help2man
+--->  Attempting to fetch help2man-1.37.1.tar.gz from http://distfiles.macports.org/help2man
+--->  Verifying checksum(s) for help2man
+--->  Extracting help2man
+--->  Configuring help2man
+--->  Building help2man
+--->  Staging help2man into destroot
+--->  Installing help2man @1.37.1_1
+--->  Activating help2man @1.37.1_1
+--->  Cleaning help2man
+--->  Fetching m4
+--->  Attempting to fetch m4-1.4.14.tar.bz2 from http://distfiles.macports.org/m4
+--->  Verifying checksum(s) for m4
+--->  Extracting m4
+--->  Configuring m4
+--->  Building m4
+--->  Staging m4 into destroot
+--->  Installing m4 @1.4.14_0
+--->  Activating m4 @1.4.14_0
+--->  Cleaning m4
+--->  Fetching autoconf
+--->  Attempting to fetch autoconf-2.65.tar.bz2 from http://distfiles.macports.org/autoconf
+--->  Verifying checksum(s) for autoconf
+--->  Extracting autoconf
+--->  Applying patches to autoconf
+--->  Configuring autoconf
+--->  Building autoconf
+--->  Staging autoconf into destroot
+--->  Installing autoconf @2.65_1
+--->  Activating autoconf @2.65_1
+--->  Cleaning autoconf
+--->  Fetching automake
+--->  Attempting to fetch automake-1.11.1.tar.bz2 from http://distfiles.macports.org/automake
+--->  Verifying checksum(s) for automake
+--->  Extracting automake
+--->  Configuring automake
+--->  Building automake
+--->  Staging automake into destroot
+--->  Installing automake @1.11.1_0
+--->  Activating automake @1.11.1_0
+--->  Cleaning automake
+--->  Fetching bzip2
+--->  Attempting to fetch bzip2-1.0.5.tar.gz from http://distfiles.macports.org/bzip2
+--->  Verifying checksum(s) for bzip2
+--->  Extracting bzip2
+--->  Applying patches to bzip2
+--->  Configuring bzip2
+--->  Building bzip2
+--->  Staging bzip2 into destroot
+--->  Installing bzip2 @1.0.5_3+darwin
+--->  Activating bzip2 @1.0.5_3+darwin
+--->  Cleaning bzip2
+--->  Fetching freetype
+--->  Attempting to fetch freetype-2.3.12.tar.bz2 from http://voxel.dl.sourceforge.net/freetype
+--->  Attempting to fetch freetype-doc-2.3.12.tar.bz2 from http://voxel.dl.sourceforge.net/freetype
+--->  Verifying checksum(s) for freetype
+--->  Extracting freetype
+--->  Applying patches to freetype
+--->  Configuring freetype
+--->  Building freetype
+--->  Staging freetype into destroot
+--->  Installing freetype @2.3.12_0+macosx
+--->  Activating freetype @2.3.12_0+macosx
+--->  Cleaning freetype
+--->  Fetching fontconfig
+--->  Attempting to fetch fontconfig-2.8.0.tar.gz from http://distfiles.macports.org/fontconfig
+--->  Verifying checksum(s) for fontconfig
+--->  Extracting fontconfig
+--->  Applying patches to fontconfig
+--->  Configuring fontconfig
+--->  Building fontconfig
+--->  Staging fontconfig into destroot
+--->  Installing fontconfig @2.8.0_0+macosx
+--->  Activating fontconfig @2.8.0_0+macosx
+--->  Cleaning fontconfig
+--->  Fetching jpeg
+--->  Attempting to fetch jpegsrc.v8a.tar.gz from http://distfiles.macports.org/jpeg
+--->  Verifying checksum(s) for jpeg
+--->  Extracting jpeg
+--->  Configuring jpeg
+--->  Building jpeg
+--->  Staging jpeg into destroot
+--->  Installing jpeg @8a_0
+--->  Activating jpeg @8a_0
+--->  Cleaning jpeg
+--->  Fetching tiff
+--->  Attempting to fetch tiff-3.9.2.tar.gz from ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/distfiles/
+--->  Verifying checksum(s) for tiff
+--->  Extracting tiff
+--->  Applying patches to tiff
+--->  Configuring tiff
+--->  Building tiff
+--->  Staging tiff into destroot
+--->  Installing tiff @3.9.2_3+macosx
+--->  Activating tiff @3.9.2_3+macosx
+--->  Cleaning tiff
+--->  Fetching lcms
+--->  Attempting to fetch lcms-1.19.tar.gz from http://voxel.dl.sourceforge.net/lcms
+--->  Verifying checksum(s) for lcms
+--->  Extracting lcms
+--->  Configuring lcms
+--->  Building lcms
+--->  Staging lcms into destroot
+--->  Installing lcms @1.19_2
+--->  Activating lcms @1.19_2
+--->  Cleaning lcms
+--->  Fetching libpng
+--->  Attempting to fetch libpng-1.2.43.tar.bz2 from http://voxel.dl.sourceforge.net/libpng
+--->  Verifying checksum(s) for libpng
+--->  Extracting libpng
+--->  Configuring libpng
+--->  Building libpng
+--->  Staging libpng into destroot
+--->  Installing libpng @1.2.43_0
+--->  Activating libpng @1.2.43_0
+--->  Cleaning libpng
+--->  Fetching libtool
+--->  Attempting to fetch libtool-2.2.6b.tar.gz from http://distfiles.macports.org/libtool
+--->  Verifying checksum(s) for libtool
+--->  Extracting libtool
+--->  Configuring libtool
+--->  Building libtool
+--->  Staging libtool into destroot
+--->  Installing libtool @2.2.6b_1+darwin
+--->  Activating libtool @2.2.6b_1+darwin
+--->  Cleaning libtool
+--->  Fetching libxml2
+--->  Attempting to fetch libxml2-2.7.7.tar.gz from http://distfiles.macports.org/libxml2
+--->  Verifying checksum(s) for libxml2
+--->  Extracting libxml2
+--->  Configuring libxml2
+--->  Building libxml2
+--->  Staging libxml2 into destroot
+--->  Installing libxml2 @2.7.7_0
+--->  Activating libxml2 @2.7.7_0
+--->  Cleaning libxml2
+--->  Fetching p7zip
+--->  Attempting to fetch p7zip_9.04_src_all.tar.bz2 from http://voxel.dl.sourceforge.net/p7zip
+--->  Verifying checksum(s) for p7zip
+--->  Extracting p7zip
+--->  Applying patches to p7zip
+--->  Configuring p7zip
+--->  Building p7zip
+--->  Staging p7zip into destroot
+--->  Installing p7zip @9.04_0
+--->  Activating p7zip @9.04_0
+--->  Cleaning p7zip
+--->  Fetching xorg-bigreqsproto
+--->  Attempting to fetch bigreqsproto-1.1.0.tar.bz2 from http://distfiles.macports.org/xorg-bigreqsproto
+--->  Verifying checksum(s) for xorg-bigreqsproto
+--->  Extracting xorg-bigreqsproto
+--->  Configuring xorg-bigreqsproto
+--->  Building xorg-bigreqsproto
+--->  Staging xorg-bigreqsproto into destroot
+--->  Installing xorg-bigreqsproto @1.1.0_0
+--->  Activating xorg-bigreqsproto @1.1.0_0
+--->  Cleaning xorg-bigreqsproto
+--->  Fetching xorg-inputproto
+--->  Attempting to fetch inputproto-2.0.tar.bz2 from http://distfiles.macports.org/xorg-inputproto
+--->  Verifying checksum(s) for xorg-inputproto
+--->  Extracting xorg-inputproto
+--->  Configuring xorg-inputproto
+--->  Building xorg-inputproto
+--->  Staging xorg-inputproto into destroot
+--->  Installing xorg-inputproto @2.0_0
+--->  Activating xorg-inputproto @2.0_0
+--->  Cleaning xorg-inputproto
+--->  Fetching xorg-kbproto
+--->  Attempting to fetch kbproto-1.0.4.tar.bz2 from http://distfiles.macports.org/xorg-kbproto
+--->  Verifying checksum(s) for xorg-kbproto
+--->  Extracting xorg-kbproto
+--->  Configuring xorg-kbproto
+--->  Building xorg-kbproto
+--->  Staging xorg-kbproto into destroot
+--->  Installing xorg-kbproto @1.0.4_0
+--->  Activating xorg-kbproto @1.0.4_0
+--->  Cleaning xorg-kbproto
+--->  Fetching xorg-xproto
+--->  Attempting to fetch xproto-7.0.16.tar.bz2 from http://distfiles.macports.org/xorg-xproto
+--->  Verifying checksum(s) for xorg-xproto
+--->  Extracting xorg-xproto
+--->  Configuring xorg-xproto
+--->  Building xorg-xproto
+--->  Staging xorg-xproto into destroot
+--->  Installing xorg-xproto @7.0.16_0
+--->  Activating xorg-xproto @7.0.16_0
+--->  Cleaning xorg-xproto
+--->  Fetching xorg-libXau
+--->  Attempting to fetch libXau-1.0.5.tar.bz2 from http://distfiles.macports.org/xorg-libXau
+--->  Verifying checksum(s) for xorg-libXau
+--->  Extracting xorg-libXau
+--->  Configuring xorg-libXau
+--->  Building xorg-libXau
+--->  Staging xorg-libXau into destroot
+--->  Installing xorg-libXau @1.0.5_0
+--->  Activating xorg-libXau @1.0.5_0
+--->  Cleaning xorg-libXau
+--->  Fetching xorg-libXdmcp
+--->  Attempting to fetch libXdmcp-1.0.3.tar.bz2 from http://distfiles.macports.org/xorg-libXdmcp
+--->  Verifying checksum(s) for xorg-libXdmcp
+--->  Extracting xorg-libXdmcp
+--->  Configuring xorg-libXdmcp
+--->  Building xorg-libXdmcp
+--->  Staging xorg-libXdmcp into destroot
+--->  Installing xorg-libXdmcp @1.0.3_0
+--->  Activating xorg-libXdmcp @1.0.3_0
+--->  Cleaning xorg-libXdmcp
+--->  Fetching xorg-util-macros
+--->  Attempting to fetch util-macros-1.7.0.tar.bz2 from http://distfiles.macports.org/xorg-util-macros
+--->  Verifying checksum(s) for xorg-util-macros
+--->  Extracting xorg-util-macros
+--->  Configuring xorg-util-macros
+--->  Building xorg-util-macros
+--->  Staging xorg-util-macros into destroot
+--->  Installing xorg-util-macros @1.7.0_0
+--->  Activating xorg-util-macros @1.7.0_0
+--->  Cleaning xorg-util-macros
+--->  Fetching xorg-xcmiscproto
+--->  Attempting to fetch xcmiscproto-1.2.0.tar.bz2 from http://distfiles.macports.org/xorg-xcmiscproto
+--->  Verifying checksum(s) for xorg-xcmiscproto
+--->  Extracting xorg-xcmiscproto
+--->  Configuring xorg-xcmiscproto
+--->  Building xorg-xcmiscproto
+--->  Staging xorg-xcmiscproto into destroot
+--->  Installing xorg-xcmiscproto @1.2.0_0
+--->  Activating xorg-xcmiscproto @1.2.0_0
+--->  Cleaning xorg-xcmiscproto
+--->  Fetching xorg-xextproto
+--->  Attempting to fetch xextproto-7.1.1.tar.bz2 from http://distfiles.macports.org/xorg-xextproto
+--->  Verifying checksum(s) for xorg-xextproto
+--->  Extracting xorg-xextproto
+--->  Configuring xorg-xextproto
+--->  Building xorg-xextproto
+--->  Staging xorg-xextproto into destroot
+--->  Installing xorg-xextproto @7.1.1_0
+--->  Activating xorg-xextproto @7.1.1_0
+--->  Cleaning xorg-xextproto
+--->  Fetching xorg-xf86bigfontproto
+--->  Attempting to fetch xf86bigfontproto-1.2.0.tar.bz2 from http://distfiles.macports.org/xorg-xf86bigfontproto
+--->  Verifying checksum(s) for xorg-xf86bigfontproto
+--->  Extracting xorg-xf86bigfontproto
+--->  Configuring xorg-xf86bigfontproto
+--->  Building xorg-xf86bigfontproto
+--->  Staging xorg-xf86bigfontproto into destroot
+--->  Installing xorg-xf86bigfontproto @1.2.0_0
+--->  Activating xorg-xf86bigfontproto @1.2.0_0
+--->  Cleaning xorg-xf86bigfontproto
+--->  Fetching xorg-xtrans
+--->  Attempting to fetch xtrans-1.2.5.tar.bz2 from http://distfiles.macports.org/xorg-xtrans
+--->  Verifying checksum(s) for xorg-xtrans
+--->  Extracting xorg-xtrans
+--->  Configuring xorg-xtrans
+--->  Building xorg-xtrans
+--->  Staging xorg-xtrans into destroot
+--->  Installing xorg-xtrans @1.2.5_0
+--->  Activating xorg-xtrans @1.2.5_0
+--->  Cleaning xorg-xtrans
+--->  Fetching xorg-libX11
+--->  Attempting to fetch libX11-1.3.3.tar.bz2 from http://distfiles.macports.org/xorg-libX11
+--->  Verifying checksum(s) for xorg-libX11
+--->  Extracting xorg-libX11
+--->  Configuring xorg-libX11
+--->  Building xorg-libX11
+--->  Staging xorg-libX11 into destroot
+--->  Installing xorg-libX11 @1.3.3_0
+--->  Activating xorg-libX11 @1.3.3_0
+--->  Cleaning xorg-libX11
+--->  Fetching xorg-libXext
+--->  Attempting to fetch libXext-1.1.1.tar.bz2 from http://distfiles.macports.org/xorg-libXext
+--->  Verifying checksum(s) for xorg-libXext
+--->  Extracting xorg-libXext
+--->  Configuring xorg-libXext
+--->  Building xorg-libXext
+--->  Staging xorg-libXext into destroot
+--->  Installing xorg-libXext @1.1.1_0
+--->  Activating xorg-libXext @1.1.1_0
+--->  Cleaning xorg-libXext
+--->  Fetching xorg-libice
+--->  Attempting to fetch libICE-1.0.6.tar.bz2 from http://distfiles.macports.org/xorg-libice
+--->  Verifying checksum(s) for xorg-libice
+--->  Extracting xorg-libice
+--->  Configuring xorg-libice
+--->  Building xorg-libice
+--->  Staging xorg-libice into destroot
+--->  Installing xorg-libice @1.0.6_0
+--->  Activating xorg-libice @1.0.6_0
+--->  Cleaning xorg-libice
+--->  Fetching xorg-libsm
+--->  Attempting to fetch libSM-1.1.1.tar.bz2 from http://distfiles.macports.org/xorg-libsm
+--->  Verifying checksum(s) for xorg-libsm
+--->  Extracting xorg-libsm
+--->  Configuring xorg-libsm
+--->  Building xorg-libsm
+--->  Staging xorg-libsm into destroot
+--->  Installing xorg-libsm @1.1.1_0
+--->  Activating xorg-libsm @1.1.1_0
+--->  Cleaning xorg-libsm
+--->  Fetching xorg-libXt
+--->  Attempting to fetch libXt-1.0.8.tar.bz2 from http://distfiles.macports.org/xorg-libXt
+--->  Verifying checksum(s) for xorg-libXt
+--->  Extracting xorg-libXt
+--->  Configuring xorg-libXt
+--->  Building xorg-libXt
+--->  Staging xorg-libXt into destroot
+--->  Installing xorg-libXt @1.0.8_0
+--->  Activating xorg-libXt @1.0.8_0
+--->  Cleaning xorg-libXt
+--->  Fetching ImageMagick
+--->  Attempting to fetch ImageMagick-6.6.1-5.7z from http://distfiles.macports.org/ImageMagick
+--->  Verifying checksum(s) for ImageMagick
+--->  Extracting ImageMagick
+--->  Applying patches to ImageMagick
+--->  Configuring ImageMagick
+--->  Building ImageMagick
+--->  Staging ImageMagick into destroot
+--->  Installing ImageMagick @6.6.1-5_0+q16
+--->  Activating ImageMagick @6.6.1-5_0+q16
+--->  Cleaning ImageMagick

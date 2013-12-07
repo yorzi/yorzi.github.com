@@ -1,0 +1,21 @@
+---
+layout: post
+title: 绪
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><span style="word-spacing:0px;font:13px arial;text-transform:none;color:rgb(0,0,0);text-indent:0px;white-space:normal;letter-spacing:normal;border-collapse:separate">
+<div align="left"><strong><em><font color="#ffff00">wanna ask,<br />know better or nothing,<br clear="all" />ever or forever...</font></em></strong></div>
+<div align="right"><br /></div>
+<div align="center"><font color="#9bbb59">一夜困乏 仍不免遭蚊子侵犯</font></div>
+<div align="center"><font color="#9bbb59">于是这夜 好迷离<br /></font></div>
+<div align="center"><font color="#9bbb59">几次三番 在失措中惊醒 以为你并不远</font></div>
+<div align="center"><font color="#9bbb59">眼前幻影 开始无数</font></div>
+<div align="center"><font color="#9bbb59"><br /></font></div>
+<div align="center"><font color="#9bbb59">早晨跑步 大街小巷 细风柔软</font></div>
+<div align="center"><font color="#9bbb59">而我 看不见刺眼的晨光 正寂寞在哪一个角落</font></div>
+<div align="center"><font color="#9bbb59"><strong>does everyone run the </strong><font color="#4f6128" size="5"><em>full</em></font><strong> circle？</strong></font></div></span>
+<div></div></p>

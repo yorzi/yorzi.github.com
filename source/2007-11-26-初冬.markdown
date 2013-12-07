@@ -1,0 +1,12 @@
+---
+layout: post
+title: 初冬
+categories:
+- Life Moments
+tags:
+- andy
+- 生活
+published: true
+comments: true
+---
+<p><p align="center"><font face="Arial"><font color="#0000ff">'士兵突击<br />'不起床小姐<br />'1Ting<br />'LRCpark<br />'夜<br />'深念<br /></font></font></p></p>

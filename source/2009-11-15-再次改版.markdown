@@ -1,0 +1,17 @@
+---
+layout: post
+title: 再次改版
+categories:
+- Mood Shots
+tags:
+- blog
+- 改版
+published: true
+comments: true
+---
+<p>有一天我突然发现blog在IE下丑陋的十分严重，就开始琢磨换一个简单的风格，今天晚上花了20分钟，换成现在的样子，有些地方还需要微调一下，让它变得更加简单。</p>
+
+<p>这回摒弃了黑色，尽管我依然对黑色钟情有佳，但是还是觉得黑的有点装，更要命的是，黑色的确会让眼睛有点疲劳，此为正解。</p>
+
+<p>最后，看一看原来的风格在我电脑上面的样子。(顺便说一下，不知道什么时候开始我无比厌恶Windows。)
+<p style="text-align: center;"><a href="http://blog.wangyaodi.com/wp-content/uploads/2009/11/blog-v1.png"><img class="aligncenter size-large wp-image-82" title="blog-v1" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/blog-v1-1024x640.png" alt="blog-v1" width="600" height="320" /></a></p></p>

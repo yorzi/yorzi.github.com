@@ -1,0 +1,34 @@
+---
+layout: post
+title: 七月
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div align="center"><strong><em><u><font color="#00b050">2001</font></u></em></strong></div>
+<div align="center">失败。失恋。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2002</font></u></em></strong></div>
+<div align="center">流浪。成长。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2003</font></u></em></strong></div>
+<div align="center">骑车。劫难。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2004</font></u></em></strong></div>
+<div align="center">考研。幻想。</div>
+<div align="center"> </div>
+<div align="center"><font color="#00b050"><strong><u><em>2005</em></u></strong></font></div>
+<div align="center">失业。失恋。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2006</font></u></em></strong></div>
+<div align="center">抽烟。读书。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2007</font></u></em></strong></div>
+<div align="center">酗酒。失眠。</div>
+<div align="center"> </div>
+<div align="center"><strong><em><u><font color="#00b050">2008</font></u></em></strong></div>
+<div align="center">戒烟。运动。</div>
+<div align="center"> </div>
+<div align="center"><font face="Comic Sans MS" color="#ff0000"><strong>TO BE CONTINUED ...</strong></font></div></p>

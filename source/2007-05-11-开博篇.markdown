@@ -1,0 +1,11 @@
+---
+layout: post
+title: 开博篇
+categories:
+- Life Moments
+tags:
+- 踩
+published: true
+comments: true
+---
+<p><p>新博开张了。<br />欢迎新老朋友，欢迎亲爱的们，欢迎那些希望获得力量和支持的朋友！<br /></p></p>

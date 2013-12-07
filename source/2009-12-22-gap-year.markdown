@@ -1,0 +1,29 @@
+---
+layout: post
+title: Gap Year
+categories:
+- Life Moments
+- Mood Shots
+tags:
+- gap-year
+- trip
+- 不去会死
+- 间隔年
+published: true
+comments: true
+---
+<p>原本就想着回来要写这么一篇，不想<a href="http://angiewenwen.yo2.cn/">Angela同学</a>居然在自己的Blog上面<a href="http://angiewenwen.yo2.cn/articles/gap-year.html">说出了我的心里话</a>，居然也是在说<a href="http://www.douban.com/subject/3905366/">《迟到的间隔年》</a>和<a href="http://www.douban.com/subject/1962409/">《不去会死》</a>。</p>
+
+<p>好吧，我不得不成认我极度崇拜这样的<a href="http://www.daisukebike.be/">牛人和牛事</a>，似乎碰到这样的事情小宇宙总能开始燃烧，畅想着有一天自己也可以和他们一样行走在路上。</p>
+
+<p>又想起了很多年前读到的一段话：
+<code lang="ruby">
+行者无疆<br />
+直面天地间的挑战<br />
+从容淡定之间<br />
+纷扰与困惑<br />
+烟消云散<br />
+胜利<br />
+原本就是一次<br />
+智慧的旅行
+</code></p>

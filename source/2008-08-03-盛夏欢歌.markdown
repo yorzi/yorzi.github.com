@@ -1,0 +1,47 @@
+---
+layout: post
+title: 盛夏欢歌
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div>
+<div align="left"><strong><font color="#66ffff">香山</font></strong></div>
+<div align="left">两个礼拜，去了四次，三次是骑车，还有一次是跑。</div>
+<div align="left">那几次的天气格外晴朗，所有的阴霾都被驱散。</div>
+<div align="left">很意外会发现那样一条沿着河道的小路，悠远而翠绿。</div>
+<div align="left">买了些山货，不怎么爱吃，却喜欢那种感觉。</div>
+<div align="center"><br clear="all" /><strong><font color="#ffff00">闹运</font></strong></div>
+<div align="center">这个夏天并不闷热，然而到处都是躁动，</div>
+<div align="center">这里的天空很蓝，蓝天下是一幕幕不堪的蜂拥，</div>
+<div align="center">有人在礼赞盛大，有人生活难以为继，</div>
+<div align="center">五千年的礼节，欲收买整个世界。</div>
+<div align="left"> </div>
+<div align="right"><font face="" color="#009900" size="2"><strong>骑车</strong></font></div>
+<div align="right">乐趣在于完全投入到自己中去，</div>
+<div align="right">恋上沿途美景，或者飞驰乘风，穿梭阴影，</div>
+<div align="right">烈日不能阻挡，风雨不能阻挡，</div>
+<div align="right">同时，收获充实，快乐与骄傲。</div>
+<div> 
+<hr />
+</div>
+<div><strong><font color="#ff0000"></font></strong> </div>
+<div align="right"><strong><font color="#ff0000">工作</font></strong></div>
+<div align="right">女人曾说，男人专注于一件事的时候，爆发着惊人的魅力，</div>
+<div align="right">男人曾告诫男人，你需要有一份自己的事业。</div>
+<div align="right">如果可以吸引你投入自己的专注，它必将是你的事业。</div>
+<div align="right">开始深信不疑。</div>
+<div> </div>
+<div align="center"><font color="#3333ff"><strong>情谊</strong></font></div>
+<div align="center">有些女人会背叛男人。</div>
+<div align="center">有些男人会为女人背叛信义。</div>
+<div align="center">有些男人会欣赏男人。</div>
+<div align="center">有些女人会因为男人被欣赏而满足自己的虚荣。</div>
+<div> </div>
+<div><font color="#cc33cc"><strong>想念</strong></font></div>
+<div>不知何时，想念已等同犯贱，</div>
+<div>浅浅一笑，从此走远。</div>
+<div>阻挡不了迷幻，一直试图渲染，</div>
+<div>我们不曾相见。</div></div></p>

@@ -1,0 +1,21 @@
+---
+layout: post
+title: 两个博客
+categories:
+- Daily Stream
+- Mood Shots
+tags:
+- blog
+- 人肉
+- 技术
+- 日常生活
+published: true
+comments: true
+---
+<p>终于痛下决心把技术博客和记录日常生活的博客分开。</p>
+
+<p>技术博客主要用英文记录平时技术方面的学习和探索，请关心技术的朋友去订阅：<a href="http://tech.wangyaodi.com">http://tech.wangyaodi.com</a></p>
+
+<p>这个Blog从今以后就不在出现英文或者技术方面的内容，请大家继续关注 :)</p>
+
+<p>网络已经成为生活不可缺少的东西，打算下一步将自己的网络形象进一步丰富起来，包括整理自己的各种网络信息，和朋友们分享更多更全面的个人信息。这样一来我就成人肉标本了，我是Andy我怕谁～</p>

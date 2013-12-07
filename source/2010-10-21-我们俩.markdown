@@ -1,0 +1,13 @@
+---
+layout: post
+title: 我们俩
+categories:
+- Daily Photos
+tags:
+- '2010'
+- 纪念
+- 结婚照
+published: true
+comments: true
+---
+<p>[caption id="attachment_10205" align="aligncenter" width="414" caption="Andy & Sherry"]<a href="http://blog.wangyaodi.com/wp-content/uploads/2010/10/Screen-shot-2010-10-21-at-8.26.49-PM.png"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/10/Screen-shot-2010-10-21-at-8.26.49-PM.png" alt="" title="Andy &amp; Sherry" width="414" height="620" class="size-full wp-image-10205" /></a>[/caption] </p>

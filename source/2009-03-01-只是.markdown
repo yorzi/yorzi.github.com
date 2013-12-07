@@ -1,0 +1,15 @@
+---
+layout: post
+title: 只是
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"> <b style="color:rgb(102, 102, 102)">这是不是黎明前黑暗涌动 只是我不得而知</b><br /><b style="color:rgb(102, 102, 102)">
+这是不是人生在调戏人生观 只是我不得而知</b><br /><b style="color:rgb(102, 102, 102)">
+这是不是尽情挥霍的一截青春 只是我不得而知</b><br /><b style="color:rgb(102, 102, 102)">
+这是不是又一次流离失所 只是我不得而知</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+咸咸地味道 这是什么 只是 我不得而知</b></div></p>

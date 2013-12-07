@@ -1,0 +1,27 @@
+---
+layout: post
+title: Believe
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div><span style="word-spacing:0px;font:13px arial;text-transform:none;color:rgb(0,0,0);text-indent:0px;white-space:normal;letter-spacing:normal;border-collapse:separate"><strong><font face="宋体"><font color="#ffff00"><span style="white-space:pre;border-collapse:collapse">相信 </span>是个很诡异的命题，</font></font></strong></span></div>
+<div><strong><font face="宋体" color="#ffff00">如同 爱 哀伤 永远 及理解。</font></strong></div>
+<div><br /></div>
+<div align="center"><font color="#c3d69b">其实不认同点点点点点点</font></div>
+<div align="center"><font color="#c3d69b">装得很有含义 其实也摆脱不了简单质朴的命运</font></div>
+<div align="center"><font color="#c3d69b">很好 因为我喜欢你</font></div>
+<div align="center"><font color="#c3d69b"><br /></font></div>
+<div align="center"><font color="#c3d69b">一曲黄花瘦</font></div>
+<div align="center"><font color="#c3d69b">两抹醉清风</font></div>
+<div align="center"><font color="#c3d69b">所以 江湖就是被用来行走的</font></div>
+<div align="center"><font color="#c3d69b"><br /></font></div>
+<div align="center"><font color="#c3d69b">如果你和我一样艰难</font></div>
+<div align="center"><font color="#c3d69b">你应该和我一样幸福</font></div>
+<div align="center"><font color="#c3d69b">相伴 燃烧流年</font></div>
+<div align="center"><font color="#c3d69b"><br /></font></div>
+<div align="center"><font color="#c3d69b">谢谢你记住details</font></div>
+<div align="center"><font color="#c3d69b">而我 记住了你的眼</font></div>
+<div align="center"><font color="#7f7f7f"></font> </div></p>

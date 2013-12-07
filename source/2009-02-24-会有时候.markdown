@@ -1,0 +1,13 @@
+---
+layout: post
+title: 会有时候
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"> <b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">天空很蓝 骑车很cool很绚</b><br /><br /><b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">志同道合 真喜欢 路途依然遥远</b><br /><br /><b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">辛苦艰难 都无言 生活色彩斑斓</b><br /><br /><b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">隐约有意 心不甘 孤单化做凌乱</b><br /><br /><b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">平平淡淡 结善缘 心灵自是勇敢</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+一切缓慢 恩 缓慢</b></div></p>

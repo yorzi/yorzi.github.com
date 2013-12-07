@@ -1,0 +1,10 @@
+---
+layout: post
+title: 无题
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><span style="font-weight:bold;font-style:italic">永远都是这样子</span><br style="font-weight:bold;font-style:italic" /><span style="font-weight:bold;font-style:italic">因为你永远不知道下一次<br />又会是什么事情</span><br style="font-weight:bold;font-style:italic" /><br style="font-weight:bold;font-style:italic" /><span style="font-weight:bold;font-style:italic">后来<br />我的生活就跟着改变了</span></p>

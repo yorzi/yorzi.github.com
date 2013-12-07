@@ -1,0 +1,12 @@
+---
+layout: post
+title: 几件事情
+categories:
+- Life Moments
+tags:
+- andy
+- life
+published: true
+comments: true
+---
+<p><p><font color="#990000"><font face="Arial"> <br />Ruby on Rails in 2008.<br />Ajax in 2008.<br />English in 2008.<br /><br />Fight for living an easy life, be with peace and persistence, light up a dream lightly.<br /><br /><font color="#000099">PS, sorry for keeping you away.</font></font><br /> </font></p></p>

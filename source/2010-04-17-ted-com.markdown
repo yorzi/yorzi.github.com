@@ -1,0 +1,51 @@
+---
+layout: post
+title: TED.com
+categories:
+- Daily Stream
+- Life Moments
+- Mood Shots
+- Study Records
+tags:
+- interesting
+- ted
+- video
+published: true
+comments: true
+---
+<p>今天我要介绍TED。必须的。</p>
+
+<p>简单搜索了一下，GR里面有很多共享的内容都和TED有关，下面摘抄<a href="http://www.lixiaolai.com/" target="_blank">笑来老师</a>的一段介绍文字：
+<blockquote><a href="http://www.ted.com" target="_blank"><strong><em>TED.com</em></strong></a><em>的首页标题是“TED: Ideas worth spreading”。TED是Techonology, Entertainment, Design三个词的词头字母缩写。 </em><a href="http://www.ted.com/index.php/pages/view/id/215" target="_blank"><em>劳力士</em></a><em>和</em><a href="http://www.ted.com/index.php/pages/view/id/202" target="_blank"><em>宝马</em></a><em>是TED的主要赞助商。</em></blockquote>
+<blockquote>TED stands for <em>Technology</em>, <em>Entertainment</em>, <em>Design</em>. It started out (in 1984) as a conference bringing together people from those three worlds. Since then its scope has become ever broader.</blockquote></p>
+
+<p>The annual conference now brings together the world's most fascinating thinkers and doers, who are challenged to give the talk of their lives (in 18 minutes).</p>
+
+<p>This site makes <strong>the best talks and performances from TED available to the public, for free.</strong> More than 200 talks from our archive are now available, with more added each week. These videos are released under a Creative Commons license, so they can be freely shared and reposted.</p>
+
+<p><strong>Our mission: Spreading ideas.</strong></p>
+
+<p>We believe passionately in the power of ideas to change attitudes, lives and ultimately, the world. So we're building here a clearinghouse that offers free knowledge and inspiration from the world's most inspired thinkers, and also a community of curious souls to engage with ideas and each other. This site, launched April 2007, is an ever-evolving work in progress, and you're an important part of it. Have an idea? We want to hear from you.</p>
+
+<p>The TED Conference, held annually in Long Beach, is still the heart of TED. More than a thousand people now attend -- indeed, the event sells out a year in advance -- and the content has expanded to include science, business, the arts and the global issues facing our world. Over four days, 50 speakers each take an 18-minute slot, and there are many shorter pieces of content, including music, performance and comedy. There are no breakout groups. Everyone shares the same experience. It shouldn't work, but it does. It works because all of knowledge is connected. Every so often it makes sense to emerge from the trenches we dig for a living, and ascend to a 30,000-foot view, where we see, to our astonishment, an intricately interconnected whole.</p>
+
+<p>In recent years, TED has spawned some important extensions.</p>
+
+<p><strong>TEDGlobal</strong> is a sister conference held every other year, and in a different country on each occasion. The first conference was held in Oxford, England, in 2005; the second, in June 2007, was held in Arusha, Tanzania. The themes of the global conference are slightly more focused on development issues, but the basic TED format is maintained.</p>
+
+<p>The TED Prize is designed to leverage the TED Community's exceptional array of talent and resources. It is awarded annually to three exceptional individuals who each receive $100,000 and, much more important, the granting of "One Wish to Change the World." After several months of preparation, they unveil their wish at an award ceremony held during the TED Conference. These wishes have led to collaborative initiatives with far-reaching impact.</p>
+
+<p>TEDTalks began as a simple attempt to share what happens at TED with the world. Under the moniker "ideas worth spreading," talks were released online. They rapidly attracted a global audience in the millions. Indeed, the reaction was so enthusiastic that the entire TED website has been reengineered around TEDTalks, with the goal of giving everyone on-demand access to the world's most inspiring voices.</p>
+
+<p>Today, TED is therefore best thought of as a global community. It's a community welcoming people from every discipline and culture who have just two things in common: they seek a deeper understanding of the world, and they hope to turn that understanding into a better future for us all.
+<blockquote><strong><em> TED.com</em></strong><em>的每一个讲演者的讲演内容都非常精彩（“必须的”），每个视频都提供打包下载。最近几天feedburner.com不知为什么又解封了，于是，可以</em><a href="http://feeds.feedburner.com/tedtalks_video" target="_blank"><em>订阅</em><strong><em>TED.com</em></strong><em>的Feed</em></a><em>。很多话题都非常地有趣，比如“</em><a href="http://blog.ted.com/2008/05/alisa_miller.php" target="_blank"><em>The bad news about the news: Alisa Miller on </em><strong><em>TED.com</em></strong></a><em>”讲的是“美国传媒是如何为渴望获得</em><strong><em>更多</em></strong><em>信息的大众提供</em><strong><em>更少</em></strong><em>信息的……”。</em></blockquote></p>
+
+<p><em>有些学生反映说“要是有字幕就好了”——其实，</em><strong><em>TED.com</em></strong><em>上有相当一部分视频是有完整的Transcript的：【</em><a href="http://blog.ted.com/transcript/" target="_blank"><em>点击这里查看TED上有Transcript的视频</em></a><em>】。</em></p>
+
+<p>最早知道TED是因为Adrian给大家上英语培训课，通常都是在Ted上面找一段视频当作教材，那时候感觉不如现在深切，那就是TED这样的公共资源是何其宝贵，如果你想拓展自己的视野，提升自己的意识，那就要经常学习这样的公共资源。</p>
+
+<p>今天做了一件感觉比较有意义的事情，我给Ted提交了一个<a href="http://www.ted.com/nominate/speaker">推荐演讲者的form</a>，推荐我的boss——<a href="http://www.jonathanpalley.com">Jonathan Palley</a>，他是我的偶像，我觉的大家也会很喜欢他。</p>
+
+<p>最后，<a href="http://www.tedtochina.com/">Ted的中文站</a>也很不错，还有很多<a href="http://www.douban.com/group/tedtalks/">喜欢Ted的圈子</a>和<a href="http://www.douban.com/group/topic/10623699/">推荐的Ted Topic</a>.</p>
+
+<p>Enjoy it.</p>

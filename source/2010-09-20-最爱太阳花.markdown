@@ -1,0 +1,14 @@
+---
+layout: post
+title: 最爱太阳花
+categories:
+- Daily Photos
+- Life Moments
+tags:
+- sunflower
+- 向日葵
+- 太阳花
+published: true
+comments: true
+---
+<p><a href="http://blog.wangyaodi.com/wp-content/uploads/2010/09/sf1.jpg"><img class="aligncenter size-full wp-image-10190" title="sf1" src="http://blog.wangyaodi.com/wp-content/uploads/2010/09/sf1.jpg" alt="" width="560" height="372" /></a><a href="http://blog.wangyaodi.com/wp-content/uploads/2010/09/sf2.jpg"><img class="aligncenter size-full wp-image-10191" title="sf2" src="http://blog.wangyaodi.com/wp-content/uploads/2010/09/sf2.jpg" alt="" width="560" height="374" /></a></p>

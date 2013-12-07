@@ -1,0 +1,19 @@
+---
+layout: post
+title: was young
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><span style="word-spacing:0px;font:13px arial;text-transform:none;color:rgb(0,0,0);text-indent:0px;white-space:normal;letter-spacing:normal;border-collapse:separate">
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)"> </span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)">很简单</span></span><span style="color:rgb(204,204,204)"></span></div></span>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)">就在我们状态不好的时候</span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)">许多事情</span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)">做错了</span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)"></span></span> <span style="color:rgb(255,102,0)"><span style="word-spacing:0px;font:bold 13px arial;text-transform:none;color:rgb(204,204,204);text-indent:0px;white-space:normal;letter-spacing:normal;border-collapse:separate"><font color="#7030a0">======================================================================</font></span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)"><span style="color:rgb(255,255,102)">第六句</span><br /></span></span><span style="font-weight:bold"><span style="color:rgb(204,204,204)">就算是believe  中间也藏了一个lie</span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)"> </span></span></div>
+<div align="center"><span style="font-weight:bold"><span style="color:rgb(204,204,204)"></span></span> </div></p>

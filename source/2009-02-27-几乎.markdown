@@ -1,0 +1,14 @@
+---
+layout: post
+title: 几乎
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"><b style="color:rgb(102, 102, 102)">几乎永远都是一瞬间，                 <br />                    而每个一瞬间也都是永远，</b><br /><b style="color:rgb(102, 102, 102)">
+几乎所有通透都来自黑暗，<br />           而每一次光明总将前方渲染，</b><br /><b style="color:rgb(102, 102, 102)">
+几乎来不及向往明天，                                        <br />而每一日开始无所谓长短，</b><br /><b style="color:rgb(102, 102, 102)">
+几乎无怨无所依恋，<br />                          而每一步渐行渐远渐无言，</b><br /><b style="color:rgb(102, 102, 102)">
+几乎走散，                               <br />而每一回都是绕圈。</b></div></p>

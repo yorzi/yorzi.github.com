@@ -1,0 +1,19 @@
+---
+layout: post
+title: 什么都不是，是寂寞
+categories:
+- Life Moments
+tags:
+- blog
+- buzz
+- colleague
+- jp
+- seven
+published: true
+comments: true
+---
+<p>其实再次决定坚持写Blog是因为不久前发现<a href="http://jonathanpalley.com/">JP的blog</a>和最近<a href="http://www.dujinfang.com">Seven哥Blog</a>积极的带动，所以我基本上打算打造一个以技术为主，扯淡为辅，学习为主，抒情几乎可以忽略到都谈不上为辅的Blog。</p>
+
+<p>今天<a href="http://lijiapeng.com/">Buzz</a>看见我Blog的副标题调侃了一下我，我才突然明白一个道理：很多事情，都介于说了矫情和不说憋屈之间。所以那句“给寂寞，一个许诺。”就属于很靠近矫情的表达，坚决干掉，哈哈。并且我觉得Blog的名字也很罗嗦，干脆简化之：Refactoring Thoughts.</p>
+
+<p>什么？Refactoring是什么意思？你不会Google啊。</p>

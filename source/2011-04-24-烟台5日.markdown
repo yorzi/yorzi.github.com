@@ -1,0 +1,38 @@
+---
+layout: post
+title: 烟台5日
+categories:
+- Daily Photos
+- Trival
+tags:
+- 旅游
+- 海鲜
+- 烟台
+- 蓬莱
+published: true
+comments: true
+---
+<p>4月19日<br />
+一大早火车就到烟台了，出了车站，就能感觉到扑面而来的海的味道，凉爽而空气清新。7哥家并不远，打车10分钟就到了。进屋子的时候，7嫂正在准备早餐，看见可爱的小七，真好。吃过饭以后，sherry一个人去海边闲逛，我和7哥就开始工作起来。中午还到楼下的打了一会篮球，烟台的户外春光明媚，春风续续，我脆弱的嗓子似乎瞬间变得通畅。晚上我们一起去海鲜市场，sherry显然很贪心，她买了很多皮皮虾和其它我叫不上名字的海鲜。于是我们晚上大餐一顿。</p>
+
+<p>4月20日<br />
+吃完早饭，我和sherry一起去看7哥新买的房子，房子正在装修，但是已经尽显其用心和浪漫的装修风格，羡慕嫉妒却并无恨意，只盼着自己在户县的房子也能早点入住，到时候也可以在自己家招呼各路朋友。之后我们去了烟台山公园，干净狭长的海岸线，清澈的海水，微波阵阵。看见大海，总能让人内心平静，遥望远方，那就是梦想的样子。因为还有事情要做，中午我们就赶回来了。</p>
+
+<p>4月21日<br />
+完整的一天，坐在7哥家的大客厅里面，和他边聊天边干活，sherry又野到外面去了，她总是玩不够，还好不用事事相陪，你只要带她出来，她就会玩的很好，这是我媳妇的优点。晚上sherry去海鲜市场又买了不同的各种海鲜，天呐，顿顿海鲜对我而言还算是个小小的烦恼 :)</p>
+
+<p>4月22日<br />
+突然收到TeamLeader和PM的邮件，分别给我安排了一些紧急的任务，这下可好，周五需要熬夜了。晚上和ChinaTeam开会，大家聊得很高兴，互相讲了自己和Rails结缘的过程，每个人的经历都很有趣，我觉得只有一个词可以概括大家的经历，那就是“缘分”。缘分让我开始Ruby/Rails的编程生涯，使我第一次热爱这样的事业。同时，也是缘分让我不断的认识优秀的同行，这是我莫大的荣幸。</p>
+
+<p>4月23日<br />
+7哥借了一辆车，载我和sherry还有7嫂一起去蓬莱游玩。心中对蓬莱这个地方了解不多，但是也确实有极好的印象，蓬莱仙境，很多书中都有提说，这次有缘游览，乃是幸事。一路向北，直到渤海。在蓬莱参观了博物馆，看了360度的全周电影，也从各种文物古籍看到了古代邓州文化的繁荣。然而最令我动容的还是大海，不同地方的海总有不同的特点，我喜欢烟台和蓬莱这边的海。晚上回到烟台，7哥为我饯行，我们一起去吃很有特色的鲁菜馆子，大饱而归。</p>
+
+<p>至此，烟台五日行程行将结束，现在是24日上午11点，一大早就坐在去青岛的大巴车上，写这篇文章的时候，我在想，这几天时间里面有很多欢乐，7哥7嫂热情的招待让我和sherry过足的嘴瘾，谢谢质朴善良的烟台人民的杰出代表7哥7嫂，等你们房子装好的时候我们还要来，烟台，再见！</p>
+
+<p>几张照片：<br />
+Sherry | Andy | Seven | 7嫂
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P4230096.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P4230096-1024x768.jpg" alt="" title="蓬莱阁" width="725" height="543" class="aligncenter size-large wp-image-10266" /></a>
+蓬莱海边
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P4230191.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P4230191-1024x768.jpg" alt="" title="蓬莱海边" width="725" height="543" class="aligncenter size-large wp-image-10268" /></a>
+疯狂的Sherry
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P42302041.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2011/04/P42302041-768x1024.jpg" alt="" title="Sherry" width="725" height="966" class="aligncenter size-large wp-image-10271" /></a></p>

@@ -1,0 +1,12 @@
+---
+layout: post
+title: 一岁一枯荣
+categories:
+- Life Moments
+tags:
+- andy
+- life
+published: true
+comments: true
+---
+<p><font color="#0000ff"><br />跌了一跤，伤了左脚的大拇指，右手的大拇指，和眼眉。<br />这一摔，直接将我扔进了春天，一切，恍如隔世。<br />Spring，并非那般sunshine，也会有黄沙漫天，也会有永远不再相见。<br />来不及记住，来不及。<br />你们，走吧。<br /> </font></p>

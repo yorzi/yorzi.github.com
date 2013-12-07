@@ -1,0 +1,21 @@
+---
+layout: post
+title: cher
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"><b>11:01am<br />
+<br />
+<span style="color:rgb(191, 191, 191)">很多时候</span></b><b style="color:rgb(191, 191, 191)"><br />
+</b><b><span style="color:rgb(191, 191, 191)">我们状态不好</span><br style="color:rgb(191, 191, 191)" /><span style="color:rgb(191, 191, 191)">
+却以为</span><br style="color:rgb(191, 191, 191)" /><span style="color:rgb(191, 191, 191)">
+生活不好</span><br style="color:rgb(191, 191, 191)" />
+＆<br style="color:rgb(191, 191, 191)" /><span style="color:rgb(191, 191, 191)">
+谢谢</span><br style="color:rgb(191, 191, 191)" /><span style="color:rgb(191, 191, 191)">
+。</span><br />
+</b><br />
+<b>11:11am</b><br />
+</div></p>

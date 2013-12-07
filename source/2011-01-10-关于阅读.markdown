@@ -1,0 +1,35 @@
+---
+layout: post
+title: 关于阅读
+categories:
+- Daily Stream
+- Mood Shots
+- Reading Marks
+tags:
+- 37signals
+- gettingreal
+- reading
+- rework
+- 读书
+published: true
+comments: true
+---
+<p><table>
+<tbody>
+<tr>
+<td><img class="alignright" title="Rework" src="http://img3.douban.com/lpic/s4242326.jpg" alt="" width="294" height="450" /></td>
+<td><img class="alignleft" title="Getting Real" src="http://img3.douban.com/lpic/s4126286.jpg" alt="" width="297" height="447" /></td>
+</tr>
+</tbody>
+</table>
+很久没有翻书了，这是我内心的疼痛。</p>
+
+<p>最近在看<a href="http://book.douban.com/subject/3889178/">Rework</a>和<a href="http://book.douban.com/subject/3567853/">Getting Real</a>（因为这两本书，37signals又一次变成我心中的超级大神！），很享受这种阅读的乐趣，如同结交到各路大牛一般的朋友，或者听他们神侃，或者自己静静体味，对我而言，这便是生活中暖心的满足感。</p>
+
+<p>翻看了<a href="http://book.douban.com/">Douban</a>的读书记录，09年开始就没怎么好好完整读过什么书，内心一直有这样的向往，但是工作越来越忙，于是遗忘了精神层面的快慰。</p>
+
+<p>回头看来路，感觉多少有些偏离生活的初衷，我需要一番自省，需要和我的青春进行一次深入的谈话，告别浮躁，静水流深。</p>
+
+<p>接下来会和大家分享一些<a href="http://book.douban.com/people/yorzi/reviews?cat_id=1001">过往的读书笔记</a>或者评论，一来鼓励自己延续以前阅读和写字的好习惯，一来也和朋友们分享一些好的书籍。</p>
+
+<p>一直用一句话来鞭策自己，那就是”伟大的人分享知识！(Great People Share Knowledge!)“，现在写出来，与各位共勉。</p>

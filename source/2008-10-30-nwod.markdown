@@ -1,0 +1,23 @@
+---
+layout: post
+title: nwod
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><strong><font color="#666666">眼睛累得生疼</font></strong>
+<div><strong><font color="#666666">还是在很多遍crash之后决定放弃ubuntu</font></strong></div>
+<div><strong><font color="#666666">至少在这台即将爆毙的机器上面 我需要保持平常心 就算一晚上无故死机7次 我也还是要坚强一些</font></strong></div>
+<div><strong><font color="#666666"></font></strong> </div>
+<div><strong><font color="#666666">总是莫名其妙的在午后某个瞬间觉得自己的神明出鞘了</font></strong></div>
+<div><strong><font color="#666666">一杯咖啡压掉了恐慌也制造了更大的恐慌 我从来都觉得自己可以轻松的逃离控制 却也从来都很容易被控制</font></strong></div>
+<div><strong><font color="#666666">难道 承认会更好受一些？</font></strong></div>
+<div><strong><font color="#666666"></font></strong> </div>
+<div><strong><font color="#666666">无端迷离</font></strong></div>
+<div><strong><font color="#666666">像夜的外衣 通体黑暗</font></strong></div>
+<div><strong><font color="#666666">明亮的窗 遥远的希望 温暖呈橘黄色</font></strong></div>
+<div> </div>
+<div><strong><font color="#999999">Dear, needless of what</font></strong></div>
+<div></div></p>

@@ -1,0 +1,29 @@
+---
+layout: post
+title: 没有时候
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"> <b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">
+被寒冷击穿</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+心存痴怨</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+感觉非常遥远</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+平淡</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+忘记什么是温暖</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+永远不上演</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+念</b></div></p>

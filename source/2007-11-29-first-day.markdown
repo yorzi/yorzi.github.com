@@ -1,0 +1,11 @@
+---
+layout: post
+title: First Day
+categories:
+- Life Moments
+tags:
+- Signs
+published: true
+comments: true
+---
+<p><p><font face="Arial"><font><font color="#000000"><font size="2"><font>&quot;It's frustrating when your long-term goals seem so far off that you believe you won't reach them. Don't throw in the towel just yet, for your perspective is a bit warped by Saturn the Tester who might be making things look less than optimum. Instead of giving up, recommit to what's most important. Then after a few days of hard work, reassess your situation before making a final decision.&quot;</font><br /></font></font></font><br />Definitely, I know my situation.</font></p></p>

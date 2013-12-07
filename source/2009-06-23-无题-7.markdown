@@ -1,0 +1,18 @@
+---
+layout: post
+title: 无题
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p>翻滚的热浪将愁虑搅得混乱，<br />
+小宇宙穿越银河系仍远远相望。<br />
+CS把ls打得满地找牙，<br />
+然后他用一盒诡异的烟让我毛骨悚然。<br />
+还值得一提的是，<br />
+自从买了专用的啤酒杯，<br />
+夜变的更加简单和纯粹了。<br />
+<br />
+地球人，晚安。</p>

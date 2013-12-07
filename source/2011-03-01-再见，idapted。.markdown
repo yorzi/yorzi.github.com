@@ -1,0 +1,23 @@
+---
+layout: post
+title: 再见，Idapted。
+categories:
+- Daily Stream
+- Life Moments
+tags:
+- idapted
+- 离职
+published: true
+comments: true
+---
+<p>是的，我辞职了。</p>
+
+<p>三年零10天，我在Idapted完成了自己青春时候最重要的蜕变。</p>
+
+<p>友情，激情，爱情..</p>
+
+<p>拧巴，混乱，劳累..</p>
+
+<p>从此，我要开始一段新的旅程。</p>
+
+<p>再见，Idapted。</p>

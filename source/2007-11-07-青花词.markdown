@@ -1,0 +1,12 @@
+---
+layout: post
+title: 青花词
+categories:
+- Life Moments
+tags:
+- andy
+- night
+published: true
+comments: true
+---
+<p><div align="center"><font color="#6600cc">前世今生 一抹深情浮华<br /></font><font color="#6600cc">留住青山万千水 把心寄明月<br />朗朗乾坤 平添私语...<br /><br />                    <font color="#990000">----11/07 01am<br /></font><br /></font></div><img style="DISPLAY: block; MARGIN: 0px auto 10px; TEXT-ALIGN: center" alt="" src="http://122.img.pp.sohu.com/images/blog/2007/11/7/0/19/116b16bba75.jpg" border="0" /></p>

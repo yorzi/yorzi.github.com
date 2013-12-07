@@ -1,0 +1,10 @@
+---
+layout: post
+title: 你的生日让我想起一个很久以前的朋友
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p>感冒四天<br />困倦弥漫了整个空间<br />而我依然想说<br />要快乐<br />万安<br /></p>

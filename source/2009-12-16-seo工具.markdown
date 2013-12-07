@@ -1,0 +1,28 @@
+---
+layout: post
+title: SEO工具
+categories:
+- Tech Notes
+tags:
+- SEO
+- seotool
+- tool
+- website
+published: true
+comments: true
+---
+<p>友情链接检测工具：<a href="http://link.chinaz.com/">http://link.chinaz.com/</a></p>
+
+<p>关键词排名查询工具：<a href="http://tool.chinaz.com/KeyWords/">http://tool.chinaz.com/KeyWords/</a></p>
+
+<p>关键词密度查询：<a href="http://tool.chinaz.com/Tools/Density.aspx">http://tool.chinaz.com/Tools/Density.aspx</a></p>
+
+<p>模拟搜索引擎抓取工具：<a href="http://tool.chinaz.com/Tools/Robot.aspx">http://tool.chinaz.com/Tools/Robot.aspx</a></p>
+
+<p>网页MATA信息检测：<a href="http://tool.chinaz.com/Tools/MetaCheck.aspx">http://tool.chinaz.com/Tools/MetaCheck.aspx</a></p>
+
+<p>百度近日收录查询：<a href="http://tool.chinaz.com/baidu/">http://tool.chinaz.com/baidu/</a></p>
+
+<p>Google网站管理员工具：<a href="http://www.google.com/webmasters/tools/?hl=zh_CN">http://www.google.com/webmasters/tools/?hl=zh_CN</a></p>
+
+<p>雅虎站长工具：<a href="http://sitemap.cn.yahoo.com/">http://sitemap.cn.yahoo.com/</a></p>

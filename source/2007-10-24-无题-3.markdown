@@ -1,0 +1,15 @@
+---
+layout: post
+title: 无题
+categories:
+- Life Moments
+tags:
+- andy
+- 夜
+- 晨
+published: true
+comments: true
+---
+<p><p align="center"><font color="#0000ff">不觉已是三更天，</font><font color="#0000ff"><br />掩卷余叹千般转。<br />莫问此生何处去，<br />轻舟游遍万重山。</font></p>
+<p align="center">                     ----10/24 03am</p>
+<p align="center"><img style="DISPLAY: block; MARGIN: 0px auto 10px; TEXT-ALIGN: center" alt="" src="http://119.img.pp.sohu.com/images/blog/2007/10/24/16/28/1166c5f0ff3.jpg" border="0" /></p></p>

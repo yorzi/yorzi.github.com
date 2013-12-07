@@ -1,0 +1,14 @@
+---
+layout: post
+title: 夏天的风
+categories:
+- Life Moments
+tags:
+- andy
+- 城市
+- 夏天
+- 生活
+published: true
+comments: true
+---
+<p><span style="#"><br />闷热的空气在这个城市里无孔不入，肆无忌惮的考验着每一颗焦灼的心灵和每一条脆弱的神经。躁热不是问题，问题在于燥热背后浮躁的一切，包括那已经不够严肃和深沉的爱恋。</span><span style="#"><br /><br /></span><span style="#">昨日的夜风，游走在我的耳畔，清凉来得没有一点征兆，几罐啤酒，几支香烟，陪我在经贸大学的球场边，厮守这一望无际的黑夜。灯火之下，看那些跑动的身影，我专注的笑出了声音。</span><span style="#"><br /><br /></span><span style="#">梦境里，我再一次邂逅那个身影，你是谁？你在那里？</span><span style="#"><br /></span><span style="#">我的爱散漫了。<br /> </span></p>

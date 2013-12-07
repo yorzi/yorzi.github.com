@@ -1,0 +1,18 @@
+---
+layout: post
+title: Not, But
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div>
+<div><strong><font color="#006600">It happens as things always happen,</font></strong></div>
+<div><strong><font color="#006600">That's why I FOLLOWED.</font></strong><br clear="all" /><br />突如其来的一场秋雨 浇灭了整个夏的蠢动</div>
+<div>如同曾经的炙烈没有发生过一样</div>
+<div>也如同突如其来的感冒 让我异常需要听到那一声欢笑</div>
+<div>嗓子哑了 却那么想要告诉你 Dear Jul.</div>
+<div><font color="#cc6600">没有什么路是直的 而我们一定要走向最美丽的地方</font></div>
+<div> </div>
+<div>成都 我来了</div></div></p>

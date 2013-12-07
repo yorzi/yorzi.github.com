@@ -1,0 +1,31 @@
+--- 
+layout: post
+title: "SEO Tools"
+comments: true
+categories:
+- SEO
+- seotool
+- tool
+- Web2.0
+- website
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+友情链接检测工具：<a href="http://link.chinaz.com/">http://link.chinaz.com/</a>
+
+关键词排名查询工具：<a href="http://tool.chinaz.com/KeyWords/">http://tool.chinaz.com/KeyWords/</a>
+
+关键词密度查询：<a href="http://tool.chinaz.com/Tools/Density.aspx">http://tool.chinaz.com/Tools/Density.aspx</a>
+
+模拟搜索引擎抓取工具：<a href="http://tool.chinaz.com/Tools/Robot.aspx">http://tool.chinaz.com/Tools/Robot.aspx</a>
+
+网页MATA信息检测：<a href="http://tool.chinaz.com/Tools/MetaCheck.aspx">http://tool.chinaz.com/Tools/MetaCheck.aspx</a>
+
+百度近日收录查询：<a href="http://tool.chinaz.com/baidu/">http://tool.chinaz.com/baidu/</a>
+
+Google网站管理员工具：<a href="http://www.google.com/webmasters/tools/?hl=zh_CN">http://www.google.com/webmasters/tools/?hl=zh_CN</a>
+
+雅虎站长工具：<a href="http://sitemap.cn.yahoo.com/">http://sitemap.cn.yahoo.com/</a>

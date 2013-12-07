@@ -1,0 +1,10 @@
+---
+layout: post
+title: 只是
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"><span style="font-weight:bold">总之<br />我只是喜欢</span><br style="font-weight:bold" /><span style="font-weight:bold">又不亏欠</span><br /></div></p>

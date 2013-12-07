@@ -1,0 +1,14 @@
+---
+layout: post
+title: Apple
+categories:
+- Daily Photos
+- Daily Stream
+- Life Moments
+tags:
+- Apple
+- Tee
+published: true
+comments: true
+---
+<p><p><a href="http://blog.wangyaodi.com/wp-content/uploads/2010/04/l_1600_1200_7DE812DB-58C4-4396-A808-85EBB21E0842.jpeg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/04/l_1600_1200_7DE812DB-58C4-4396-A808-85EBB21E0842.jpeg" alt="" class="alignnone size-full" /></a><br /><br /><a href="http://blog.wangyaodi.com/wp-content/uploads/2010/04/p_1600_1200_D1738FAD-3CCB-4651-A60B-5C61BB10DB08.jpeg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/04/p_1600_1200_D1738FAD-3CCB-4651-A60B-5C61BB10DB08.jpeg" alt="" class="alignnone size-full" /></a></p></p>

@@ -1,0 +1,51 @@
+---
+layout: post
+title: 无题
+categories:
+- Life Moments
+tags:
+- andy
+- 心情
+- 生活
+published: true
+comments: true
+---
+<p><div><br />这些年 那些人 些许事</div>
+<div>一点点 浅浅渗入我的骨髓</div>
+<div> </div>
+<div>有时候冰凉 无尽的蔓延</div>
+<div>再也记不住火热的过往 </div>
+<div>竟是冰凉的根源<br /><br />笑脸会在一瞬间熄灭</div>
+<div>化作僵硬的惆怅 再也没有温度</div>
+<div>那竟是很久以前 我们的誓言</div>
+<div> </div>
+<div>原来 都变得散漫了</div>
+<div> </div>
+<div>那时候 把酒言欢 悦如蝶恋</div>
+<div>那一年 是谁</div>
+<div>和我携手 走进深渊</div>
+<div>曾经阵阵的呐喊</div>
+<div>竟是青春老死的纪念</div>
+<div><br />新生活出现</div>
+<div>代价是</div>
+<div>再也看不见 我再也看不见</div>
+<div>纯真 和简单</div>
+<div> </div>
+<div>我的生命</div>
+<div>终归于沉寂</div>
+<div>我们的歧途 让我们</div>
+<div>通向各自不同终点</div>
+<div> </div>
+<div>曾经 或许 我们相隔不远</div>
+<div>一切 如今 积重难返</div>
+<div>朋友 爱人</div>
+<div>曲会终 人也散</div>
+<div> </div>
+<div>未来 在远处绽放</div>
+<div>我努力 不做奢望</div>
+<div>生活静静流淌</div>
+<div> </div>
+<div>有一天</div>
+<div>我会手捧 残存的温暖</div>
+<div>全部给你</div>
+<div>变成你的春天</div></p>

@@ -1,0 +1,12 @@
+---
+layout: post
+title: 第三站
+categories:
+- Life Moments
+tags:
+- andy
+published: true
+comments: true
+---
+<p><font color="#0000ff" size="5"><a href="http://wangyaodi.spaces.live.com/" target="_blank">
+</a><p align="center"><a href="http://wangyaodi.spaces.live.com/" target="_blank"><font color="#0000ff" size="5">创 新，迎 新</font></a></p></font></p>

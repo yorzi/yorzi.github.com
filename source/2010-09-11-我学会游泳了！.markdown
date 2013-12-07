@@ -1,0 +1,19 @@
+---
+layout: post
+title: 我学会游泳了！
+categories:
+- Daily Stream
+- Life Moments
+tags:
+- 游泳
+- 英东
+- 铁人三项
+published: true
+comments: true
+---
+<p>时间：2010/9/11<br />
+地点：奥林匹克中心英东游泳馆</p>
+
+<p>历时三年，我终于可以从泳池的一边游到泳池的另一边了(50m)～纪念之！</p>
+
+<p>我似乎看到了自己参加铁人三项的可能性...</p>

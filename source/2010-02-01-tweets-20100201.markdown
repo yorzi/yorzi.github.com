@@ -1,0 +1,83 @@
+---
+layout: post
+title: Tweets 2010/02/01
+categories:
+- Daily Stream
+- GR Shares
+- NB Tweets
+tags:
+- NB Tweets
+- shares
+published: true
+comments: true
+---
+<p><table style="border-collapse: collapse;" border="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;" colspan="2"><small style="color: #555555;"><strong>Monday 1st February 2010</strong></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8503006928">23:47</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/arthur369">arthur369</a>: 每日设计三推：可用性web表单的设计开发指南。表单在web设计中引发的讨论已经持续了10年，本文中罗列了多条原则，包括布局，验证，代码可读性，使用jquery来改良表单等。<a style="color: #dd1122;" href="http://is.gd/7tokO" target="_blank">http://is.gd/7tokO</a><a style="color: #dd1122;" href="hash/3dt">#3dt</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8502946209">23:45</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/dupola">dupola</a>: 网络牛人模仿15个明星演唱《狮子座》 <a style="color: #dd1122;" href="http://u.dupola.net/30" target="_blank">http://u.dupola.net/30</a> 很好很强大。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8502608070">23:36</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/Alice7vong">Alice7vong</a> RT @<a style="color: #dd1122;" href="http://twitter.com/xgjames">xgjames</a>: “爱情，往往不是从天而降一个现成的好男人或好女人，让之成为我们的伴侣，而是在天时地利之际遇见一个普通人，我们相互发掘了彼此身上好的那一面，相互成为对方生命中的好男人和好女人，并好好相爱下去。” <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8492232450">17:19</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/xiaolai">xiaolai</a>: 据说最长的英文单词：pneumonoultramicroscopicsilicovolcanoconiosis <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8488643291">14:32</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/zhutouinfo">zhutouinfo</a> RT @<a style="color: #dd1122;" href="http://twitter.com/nuo">nuo</a>: 转某同学的状态：今年的2月14号是考验一个男人要亲情还是要爱情还是要自己的日子：大年初一，情人节，NBA全明星周末 三合一…… 比妈和老婆同时掉河里救谁的选择还要难.<small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8485347841">12:40</a></small>
+试用了一上午mac,还真是不习惯...于是又退回到ubuntu <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8485095551">12:34</a></small>
+@<a style="color: #dd1122;" href="http://twitter.com/_dz">_dz</a> 我去的是中关村金逸国际，开始是去北三环那个华星，结果所有时段都爆满了。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8480740574">11:04</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/_dz">_dz</a>: 周末去看了阿凡达，电影院里巨火爆啊，非常不理解的是，竟然还有人真的去看孔子！// 你也是这周末看的...没有想象的好看 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8479388645">10:39</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/wangpei">wangpei</a>: 热烈推荐英文版《推特时报》<a style="color: #dd1122;" href="http://twittertim.es/timOReilly" target="_blank">http://twittertim.es/timOReilly</a> ，期待针对中文推特圈的时报现身江湖。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8473057738">08:30</a></small>
+@<a style="color: #dd1122;" href="http://twitter.com/doubleaf">doubleaf</a> 你是西安人？ <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8472229027">08:08</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/turingbook">turingbook</a>: 这创意很不错啊，Twitter报：<a style="color: #dd1122;" href="http://twittertim.es/timOReilly" target="_blank">http://twittertim.es/timOReilly</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8472189464">08:06</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/mranti">mranti</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/yimaobuba">yimaobuba</a>: 综合各方八卦，《孔子》到周五为止票房大约只有4000万，总票房看来最多在6000-7000万之间。周末中影旗下的星美院线率先偷偷把孔子下线，为喜洋洋让路。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8472105243">08:04</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/guao">guao</a>: 谷奥更新: Gmail 不允许建立叫做 Buzz 的邮件标签？ <a style="color: #dd1122;" href="http://guao.cc/U2o" target="_blank">http://guao.cc/U2o</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8458120723">00:59</a></small>
+RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/blogtd">blogtd</a> RT: @<a style="color: #dd1122;" href="http://twitter.com/8jun">8jun</a>: 糗事百科：看了【央视《环球视线》奥巴马对台军售的报价单】这一期的节目，最后主持人问特约评论员“咱们国家可以采取一些什么样的反制措施呢？”评论员答：“我觉得首先就是抗议。” <a style="color: #dd1122;" href="hash/GFW">#GFW</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8456792276">00:16</a></small>
+[GR Share] : Active Record Query Interface 3.0 <a style="color: #dd1122;" href="http://goo.gl/dgR8" target="_blank">http://goo.gl/dgR8</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://apiwiki.twitter.com/">API</a></small></td>
+</tr>
+<tr>
+<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;"><small style="color: #555555;"><a style="color: #555555;" href="status/8456678048">00:12</a></small>
+[GR Share] : 交互设计实用指南系列(8)—深广度平衡 <a style="color: #dd1122;" href="http://goo.gl/wGyA" target="_blank">http://goo.gl/wGyA</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://apiwiki.twitter.com/">API</a></small></td>
+</tr>
+</tbody></table></p>

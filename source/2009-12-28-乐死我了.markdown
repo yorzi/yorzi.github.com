@@ -1,0 +1,25 @@
+---
+layout: post
+title: 乐死我了
+categories:
+- Daily Photos
+- Tech Notes
+tags:
+- fun
+- language
+- linux
+- os
+- ruby
+- tech
+published: true
+comments: true
+---
+<p>最近看见两张图，很有意思，废话少说，直接上图：</p>
+
+<p>关于编程语言
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2009/12/lang.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2009/12/lang-300x196.jpg" alt="language fighting" title="language fighting" width="300" height="196" class="aligncenter size-medium wp-image-270" /></a></p>
+
+<p>关于操作系统
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2009/12/os.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2009/12/os-300x219.jpg" alt="OS fighting" title="OS fighting" width="300" height="219" class="aligncenter size-medium wp-image-271" /></a></p>
+
+<p>haha, I am playing with <a href="http://www.ruby-lang.org/en/">Ruby</a> on <a href="http://www.ubuntu.com/">Linux</a>!</p>

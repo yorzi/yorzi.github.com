@@ -1,0 +1,20 @@
+---
+layout: post
+title: Key Results in Q4 2009
+categories:
+- Daily Photos
+- Mood Shots
+tags:
+- '2009'
+- blog
+- daily-share
+- key-results
+- photo
+published: true
+comments: true
+---
+<p>突然发现已经站在2009的尾巴上面了，昨天开会说要做下一季度的计划，于是赶紧把这个季度的Key Results拿出来看看，GOD！基本上只完成了50%左右。<br />
+但是也并非我儿戏工作，因为这一季度似乎只有1.5个月(从写计划的时候算起)，同时呢，还做了一些并不在计划之列的工作，比方EQV2的结构化重构。另外，又因为受伤歇了大概10天，总之，这个季度真他娘的不应该叫季度，应该叫，比方一个月子。</p>
+
+<p>之前打算搞几个“专栏”放在Blog上面，现在开始，我要一个一个揭开面纱，不就是BLOG吗，经过几年的锤炼，我越来越体会到“会看”和“会写”的重要性(当然“会说”和“会做”也很重要，只不过我对这两点领悟比较早)。最早读过一个人写的BLOG，我才真正明白了<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/">为什么要写BLOG</a>。其实现在在网络上做很多事情都是相同的思路。<br />
+[caption id="attachment_192" align="aligncenter" width="300" caption="andy\'s key results in Q4 2009"]<a href="http://blog.wangyaodi.com/2009/12/17/key-results-in-q4-2009/andys-key-results/" rel="attachment wp-att-192"><img src="http://blog.wangyaodi.com/wp-content/uploads/2009/12/andys-key-results.-300x225.png" alt="andy&#039;s key results in Q4 2009" title="andy&#039;s key results in Q4 2009" width="300" height="225" class="size-medium wp-image-192" /></a>[/caption] </p>

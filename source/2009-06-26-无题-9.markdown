@@ -1,0 +1,10 @@
+---
+layout: post
+title: 无题
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div>凌晨4点，<br />从诺大的双人床上滚落到地板，<br />噩梦就此嘎然被打断，<br />做人真无辜。<br /><br />Night, THE HOT.</div></p>

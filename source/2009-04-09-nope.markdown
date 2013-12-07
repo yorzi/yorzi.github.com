@@ -1,0 +1,19 @@
+---
+layout: post
+title: Nope
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center;font-weight:bold">累到筋疲力尽<br />
+累到神经错乱<br />
+累到心里灰暗<br />
+累到嘴唇打结<br />
+累到不想睡觉<br />
+累到不食人间烟火<br />
+<br />
+姐说<br />
+“男人要担当，<br />女人才有耍赖的权力。”<br />
+</div></p>

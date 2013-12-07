@@ -1,0 +1,27 @@
+---
+layout: post
+title: 有时候
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"> <b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">
+心如长眠 静寂而噩梦连连</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+洁白如雪 而后狼藉一片</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+转角处隐藏玄机 被风吹透</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+不知所依 生似浮萍</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+真真切切 皱纹爬满双眼</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+就此走散 再难相见</b><br />
+</div></p>

@@ -1,0 +1,18 @@
+---
+layout: post
+title: 无题
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p>神经边缘是悲怆和绝望<br />
+而夏天滋养着火焰和热血涌动<br />
+待我淡定的退隐<br />
+山林一眼混乱<br />
+<br />
+笑和哭的距离<br />
+是命悬一线的倔强<br />
+<br />
+Night, Earth!</p>

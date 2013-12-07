@@ -1,0 +1,12 @@
+---
+layout: post
+title: spring
+categories:
+- Life Moments
+tags:
+- andy
+- life
+published: true
+comments: true
+---
+<p><p><font color="#0000ff">def</font> <strong>day_and_night</strong><br />  <font color="#009900">@life</font> = Work.find_by_interest_and_money(challenge,normal)<br />  <font color="#009900">@life</font> &lt;&lt; People.find(<font color="#00ffff">:all</font>, conditions =&gt; <font color="#660000">"struggle is not null,character is special"</font>)<br />  <font color="#0000ff">unless</font> !Love.nil?<br />    <font color="#009900">@life</font> &lt;&lt; ***<br />  <font color="#0000ff">end<br />  <font color="#009900">@life</font> </font><font color="#000000">&lt;&lt; Spring.find(:all)<br /></font><font color="#0000ff">end<br /></font><br />render =&gt; <font color="#00ffff">:day_and_night</font></p></p>

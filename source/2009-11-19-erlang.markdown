@@ -1,0 +1,169 @@
+--- 
+layout: post
+title: Erlang
+comments: true
+categories:
+- erlang
+- Programing
+- tech
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+  _wp_old_slug: "103"
+---
+本篇是完全转载的一篇文章，<a href="http://www.dujingfang.com">7哥</a>昨天利用这个例子给team讲了一下erlang，在这里做个备份，免得以后要用时候找不到了。<a href="http://erlang-china.org/start/mochiweb_intro.html">原文链接</a>
+
+------------------------------------------------------------------------------------------------------------------------------
+<a href="http://code.google.com/p/mochiweb" target="_blank">MochiWeb</a>是<a href="http://www.mochibot.com/" target="_blank">mochibot.com</a>的<a href="http://bob.pythonmac.org/" target="_blank">Bob Ippolito</a>贡献的开源项目[在<a href="http://undefined.org/c4-1/" target="_blank">这里</a>有一个介绍它的Slide]。
+
+MochiBot.com 提供 Flash 内容的访问统计和用户跟踪服务（大致上，可以理解为针对 flash 的 google Analytics 服务），他们在 mochiweb 之上构建了一个定制化的 web server ，并通过这个 web server 获取用户的访问数据（在这一点上有点象 <a href="http://code.google.com/p/erlana/" target="_blank">Erlana</a> 项目）。可以想象，这个定制的 web server 需要很高的并发支持，精简和牢固的底层架构，以及对于 http 协议的完备支持（乃至对于 socket 的直接操控）。如果可以的话，最好还有更为精简的 API ，易于定制的 URL 扩展方式，以及易于理解的底层框架。幸运的是，这些 mochiweb 都已经提供，而且还是开源的。
+
+需要说明的是，相比 yaws / inets httpd 而言，它的目标并不是 apache 之类的软件，它并不是一个完整的 web server （没有cache等机制，因而也不做任何加速动作），它只是一个实现 web server 的工具包（这也就意味着，它直接通过代码来扩展，你可以在它的基础上做任何事）。正因为此，在“需要定制 Web Server”的情况下，它成为一个非常不错的选择（比如，配置在 enginx 的后面，专门用于动态内容的生成）。在 erlang 的世界里，有几个项目已经开始转而使用 mochiweb 。
+
+下面是对这个项目代码的一些粗浅实战。
+
+首先遵循它的提示，通过svn获取代码：
+<div>
+<div>svn checkout http://mochiweb.googlecode.com/svn/trunk/ mochiweb-read-only</div>
+</div>
+获得的文件和目录结构如下：
+<div>
+<div>deps  ebin     LICENSE   priv    scripts  support
+doc   include  Makefile  README  src</div>
+</div>
+注：大写字母开头的是文件，小写字母开头的是目录。这是一个相当标准的 Erlang 项目目录结构，其 Makefile （用到 support 目录的 make 包含文件）非常值得借鉴（而且也有简化这一借鉴步骤的办法，后面会提到）。
+
+这是一个纯粹的 Erlang 项目，并不涉及其它语言写的模块，照老规矩，直接 make ：
+<div>
+<div>make</div>
+</div>
+注：如果你和我一样，仍在 R11* 上工作，那么 make 会在 edoc 的步骤中失败，这是因为 R11* 的 edoc 工具存在 bug 无法正确处理 mochiweb 用到的<a href="http://erlang-china.org/study/parameterized-module.html" target="_blank"> Parameterized module 语法</a>，不用管它，并不影响后续使用。
+
+make 完成之后，要怎么试运行呢？这就涉及我们上面提到的“借鉴”工作。因为 mochiweb 是设计用来作为一个完整项目的一个基础部分，也就是说，它只是一个骨架（或者如作者所说的toolkit），在你 make 完之后，什么也干不了，除非你对它进行定制化编码，完成这个 web server 。好在它自己已经提供了工具来简化这一步骤：
+<div>
+<div>escript scripts/new_mochiweb.erl test</div>
+</div>
+new_mochiweb.erl 是一个 EScript 脚本，它负责从 mochiweb 中拷贝使用 mochiweb 所必须文件和目录，形成你的新项目的“骨架”（概念上有点类似于 rails 的自动生成代码）。上面的命令生成了名为 test 的项目，会在当前目录建立名为 test 子目录（还可以使用 escript scripts/new_mochiweb.erl test testdir 将新建立的项目放在 testdir 目录中）。上面的命令生成了一些文件，我加了注释：
+<div>
+<div>./test/			项目目录
+Makefile		Make文件
+start.sh		启动脚本
+start-dev.sh	开发模式下的启动脚本（开启代码重载机制）
+./test/ebin/		编译目录
+./test/support/		Make支持文件目录
+include.mk		Make包含脚本
+./test/deps/		依赖目录，包含mochiweb自身
+./test/src/		代码目录
+skel.app		实际名称为test.app，OTP规范的应用定义文件
+Makefile		Make文件
+skel_web.erl	实际名称为test_web.erl，应用的web服务器代码
+skel_deps.erl	实际名称为test_deps.erl，负责加载deps目录的代码
+skel_sup.erl	实际名称为test_sup.erl，OTP规范的监控树
+skel.hrl		实际名称为test.hrl，应用的头文件
+skel_app.erl	实际名称为test_app.erl，OTP规范的应用启动文件
+skel.erl		实际名称为test.erl，应用的API定义文件
+./test/doc/		文档目录
+./test/include/		包含文件目录
+./test/priv/		项目附加目录
+./test/priv/www/	项目附加的www目录
+index.html		默认的项目首页</div>
+</div>
+是的，什么也不用改，在新生成的项目骨架中，一个可用的web服务器已经就绪：
+<div>
+<div>make
+./start-dev.sh</div>
+</div>
+这会打开一个 erlang shell ，输出的信息表明在 8000 端口开了一个 web 服务，此时用浏览器访问 http://localhost:8000 （或者其它正确的地址）就能看到“MochiWeb running.”，这表明 mochiweb 配置正确，运行良好。注意，我们上面是用 start-dev.sh 来启动的，它打开了 reloader 特性。
+
+现在修改一下 test_web.erl 的代码，加点料。因为我们上面已经打开了 reloader 所以，不用关掉这个 erlang shell ，我们可以直接修改和编译，然后刷新就能看到效果（有点 PHP 编程的意思了）。把 test_web.erl 改成这样，看看会有什么情况发生：
+<div>下载: <a href="http://erlang-china.org/wordpress/wp-content/plugins/coolcode/coolcode.php?p=151&amp;download=test_web.erl">test_web.erl</a></div>
+<div>
+<ol title="Double click to hide line number." ondblclick="linenumber(this)">
+	<li><span style="color: #ffa500;">%% @author author &lt;author@example.com&gt;</span></li>
+	<li><span style="color: #ffa500;">%% @copyright YYYY author.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: #ffa500;">%% @doc Web server for test.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Gray;">-</span><span style="color: Blue;">module</span><span style="color: Olive;">(</span><span style="color: Blue;">test_web</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;">-</span><span style="color: Blue;">author</span><span style="color: Olive;">(</span><span style="color: #8b0000;">'</span><span style="color: Red;">author &lt;author@example.com&gt;</span><span style="color: #8b0000;">'</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Gray;">-</span><span style="color: Blue;">export</span><span style="color: Olive;">([</span><span style="color: Blue;">start</span><span style="color: Gray;">/</span><span style="color: Maroon;">1</span><span style="color: Gray;">, </span><span style="color: Blue;">stop</span><span style="color: Gray;">/</span><span style="color: Maroon;">0</span><span style="color: Gray;">, </span><span style="color: Blue;">loop</span><span style="color: Gray;">/</span><span style="color: Maroon;">2</span><span style="color: Olive;">])</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: #ffa500;">%% External API</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Blue;">start</span><span style="color: Olive;">(</span><span style="color: Blue;">Options</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> {</span><span style="color: Blue;">DocRoot</span><span style="color: Gray;">, </span><span style="color: Blue;">Options1</span><span style="color: Gray;">} = </span><span style="color: Blue;">get_option</span><span style="color: Olive;">(</span><span style="color: Blue;">docroot</span><span style="color: Gray;">, </span><span style="color: Blue;">Options</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Loop</span><span style="color: Gray;"> = </span><span style="color: Green;">fun</span><span style="color: Gray;"> </span><span style="color: Olive;">(</span><span style="color: Blue;">Req</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> ?</span><span style="color: Blue;">MODULE</span><span style="color: Gray;">:</span><span style="color: Blue;">loop</span><span style="color: Olive;">(</span><span style="color: Blue;">Req</span><span style="color: Gray;">, </span><span style="color: Blue;">DocRoot</span><span style="color: Olive;">)</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">end</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">mochiweb_http</span><span style="color: Gray;">:</span><span style="color: Blue;">start</span><span style="color: Olive;">([</span><span style="color: Gray;">{</span><span style="color: Blue;">name</span><span style="color: Gray;">, ?</span><span style="color: Blue;">MODULE</span><span style="color: Gray;">}, {</span><span style="color: Blue;">loop</span><span style="color: Gray;">, </span><span style="color: Blue;">Loop</span><span style="color: Gray;">} | </span><span style="color: Blue;">Options1</span><span style="color: Olive;">])</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Blue;">stop</span><span style="color: Olive;">()</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">mochiweb_http</span><span style="color: Gray;">:</span><span style="color: Blue;">stop</span><span style="color: Olive;">(</span><span style="color: Gray;">?</span><span style="color: Blue;">MODULE</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Blue;">loop</span><span style="color: Olive;">(</span><span style="color: Blue;">Req</span><span style="color: Gray;">, </span><span style="color: Blue;">DocRoot</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: #8b0000;">"</span><span style="color: Red;">/</span><span style="color: #8b0000;">"</span><span style="color: Gray;"> ++ </span><span style="color: Blue;">Path</span><span style="color: Gray;"> = </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">get</span><span style="color: Olive;">(</span><span style="color: Blue;">path</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">get</span><span style="color: Olive;">(</span><span style="color: Blue;">method</span><span style="color: Olive;">)</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> </span><span style="color: Green;">when</span><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">'</span><span style="color: Red;">GET</span><span style="color: #8b0000;">'</span><span style="color: Gray;">; </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">'</span><span style="color: Red;">HEAD</span><span style="color: #8b0000;">'</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Path</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: #8b0000;">"</span><span style="color: Red;">timer</span><span style="color: #8b0000;">"</span><span style="color: Gray;"> -&gt; </span><span style="color: #ffa500;">%% 新增了 /timer 这个 URL，它是一个 HTTP Chunked 的例子</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Response</span><span style="color: Gray;"> = </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">ok</span><span style="color: Olive;">(</span><span style="color: Gray;">{</span><span style="color: #8b0000;">"</span><span style="color: Red;">text/plain</span><span style="color: #8b0000;">"</span><span style="color: Gray;">, </span><span style="color: Blue;">chunked</span><span style="color: Gray;">}</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">timer</span><span style="color: Olive;">(</span><span style="color: Blue;">Response</span><span style="color: Olive;">)</span><span style="color: Gray;">;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">_</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">serve_file</span><span style="color: Olive;">(</span><span style="color: Blue;">Path</span><span style="color: Gray;">, </span><span style="color: Blue;">DocRoot</span><span style="color: Olive;">)</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">end</span><span style="color: Gray;">;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: #8b0000;">'</span><span style="color: Red;">POST</span><span style="color: #8b0000;">'</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Path</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">_</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">not_found</span><span style="color: Olive;">()</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">end</span><span style="color: Gray;">;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">_</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">respond</span><span style="color: Olive;">(</span><span style="color: Gray;">{</span><span style="color: Maroon;">501</span><span style="color: Gray;">, </span><span style="color: Olive;">[]</span><span style="color: Gray;">, </span><span style="color: Olive;">[]</span><span style="color: Gray;">}</span><span style="color: Olive;">)</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Green;">end</span><span style="color: Gray;">.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: #ffa500;">%% Internal API</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: Blue;">get_option</span><span style="color: Olive;">(</span><span style="color: Blue;">Option</span><span style="color: Gray;">, </span><span style="color: Blue;">Options</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> {</span><span style="color: Blue;">proplists</span><span style="color: Gray;">:</span><span style="color: Blue;">get_value</span><span style="color: Olive;">(</span><span style="color: Blue;">Option</span><span style="color: Gray;">, </span><span style="color: Blue;">Options</span><span style="color: Olive;">)</span><span style="color: Gray;">, </span><span style="color: Blue;">proplists</span><span style="color: Gray;">:</span><span style="color: Blue;">delete</span><span style="color: Olive;">(</span><span style="color: Blue;">Option</span><span style="color: Gray;">, </span><span style="color: Blue;">Options</span><span style="color: Olive;">)</span><span style="color: Gray;">}.</span></li>
+	<li><span style="color: Gray;"> </span></li>
+	<li><span style="color: #ffa500;">%% 打印当前时间，间隔一秒，再在已经打开的 http 连接之上，再次打印，这也就是所谓 HTTP长连接/ServerPush 的一种</span></li>
+	<li><span style="color: Blue;">timer</span><span style="color: Olive;">(</span><span style="color: Blue;">Response</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">Response</span><span style="color: Gray;">:</span><span style="color: Blue;">write_chunk</span><span style="color: Olive;">(</span><span style="color: Blue;">io_lib</span><span style="color: Gray;">:</span><span style="color: Blue;">format</span><span style="color: Olive;">(</span><span style="color: #8b0000;">"</span><span style="color: Red;">The time is: ~p~n</span><span style="color: #8b0000;">"</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Olive;">[</span><span style="color: Blue;">calendar</span><span style="color: Gray;">:</span><span style="color: Blue;">local_time</span><span style="color: Olive;">()]))</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">timer</span><span style="color: Gray;">:</span><span style="color: Blue;">sleep</span><span style="color: Olive;">(</span><span style="color: Maroon;">1000</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
+	<li><span style="color: Gray;"> </span><span style="color: Blue;">timer</span><span style="color: Olive;">(</span><span style="color: Blue;">Response</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
+</ol>
+</div>
+编译之前，先访问一下 http://localhost:8000/timer ，是“Not found.”。此时，不要中断之前的 erlang shell 而是直接再次 make ：
+<div>
+<div>make</div>
+</div>
+留意到之前打开的 erlang shell 上出现了这么一行：
+<div>
+<div>1&gt; Reloading test_web ... ok.</div>
+</div>
+此时，再次访问 http://localhost:8000/timer （耐心些 HTTP chunked 获得的数据要积累到一定的字节浏览器才会显示），你会发现这是一个不会“下载结束”的页面，不断会有新的内容出现在下面。你也许可以利用这个特性实现传说 中的“无刷新聊天室”。
+
+值得留意的是这样的代码：
+<div>
+<div>...
+Req:ok({"text/plain", chunked}),
+...
+Req:serve_file(Path, DocRoot)
+...
+Response:write_chunk(io_lib:format("The time is: ~p~n",
+[calendar:local_time()])),
+...</div>
+</div>
+我们这里是用 Req:ok(…) 而不是 request:ok(Req, …) 这在 Erlang 的代码中并不寻常，Req 是一个变量，通常这个变量的值是某个 atom 表明的是一个 module 的名称，但这里的 Req 显然不是这样。它是一个 “module 的实例”，这就是我们前面提到的“<a href="http://erlang-china.org/study/parameterized-module.html" target="_blank"> Parameterized module 语法</a>”的实际应用，它不仅意味着某个模块的名称，还意味着(初始化时)传给这个模块的一系列参数，它包装了与一个 request 相关的数据。应该说，这个语法更加简洁易懂。
+
+问题：
+
+1. 如果在此时，并不关闭正在不断“下载页面”的浏览器，在 test_web.erl 中将 timer 的部分注释掉，然后再次 make ，会发生什么？为什么？
+2. 找出 Req 在 mochiweb 的哪个模块中被初始化？如何被初始化？它实际上是由哪个模块来实现的？
+3. 解释 test_web.erl 的代码结构，各个部分都起什么作用？它是如何服务于每一个请求的？
+4. 如何在 test_web.erl 中直接访问 http 连接的 socket ？
+
+（实际上，这个例子只是一个 HTTP Chunked 的例子而已，你并不能依赖于 HTTP Chunked 来实现聊天室，这不是 HTTP Chunked 的问题，而是因为在现实的网络环境下，路由器有可能会自动断开连接时长超过某个值的连接。）

@@ -1,0 +1,11 @@
+---
+layout: post
+title: future
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"><span style="font-weight:bold">我说我想睡个大大的懒觉</span><br style="font-weight:bold" /><span style="font-weight:bold">因为睡饱这件事情可以让我觉得生活很美好</span><br style="font-weight:bold" /><br style="font-weight:bold" /><span style="font-weight:bold">我不期待很多</span><br style="font-weight:bold" /><span style="font-weight:bold">但是如果 我希望爱我的人都快乐</span><br /></div>
+<br /></p>

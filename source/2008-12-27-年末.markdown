@@ -1,0 +1,13 @@
+---
+layout: post
+title: 年末
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center;font-weight:bold;color:rgb(191, 191, 191)">年末的方寸就这么乱了。<br />
+与其说这些具体的小事扭缠成一团，倒不如说，我只是心底有些悲凉的绝望。<br />
+渐渐明白人是不能暴露痛苦的，暴露出来的痛苦会成倍增长，变成巨大的焦虑和阴郁。<br />
+世人未必愿意知道他人的痛苦，其实这样子是合理的。</div> <br /></p>

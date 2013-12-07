@@ -1,0 +1,30 @@
+---
+layout: post
+title: 关于逻辑
+categories:
+- Reading Marks
+tags:
+- 书籍
+- 心理学
+- 自省
+- 逻辑
+- 道义
+published: true
+comments: true
+---
+<p>完全转载：原文看<a href="http://www.lixiaolai.com/index.php/archives/8483.html">这里</a>！
+<blockquote>有<a style="color: #2244bb;" href="http://www.lixiaolai.com/index.php/archives/askxiaolai" target="_blank">读者来信提问</a>：<br />
+你好，笑来，我想我问关于逻辑学方面的书籍有什么比较值得推荐的吗？</blockquote></p>
+
+<p>其实，我总觉得很多人缺的不是逻辑训练，而是“自省”训练，以及“道义”教育。
+<ol>
+	<li><a style="color: #2244bb;" href="http://www.lixiaolai.com/misc/Beyond%20Feelings.zip" target="_blank">Beyond Feelings</a>，这是我当年的启蒙书籍（是我边读边敲做成电子版的）。</li>
+	<li><a style="color: #2244bb;" href="http://www.lixiaolai.com/index.php/archives/category/thinking-clearly-series" target="_blank">想明白（系列）</a>分类里的文章，建议你看看。</li>
+	<li>TTC出过一个24讲的”Argumentation”，到Google上搜索“<a style="color: #2244bb;" href="http://is.gd/68lRx" target="_blank">TTC+Argumentation</a>”就可以找到。</li>
+	<li>推荐看这套视频：<a style="color: #2244bb;" href="http://www.lixiaolai.com/index.php/archives/8104.html" target="_blank">Justice – What’s the right thing to do?</a></li>
+	<li>另外，逻辑学现在已经不再是孤立的学科；事实上，正确思考不是仅逻辑学就能搞定的。建议多看“心理学”、“经济学”，以及一些科普的读物。注意其中的说理方式。</li>
+</ol>
+	<li><a style="color: #2244bb;" href="http://www.douban.com/doulist/243468/?start=25" target="_blank">我在豆瓣上有个List</a>，你不妨也去看看。</li>
+</p>
+
+<p>PS: <a href="http://www.lixiaolai.com">笑来老师</a>的推荐一定不能错过。</p>

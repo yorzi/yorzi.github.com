@@ -1,0 +1,22 @@
+---
+layout: post
+title: 无题
+categories:
+- Life Moments
+tags:
+- andy
+- life
+published: true
+comments: true
+---
+<p><div align="center"><font color="#0000ff"><br />夜的颜色融化成了悲伤，</font></div>
+<div align="center"><font color="#0000ff">烟火支撑着我盼的黎明，</font></div>
+<div align="center"><font color="#0000ff">那沉沉的恸哭惊扰睡梦，</font></div>
+<div align="center"><font color="#0000ff">记忆在枯叶落下的一刻，</font></div>
+<div align="center"><font color="#0000ff">变成心底难以割舍的怨，</font></div>
+<div align="center"><font color="#0000ff">未来的明光在梦外摇曳，</font></div>
+<div align="center"><font color="#0000ff">恍惚我无限赠与的柔情，</font></div>
+<div align="center"><font color="#0000ff">时光终将于抛弃后荏苒，</font></div>
+<div align="center"><font color="#0000ff">那时我慌乱的任由它去，</font></div>
+<div align="center"><font color="#0000ff">于是走走停停停停走走。</font></div>
+<div align="center"><br /><font color="#990099">---念着那些故人，和同窗好友。<br /></font></div></p>

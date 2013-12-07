@@ -1,0 +1,12 @@
+---
+layout: post
+title: 过劳
+categories:
+- Life Moments
+tags:
+- andy
+- dailylife
+published: true
+comments: true
+---
+<p><p align="center"><font color="#3333cc"><br />好吧，我累了。<br />于是，冷暖自知。<br /></font></p></p>

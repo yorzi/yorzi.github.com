@@ -1,0 +1,24 @@
+---
+layout: post
+title: 什么时候
+categories:
+- Live Space
+tags: []
+published: true
+comments: true
+---
+<p><div style="text-align:center"> <b style="color:rgb(102, 102, 102)">有时候</b><br /><b style="color:rgb(102, 102, 102)">
+难以理解的事情会自然而然的发生</b><br /><b style="color:rgb(102, 102, 102)">
+难以理解只不过是一场误会</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+更多关切丝毫于事无补</b><br /><b style="color:rgb(102, 102, 102)">
+更多关切只不过是一次意外</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+举动反常也有真情流露</b><br /><b style="color:rgb(102, 102, 102)">
+举动反常只不过是一次错觉</b><br /><b style="color:rgb(102, 102, 102)">
+</b><br /><b style="color:rgb(102, 102, 102)">
+有时候</b><br /><b style="color:rgb(102, 102, 102)">
+唐僧很唠叨闰土很帅</b><br /><b style="color:rgb(102, 102, 102)">
+唐僧也很帅闰土也很唠叨</b></div></p>

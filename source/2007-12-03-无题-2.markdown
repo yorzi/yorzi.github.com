@@ -1,0 +1,21 @@
+---
+layout: post
+title: 无题
+categories:
+- Life Moments
+tags:
+- andy
+published: true
+comments: true
+---
+<p><div align="center"><font color="#0000cc">这生活，何必如此凄美。<br /><br /></font></div>
+<div align="center"><font color="#0000cc">我漫无目的的走着，</font></div>
+<div align="center"><font color="#0000cc">看着人们总是欢声笑语，<br />从来不曾给我力量和勇气。<br /><br />初冬的太阳，美的凄凉，</font></div>
+<div align="center"><font color="#0000cc">我一遍一遍的想象，</font></div>
+<div align="center"><font color="#0000cc">我们终将去向什么地方。<br /><br />他们回来了，</font></div>
+<div align="center"><font color="#0000cc">我的心伤了，<br />他们离去了，</font></div>
+<div align="center"><font color="#0000cc">我开始焦虑，</font></div>
+<div align="center"><font color="#0000cc">他们看着我，</font></div>
+<div align="center"><font color="#0000cc">我已经疲惫...</font></div>
+<div align="center"><font color="#0000cc"> </font></div>
+<div align="center"><font color="#0000cc">这人们，何必如此善良。</font></div></p>

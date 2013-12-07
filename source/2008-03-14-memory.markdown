@@ -1,0 +1,13 @@
+---
+layout: post
+title: memory
+categories:
+- Life Moments
+tags:
+- andy
+- life
+- ror
+published: true
+comments: true
+---
+<p><p><font color="#0000cc">def</font> fresh<br />  Love.find(<font color="#00ffff">:all</font>).delete<br /><font color="#0000cc">end<br /></font><br /><font color="#990000">render</font> =&gt; <font color="#00ffff">:fresh<br /><br /></font><font color="#ff0000">#reference-http://rubyonrails.org/</font></p></p>
