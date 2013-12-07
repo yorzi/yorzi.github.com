@@ -1,0 +1,496 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      MacPorts is a monster - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="homebrew, imagemagick, MAC OS X, macports, Programing, rmagick">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_09 2010_09_01 2010_09_01_macports-is-a-monster">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/09/01/macports-is-a-monster.html">MacPorts is a monster</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Sep 01, 2010
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/homebrew.html">homebrew</a>
+      
+        <a href="/tags/imagemagick.html">imagemagick</a>
+      
+        <a href="/tags/mac-os-x.html">MAC OS X</a>
+      
+        <a href="/tags/macports.html">macports</a>
+      
+        <a href="/tags/programing.html">Programing</a>
+      
+        <a href="/tags/rmagick.html">rmagick</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h1>MacPorts is a monster.. see the log I installed ImageMagick. Anyway, it works for me. but the <a href="http://weblogs.manas.com.ar/mverzilli/2010/05/19/install-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in/">brew solution</a> is not working for me.</h1>
+
+<p>andy@Wang-Andys-MacBook-Pro~/proj.workspace:sudo port install ImageMagick
+&mdash;&gt;  Computing dependencies for ImageMagick
+&mdash;&gt;  Fetching p5-locale-gettext
+&mdash;&gt;  Attempting to fetch gettext-1.05.tar.gz from <a href="http://distfiles.macports.org/perl5">http://distfiles.macports.org/perl5</a>
+&mdash;&gt;  Verifying checksum(s) for p5-locale-gettext
+&mdash;&gt;  Extracting p5-locale-gettext
+&mdash;&gt;  Applying patches to p5-locale-gettext
+&mdash;&gt;  Configuring p5-locale-gettext
+&mdash;&gt;  Building p5-locale-gettext
+&mdash;&gt;  Staging p5-locale-gettext into destroot
+&mdash;&gt;  Installing p5-locale-gettext @1.05<em>2
+&mdash;&gt;  Activating p5-locale-gettext @1.05</em>2
+&mdash;&gt;  Cleaning p5-locale-gettext
+&mdash;&gt;  Fetching help2man
+&mdash;&gt;  Attempting to fetch help2man-1.37.1.tar.gz from <a href="http://distfiles.macports.org/help2man">http://distfiles.macports.org/help2man</a>
+&mdash;&gt;  Verifying checksum(s) for help2man
+&mdash;&gt;  Extracting help2man
+&mdash;&gt;  Configuring help2man
+&mdash;&gt;  Building help2man
+&mdash;&gt;  Staging help2man into destroot
+&mdash;&gt;  Installing help2man @1.37.1<em>1
+&mdash;&gt;  Activating help2man @1.37.1</em>1
+&mdash;&gt;  Cleaning help2man
+&mdash;&gt;  Fetching m4
+&mdash;&gt;  Attempting to fetch m4-1.4.14.tar.bz2 from <a href="http://distfiles.macports.org/m4">http://distfiles.macports.org/m4</a>
+&mdash;&gt;  Verifying checksum(s) for m4
+&mdash;&gt;  Extracting m4
+&mdash;&gt;  Configuring m4
+&mdash;&gt;  Building m4
+&mdash;&gt;  Staging m4 into destroot
+&mdash;&gt;  Installing m4 @1.4.14<em>0
+&mdash;&gt;  Activating m4 @1.4.14</em>0
+&mdash;&gt;  Cleaning m4
+&mdash;&gt;  Fetching autoconf
+&mdash;&gt;  Attempting to fetch autoconf-2.65.tar.bz2 from <a href="http://distfiles.macports.org/autoconf">http://distfiles.macports.org/autoconf</a>
+&mdash;&gt;  Verifying checksum(s) for autoconf
+&mdash;&gt;  Extracting autoconf
+&mdash;&gt;  Applying patches to autoconf
+&mdash;&gt;  Configuring autoconf
+&mdash;&gt;  Building autoconf
+&mdash;&gt;  Staging autoconf into destroot
+&mdash;&gt;  Installing autoconf @2.65<em>1
+&mdash;&gt;  Activating autoconf @2.65</em>1
+&mdash;&gt;  Cleaning autoconf
+&mdash;&gt;  Fetching automake
+&mdash;&gt;  Attempting to fetch automake-1.11.1.tar.bz2 from <a href="http://distfiles.macports.org/automake">http://distfiles.macports.org/automake</a>
+&mdash;&gt;  Verifying checksum(s) for automake
+&mdash;&gt;  Extracting automake
+&mdash;&gt;  Configuring automake
+&mdash;&gt;  Building automake
+&mdash;&gt;  Staging automake into destroot
+&mdash;&gt;  Installing automake @1.11.1<em>0
+&mdash;&gt;  Activating automake @1.11.1</em>0
+&mdash;&gt;  Cleaning automake
+&mdash;&gt;  Fetching bzip2
+&mdash;&gt;  Attempting to fetch bzip2-1.0.5.tar.gz from <a href="http://distfiles.macports.org/bzip2">http://distfiles.macports.org/bzip2</a>
+&mdash;&gt;  Verifying checksum(s) for bzip2
+&mdash;&gt;  Extracting bzip2
+&mdash;&gt;  Applying patches to bzip2
+&mdash;&gt;  Configuring bzip2
+&mdash;&gt;  Building bzip2
+&mdash;&gt;  Staging bzip2 into destroot
+&mdash;&gt;  Installing bzip2 @1.0.5<em>3+darwin
+&mdash;&gt;  Activating bzip2 @1.0.5</em>3+darwin
+&mdash;&gt;  Cleaning bzip2
+&mdash;&gt;  Fetching freetype
+&mdash;&gt;  Attempting to fetch freetype-2.3.12.tar.bz2 from <a href="http://voxel.dl.sourceforge.net/freetype">http://voxel.dl.sourceforge.net/freetype</a>
+&mdash;&gt;  Attempting to fetch freetype-doc-2.3.12.tar.bz2 from <a href="http://voxel.dl.sourceforge.net/freetype">http://voxel.dl.sourceforge.net/freetype</a>
+&mdash;&gt;  Verifying checksum(s) for freetype
+&mdash;&gt;  Extracting freetype
+&mdash;&gt;  Applying patches to freetype
+&mdash;&gt;  Configuring freetype
+&mdash;&gt;  Building freetype
+&mdash;&gt;  Staging freetype into destroot
+&mdash;&gt;  Installing freetype @2.3.12<em>0+macosx
+&mdash;&gt;  Activating freetype @2.3.12</em>0+macosx
+&mdash;&gt;  Cleaning freetype
+&mdash;&gt;  Fetching fontconfig
+&mdash;&gt;  Attempting to fetch fontconfig-2.8.0.tar.gz from <a href="http://distfiles.macports.org/fontconfig">http://distfiles.macports.org/fontconfig</a>
+&mdash;&gt;  Verifying checksum(s) for fontconfig
+&mdash;&gt;  Extracting fontconfig
+&mdash;&gt;  Applying patches to fontconfig
+&mdash;&gt;  Configuring fontconfig
+&mdash;&gt;  Building fontconfig
+&mdash;&gt;  Staging fontconfig into destroot
+&mdash;&gt;  Installing fontconfig @2.8.0<em>0+macosx
+&mdash;&gt;  Activating fontconfig @2.8.0</em>0+macosx
+&mdash;&gt;  Cleaning fontconfig
+&mdash;&gt;  Fetching jpeg
+&mdash;&gt;  Attempting to fetch jpegsrc.v8a.tar.gz from <a href="http://distfiles.macports.org/jpeg">http://distfiles.macports.org/jpeg</a>
+&mdash;&gt;  Verifying checksum(s) for jpeg
+&mdash;&gt;  Extracting jpeg
+&mdash;&gt;  Configuring jpeg
+&mdash;&gt;  Building jpeg
+&mdash;&gt;  Staging jpeg into destroot
+&mdash;&gt;  Installing jpeg @8a<em>0
+&mdash;&gt;  Activating jpeg @8a</em>0
+&mdash;&gt;  Cleaning jpeg
+&mdash;&gt;  Fetching tiff
+&mdash;&gt;  Attempting to fetch tiff-3.9.2.tar.gz from <a href="ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/distfiles/">ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/distfiles/</a>
+&mdash;&gt;  Verifying checksum(s) for tiff
+&mdash;&gt;  Extracting tiff
+&mdash;&gt;  Applying patches to tiff
+&mdash;&gt;  Configuring tiff
+&mdash;&gt;  Building tiff
+&mdash;&gt;  Staging tiff into destroot
+&mdash;&gt;  Installing tiff @3.9.2<em>3+macosx
+&mdash;&gt;  Activating tiff @3.9.2</em>3+macosx
+&mdash;&gt;  Cleaning tiff
+&mdash;&gt;  Fetching lcms
+&mdash;&gt;  Attempting to fetch lcms-1.19.tar.gz from <a href="http://voxel.dl.sourceforge.net/lcms">http://voxel.dl.sourceforge.net/lcms</a>
+&mdash;&gt;  Verifying checksum(s) for lcms
+&mdash;&gt;  Extracting lcms
+&mdash;&gt;  Configuring lcms
+&mdash;&gt;  Building lcms
+&mdash;&gt;  Staging lcms into destroot
+&mdash;&gt;  Installing lcms @1.19<em>2
+&mdash;&gt;  Activating lcms @1.19</em>2
+&mdash;&gt;  Cleaning lcms
+&mdash;&gt;  Fetching libpng
+&mdash;&gt;  Attempting to fetch libpng-1.2.43.tar.bz2 from <a href="http://voxel.dl.sourceforge.net/libpng">http://voxel.dl.sourceforge.net/libpng</a>
+&mdash;&gt;  Verifying checksum(s) for libpng
+&mdash;&gt;  Extracting libpng
+&mdash;&gt;  Configuring libpng
+&mdash;&gt;  Building libpng
+&mdash;&gt;  Staging libpng into destroot
+&mdash;&gt;  Installing libpng @1.2.43<em>0
+&mdash;&gt;  Activating libpng @1.2.43</em>0
+&mdash;&gt;  Cleaning libpng
+&mdash;&gt;  Fetching libtool
+&mdash;&gt;  Attempting to fetch libtool-2.2.6b.tar.gz from <a href="http://distfiles.macports.org/libtool">http://distfiles.macports.org/libtool</a>
+&mdash;&gt;  Verifying checksum(s) for libtool
+&mdash;&gt;  Extracting libtool
+&mdash;&gt;  Configuring libtool
+&mdash;&gt;  Building libtool
+&mdash;&gt;  Staging libtool into destroot
+&mdash;&gt;  Installing libtool @2.2.6b<em>1+darwin
+&mdash;&gt;  Activating libtool @2.2.6b</em>1+darwin
+&mdash;&gt;  Cleaning libtool
+&mdash;&gt;  Fetching libxml2
+&mdash;&gt;  Attempting to fetch libxml2-2.7.7.tar.gz from <a href="http://distfiles.macports.org/libxml2">http://distfiles.macports.org/libxml2</a>
+&mdash;&gt;  Verifying checksum(s) for libxml2
+&mdash;&gt;  Extracting libxml2
+&mdash;&gt;  Configuring libxml2
+&mdash;&gt;  Building libxml2
+&mdash;&gt;  Staging libxml2 into destroot
+&mdash;&gt;  Installing libxml2 @2.7.7<em>0
+&mdash;&gt;  Activating libxml2 @2.7.7</em>0
+&mdash;&gt;  Cleaning libxml2
+&mdash;&gt;  Fetching p7zip
+&mdash;&gt;  Attempting to fetch p7zip<em>9.04</em>src<em>all.tar.bz2 from <a href="http://voxel.dl.sourceforge.net/p7zip">http://voxel.dl.sourceforge.net/p7zip</a>
+&mdash;&gt;  Verifying checksum(s) for p7zip
+&mdash;&gt;  Extracting p7zip
+&mdash;&gt;  Applying patches to p7zip
+&mdash;&gt;  Configuring p7zip
+&mdash;&gt;  Building p7zip
+&mdash;&gt;  Staging p7zip into destroot
+&mdash;&gt;  Installing p7zip @9.04</em>0
+&mdash;&gt;  Activating p7zip @9.04<em>0
+&mdash;&gt;  Cleaning p7zip
+&mdash;&gt;  Fetching xorg-bigreqsproto
+&mdash;&gt;  Attempting to fetch bigreqsproto-1.1.0.tar.bz2 from <a href="http://distfiles.macports.org/xorg-bigreqsproto">http://distfiles.macports.org/xorg-bigreqsproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-bigreqsproto
+&mdash;&gt;  Extracting xorg-bigreqsproto
+&mdash;&gt;  Configuring xorg-bigreqsproto
+&mdash;&gt;  Building xorg-bigreqsproto
+&mdash;&gt;  Staging xorg-bigreqsproto into destroot
+&mdash;&gt;  Installing xorg-bigreqsproto @1.1.0</em>0
+&mdash;&gt;  Activating xorg-bigreqsproto @1.1.0<em>0
+&mdash;&gt;  Cleaning xorg-bigreqsproto
+&mdash;&gt;  Fetching xorg-inputproto
+&mdash;&gt;  Attempting to fetch inputproto-2.0.tar.bz2 from <a href="http://distfiles.macports.org/xorg-inputproto">http://distfiles.macports.org/xorg-inputproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-inputproto
+&mdash;&gt;  Extracting xorg-inputproto
+&mdash;&gt;  Configuring xorg-inputproto
+&mdash;&gt;  Building xorg-inputproto
+&mdash;&gt;  Staging xorg-inputproto into destroot
+&mdash;&gt;  Installing xorg-inputproto @2.0</em>0
+&mdash;&gt;  Activating xorg-inputproto @2.0<em>0
+&mdash;&gt;  Cleaning xorg-inputproto
+&mdash;&gt;  Fetching xorg-kbproto
+&mdash;&gt;  Attempting to fetch kbproto-1.0.4.tar.bz2 from <a href="http://distfiles.macports.org/xorg-kbproto">http://distfiles.macports.org/xorg-kbproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-kbproto
+&mdash;&gt;  Extracting xorg-kbproto
+&mdash;&gt;  Configuring xorg-kbproto
+&mdash;&gt;  Building xorg-kbproto
+&mdash;&gt;  Staging xorg-kbproto into destroot
+&mdash;&gt;  Installing xorg-kbproto @1.0.4</em>0
+&mdash;&gt;  Activating xorg-kbproto @1.0.4<em>0
+&mdash;&gt;  Cleaning xorg-kbproto
+&mdash;&gt;  Fetching xorg-xproto
+&mdash;&gt;  Attempting to fetch xproto-7.0.16.tar.bz2 from <a href="http://distfiles.macports.org/xorg-xproto">http://distfiles.macports.org/xorg-xproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-xproto
+&mdash;&gt;  Extracting xorg-xproto
+&mdash;&gt;  Configuring xorg-xproto
+&mdash;&gt;  Building xorg-xproto
+&mdash;&gt;  Staging xorg-xproto into destroot
+&mdash;&gt;  Installing xorg-xproto @7.0.16</em>0
+&mdash;&gt;  Activating xorg-xproto @7.0.16<em>0
+&mdash;&gt;  Cleaning xorg-xproto
+&mdash;&gt;  Fetching xorg-libXau
+&mdash;&gt;  Attempting to fetch libXau-1.0.5.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libXau">http://distfiles.macports.org/xorg-libXau</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libXau
+&mdash;&gt;  Extracting xorg-libXau
+&mdash;&gt;  Configuring xorg-libXau
+&mdash;&gt;  Building xorg-libXau
+&mdash;&gt;  Staging xorg-libXau into destroot
+&mdash;&gt;  Installing xorg-libXau @1.0.5</em>0
+&mdash;&gt;  Activating xorg-libXau @1.0.5<em>0
+&mdash;&gt;  Cleaning xorg-libXau
+&mdash;&gt;  Fetching xorg-libXdmcp
+&mdash;&gt;  Attempting to fetch libXdmcp-1.0.3.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libXdmcp">http://distfiles.macports.org/xorg-libXdmcp</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libXdmcp
+&mdash;&gt;  Extracting xorg-libXdmcp
+&mdash;&gt;  Configuring xorg-libXdmcp
+&mdash;&gt;  Building xorg-libXdmcp
+&mdash;&gt;  Staging xorg-libXdmcp into destroot
+&mdash;&gt;  Installing xorg-libXdmcp @1.0.3</em>0
+&mdash;&gt;  Activating xorg-libXdmcp @1.0.3<em>0
+&mdash;&gt;  Cleaning xorg-libXdmcp
+&mdash;&gt;  Fetching xorg-util-macros
+&mdash;&gt;  Attempting to fetch util-macros-1.7.0.tar.bz2 from <a href="http://distfiles.macports.org/xorg-util-macros">http://distfiles.macports.org/xorg-util-macros</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-util-macros
+&mdash;&gt;  Extracting xorg-util-macros
+&mdash;&gt;  Configuring xorg-util-macros
+&mdash;&gt;  Building xorg-util-macros
+&mdash;&gt;  Staging xorg-util-macros into destroot
+&mdash;&gt;  Installing xorg-util-macros @1.7.0</em>0
+&mdash;&gt;  Activating xorg-util-macros @1.7.0<em>0
+&mdash;&gt;  Cleaning xorg-util-macros
+&mdash;&gt;  Fetching xorg-xcmiscproto
+&mdash;&gt;  Attempting to fetch xcmiscproto-1.2.0.tar.bz2 from <a href="http://distfiles.macports.org/xorg-xcmiscproto">http://distfiles.macports.org/xorg-xcmiscproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-xcmiscproto
+&mdash;&gt;  Extracting xorg-xcmiscproto
+&mdash;&gt;  Configuring xorg-xcmiscproto
+&mdash;&gt;  Building xorg-xcmiscproto
+&mdash;&gt;  Staging xorg-xcmiscproto into destroot
+&mdash;&gt;  Installing xorg-xcmiscproto @1.2.0</em>0
+&mdash;&gt;  Activating xorg-xcmiscproto @1.2.0<em>0
+&mdash;&gt;  Cleaning xorg-xcmiscproto
+&mdash;&gt;  Fetching xorg-xextproto
+&mdash;&gt;  Attempting to fetch xextproto-7.1.1.tar.bz2 from <a href="http://distfiles.macports.org/xorg-xextproto">http://distfiles.macports.org/xorg-xextproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-xextproto
+&mdash;&gt;  Extracting xorg-xextproto
+&mdash;&gt;  Configuring xorg-xextproto
+&mdash;&gt;  Building xorg-xextproto
+&mdash;&gt;  Staging xorg-xextproto into destroot
+&mdash;&gt;  Installing xorg-xextproto @7.1.1</em>0
+&mdash;&gt;  Activating xorg-xextproto @7.1.1<em>0
+&mdash;&gt;  Cleaning xorg-xextproto
+&mdash;&gt;  Fetching xorg-xf86bigfontproto
+&mdash;&gt;  Attempting to fetch xf86bigfontproto-1.2.0.tar.bz2 from <a href="http://distfiles.macports.org/xorg-xf86bigfontproto">http://distfiles.macports.org/xorg-xf86bigfontproto</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-xf86bigfontproto
+&mdash;&gt;  Extracting xorg-xf86bigfontproto
+&mdash;&gt;  Configuring xorg-xf86bigfontproto
+&mdash;&gt;  Building xorg-xf86bigfontproto
+&mdash;&gt;  Staging xorg-xf86bigfontproto into destroot
+&mdash;&gt;  Installing xorg-xf86bigfontproto @1.2.0</em>0
+&mdash;&gt;  Activating xorg-xf86bigfontproto @1.2.0<em>0
+&mdash;&gt;  Cleaning xorg-xf86bigfontproto
+&mdash;&gt;  Fetching xorg-xtrans
+&mdash;&gt;  Attempting to fetch xtrans-1.2.5.tar.bz2 from <a href="http://distfiles.macports.org/xorg-xtrans">http://distfiles.macports.org/xorg-xtrans</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-xtrans
+&mdash;&gt;  Extracting xorg-xtrans
+&mdash;&gt;  Configuring xorg-xtrans
+&mdash;&gt;  Building xorg-xtrans
+&mdash;&gt;  Staging xorg-xtrans into destroot
+&mdash;&gt;  Installing xorg-xtrans @1.2.5</em>0
+&mdash;&gt;  Activating xorg-xtrans @1.2.5<em>0
+&mdash;&gt;  Cleaning xorg-xtrans
+&mdash;&gt;  Fetching xorg-libX11
+&mdash;&gt;  Attempting to fetch libX11-1.3.3.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libX11">http://distfiles.macports.org/xorg-libX11</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libX11
+&mdash;&gt;  Extracting xorg-libX11
+&mdash;&gt;  Configuring xorg-libX11
+&mdash;&gt;  Building xorg-libX11
+&mdash;&gt;  Staging xorg-libX11 into destroot
+&mdash;&gt;  Installing xorg-libX11 @1.3.3</em>0
+&mdash;&gt;  Activating xorg-libX11 @1.3.3<em>0
+&mdash;&gt;  Cleaning xorg-libX11
+&mdash;&gt;  Fetching xorg-libXext
+&mdash;&gt;  Attempting to fetch libXext-1.1.1.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libXext">http://distfiles.macports.org/xorg-libXext</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libXext
+&mdash;&gt;  Extracting xorg-libXext
+&mdash;&gt;  Configuring xorg-libXext
+&mdash;&gt;  Building xorg-libXext
+&mdash;&gt;  Staging xorg-libXext into destroot
+&mdash;&gt;  Installing xorg-libXext @1.1.1</em>0
+&mdash;&gt;  Activating xorg-libXext @1.1.1<em>0
+&mdash;&gt;  Cleaning xorg-libXext
+&mdash;&gt;  Fetching xorg-libice
+&mdash;&gt;  Attempting to fetch libICE-1.0.6.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libice">http://distfiles.macports.org/xorg-libice</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libice
+&mdash;&gt;  Extracting xorg-libice
+&mdash;&gt;  Configuring xorg-libice
+&mdash;&gt;  Building xorg-libice
+&mdash;&gt;  Staging xorg-libice into destroot
+&mdash;&gt;  Installing xorg-libice @1.0.6</em>0
+&mdash;&gt;  Activating xorg-libice @1.0.6<em>0
+&mdash;&gt;  Cleaning xorg-libice
+&mdash;&gt;  Fetching xorg-libsm
+&mdash;&gt;  Attempting to fetch libSM-1.1.1.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libsm">http://distfiles.macports.org/xorg-libsm</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libsm
+&mdash;&gt;  Extracting xorg-libsm
+&mdash;&gt;  Configuring xorg-libsm
+&mdash;&gt;  Building xorg-libsm
+&mdash;&gt;  Staging xorg-libsm into destroot
+&mdash;&gt;  Installing xorg-libsm @1.1.1</em>0
+&mdash;&gt;  Activating xorg-libsm @1.1.1<em>0
+&mdash;&gt;  Cleaning xorg-libsm
+&mdash;&gt;  Fetching xorg-libXt
+&mdash;&gt;  Attempting to fetch libXt-1.0.8.tar.bz2 from <a href="http://distfiles.macports.org/xorg-libXt">http://distfiles.macports.org/xorg-libXt</a>
+&mdash;&gt;  Verifying checksum(s) for xorg-libXt
+&mdash;&gt;  Extracting xorg-libXt
+&mdash;&gt;  Configuring xorg-libXt
+&mdash;&gt;  Building xorg-libXt
+&mdash;&gt;  Staging xorg-libXt into destroot
+&mdash;&gt;  Installing xorg-libXt @1.0.8</em>0
+&mdash;&gt;  Activating xorg-libXt @1.0.8<em>0
+&mdash;&gt;  Cleaning xorg-libXt
+&mdash;&gt;  Fetching ImageMagick
+&mdash;&gt;  Attempting to fetch ImageMagick-6.6.1-5.7z from <a href="http://distfiles.macports.org/ImageMagick">http://distfiles.macports.org/ImageMagick</a>
+&mdash;&gt;  Verifying checksum(s) for ImageMagick
+&mdash;&gt;  Extracting ImageMagick
+&mdash;&gt;  Applying patches to ImageMagick
+&mdash;&gt;  Configuring ImageMagick
+&mdash;&gt;  Building ImageMagick
+&mdash;&gt;  Staging ImageMagick into destroot
+&mdash;&gt;  Installing ImageMagick @6.6.1-5</em>0+q16
+&mdash;&gt;  Activating ImageMagick @6.6.1-5_0+q16
+&mdash;&gt;  Cleaning ImageMagick</p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'macports-is-a-monster';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

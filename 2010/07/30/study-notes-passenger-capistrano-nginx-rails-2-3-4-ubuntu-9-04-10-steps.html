@@ -1,0 +1,315 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps) - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps) - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_07 2010_07_30 2010_07_30_study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 30, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong><em>This post is just copied from </em></strong><a href="http://rustammamedov.wordpress.com/2009/12/27/capistrano-nginx-mongrel-deployment/"><strong><em>this page</em></strong></a><strong><em>. As a study notes, I re-share this manual here. Please check out original one if you wanna have a whole view of other involving topics. Thanks to the </em></strong><a href="http://rustammamedov.wordpress.com/"><strong><em>author</em></strong></a><strong><em> :)</em></strong>
+<div>
+<div>
+<ol>
+    <li>Install capistrano gem. if you use <a href="http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today">bundler</a> you need to add just one line to Gemfile
+<code>
+gem &quot;capistrano&quot;
+</code>
+and then run
+<code>gem bundle
+</code></li>
+    <li>after capistrano installed you need to make Capfile and default deploy.rb, run such from the root of your application
+<code>capify .</code></li>
+    <li>create user for deployments in remote machine (let’s say ‘deploy’ user)
+<code>adduser deploy</code></li>
+    <li>add sudo privileges to this user. add one line in your /etc/sudoers file
+<code>deploy ALL=(ALL) NOPASSWD: ALL</code></li>
+    <li>adjust deploy.rb for you. I used example from this <a href="http://jimneath.org/2008/05/10/using-capistrano-with-passenger-mod_rails/">link</a>
+<code lang="ruby"></p>
+
+<h1>Application</h1>
+
+<p>set :application, &quot;test&quot;
+set :deploy_to, &quot;/var/www/#{application}&quot;</p>
+
+<h1>Settings</h1>
+
+<p>default<em>run</em>options[:pty] = true
+set :use_sudo, true</p>
+
+<h1>Servers</h1>
+
+<p>set :user, &quot;deploy&quot;
+set :domain, &quot;rustam.example.com&quot;
+server domain, :app, :web
+role :db, domain, :primary =&gt; true</p>
+
+<h1>Subversion</h1>
+
+<p>set :repository, &quot;<a href="http://www.rustam.example.com">http://www.rustam.example.com</a>&quot;
+set :svn<em>username, &quot;rustam&quot;
+set :svn</em>password, &quot;password&quot;
+set :checkout, &quot;export&quot;</p>
+
+<h1>Passenger</h1>
+
+<p>namespace :passenger do
+desc &quot;Restart Application&quot;
+task :restart do
+run &quot;touch #{current_path}/tmp/restart.txt&quot;
+end
+end
+after :deploy, &quot;passenger:restart&quot;
+</code>
+to understand how it works – read <a href="http://www.capify.org/index.php/Capistrano">this link</a></li>
+    <li>if you don’t use bundler, skip it. Otherwise, it will be usefull to add such piece of code to your deploy.rb file (from <a href="http://gist.github.com/244420">Richie’s post</a>)
+<code lang="ruby"></p>
+
+<h1>bundler</h1>
+
+<p>namespace :bundler do
+  task :install do
+    run(&quot;gem install bundler --source=<a href="http://gemcutter.org%22">http://gemcutter.org&quot;</a>)
+  end</p>
+
+<p>task :symlink<em>vendor do
+  shared</em>gems = File.join(shared<em>path, &#39;vendor/bundler</em>gems&#39;)
+  release<em>gems = &quot;#{release</em>path}/vendor/bundler<em>gems/&quot;
+    %w(cache gems specifications).each do |sub</em>dir|
+      shared<em>sub</em>dir = File.join(shared<em>gems, sub</em>dir)
+      run(&quot;mkdir -p #{shared<em>sub</em>dir} &amp;&amp; mkdir -p #{release<em>gems} &amp;&amp; ln -s #{shared</em>sub<em>dir} #{release</em>gems}/#{sub_dir}&quot;)
+    end
+  end</p>
+
+<p>task :bundle<em>new</em>release do
+    bundler.symlink<em>vendor
+    rails</em>env = variables[:rails<em>env] || &#39;production&#39;
+    run(&quot;cd #{release</em>path} &amp;&amp; gem bundle --only #{rails_env}&quot;)
+  end
+end</p>
+
+<p>after &#39;deploy:update<em>code&#39;, &#39;bundler:bundle</em>new<em>release&#39;
+</code>
+it will bundle all production gems to your bundler</em>gems path</li>
+    <li>ask Capistrano to create set of folders for deployments in the remote machine
+<code>cap deploy:setup</code></li>
+    <li>ask capistrano to check all remote folders:
+<code>cap deploy:check</code>
+it will return to you all problems that you have with both locale/remote machines – structure of folders/permissions etc. you can get something like this:
+<code>
+The following dependencies failed. Please check them and try again:
+--&gt; You do not have permissions to write to <code>/var/www&#39;. (rustam.example.com)
+--&amp;gt; You do not have permissions to write to</code>/var/www/releases&#39;. (rustam.example.com)
+</code>
+When you’ll fix everything, you’ll get such:
+<code>You appear to have all necessary dependencies installed</code>
+it means that you’re finished with capistrano configs</li>
+    <li>you need to install passenger and nginx module for passenger in your remote machine according to <a href="http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220/">this</a>
+<code>
+sudo gem install passenger
+sudo passenger-install-nginx-module</code>
+the second command will tell you how to configure Nginx and to deploy rails application.
+it will create Nginx configuration file for you:
+<code>/opt/nginx/conf/nginx.conf)</code>
+you need to change server block there
+<code>
+server {
+listen 80;
+server<em>name rustam.example.com;
+root /var/www/current/public; # &lt;--- notice the &#39;public&#39; part
+passenger</em>enabled on; # &lt;--- don&#39;t forget this!li
+}</code>
+everything is finished for passenger and nginx!</li>
+    <li>you can start deploy you app!
+<code>cap deploy:update</code> – copies your project to remote machine and updates symlinks
+<code>cap passenger-restart</code> – will start application</li>
+FYI <code>sudo /opt/nginx/sbin/nginx</code> starts nginx in the remote machine
+    <li><strong>Extra step</strong>: if you’re using bundler and used <a href="http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today/">Yehuda’s link to run it</a>(like me <img src="http://s.wordpress.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" /> ), you’ll have a problem with preinitializer. I used <a href="http://tomafro.net/2009/11/a-rails-template-for-gem-bundler">Tom Ward’s solution</a> to fix it
+i.e. put only such line to preinitializer.rb
+<code>require File.expand<em>path(File.join(File.dirname(</em><em>FILE</em>_), &quot;..&quot;, &quot;gems&quot;, &quot;environment&quot;))</code>
+and add such piece of code just after loading boot
+<code></p>
+
+<h1>Hijack rails initializer to load the bundler gem</h1>
+
+<h1>environment before loading the rails environment.</h1>
+
+<p>Rails::Initializer.module<em>eval do
+alias load</em>environment<em>without</em>bundler load<em>environment
+def load</em>environment
+Bundler.require<em>env configuration.environment
+load</em>environment<em>without</em>bundler
+end
+end
+</code></li>
+</ol>
+Links with detailed description:
+<ul>
+    <li><a title="http://wiki.zhekov.net/nginx" href="http://wiki.zhekov.net/nginx">nginx</a></li>
+    <li><a title="http://gautamrege.wordpress.com/2009/11/10/capistrano-nginx-thin-deployment-on-linode" href="http://gautamrege.wordpress.com/2009/11/10/capistrano-nginx-thin-deployment-on-linode">capistrano-nginx-thin-deployment-on-linode</a></li>
+    <li><a title="http://74.125.95.132/search?q=cache:NyrJDYo75rAJ:www.capify.org/index.php/From_The_Beginning+capistrano+from+the+beginning&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=us&amp;client=firefox-a" href="http://74.125.95.132/search?q=cache:NyrJDYo75rAJ:www.capify.org/index.php/From_The_Beginning+capistrano+from+the+beginning&amp;cd=2&amp;hl=en&amp;ct=clnk&amp;gl=us&amp;client=firefox-a">Capistrano from the beginning</a></li>
+    <li><a title="http://www.viget.com/extend/building-an-environment-from-scratch-with-capistrano-2/" href="http://www.viget.com/extend/building-an-environment-from-scratch-with-capistrano-2/">capistrano + passenger</a></li>
+    <li><a title="http://jimneath.org/2008/05/10/using-capistrano-with-passenger-mod_rails/" href="http://jimneath.org/2008/05/10/using-capistrano-with-passenger-mod_rails/">capistrano + passenger + mod<em>rails</a></li>
+    <li>&lt;a title=&ldquo;<a href="http://www.rubyinside.com/28">http://www.rubyinside.com/28</a></em>mod<em>rails</em>and<em>passenger</em>resources-899.html&rdquo; href=&ldquo;<a href="http://www.rubyinside.com/28_mod_rails_and_passenger_resources-899.html%22%3E28">http://www.rubyinside.com/28_mod_rails_and_passenger_resources-899.html&rdquo;&gt;28</a> links howto passenger + capistrano</a></li>
+    <li><a title="http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220/" href="http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220/">passenger + nginx</a></li>
+    <li><a title="http://www.modrails.com/documentation/Users%20guide%20Nginx.html" href="http://www.modrails.com/documentation/Users%20guide%20Nginx.html">nginx guide for passenger</a></li>
+</ul>
+</div>
+</div></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

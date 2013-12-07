@@ -1,0 +1,349 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Titanium : DB Synchronization - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Titanium : DB Synchronization - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_07 2010_07_14 2010_07_14_titanium-db-synchronization">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/07/14/titanium-db-synchronization.html">Titanium : DB Synchronization</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 14, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>Header Notes:</strong>
+1. Static data should be released with app, just don&#39;t do db synchronization.
+2. Just embed sync background when ppl looking at some instructions/tips etc.
+3. Don&#39;t update db all the time.</p>
+
+<p>App Start:
+<em><strong>app.js</strong></em>
+<code lang='javascript'>
+// Localization libs
+Ti.include(&#39;l10n/l10n.js&#39;);
+Ti.include(&#39;l10n/l10n<em>dialog.js&#39;);
+Ti.include(&#39;l10n/l10n</em>format.js&#39;);</p>
+
+<p>var db = Titanium.Database.install(&#39;eq31formulas.db&#39;, &#39;eq31formulas&#39;);</p>
+
+<p>// Ti.include(&#39;content/tab_formula.js&#39;)</p>
+
+<p>// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor(&#39;#000&#39;);</p>
+
+<p>// create tab group
+var tabGroup = Titanium.UI.createTabGroup();</p>
+
+<p>//
+// create tab for tips
+//
+Ti.include(&#39;content/tab_tips.js&#39;);</p>
+
+<p>//
+// create tab for weibo
+//
+Ti.include(&#39;content/tab_weibo.js&#39;);</p>
+
+<p>//
+// create tab for formulas
+//
+Ti.include(&#39;content/tab_formulas.js&#39;);</p>
+
+<p>// create tab for lang settings
+var win<em>setting = Ti.UI.createWindow({
+    title:</em>(&#39;tab_settings&#39;)
+});</p>
+
+<p>var tab<em>setting = Ti.UI.createTab({<br>
+    icon:&#39;images/nav</em>icon<em>setting.png&#39;,
+    title:</em>(&#39;tab<em>settings&#39;),
+    window:win</em>setting
+});</p>
+
+<p>var data = [];
+var ACTION_LANGUAGE = 0;</p>
+
+<p>var row = Ti.UI.createTableViewRow({
+  title: <em>(&#39;language&#39;),
+  hasChild: true,
+  action: ACTION</em>LANGUAGE,
+  className: &#39;control&#39;
+});</p>
+
+<p>var label_lang = Ti.UI.createLabel({
+  textAlign: &#39;right&#39;,
+  right: 10,
+  width: 175,
+  color: &#39;#385487&#39;,
+  font: {fontSize: 16},
+  text: L10N.getLanguageDisplayName()
+});</p>
+
+<p>row.add(label_lang);</p>
+
+<p>data.push(row);</p>
+
+<p>// create table view</p>
+
+<p>var tableview = Ti.UI.createTableView({
+  data:data,
+  style:Ti.UI.iPhone.TableViewStyle.GROUPED
+});</p>
+
+<p>// add table click listener</p>
+
+<p>tableview.addEventListener(&#39;click&#39;, function(e) {
+  var rowdata = e.rowData;
+  if (rowdata.action == ACTION_LANGUAGE) {</p>
+<pre class="highlight plaintext">// show language selection dialog
+
+L10N.showLanguageSelectionDialog();
+</pre>
+<p>}
+});</p>
+
+<p>win_setting.add(tableview);</p>
+
+<p>//
+//  add tabs
+//
+tabGroup.addTab(tab<em>formulas);<br>
+tabGroup.addTab(tab</em>tips);<br>
+tabGroup.addTab(tab<em>weibo);
+tabGroup.addTab(tab</em>setting);  </p>
+
+<p>var omodes = [
+    Titanium.UI.PORTRAIT,
+    Titanium.UI.UPSIDE<em>PORTRAIT,
+    Titanium.UI.LANDSCAPE</em>LEFT,
+    Titanium.UI.LANDSCAPE_RIGHT
+];</p>
+
+<p>win<em>formulas.orientationModes = omodes;
+win</em>tips.orientationModes = omodes;
+win_weibo.orientationModes = omodes;</p>
+
+<p>Titanium.Analytics.featureEvent(&#39;app.feature.blah&#39;,{product:&#39;killer&#39;});</p>
+
+<p>tabGroup.addEventListener(&#39;open&#39;,function()
+{
+    Titanium.UI.setBackgroundColor(&#39;#fff&#39;);
+});</p>
+
+<p>tabGroup.setActiveTab(0);
+tabGroup.open({
+    transition:Titanium.UI.iPhone.AnimationStyle.FLIP<em>FROM</em>LEFT
+});</p>
+
+<p>// add top level introduction of 31 formulas
+Ti.include(&quot;introduction.js&quot;);</p>
+
+<p>// synchronize db
+Ti.include(&quot;synchronize.js&quot;);</p>
+
+<p></code></p>
+
+<p>Prepare data while launching the app:
+<em><strong>synchronize.js</strong></em>
+<code lang="javascript">
+(function(){
+    var db = Titanium.Database.open(&#39;eq31formulas&#39;);</p>
+<pre class="highlight plaintext">    // JS test
+var currentTime = new Date();
+var month = currentTime.getMonth() + 1;
+var day = currentTime.getDate();
+var year = currentTime.getFullYear();
+
+Titanium.API.info(&#39;JS TIME:&#39; + currentTime);
+// lesson = db.execute(&#39;SELECT * FROM LESSONS ORDER BY ID LIMIT 1&#39;)
+
+if (Titanium.Network.online == true)
+{
+    Titanium.API.info(&#39;Online--update lessons!&#39;);
+    var src = &#39;http://www.veecue.com/eq31formulas/data_service/lessons&#39;;
+    c = Titanium.Network.createHTTPClient();
+
+    c.onload = function()
+    {   
+        var json_data = JSON.parse(this.responseText);
+
+        Titanium.API.info(&#39;lesson count:&#39; + json_data.length);
+
+        for(var i=0; i&lt;json_data.length; i++)
+        {
+            Titanium.API.info(&quot;updating lesson:&quot; + i);
+            var record = json_data[i].lesson;
+            // add different control for UPDATE or INSERTION here
+            db.execute(&#39;CREATE TABLE IF NOT EXISTS LESSONS (ID INTEGER, TITLE TEXT, AIMS TEXT, ANSWER_ORDER TEXT, LANG_STEP TEXT, MODEL_ANSWER TEXT)&#39;);
+            db.execute(&#39;DELETE FROM LESSONS&#39;);
+            db.execute(&quot;INSERT INTO LESSONS (ID, TITLE, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?)&quot;, record.id, record.title, record.aims, record.answer_order, record.lang_step, record.model_answer);   
+        }
+    };
+
+    // open the client
+    c.open(&#39;GET&#39;, src);
+
+    // send the data
+    c.send();
+}
+else
+{
+    Titanium.API.info(&#39;Offline--&#39;);
+    return;
+}   
+</pre>
+<p>})();
+</code></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'titanium-db-synchronization';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

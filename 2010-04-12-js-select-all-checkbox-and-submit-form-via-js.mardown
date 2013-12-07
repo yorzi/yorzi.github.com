@@ -1,0 +1,48 @@
+--- 
+layout: post
+title: "JS: select all checkbox and submit form via js"
+comments: true
+categories:
+- checkbox
+- form
+- JavaScript
+- js
+- tips
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "1"
+---
+<strong>TIPS:</strong>
+
+<code lang='js'>
+<script type="text/javascript">
+  function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+  {
+    if(!document.forms[FormName])
+      return;
+    var objCheckBoxes = document.forms[FormName].elements[FieldName];
+    if(!objCheckBoxes)
+      return;
+    var countCheckBoxes = objCheckBoxes.length;
+    if(!countCheckBoxes)
+      objCheckBoxes.checked = CheckValue;
+    else
+    // set the check value for all check boxes
+      for(var i = 0; i < countCheckBoxes; i++)
+        objCheckBoxes[i].checked = CheckValue;
+  }
+
+  function SendForm(FormName, ActionName)
+  {
+    if(!document.forms[FormName])
+      return;
+    if(ActionName == 'unread')
+      document.forms[FormName].action = '<%= batch_update_notifications_path(:type => "unread") %>';
+    if(ActionName == 'remove')
+      document.forms[FormName].action = '<%= batch_update_notifications_path(:type => "remove") %>';
+    document.forms[FormName].submit();
+  }
+</script>
+</code>

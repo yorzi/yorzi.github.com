@@ -1,0 +1,200 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Sessions and Cookies in Ruby on Rails - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Sessions and Cookies in Ruby on Rails - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2009 2009_12 2009_12_22 2009_12_22_sessions-and-cookies-in-ruby-on-rails">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2009/12/22/sessions-and-cookies-in-ruby-on-rails.html">Sessions and Cookies in Ruby on Rails</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 22, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <ol style="list-style-type: none; list-style-image: none; list-style-position: outside; margin-left: 0px;">
+    <li>最近读了一篇文章，里面介绍了Session和Cookie在RoR开发中的使用方法，英文还不错的同学请<a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scinrails" target="_blank">直接读这篇文章</a>。我仅仅在这篇Post里面做个整理，把那些有用的资料在此备份，免得下回又的麻烦Google。上面提到的文章很全面的介绍了很多细节，目录如下：
+<ol style="list-style-type: none; list-style-position: outside; margin-left: 0px;">
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sintro" target="_blank"><strong>Introduction</strong></a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#ssessions" target="_blank"><strong>Sessions</strong></a>
+<ol style="margin-top: 0.4em; margin-right: 0.4em; margin-bottom: 1em; margin-left: 1.4em;">
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sinrails" target="_blank">Session in rails</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sconfig" target="_blank">Configure your sessions</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sstorage" target="_blank">Storage options</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#slimitations" target="_blank">Session storage limitations</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#ssecurity" target="_blank">Session and Security</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#showto" target="_blank">HowTo</a>
+<ol style="margin: 0.4em;">
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sexpire" target="_blank">Implement session expiration</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sstale" target="_blank">Delete stale sessions</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#sactive" target="_blank">Find out active users</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#ssessionid" target="_blank">Access session data using session_id</a></li>
+</ol>
+
+<p></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#smisc" target="_blank">Miscellaneous</a></li>
+</ol>
+</li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scookies" target="_blank"><strong>Cookies</strong></a>
+<ol style="margin-top: 0.4em; margin-right: 0.4em; margin-bottom: 1em; margin-left: 1.4em;">
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scinrails" target="_blank">Cookie on rails</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scvr" target="_blank">cookies vs. request.cookies</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scookiejar" target="_blank">CookieJar</a></li>
+    <li><a style="color: #2244bb;" href="http://www.quarkruby.com/2007/10/21/sessions-and-cookies-in-ruby-on-rails#scmisc" target="_blank">Miscellaneous</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'sessions-and-cookies-in-ruby-on-rails';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
