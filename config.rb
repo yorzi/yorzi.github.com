@@ -70,6 +70,10 @@ page "/sitemap.xml", :layout => false
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+activate :disqus do |d|
+  d.shortname = "andyspersonalblog"
+end
+
 activate :syntax
 
 # Methods defined in the helpers block are available in templates
