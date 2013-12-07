@@ -3,11 +3,7 @@ layout: post
 title: Build A Widget
 date: 2013-07-05 16:08
 comments: true
-categories: 
-- widget
-- js
-- iframe
-- postMessage
+tags: widget, js, iframe, postMessage
 ---
 Some thoughts and resources on building a widget for a specific web page or web page section.
 

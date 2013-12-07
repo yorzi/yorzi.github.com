@@ -3,9 +3,7 @@ layout: post
 title: "乡居生活"
 date: 2013-06-16 22:47
 comments: true
-categories:
-- 生活
-- 乡居 
+tags: 生活, 乡居 
 ---
 <div style="float:left;margin-right:10px;"><img src="http://farm4.staticflickr.com/3797/9058792410_49bd959faa_n.jpg" /></div>
 

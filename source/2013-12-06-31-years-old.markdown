@@ -31,3 +31,7 @@ tags: 生日, 而立之年, 31岁
 为了持续的快乐和满足感，人的一生到底应该追求什么？我想我会追求简单实用，追求自然而平淡，追求平衡和耐力，追求丰富和豁达，而立之后，要让自己没有后顾之忧，要懂得感恩和分享，要积攒力量，向自由飞翔。
 
 最后，我要感谢互联网，让我视野无边无疆。
+
+<span class="footnotes">
+写完这边博客之后，我顺手把自己的Blog系统升级到middleman，要感谢[Yedingding](http://yedingding.com)的[源代码](https://github.com/sishen/sishen.github.com)，Yedingding同学是国内专家级别的*远程工作者*，也是团队协作和软件项目管理软件[Pragmatic.ly](Pragmatic.ly)的创始人，欢迎大家关注他和他的产品。
+</span>

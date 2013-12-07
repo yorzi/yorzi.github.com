@@ -3,12 +3,7 @@ layout: post
 title: "莫愁前路无知己"
 date: 2013-06-25 23:15
 comments: true
-categories: 
-- 聚会
-- 改变
-- 向前
-- PartyHour
-- RubyistsParty
+tags: 聚会, 改变, 向前, PartyHour, RubyistsParty
 ---
 ![image]
 
