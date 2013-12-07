@@ -1,0 +1,280 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      JS note: setTimeout and setInterval - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      JS note: setTimeout and setInterval - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2011 2011_03 2011_03_09 2011_03_09_settimeout-and-setinterval">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2011/03/09/settimeout-and-setinterval.html">JS note: setTimeout and setInterval</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Mar 09, 2011
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Yesterday, I discussed a JS issue with <a href="http://www.yakjuly.com/">Blade</a>, that I have to set up an automatic photo-switch effect on an existing page. I don&#39;t want to change anything except adding a piece of javascript for doing that job because this page is already messy up by another engineer. Blade suggested I should use <strong><a href="https://developer.mozilla.org/en/DOM/window.setTimeout">setTimeout</a></strong> for this effect.</p>
+
+<h4><strong>* Case Study</strong></h4>
+
+<p>The basic case is something like below(there are some other effects based on the structure and style, so don&#39;t affect others):
+<code lang='html'>
+<div id="tab_ls">
+        <a class="active" id="haikou"></a>
+    <a id="dalian"></a><br>
+        <a id="changsha"></a> 
+</div></p>
+
+<div id="tab_con">
+    <div style="display: block;" id="fk">   
+        <div id="end"></div>
+        <div id="ctt">
+            <img src="http://www.2011roadshow.com/images/haikou.jpg">
+                    <h3>会议城市：海口</h3>
+            <p>时间：8月26日 14：00-18：00</p>
+                    <p>地点：海口鑫源温泉大酒店</p>
+        </div>
+    </div>
+        
+    <div id="fk" style="display:none">
+        <div id="end"></div>
+            <div id="ctt">
+            <img src="http://www.2011roadshow.com/images/dalian.jpg">
+                    <h3>会议城市：大连</h3>
+            <p>时间：9月3日 14：00-18：00</p>
+                    <p>地点：香洲花园酒店 </p>
+        </div>
+    </div>
+
+    <div id="fk" style="display:none">
+        <div id="end"></div>
+            <div id="ctt">
+            <img src="images/changsha.jpg">
+                    <h3>城市：长沙</h3>
+            <p>时间：9月4日 14：00-18：00</p>
+                    <p>地点：长沙潇湘华天大酒店</p>
+        </div>
+    </div>
+</div>
+
+<p></code>
+Now the task is to write a js to roll the cities and regarding images, how to make it happen?
+<h4>* Solution with <strong>setTimeout</strong></h4>
+<code lang='javascript'>
+<script type="text/javascript">
+    var cities;
+    var cityImages;
+    var currentCity;
+    var pause = false;
+    var timer1;
+    var timer2 ;</p>
+<pre class="highlight plaintext">function showNextImage()
+{           
+    if (pause) {
+        // do nothing
+    } else {
+        console.log(&quot;show next image&quot;);
+        console.log(currentCity);
+        if(cities.last() == currentCity) {
+            currentCity = currentCity.first();
+        } else {
+            currentCity = currentCity.next();
+        }
+        console.log(currentCity);
+
+        var index = cities.index(currentCity);
+        console.log(index);
+        cityImages.hide();
+        console.log(cityImages.get(index));
+        $(cityImages.get(index)).show();
+        cities.removeClass(&quot;active&quot;)
+        currentCity.addClass(&quot;active&quot;);
+    }
+    timer1 = window.setTimeout(&quot;showNextImage()&quot;, 2000);
+}
+
+function repeatPlay()
+{   
+    console.log(&quot;repeat play&quot;);
+    showNextImage();
+    if (timer2 != null){
+        clearTimeout(timer2);
+        timer2 = null;
+    }
+}
+</pre>
+<p>$(window).load(function(){
+    cities = $(&quot;#tab<em>ls a&quot;);
+    cityImages = $(&quot;#tab</em>con div#fk&quot;);
+    currentCity = cities.first()
+    console.log(cities);
+    console.log(&quot;window load&quot;);
+    repeatPlay();
+    $(&quot;#tab_ls a&quot;).click(function(){
+                clearTimeout(timer1);
+        timer1 = null;
+            timer2 = window.setTimeout(&quot;repeatPlay()&quot;, 6000);
+    });
+  });
+</script>
+</code>
+Actually, you can figure out this effect with <strong><a href="https://developer.mozilla.org/en/window.setInterval">setInterval</a></strong> as well. The difference between setTimeout and setInterval is how many times you want to run the function which is set as their parameters. setTimeout will execute the function only once when time is out. But setInterval execute the function repeatedly in certain interval which is set as a parameter.</p>
+
+<p>Every time you should remember to clear the Timeout or Interval after finish your job through <strong><a href="https://developer.mozilla.org/en/DOM/window.clearTimeout">clearTimeout</a></strong> and <strong><a href="https://developer.mozilla.org/en/DOM/window.clearInterval">clearInterval</a></strong>. </p>
+
+<p>I have linked the regarding references for the four methods about, you should read the document and related samples to know more details.</p>
+
+<p>More Resources:
+<a href="http://hi.baidu.com/ruhaole/blog/item/af905fefc2dad33aadafd57a.html">如何在jQuery中使用 setInterval，setTimeout</a>
+<a href="http://cn.dydou.cn/wyzz/2010/0710/13733.html">jQuery：Tab切换功能的集合</a></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'js-note-settimeout-and-setinterval';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

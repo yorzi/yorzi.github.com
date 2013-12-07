@@ -1,0 +1,240 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Install mysql on centOS5.5 - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Install mysql on centOS5.5 - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_07 2010_07_17 2010_07_17_install-mysql-on-centos5-5">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/07/17/install-mysql-on-centos5-5.html">Install mysql on centOS5.5</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 17, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>STUDY NOTES(<a href="http://library.linode.com/databases/mysql/centos-5" target="_blank">Linode VPS Doc Copy</a></strong><strong>):</strong>
+<div id="installing-mysql">
+<h2>Installing MySQL</h2>
+Issue the following commands to update your system and install MySQL:
+<pre>yum update
+yum install mysql-server
+/sbin/chkconfig --levels 235 mysqld on</pre>
+The MySQL server package will be installed on your server, along with dependencies and client libraries. Start MySQL by running the following  command:
+<pre>service mysqld start</pre>
+</div>
+<div id="configuring-mysql">
+<h2>Configuring MySQL</h2>
+After installing MySQL, it&#39;s recommended that you run <tt>mysql<em>secure</em>installation</tt>, a program that helps secure MySQL. While running <tt>mysql<em>secure</em>installation</tt>, you will be presented with the opportunity to change the MySQL root  password, remove anonymous user accounts, disable root logins outside of  localhost, and remove test databases. It is recommended that you answer yes to  these options. If you are prompted to reload the privilege tables, select yes. Run the following command to execute the program:
+<pre>mysql<em>secure</em>installation</pre>
+By default, MySQL makes some assumptions about your server  environment with respect to memory. To configure MySQL more conservatively, you&#39;ll need to edit some settings in the configuration file (<tt>/etc/my.cnf</tt>) as follows:
+<pre>key<em>buffer = 16K
+max</em>allowed<em>packet = 1M
+thread</em>stack = 64K
+table<em>cache = 4
+sort</em>buffer = 64K
+net<em>buffer</em>length = 2K</pre>
+These settings are only suggested values for a low memory  environment; please feel free to tune them to appropriate values for your server. Consult the &ldquo;More Information&rdquo; section at the end of this tutorial for additional resources for this topic.</p>
+
+<p>MySQL will bind to localhost (127.0.0.1) by default. Allowing unrestricted access to MySQL on a public IP not advised, but you may change the address it listens on by modifying the <tt>bind-address</tt> parameter. If you decide to bind MySQL to your public IP, you should implement firewall rules that only allow connections from specific IP addresses.</p>
+
+<p></div>
+<div id="using-mysql">
+<h2>Using MySQL</h2>
+The standard tool for interacting with MySQL is the <tt>mysql</tt> client program. To get started, issue the following command at your prompt:
+<pre>mysql -u root -p</pre>
+You will be prompted to enter the root MySQL user&#39;s password. Enter the password you assigned when you installed MySQL, and you&#39;ll be presented with the MySQL monitor display:
+<pre>Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.0.45 Source distribution</p>
+
+<p>Type &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the buffer.</p>
+
+<p>mysql&gt;</pre>
+Let&#39;s create a database and assign a user to it. Issue the following commands at the MySQL prompt:
+<pre>CREATE DATABASE testdb;</p>
+
+<p>CREATE USER &#39;testuser&#39;@localhost IDENTIFIED BY &#39;s8723hk2&#39;;</p>
+
+<p>GRANT ALL PRIVILEGES ON testdb.* TO &#39;testuser&#39;@localhost;</p>
+
+<p>exit</pre>
+Now let&#39;s log back into the MySQL client as <tt>testuser</tt> and create a sample table called &ldquo;customers.&rdquo; Issue the following commands:
+<pre>mysql -u testuser -p</p>
+
+<p>USE testdb;</p>
+
+<p>CREATE TABLE customers (customer<em>id INT NOT NULL AUTO</em>INCREMENT PRIMARY KEY, first<em>name TEXT, last</em>name TEXT);</pre>
+This creates a table with a customer ID field of the type INT for integer (auto-incremented for new records, used as the primary key), as well as two fields for storing the customer&#39;s name. Of course, you&#39;d probably want to store much more information than this on a customer, but it&#39;s a good example of a common case nonetheless.</p>
+
+<p></div>
+<div id="resetting-the-mysql-root-password">
+<h2>Resetting the MySQL  Root Password</h2>
+If you&#39;ve forgotten your root MySQL password, you may recover it by  issuing the following commands:
+<pre>/etc/init.d/mysqld stop</p>
+
+<p>mysqld_safe --skip-grant-tables &amp;</p>
+
+<p>mysql -u root</pre>
+The following part of the password reset will now be done within the  MySQL client program:
+<pre>USE mysql;</p>
+
+<p>UPDATE USER SET PASSWORD=PASSWORD(&quot;CHANGEME&quot;) WHERE USER=&#39;root&#39;;</p>
+
+<p>FLUSH PRIVILEGES;</p>
+
+<p>exit</pre>
+Last, restart MySQL by issuing:
+<pre>service mysqld restart</pre>
+</div></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'install-mysql-on-centos5-5';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

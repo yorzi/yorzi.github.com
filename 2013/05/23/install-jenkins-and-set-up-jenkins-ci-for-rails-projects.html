@@ -1,0 +1,276 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Install Jenkins and Set Up Jenkins CI for Rails Projects - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Install Jenkins and Set Up Jenkins CI for Rails Projects - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2013 2013_05 2013_05_23 2013_05_23_install-jenkins-and-set-up-jenkins-ci-for-rails-projects">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2013/05/23/install-jenkins-and-set-up-jenkins-ci-for-rails-projects.html">Install Jenkins and Set Up Jenkins CI for Rails Projects</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      May 23, 2013
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><a href="https://travis-ci.org/">Travis CI</a> is a great solution for OpenSource project, however, what if you want to setup an internal CI server for private projects? Believe or not, <a href="http://jenkins-ci.org/">Jenkins CI</a> is the choice. This post will guide you through the Jenkins installation and configuration on VPS (e.g. EC2 instance in this post) </p>
+
+<h3>OS Assumption</h3>
+
+<p>Assume that you are running an EC2 instance with a Ubuntu system as below:</p>
+<pre class="highlight plaintext">Ubuntu 12.04.2 LTS (GNU/Linux 3.2.0-40-virtual x86_64)
+</pre>
+<p>BTW, there is an Amazon <a href="http://aws.amazon.com/ec2/pricing/">free tier</a> that is recommended if you don&#39;t have any VPS to use yet. </p>
+
+<h3>Install Rails Environment</h3>
+
+<p>As we mainly use this Jenkins CI server for Rails projects, so necessary Ruby/Rails libs and tools are needed as following:</p>
+
+<h5>- Install RVM and Ruby</h5>
+
+<p>We need to have git core and curl for <a href="https://rvm.io/">RVM</a> installation, so install them like this:</p>
+<pre class="highlight plaintext">sudo apt-get install build-essential git-core
+sudo apt-get install curl
+</pre>
+<p>And install <a href="https://rvm.io/">RVM</a> with ruby as user <code>jenkins</code>:</p>
+<pre class="highlight plaintext">#remember to switch to user `jenkins` first
+sudo su jenkins
+
+curl -L https://get.rvm.io | bash -s stable --ruby
+sudo apt-get install libmysqlclient-dev ruby-dev
+</pre>
+<h5>- Install Possible Databases</h5>
+
+<h6><strong>MySQL</strong></h6>
+<pre class="highlight plaintext">sudo apt-get install mysql-client mysql-server libmysql-ruby libmysqlclient-dev
+</pre>
+<h6>Postgres</h6>
+<pre class="highlight plaintext">sudo aptitude install libpq-dev
+sudo apt-get install postgresql
+sudo apt-get install postgresql-client
+</pre>
+<p>If you had a problem with UTF-8 take a look at <a href="http://wiki.gentoo.org/wiki/PostgreSQL">http://wiki.gentoo.org/wiki/PostgreSQL</a></p>
+
+<h6>MongoDB</h6>
+<pre class="highlight plaintext">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+echo &#39;deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen&#39; | sudo tee /etc/apt/sources.list.d/10gen.list
+sudo apt-get update
+sudo apt-get install mongodb-10gen
+</pre>
+<h3>Install Jenkins</h3>
+
+<p>Installation:</p>
+<pre class="highlight plaintext">wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c &#39;echo deb http://pkg.jenkins-ci.org/debian binary/ &gt; /etc/apt/sources.list.d/jenkins.list&#39;
+sudo aptitude update
+sudo aptitude install jenkins
+</pre>
+<p>Uninstall Jenkins is easy too, just:</p>
+<pre class="highlight plaintext">sudo apt-get remove jenkins
+</pre>
+<p>There is also detailed <a href="https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu">guide</a> for installing Jenkins on Ubuntu. FYI.</p>
+
+<h3>Run Jenkins on Port 80</h3>
+
+<p>Default Jenkins runs on port 8080, you need to reverse proxy port 80 to port 8080 for Jenkins, it makes the CI server public to the world. To install nginx, open terminal and type in:</p>
+<pre class="highlight plaintext">sudo apt-get install nginx
+sudo /etc/init.d/nginx start
+</pre>
+<p>In order to Open up the config file in vim, and update it.</p>
+<pre class="highlight plaintext">sudo vim /etc/nginx/nginx.conf
+</pre><pre class="highlight plaintext">http {
+
+        # ...Omitted Parts…
+
+        include /etc/nginx/conf.d/*.conf;    # This line not modified.
+        include /etc/nginx/sites-enabled/*;  # This line not modified.
+
+        ##
+        # Reverse proxy port 80 to port 8080 for Jenkins
+        ##
+        server {
+                listen 80 default;
+                server_name your.domain.com;
+                location /{
+                        proxy_pass http://127.0.0.1:8080;
+                }
+        }
+} 
+</pre>
+<p><strong>Notice:</strong> Jenkins shows build histories and other information, to keep the whole CI server private, you&#39;d better use <a href="https://gist.github.com/yorzi/5590462">this guide</a> to add basic auth for your Jenkins CI, it is strongly recommended.</p>
+
+<h3>Install valuable plugins for Jenkins</h3>
+
+<p>Well, after above installations are done, you are able to visit your Jenkins CI server with your domain. Now it&#39;s time to install below plugins from <code>JenkinsPlugin &gt; Manager</code> section:</p>
+
+<ul>
+<li><a href="http://wiki.jenkins-ci.org/display/JENKINS/Github+OAuth+Plugin">Github Authentication plugin</a> is used for github OAuth. (This plugin has a bug that you can not logout some times.)</li>
+<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin">GitHub Plugin</a> integrates Jenkins with Github projects.</li>
+<li><a href="http://wiki.jenkins-ci.org/display/JENKINS/Gravatar+Plugin]">Jenkins Gravatar plugin</a> is used for showing Gravatar avatar images for Jenkins users.</li>
+<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/RVM+Plugin">RVM Plugin</a> runs your jobs in the RVM managed ruby+gemset of your choice.</li>
+<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/Rake+Plugin">Rake plugin</a> allows Jenkins to invoke Rake tasks as build steps.</li>
+<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/All+Changes+Plugin">All Changes Plugin</a> shows all changes which influenced the builds of a project.</li>
+</ul>
+
+<p>For more plugins, you should check out the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Plugins">Jenkins Plugins Document</a>.</p>
+
+<h3>References &amp; Resources</h3>
+
+<p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Configuring+a+Rails+build">https://wiki.jenkins-ci.org/display/JENKINS/Configuring+a+Rails+build</a><br />
+<a href="http://aptobits.com/2012/09/setting-up-jenkins-ci-on-an-amazon-ec2-linux-instance/">http://aptobits.com/2012/09/setting-up-jenkins-ci-on-an-amazon-ec2-linux-instance/</a><br />
+<a href="http://watirmelon.com/2011/08/29/running-your-watir-webdriver-tests-in-the-cloud-for-free/">http://watirmelon.com/2011/08/29/running-your-watir-webdriver-tests-in-the-cloud-for-free/</a><br />
+<a href="http://gistflow.com/posts/492-jenkins-ci-setup-for-rails-application-from-scratch">http://gistflow.com/posts/492-jenkins-ci-setup-for-rails-application-from-scratch</a><br />
+<a href="http://blogs.burnsidedigital.com/2013/01/setting-jenkins-ci-server-for-rails-project-on-a-vagrant-box/">http://blogs.burnsidedigital.com/2013/01/setting-jenkins-ci-server-for-rails-project-on-a-vagrant-box/</a></p>
+
+<p><strong>NOTICE:</strong> This is a blog I wrote for Intridea, I also post it here for my own reference. You are able to check out the <a href="http://www.intridea.com/blog/2013/5/21/howto-install-setup-jenkins-ci-for-rails-projects">original post</a>.</p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'install-jenkins-and-set-up-jenkins-ci-for-rails-projects';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

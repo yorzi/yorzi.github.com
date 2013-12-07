@@ -1,0 +1,203 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Feed parser in Ruby - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      Feed parser in Ruby - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2009 2009_11 2009_11_13 2009_11_13_feed-parser-in-ruby">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2009/11/13/feed-parser-in-ruby.html">Feed parser in Ruby</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <blockquote>There are a number of ways of parsing an RSS feed in Ruby, but one of the best is a gem called <a href="http://github.com/pauldix/feedzirra/tree/master">Feedzirra</a>. The main advantage of Feedzirra is its speed; it parses feeds very quickly, but it is also useful as it can parse many different types of feed.
+</blockquote>
+
+<p>To install Feedzirra we first need to make sure that <code><a href="http://gems.github.com">http://gems.github.com</a></code> is in our list of gem sources. If not we’ll need to add it.
+<pre>gem sources -a <a href="http://gems.github.com">http://gems.github.com</a></pre>
+Now we can install the gem:
+<pre>sudo gem install pauldix-feedzirra</pre>
+<strong><em>Notice:</em></strong> When I was installing the gem, there are several libs needed, including <em>libcurl4-gnutls-dev libcurl3-gnutls libxslt1-dev</em>, you may not meet this issue, it&#39;s not a big deal, just install what it rely on. Several dependencies will also be installed alongside the gem. Once everything’s installed we’ll need to add a reference to the gem in our application’s <em>/config/environment.rb</em> file.
+<pre>config.gem &quot;pauldix-feedzirra&quot;, :lib =&gt; &quot;feedzirra&quot;, :source =&gt; &quot;<a href="http://gems.github.com">http://gems.github.com</a>&quot;</pre>
+That’s it. We’re ready to start parsing RSS feeds in our application.</p>
+
+<p>Getting start:
+Assume that, you&#39;ve got a model to store the feed content which is fetched by the parser, so the model should be like :
+<pre name="code" class="ruby">
+class FeedEntry &lt; ActiveRecord::Base
+  def self.update<em>from</em>feed(feed<em>url)
+    feed = Feedzirra::Feed.fetch</em>and<em>parse(feed</em>url)
+    add_entries(feed.entries)
+  end</p>
+
+<p>private
+  def self.add<em>entries(entries)
+    entries.each do |entry|
+      unless exists? :guid =&gt; entry.id
+        create!(
+          :name         =&gt; entry.title,
+          :summary      =&gt; entry.summary,
+          :url          =&gt; entry.url,
+          :published</em>at =&gt; entry.published,
+          :guid         =&gt; entry.id
+        )
+      end
+    end
+  end
+end
+</pre>
+A more detailed manual is <a href="http://asciicasts.com/episodes/168-feed-parsing">here!</a></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'feed-parser-in-ruby';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

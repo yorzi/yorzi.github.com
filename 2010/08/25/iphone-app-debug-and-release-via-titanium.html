@@ -1,0 +1,192 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      iPhone App : Debug and Release through Titanium - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      iPhone App : Debug and Release through Titanium - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_08 2010_08_25 2010_08_25_iphone-app-debug-and-release-via-titanium">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">iPhone App : Debug and Release through Titanium</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 25, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Once people develop an iPhone App using <a href="http://www.appcelerator.com/">Titanium1.4</a>, they must be very happy when the App is running on iPhone simulator. They feel great until they decide to debug their app on their devices or even release their app to AppleAppStore. This happens specially to these who firstly do this. Why? There are many reasons that you will hate Apple during the debug or release process. I bat you are like me then.</p>
+
+<p>Assume that: You&#39;ve already finished coding an iPhone app in Titanium 1.4 framework. Now you want to install your app on your device. If you do this first time, guess what will happen to you? Let me tell you my story.</p>
+
+<p>You will be blocked by Titanium certificates detections when you want to install your app to your device. see below image:
+<div class="thumbnail"><a href="http://skitch.com/yorzi/dut81/mail-1320x770"><img src="http://img.skitch.com/20100825-fuf9q1dac5ir21f5g4im2h93gi.jpg" alt="mail (1320շ70)" /></a><br /></div>
+<br />
+Well, in order to become an iPhone developer, you should pay Apple for an iPhone Program Permission. My boss paid Apple for an iPhone Program Team permission, it cost him about one month to pass Apple&#39;s approval. After that, he, as an admin agent iPhone developer, invited me as an iPhone developer member with admin permission. Here we had been running into issue for two days. Finally, we found that he only can invite my exist Apple ID as an iPhone developer, because I can&#39;t finish a registration process after he invite me with a non-exist Apple ID. The evil is Apple indicates that, we should invite non-exist accounts as team members.</p>
+
+<p>Now have I got the permission to debug my app on my iphone? Wait a moment. Actually I should be invited twice separately, one is for <a href="https://itunesconnect.apple.com/">iTunesconnect</a>. another one is for <a href="http://developer.apple.com/iphone/index.action">Provisioning Portal</a>(Dev Center). These two sites are different, only in Dev Center, I can config my provisioning profile, which is a main concept for releasing iPhone App or allowing to install App on certain devices. But in iTunesconnect, I need to release my app to iTunes/Apple App Store.</p>
+
+<p>So far, I&#39;ve got enough permission to debug the App on my own iPhone. But I am still unable to distribute my App to others&#39; devices. How that happens? As an iPhone developer, I need to pass Titanium&#39;s detection of several certificates. only after that, I can install app on my iPhone. (PS: if you want to test your app on Android, the only need is to connect your device.)</p>
+
+<p>In following images, I will show you the steps through which you can pass all the Titanium detection of certificates.
+<div><a href="http://skitch.com/yorzi/dutdc/preparation-iphone-provisioning-portal-apple-developer"><img src="http://img.skitch.com/20100825-b8ne3uxkfenjthcgnscecb89t.jpg" alt="Preparation - iPhone Provisioning Portal - Apple Developer" /></a><br /></div>
+<br />
+Then you will get the following files after your above configuration.
+<div class="thumbnail"><a href="http://skitch.com/yorzi/dutrp/users-andy-desktop-apple-developer-app"><img src="http://img.skitch.com/20100825-ds2k13epf4b7grcmabr89yk11r.jpg" alt="/Users/andy/Desktop/apple_developer/app" /></a><br /></div>
+<br />
+After you import the above certificates to your keychain, you should see something similar in your Keychian.
+<div class="thumbnail"><a href="http://skitch.com/yorzi/dutds/keychain-access"><img src="http://img.skitch.com/20100825-ra2mqhmcu94pk7kuxcpa7c6i2g.jpg" alt="Keychain Access" /></a><br /></div>
+<br />
+Finally, your Titanium will be the &ldquo;ready status&rdquo; for your debug and release on real device.
+<div class="thumbnail"><a href="http://skitch.com/yorzi/dutfb/titanium-developer-1.2.1"><img src="http://img.skitch.com/20100825-m5b6ugwjywb66qggswbsumsmfk.jpg" alt="Titanium Developer (1.2.1)" /></a><br /></div>
+<br />
+The whole process might be painful unless you understand every concepts that Apple creates. I encounter problems when creating distribution provisioning profile. Only admin agent developer has permission to do so. Thus, you should ask admin agent for this provisioning profile, he can share this profile with a private key file, you import this key file to your Keychian, then you can distribute the app to whatever devices which is bundled into specific provisioning profile. </p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'iphone-app-debug-and-release-through-titanium';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

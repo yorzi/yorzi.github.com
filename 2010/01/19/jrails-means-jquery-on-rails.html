@@ -1,0 +1,364 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      jRails means jQuery on Rails - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      jRails means jQuery on Rails - @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="2010 2010_01 2010_01_19 2010_01_19_jrails-means-jquery-on-rails">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:red;'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="//resume.wangyaodi.com">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        
+  <div class="announcement">
+    <p>
+      
+        <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
+
+
+      
+    </p>
+  </div>
+
+  <article class="post single">
+
+    <header>
+  <h2 class="title">
+    <a href="/2010/01/19/jrails-means-jquery-on-rails.html">jRails means jQuery on Rails</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jan 19, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><em><strong>Note: This introduction post to jRails is copied(mirrored) form <a href="http://mirror.ozdiy.com/assets/b8/2f96a12bc919b37e09d303b86ea1b9_1251811910.html#install">this link</a>, so that I can bakeup this for advanced learning.</strong></em>
+<div>
+<h2>Intro</h2>
+jRails is a drop-in <a href="http://jquery.com/">jQuery</a> replacement for <a href="http://www.prototypejs.org/">Prototype</a>/<a href="http://script.aculo.us/">script.aculo.us</a> on Rails.         Using jRails, you can get all of the same default Rails helpers for javascript functionality using the lighter jQuery library.</div>
+<a name="news"></a>
+<div>
+<h2>News</h2>
+<h3>jRails 0.4 : jQuery 1.5!</h3>
+jQuery-UI has just gotten a major update to version 1.5 which stabilizes most of the controls and incorporates the Enchant effects library. jRails follows suit with a single js file for jquery-ui that includes both the modules and effects. The default jRails installation includes a compressed jquery-ui js file that includes the basic modules and effects supported by Prototype/Scriptaculous. There are no modifications to this file, so if you&#39;d like to generate your own with additional modules or effects, just pop on over to the jQuery UI site and <a href="http://ui.jquery.com/download_builder/">customize your own</a>.</p>
+
+<p>This release of jRails also adds support for jQuery.noConflict(). Just uncomment the line in the init.rb file and set it to whatever you like. Now you can use jRails with other libraries without causing problems.</div>
+<a name="features"></a>
+<div>
+<h2>Features</h2>
+jRails provides drop-in functionality for these existing Rails methods.
+<ul>
+    <li>
+<ul>
+    <li><strong>Prototype</strong></li>
+    <li>form<em>remote</em>for</li>
+    <li>form<em>remote</em>tag</li>
+    <li>link<em>to</em>remote</li>
+    <li>observe<em>field</li>
+    <li>observe</em>form</li>
+    <li>periodically<em>call</em>remote</li>
+    <li>remote<em>form</em>for</li>
+    <li>submit<em>to</em>remote</li>
+</ul>
+</li>
+    <li>
+<ul>
+    <li><strong>Scriptaculous</strong></li>
+    <li>draggable<em>element</li>
+    <li>drop</em>receiving<em>element</li>
+    <li>sortable</em>element</li>
+    <li>visual<em>effect</li>
+</ul>
+</li>
+    <li>
+<ul>
+    <li><strong>RJS</strong></li>
+    <li>hide</li>
+    <li>insert</em>html</li>
+    <li>remove</li>
+    <li>replace</li>
+    <li>replace_html</li>
+    <li>show</li>
+    <li>toggle</li>
+</ul>
+</li>
+</ul>
+</div>
+<a name="effects"></a>
+<div>
+<h2>Visual Effects</h2>
+These are the current effects that are included by default in jRails.
+<div>
+<div style="display: block;" onclick="$(this).hide().appear()"></p>
+
+<p>Appear</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).fade().pause(1500).appear()"></p>
+
+<p>Fade</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).puff().pause(1500).appear()"></p>
+
+<p>Puff</div>
+</div>
+<div>
+<div onclick="$(this).blindDown()"></p>
+
+<p>BlindDown</div>
+</div>
+<div>
+<div onclick="$(this).blindUp().pause(1500).appear()"></p>
+
+<p>BlindUp</div>
+</div>
+<div>
+<div onclick="$(this).blindRight()"></p>
+
+<p>BlindRight</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).blindLeft().pause(1500).appear()"></p>
+
+<p>BlindLeft</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).switchOff().pause(1500).appear()"></p>
+
+<p>SwitchOff</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).switchOn()"></p>
+
+<p>SwitchOn</div>
+</div>
+<div>
+<div onclick="$(this).slideDown()"></p>
+
+<p>SlideDown</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).slideUp().pause(1500).appear()"></p>
+
+<p>SlideUp</div>
+</div>
+<div>
+<div onclick="$(this).dropIn()"></p>
+
+<p>DropIn</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).dropOut().pause(1500).appear()"></p>
+
+<p>DropOut</div>
+</div>
+<div>
+<div onclick="$(this).shake()"></p>
+
+<p>Shake</div>
+</div>
+<div>
+<div style="opacity: 1;" onclick="$(this).pulsate()"></p>
+
+<p>Pulsate</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).squish().pause(1500).appear()"></p>
+
+<p>Squish</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).fold().pause(1500).appear()"></p>
+
+<p>Fold</div>
+</div>
+<div>
+<div onclick="$(this).foldOut()"></p>
+
+<p>FoldOut</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).grow()"></p>
+
+<p>Grow</div>
+</div>
+<div>
+<div style="display: block;" onclick="$(this).shrink().pause(1500).appear()"></p>
+
+<p>Shrink</div>
+</div>
+<div>
+<div onclick="$(this).highlight()"></p>
+
+<p>Highlight</div>
+</div>
+</div>
+<a name="howto"></a>
+<h2>How to use</h2>
+Just install and go!        Once installed, the previous Prototype/script.aculo.us helpers will be replaced by jQuery ones.         In order for them to function correctly, just include the appropriate javascript files in the head of your page.
+<div>
+<pre>&lt;script src=&quot;/javascripts/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/javascripts/jquery-ui.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/javascripts/jrails.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+</div>
+You can also use the Rails javascript<em>include</em>tag helper with :default to load them automagically.
+<div>
+<pre>&lt;%= javascript<em>include</em>tag :defaults %&gt;</pre>
+</div>
+<a name="installation"></a>
+<div>
+<h2>Install</h2>
+To install the jRails plugin:
+<div>
+<pre>./script/plugin install git://github.com/aaronchi/jrails.git</pre>
+</div>
+Then copy the javascript files in the plugin folder to your javascripts directory.</div>
+<a name="changelog"></a>
+<div>
+<h2>Changelog</h2>
+<ul>
+    <li><label>0.1.0 </label>: Initial Release</li>
+    <li><label>0.2.0 </label>: Major Effects Updates</li>
+    <li><label>0.3.0 </label>: jQuery Enchant</li>
+    <li><label>0.4.0 </label>: jQuery-ui 1.5 and jQuery.noConflict support</li>
+</ul>
+</div>
+<a name="contact"></a>
+<div>
+<h2>Contact</h2>
+You can post to the <a href="http://groups.google.com/group/jrails">jRails group forum</a> and I&#39;ll get back to you as soon as I can</p>
+
+<p>Comments, bug reports and feedback are welcomed.        I&#39;m also considering developing a similar library for <a href="http://mootools.net/">MooTools</a> so if you are interested, please let me know.</div></p>
+
+</div>
+
+  </article>
+
+  <div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
+      var disqus_identifier = 'jrails-means-jquery-on-rails';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
