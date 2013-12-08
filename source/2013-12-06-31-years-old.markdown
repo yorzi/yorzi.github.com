@@ -33,5 +33,5 @@ tags: 生日, 而立之年, 31岁
 最后，我要感谢互联网，让我视野无边无疆。
 
 <span class="footnotes">
-写完这边博客之后，我顺手把自己的Blog系统升级到middleman，要感谢[Yedingding](http://yedingding.com)的[源代码](https://github.com/sishen/sishen.github.com)，Yedingding同学是国内专家级别的*远程工作者*，也是团队协作和软件项目管理软件[Pragmatic.ly](Pragmatic.ly)的创始人，欢迎大家关注他和他的产品。
+写完这篇博客之后，我顺手把自己的Blog系统升级到[Middleman](http://middlemanapp.com)，要感谢[Yedingding](http://yedingding.com)的[源代码](https://github.com/sishen/sishen.github.com)和这个Theme的作者[Ben](http://beenhero.com)，Yedingding和Ben是国内专家级别的*远程工作者*，也是团队协作和软件项目管理软件[Pragmatic.ly](http://pragmatic.ly)的共同创始人，欢迎大家关注他们和他们的产品。
 </span>
