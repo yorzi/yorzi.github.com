@@ -73,6 +73,46 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Study Note : serialize object in ActiveRecord</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 04, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h2><span style="color: #444444; line-height: 24px; font-size: 16px;">Copied from <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html#M001799" target="_blank">Ruby on Rails API doc</a>. Store here as a study notes for myself.
+
+Active Record can <a href="Base.html#M001799">serialize</a> any object in text <a href="Base.html#M001809">columns</a> using YAML. To do so, you must specify this with a call to the class method <tt><a href="Base.html#M001799">serialize</a></tt>. This makes it possible to store arrays, hashes, and other non-mappable objects without doing any additional work. Example:</span></h2>
+
+<pre>  class User &lt; ActiveRecord::Base
+    serialize :preferences
+  end
+
+  user = User.create(:preferences =&gt; { "background" =&gt; "black", "display" =&gt; large })
+  User.find(user.id).preferences # =&gt; { "background" =&gt; "black", "display" =&gt; large }</pre>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
   </h2>
 </header>
@@ -474,64 +514,6 @@ Here is a brief look at the similarities and differences between forms, surveys,
   </p>
   <p>
     <a href="/2010/07/21/386路和740路.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/19/公司职位名称中英文对照转.html">公司职位名称中英文对照(转)</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 19, 2010
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/.html">中英翻译</a>
-      
-        <a href="/tags/.html">职位</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><p>Marketing and Sales(市场与销售部分)<br />
-Vice-President of Sales 销售副总裁<br />
-Senior Customer Manager 高级客户经理<br />
-Sales Manager 销售经理<br />
-Regional Sales Manager 地区销售经理<br />
-Merchandising Manager 采购经理<br />
-Sales Assistant 销售助理<br />
-Wholesale Buyer 批发采购员<br />
-Tele-Interviewer 电话调查员<br />
-Real Estate Appraiser 房地产评估师<br />
-Marketing Consultant 市场顾问<br />
-Marketing and Sales Director 市场与销售总监<br />
-Market Research Analyst 市场调查分析员<br />
-Manufacturer\&#39;s Representative 厂家代表<br />
-Director of Subsidiary Rights 分公司权利总监<br />
-Sales Representative 销售代表<br />
-Assistant Customer Executive 客户管理助理<br />
-Marketing Intern 市场实习<br />
-Marketing Director 市场总监<br />
-Insurance Agent 保险代理人<br />
-Customer Manager 客户经理<br />
-Vice-President of Marketing 市场副总裁<br />
-Regional Customer Manager 地区客户经理<br />
-Sales Administrator 销售主管<br /></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/19/公司职位名称中英文对照转.html">Read more →</a>
   </p>
 </div>
     </article>
