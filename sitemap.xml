@@ -2509,6 +2509,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>http://wangyaodi.com/2013/12/19/birthday-leave-2013.html</loc>
+    <lastmod>2013-12-19T21:46:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>http://wangyaodi.com/</loc>
     <lastmod>2013-12-19T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -5377,6 +5383,42 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://wangyaodi.com/tags/.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/tags/.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/tags/.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/tags/.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/tags/gdg.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/tags/rubyists.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://wangyaodi.com/2013.html</loc>
     <lastmod>2013-12-19T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -5384,6 +5426,12 @@
   </url>
   <url>
     <loc>http://wangyaodi.com/2013/12.html</loc>
+    <lastmod>2013-12-19T00:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://wangyaodi.com/2013/12/19.html</loc>
     <lastmod>2013-12-19T00:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
