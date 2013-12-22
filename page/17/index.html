@@ -74,6 +74,45 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/01/19/jrails-means-jquery-on-rails.html">jRails means jQuery on Rails</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jan 19, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><em><strong>Note: This introduction post to jRails is copied(mirrored) form <a href="http://mirror.ozdiy.com/assets/b8/2f96a12bc919b37e09d303b86ea1b9_1251811910.html#install">this link</a>, so that I can bakeup this for advanced learning.</strong></em>
+<div>
+<h2>Intro</h2>
+jRails is a drop-in <a href="http://jquery.com/">jQuery</a> replacement for <a href="http://www.prototypejs.org/">Prototype</a>/<a href="http://script.aculo.us/">script.aculo.us</a> on Rails.         Using jRails, you can get all of the same default Rails helpers for javascript functionality using the lighter jQuery library.</div>
+<a name="news"></a>
+<div>
+<h2>News</h2>
+<h3>jRails 0.4 : jQuery 1.5!</h3>
+jQuery-UI has just gotten a major update to version 1.5 which stabilizes most of the controls and incorporates the Enchant effects library. jRails follows suit with a single js file for jquery-ui that includes both the modules and effects. The default jRails installation includes a compressed jquery-ui js file that includes the basic modules and effects supported by Prototype/Scriptaculous. There are no modifications to this file, so if you&#39;d like to generate your own with additional modules or effects, just pop on over to the jQuery UI site and <a href="http://ui.jquery.com/download_builder/">customize your own</a>.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/01/19/jrails-means-jquery-on-rails.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/01/17/独唱团.html">独唱团</a>
   </h2>
 </header>
@@ -206,7 +245,7 @@
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/01/14/最爱《六人行》.html">最爱《六人行》</a>
+    <a href="/2010/01/14/a-ab-test-solution-in-ror.html">an A/B test solution in ROR</a>
   </h2>
 </header>
 
@@ -217,29 +256,28 @@
     </li>
     <li class="tags">
       
-        <a href="/tags/download.html">download</a>
-      
-        <a href="/tags/friends-script.html">friends-script</a>
-      
-        <a href="/tags/pdf.html">pdf</a>
-      
-        <a href="/tags/.html">老友记剧本</a>
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Noah兄近来打印英文书籍成瘾，每次都一摞一摞的，后来我也有些心动，总想打点什么(犯贱心理?)，想了几秒钟发现还是打印剧本比较有趣，比方来一套Friends的剧本，没事翻翻，一定满脑子快乐。</p>
+  <p>Last few days, I worked for a mission to add more flexible control to <a href="http://www.eqenglish.com">our website</a> landing pages. What I did is to add a &ldquo;a/b&rdquo; test feature for new landing pages, that means, if people have two designs and want to compare the results, they only release two versions of landing page, and then only get one url for the two versions of pages, after that the url will automatically redirect to different versions evenly, so that through Google analytics marketing people can easily decide which landing page is much better.</p>
 
-<p><strong>这里提供适合打印的版本下载</strong>：点击 <a href="http://blog.wangyaodi.com/wp-content/uploads/pdf/Friends-英文剧本-全10季[适合打印].pdf">PDF版</a> | <a href="http://blog.wangyaodi.com/wp-content/uploads/pdf/Friends-英文剧本-全10季[适合打印].doc">Word版</a></p>
+<p><strong>Landing pages A/B test solution:</strong>
+<code lang="ruby">
+class LandingsController &lt; ApplicationController
+  layout &quot;layouts/blank&quot;
+  caches<em>page &quot;ielts&quot;,&quot;ab</em>test&quot;</p>
 
+<p>def ielts
+    @landing<em>page = Landing.find</em>by<em>url</em>slug(params[:url<em>slug]) || Landing.valid</em>landings.first</p>
+ 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/01/14/最爱《六人行》.html">Read more →</a>
+    <a href="/2010/01/14/a-ab-test-solution-in-ror.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -297,7 +335,7 @@
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/01/14/a-ab-test-solution-in-ror.html">an A/B test solution in ROR</a>
+    <a href="/2010/01/14/最爱《六人行》.html">最爱《六人行》</a>
   </h2>
 </header>
 
@@ -308,28 +346,29 @@
     </li>
     <li class="tags">
       
+        <a href="/tags/download.html">download</a>
+      
+        <a href="/tags/friends-script.html">friends-script</a>
+      
+        <a href="/tags/pdf.html">pdf</a>
+      
+        <a href="/tags/.html">老友记剧本</a>
+      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Last few days, I worked for a mission to add more flexible control to <a href="http://www.eqenglish.com">our website</a> landing pages. What I did is to add a &ldquo;a/b&rdquo; test feature for new landing pages, that means, if people have two designs and want to compare the results, they only release two versions of landing page, and then only get one url for the two versions of pages, after that the url will automatically redirect to different versions evenly, so that through Google analytics marketing people can easily decide which landing page is much better.</p>
+  <p>Noah兄近来打印英文书籍成瘾，每次都一摞一摞的，后来我也有些心动，总想打点什么(犯贱心理?)，想了几秒钟发现还是打印剧本比较有趣，比方来一套Friends的剧本，没事翻翻，一定满脑子快乐。</p>
 
-<p><strong>Landing pages A/B test solution:</strong>
-<code lang="ruby">
-class LandingsController &lt; ApplicationController
-  layout &quot;layouts/blank&quot;
-  caches<em>page &quot;ielts&quot;,&quot;ab</em>test&quot;</p>
+<p><strong>这里提供适合打印的版本下载</strong>：点击 <a href="http://blog.wangyaodi.com/wp-content/uploads/pdf/Friends-英文剧本-全10季[适合打印].pdf">PDF版</a> | <a href="http://blog.wangyaodi.com/wp-content/uploads/pdf/Friends-英文剧本-全10季[适合打印].doc">Word版</a></p>
 
-<p>def ielts
-    @landing<em>page = Landing.find</em>by<em>url</em>slug(params[:url<em>slug]) || Landing.valid</em>landings.first</p>
- 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/01/14/a-ab-test-solution-in-ror.html">Read more →</a>
+    <a href="/2010/01/14/最爱《六人行》.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -456,51 +495,6 @@ class LandingsController &lt; ApplicationController
   </p>
   <p>
     <a href="/2010/01/10/weekly-key-words-20100110.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/01/08/martin-niemoller-quotation.html">再也没有人站起来为我说话了</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jan 08, 2010
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/martin-niemoller.html">Martin Niemoller</a>
-      
-        <a href="/tags/quotation.html">quotation</a>
-      
-        <a href="/tags/.html">墓志铭</a>
-      
-        <a href="/tags/.html">马丁.尼莫拉</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><p style="text-align: center;"><a rel="attachment wp-att-311" href="http://blog.wangyaodi.com/2010/01/08/martin-niemoller-quotation/2010_01_08/" target="_blank"><img class="aligncenter size-full wp-image-311" style="margin-top: 2px; margin-bottom: 2px; border: 2px solid black;" title="2010_01_08" src="http://blog.wangyaodi.com/wp-content/uploads/2010/01/2010_01_08.jpg" alt="2010_01_08" width="348" height="515" /></a></p></p>
-
-<p><blockquote><strong><em>在德国，起初他们追杀共产主义者，我没有说话——因为我不是共产主义者；<br />
-接著他们追杀犹太人，我没有说话——因为我不是犹太人； 后来他们追杀工会成员，我没有说话——因为我不是工会成员；<br />
-此后他们追杀天主教徒，我没有说话——因为我是新教教徒；<br />
-最后他们奔我而来，却再也没有人站起来为我说话了。</em></strong></blockquote>
-<p style="text-align: center;">—— <a href="http://zh.wikipedia.org/wiki/馬丁·尼莫拉"><em><strong>马丁.尼莫拉</strong></em>(Martin Niemoller)</a></p></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/01/08/martin-niemoller-quotation.html">Read more →</a>
   </p>
 </div>
     </article>
