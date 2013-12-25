@@ -120,38 +120,51 @@ Then you should use this function as fetch</em>value(&ldquo;author&rdquo;), it w
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">How to keep a space in your iPhone App name?</a>
+    <a href="/2010/09/01/macports-is-a-monster.html">MacPorts is a monster</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Aug 31, 2010
+      Sep 01, 2010
     </li>
     <li class="tags">
+      
+        <a href="/tags/homebrew.html">homebrew</a>
+      
+        <a href="/tags/imagemagick.html">imagemagick</a>
+      
+        <a href="/tags/mac-os-x.html">MAC OS X</a>
+      
+        <a href="/tags/macports.html">macports</a>
+      
+        <a href="/tags/programing.html">Programing</a>
+      
+        <a href="/tags/rmagick.html">rmagick</a>
       
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>The answer is, <strong>you can&#39;t submit your iPhone App with <em>whitespace</em> in its name</strong>. But you do <strong>be able to add space in your App display name</strong> under icon. I guess your purpose is the second one, you only want to display the space under app icon on device, don&#39;t you?</p>
+  <h1>MacPorts is a monster.. see the log I installed ImageMagick. Anyway, it works for me. but the <a href="http://weblogs.manas.com.ar/mverzilli/2010/05/19/install-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in-the-painless-way-with-homebrewinstall-the-rmagick-gem-in/">brew solution</a> is not working for me.</h1>
 
-<p>OK, just name your app as whatever name with space before you setup the distribution package, e.g. &ldquo;Example Name.app&rdquo;. Then,</p>
-
-<p>1) In Xcode Organizer right click on the build date of the app and select &ldquo;Reveal Archived App in Finder&rdquo;
-2) Open ArchiveInfo.plist in a text editor, edit the attribute &ldquo;<strong><em><string>Example Name.app</string></em></strong>&rdquo;
-Change that to ExampleName.app and save the file.
-4) In Finder remove the space in the file names on both the .app and the .app.dSYM files
-5) Once you get back to Xcode Organizer, you should be able to submitting app to itunesconnect successfully.</p>
+<p>andy@Wang-Andys-MacBook-Pro~/proj.workspace:sudo port install ImageMagick
+&mdash;&gt;  Computing dependencies for ImageMagick
+&mdash;&gt;  Fetching p5-locale-gettext
+&mdash;&gt;  Attempting to fetch gettext-1.05.tar.gz from <a href="http://distfiles.macports.org/perl5">http://distfiles.macports.org/perl5</a>
+&mdash;&gt;  Verifying checksum(s) for p5-locale-gettext
+&mdash;&gt;  Extracting p5-locale-gettext
+&mdash;&gt;  Applying patches to p5-locale-gettext
+&mdash;&gt;  Configuring p5-locale-gettext</p>
 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">Read more →</a>
+    <a href="/2010/09/01/macports-is-a-monster.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -194,6 +207,45 @@ PS ：如果不能顺利观看，请点击右键<a href="http://www.wangyaodi.co
   </p>
   <p>
     <a href="/2010/08/31/andy-sherry-pics-1.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">How to keep a space in your iPhone App name?</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 31, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>The answer is, <strong>you can&#39;t submit your iPhone App with <em>whitespace</em> in its name</strong>. But you do <strong>be able to add space in your App display name</strong> under icon. I guess your purpose is the second one, you only want to display the space under app icon on device, don&#39;t you?</p>
+
+<p>OK, just name your app as whatever name with space before you setup the distribution package, e.g. &ldquo;Example Name.app&rdquo;. Then,</p>
+
+<p>1) In Xcode Organizer right click on the build date of the app and select &ldquo;Reveal Archived App in Finder&rdquo;
+2) Open ArchiveInfo.plist in a text editor, edit the attribute &ldquo;<strong><em><string>Example Name.app</string></em></strong>&rdquo;
+Change that to ExampleName.app and save the file.
+4) In Finder remove the space in the file names on both the .app and the .app.dSYM files
+5) Once you get back to Xcode Organizer, you should be able to submitting app to itunesconnect successfully.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -458,65 +510,6 @@ After successfully install the installer will tell where the library files have 
   </p>
   <p>
     <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/08/21/你在哪一边？.html">你在哪一边？</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Aug 21, 2010
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/.html">关注生活</a>
-      
-        <a href="/tags/.html">快乐</a>
-      
-        <a href="/tags/.html">思考</a>
-      
-        <a href="/tags/.html">感触</a>
-      
-        <a href="/tags/.html">时间</a>
-      
-        <a href="/tags/.html">爱</a>
-      
-        <a href="/tags/.html">生活</a>
-      
-        <a href="/tags/.html">秋天</a>
-      
-        <a href="/tags/.html">闲适</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><p style="text-align: center;"><a href="http://skitch.com/yorzi/duy49/fall-rain.jpg"><img class="aligncenter" title="秋雨" src="http://img.skitch.com/20100821-r7s1xsmhwqnyrq8rwnge13h7jn.jpg" alt="Rain In Fall" width="490" height="362" /></a></p></p>
-
-<p>早上睁眼的时候，已经10点，窗外的秋雨，淅淅沥沥，将这个周末的清晨，变得凉爽袭人，让人不想起床。</p>
-
-<p>秋天大概就是这个样子的，让人心底无比踏实，比起刚刚经过的酷暑，我更愿意相信秋天的诚意，它让我思考，让我放松。</p>
-
-<p>往回看，过去的几个月充满了喜悦和劳顿，充满了幸福和折腾，而这种矛盾的感触，恰好是我婚后最初一段时间里面真实的写照，这种感觉很奇妙，仿佛过去的二十多年都不曾有如此迅速的变化。我喜欢这样的变化。</p>
-
-<p>不知不觉，有一阵子没有写blog了，甚至连<a href="http://tech.wangyaodi.com">技术blog</a>也没有更新，五月那阵子给高中十年聚会搭设的<a href="http://www.2001-2011.com">专题blog</a>也很久没有更新。总的说来，当生活的主题改变的时候，生活的节奏和内容都会有所变化，对我而言，这种变化最直接的影响就是我开始没有时间来更新这些blog，没有时间和别人分享生活，因为劳顿使我变的慵懒，而繁忙的工作使我异常充实而且兴奋，这一切，催促着我，使我每天都那样的忙忙叨叨，我不敢怠慢，也无法停歇。</p>
-
-<p>终于，迎来这一场秋雨，它涤荡了我疲惫的思绪，启发我完全放松我的身体。就在这一天，我决定什么都不干，煮一壶咖啡，写写字，然后将那本看了半年还没看完的<a href="http://book.douban.com/subject/1792668/">《苏东坡传》</a>翻一翻，或者只是坐在客厅看看电视，随便什么电视都行。静静的午后，我需要做得就是，静下心来，仔细体会这种珍贵的闲适。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/08/21/你在哪一边？.html">Read more →</a>
   </p>
 </div>
     </article>
