@@ -74,6 +74,42 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">iPhone App : Debug and Release through Titanium</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 25, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Once people develop an iPhone App using <a href="http://www.appcelerator.com/">Titanium1.4</a>, they must be very happy when the App is running on iPhone simulator. They feel great until they decide to debug their app on their devices or even release their app to AppleAppStore. This happens specially to these who firstly do this. Why? There are many reasons that you will hate Apple during the debug or release process. I bat you are like me then.</p>
+
+<p>Assume that: You&#39;ve already finished coding an iPhone app in Titanium 1.4 framework. Now you want to install your app on your device. If you do this first time, guess what will happen to you? Let me tell you my story.</p>
+
+<p>You will be blocked by Titanium certificates detections when you want to install your app to your device. see below image:
+<div class="thumbnail"><a href="http://skitch.com/yorzi/dut81/mail-1320x770"><img src="http://img.skitch.com/20100825-fuf9q1dac5ir21f5g4im2h93gi.jpg" alt="mail (1320շ70)" /></a><br /></div></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/08/21/你在哪一边？.html">你在哪一边？</a>
   </h2>
 </header>
@@ -222,46 +258,6 @@
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/08/04/serialize-object-in-activerecord.html">Study Note : serialize object in ActiveRecord</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Aug 04, 2010
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <h2><span style="color: #444444; line-height: 24px; font-size: 16px;">Copied from <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html#M001799" target="_blank">Ruby on Rails API doc</a>. Store here as a study notes for myself.
-
-Active Record can <a href="Base.html#M001799">serialize</a> any object in text <a href="Base.html#M001809">columns</a> using YAML. To do so, you must specify this with a call to the class method <tt><a href="Base.html#M001799">serialize</a></tt>. This makes it possible to store arrays, hashes, and other non-mappable objects without doing any additional work. Example:</span></h2>
-
-<pre>  class User &lt; ActiveRecord::Base
-    serialize :preferences
-  end
-
-  user = User.create(:preferences =&gt; { "background" =&gt; "black", "display" =&gt; large })
-  User.find(user.id).preferences # =&gt; { "background" =&gt; "black", "display" =&gt; large }</pre>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/08/04/serialize-object-in-activerecord.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2010/08/04/calculate-results-vs-store-result-sets.html">calculate results VS. store result sets</a>
   </h2>
 </header>
@@ -302,14 +298,14 @@ We want to pick up a name list, all people in the list should be under certain c
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/07/30/start-working-on-titanium.html">Start working on Titanium</a>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Study Note : serialize object in ActiveRecord</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Jul 30, 2010
+      Aug 04, 2010
     </li>
     <li class="tags">
       
@@ -318,16 +314,23 @@ We want to pick up a name list, all people in the list should be under certain c
 </aside>
 
 <div class="content">
-  <p>Been working on Titanium for a while, I find a must read PPT to guide you smoothly getting start on <a href="http://developer.appcelerator.com/get_started">Titanium Mobile Development</a>. </p>
+  <h2><span style="color: #444444; line-height: 24px; font-size: 16px;">Copied from <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html#M001799" target="_blank">Ruby on Rails API doc</a>. Store here as a study notes for myself.
 
-<div style="width:425px" id="__ss_4793534"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kwhinnery/oscon-titanium-tutorial" title="OSCON Titanium Tutorial">OSCON Titanium Tutorial</a></strong><object id="__sse4793534" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4793534" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/kwhinnery">Kevin Whinnery</a>.</div></div>
+Active Record can <a href="Base.html#M001799">serialize</a> any object in text <a href="Base.html#M001809">columns</a> using YAML. To do so, you must specify this with a call to the class method <tt><a href="Base.html#M001799">serialize</a></tt>. This makes it possible to store arrays, hashes, and other non-mappable objects without doing any additional work. Example:</span></h2>
+
+<pre>  class User &lt; ActiveRecord::Base
+    serialize :preferences
+  end
+
+  user = User.create(:preferences =&gt; { "background" =&gt; "black", "display" =&gt; large })
+  User.find(user.id).preferences # =&gt; { "background" =&gt; "black", "display" =&gt; large }</pre>
 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/07/30/start-working-on-titanium.html">Read more →</a>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -370,6 +373,39 @@ and then run
   </p>
   <p>
     <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/07/30/start-working-on-titanium.html">Start working on Titanium</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 30, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Been working on Titanium for a while, I find a must read PPT to guide you smoothly getting start on <a href="http://developer.appcelerator.com/get_started">Titanium Mobile Development</a>. </p>
+
+<div style="width:425px" id="__ss_4793534"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kwhinnery/oscon-titanium-tutorial" title="OSCON Titanium Tutorial">OSCON Titanium Tutorial</a></strong><object id="__sse4793534" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4793534" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/kwhinnery">Kevin Whinnery</a>.</div></div>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/07/30/start-working-on-titanium.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -481,41 +517,6 @@ and then run
   </p>
   <p>
     <a href="/2010/07/28/rails3-app-gem-stack.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Beta Salon - Rails Developer Meetup</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 27, 2010
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><div></p>
-
-<p><a href="http://developer.idapted.com/about/">Engineers at Idapted</a> are famous and cool. They are eager to join the technical activities. At the very beginning of this June, <a href="http://jonathonpalley.com">Jonathon Palley</a> and Guolei went to US to attend the <a href="http://en.oreilly.com/rails2010">Railsconf2010</a>, which is the top level and the largest official Ruby on Rails conference, where the most successful Rails experts and companies share their experience and skill.</p>
-
-<p>Yeah, Jonathon and Guolei did a great job to present Idapted technology to the Rails community and gained a big success to introduce Idapted platform to the world. Since they came back to Beijing, they&#39;ve been preparing for a similar local presentation for Chinese Rails community. Finally, with <a href="http://club.blogbeta.com/" target="_blank">Beta Salon</a>&#39;s help, in last Saturday evening, Idapted technology team organized a Ruby on Rails activity in <a href="http://storygarden.me/" target="_blank">Story Garden</a>, which is a famous Cafe House where different people in different community open different salons.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Read more →</a>
   </p>
 </div>
     </article>
