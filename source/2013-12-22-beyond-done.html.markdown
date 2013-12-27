@@ -1,7 +1,7 @@
 ---
 title: 做过什么？
 date: 2013-12-22 13:20 +08:00
-tags: 计划, 总结, 改进, 思考, 2013, MD12
+tags: 计划, 总结, 改进, 思考, 2013, MD, MD12
 ---
 
 ![Review Time](post/time-for-review.jpg)
