@@ -74,6 +74,55 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2013/06/07/tricks-and-tips-of-deploying-rails4-app-to-heroku.html">Tricks and Tips of Deploying Rails4 App to Heroku</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jun 07, 2013
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Recently, I deployed a client project to Heroku and made the Heroku instance as an internal demo server. The project is based on Ruby2.0 and Rails4, unexpectedly, the deployment to Heroku is not as smooth as before. Below I&#39;d like to share some tricks and tips that I came across. </p>
+
+<h5>Rails4 Specific Tricks</h5>
+
+<ul>
+<li>Heroku forces you to specify your ruby version in Gemfile, it&#39;s supported by bundler from [1.2 version], so just add below line into your Gemfile:</li>
+</ul>
+
+<p>{% codeblock ruby %}</p>
+
+<h1>specify ruby version to enable the deploy to Heroku instance.</h1>
+
+<p>ruby &#39;2.0.0&#39;
+{% endcodeblock %}</p>
+
+<ul>
+<li>Rails4 gets rid of plugin system. In order to use features such as static asset serving and logging on Heroku, you should add the following gems to your Gemfile:</li>
+</ul>
+<pre class="highlight plaintext">gem &#39;rails_log_stdout&#39;,           github: &#39;Heroku/rails_log_stdout&#39;
+</pre>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2013/06/07/tricks-and-tips-of-deploying-rails4-app-to-heroku.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2013/05/23/install-jenkins-and-set-up-jenkins-ci-for-rails-projects.html">Install Jenkins and Set Up Jenkins CI for Rails Projects</a>
   </h2>
 </header>
@@ -433,43 +482,6 @@
   </p>
   <p>
     <a href="/2013/01/19/downloadable-svg-in-png-format.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2012/10/22/run-a-static-website-on-heroku-for-free.html">Run a Static Website on Heroku for Free</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Oct 22, 2012
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <div class="thumbnail"><a href="http://wangyaodi.com"><img src="https://img.skitch.com/20121023-fxqkstawwd56ehbpecxq6ifkq8.preview.jpg" alt="Andy Wang - Professional Ruby on Rails Engineer, Senior Web Application Developer." /></a><br /><span>Uploaded with <a href="http://skitch.com">Skitch</a>!</span></div>
-
-<p>Recently, I plan to update my personal information on internet, I also plan to have a professional personal website on which I can show my introduction, skills and working experiences. I guess it will introduce me to the world in a cool way.</p>
-
-<p>Well, first of all, I bought an awesome template on [wrapbootstrap], where all pretty templates are built on [Twitter&#39;s BootStrap], I guess everyone loves BootStrap, who doesn&#39;t?</p>
-
-<p>Once I get the simple static HTML template for website, I am going to deploy it to Heroku for free. We know [Heroku] deliveries their popular cloud hosting for [Ruby on Rails], [Node.js] and other framework. How does it work for static HTML website hosting?</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2012/10/22/run-a-static-website-on-heroku-for-free.html">Read more →</a>
   </p>
 </div>
     </article>

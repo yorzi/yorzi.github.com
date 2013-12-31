@@ -74,6 +74,68 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/26/install-sqlite3-ruby-on-centos.html">install sqlite3-ruby on CentOS</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 26, 2010
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Normally you would get an error if you try to install or to update your sqlite3-ruby gems. But you need this gem when there is other dependence. Here’s the solution to get it running:</p>
+
+<p>Go to sqlite.org and get the amalgamation package or wget directly (below is my way):
+<pre></p>
+
+<h1>cd into my source tarball folder</h1>
+
+<p>cd /usr/src</p>
+
+<h1>get the amalgation package</h1>
+
+<p>wget <a href="http://sqlite.org/sqlite-amalgamation-3.6.23.1.tar.gz">http://sqlite.org/sqlite-amalgamation-3.6.23.1.tar.gz</a></p>
+
+<h1>unpack it</h1>
+
+<p>tar xvzf sqlite-amalgamation-3.6.23.1.tar.gz</p>
+
+<h1>cd into the created folder</h1>
+
+<p>cd sqlite-amalgamation-3.6.23.1</p>
+
+<h1>run configuration</h1>
+
+<p>./configure</p>
+
+<h1>make and intall the package</h1>
+
+<p>make &amp;&amp; sudo make install
+</pre>
+After successfully install the installer will tell where the library files have been stored in. In my case this was “/usr/local/lib”.</p>
+
+<p>So I can install the gem now with:</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/26/install-sqlite3-ruby-on-centos.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">iPhone App : Debug and Release through Titanium</a>
   </h2>
 </header>
@@ -453,70 +515,6 @@ and then run
   </p>
   <p>
     <a href="/2010/07/29/天气.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/28/rails3-app-gem-stack.html">Rails3 App Gem Stack</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 28, 2010
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Rails3 RC1 was released yesterday, that&#39;s really awesome, I can&#39;t help experimenting a sample of Rails3 new features. I want to share my Gemfile to list all application gem stack, which may be useful for those who don&#39;t wanna create wheels themselves. Below is the list:
-<code lang='ruby'></p>
-
-<h1>Bundle edge Rails instead:</h1>
-
-<p>gem &#39;rails&#39;, :git =&gt; &#39;git://github.com/rails/rails.git&#39;</p>
-
-<p>gem &#39;mysql&#39;</p>
-
-<h1>devise for auth</h1>
-
-<p>gem &#39;devise&#39;, &#39;1.1.rc2&#39;</p>
-
-<h1>show_for is a helper for showing objects</h1>
-
-<p>gem &#39;show_for&#39;</p>
-
-<h1>pageinate</h1>
-
-<p>gem &#39;will_paginate&#39;, &#39;3.0.pre&#39;</p>
-
-<h1>A set of responders modules to dry up your Rails 3 app</h1>
-
-<p>gem &#39;responders&#39;</p>
-
-<h1>Cron job in Rails</h1>
-
-<p>gem &#39;whenever&#39;, :git =&gt; &#39;git://github.com/javan/whenever.git&#39;</p>
-
-<h1>for creating navigations</h1>
-
-<p>gem &#39;simple-navigation&#39;, &#39;2.6.0&#39;</p>
-
-<h1>for backup db to s3/remote server</h1>
- 
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/28/rails3-app-gem-stack.html">Read more →</a>
   </p>
 </div>
     </article>
