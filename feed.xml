@@ -5,10 +5,82 @@
   <id>http://yedingding.com</id>
   <link href="http://yedingding.com/"/>
   <link href="http://yedingding.com/feed.xml" rel="self"/>
-  <updated>2013-12-31T13:28:00Z</updated>
+  <updated>2014-01-05T14:46:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>2014年西安GDG第一次活动召集</title>
+    <link rel="alternate" href="/2014/01/05/2014-first-gdg-event.html"/>
+    <id>/2014/01/05/2014-first-gdg-event.html</id>
+    <published>2014-01-05T14:46:00Z</published>
+    <updated>2014-01-05T14:46:00Z</updated>
+    <author>
+      <name>Dingding Ye</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;img alt="Party" src="/images/post/party.png?1388933856" /&gt;&lt;/p&gt;
+
+&lt;p&gt;2013年12月，连续半个月的阴霾，让西安的朋友们心头蒙上了一层灰，时间进入到2014年，我大西安终于告别了雾霾，开始了晴空万里，阳光普照的好日子，与此同时，我们西安GDG也迎来了2014年的第一场活动，我们精心策划，精选场地，精编活动主题，为了使所有西安IT圈子的朋友们能在春节前有一次有趣的聚会，我们还为大家准备了零食和饮料，以及GDG的精美礼品，赶快报名来参加我们周末(2014年1月12日)的活动吧，新年开个好头，一年都充满好运。&lt;/p&gt;
+
+&lt;p&gt;本次活动地点我们选在&lt;a href="http://weibo.com/grapecityxian"&gt;葡萄城&lt;/a&gt;，时间是2014年1月12日，当日下午1:30准时开始，我们为大家准备了四件“干货”：&lt;/p&gt;
+
+&lt;p&gt;干货一：【移动互联网的安全之困】&lt;/p&gt;
+
+&lt;p&gt;移动互联网成为2013年度最热门的话题之一，正因为热门，我们才更需要注安全问题，这一期我们的演讲嘉宾会为大家分享移动互联网中的隐私安全、业务安全方面的心得，会跟大家讲伪基站和补卡攻击等常见的安全问题。&lt;/p&gt;
+
+&lt;p&gt;干货二：【You are the director, the world is your movie】&lt;/p&gt;
+
+&lt;p&gt;神秘老外嘉宾的新年馈赠，教你成为IT圈的“大导演”，导出不一样的“产品大戏”，欢迎到现场领略不一样的IT思维。&lt;/p&gt;
+
+&lt;p&gt;干货三：【Chrome扩展中那些迷人的特性】&lt;/p&gt;
+
+&lt;p&gt;GDG的老朋友&lt;a href="http://weibo.com/greatghoul"&gt;邱健&lt;/a&gt;为大家准备了一期Chrome开发相关的新年特别演讲，他会讲什么迷人特性呢？他会演示最近的什么“新玩具”呢？让我们拭目以待。&lt;/p&gt;
+
+&lt;p&gt;干货四：【持续演进的产品开发】&lt;/p&gt;
+
+&lt;p&gt;葡萄城的软件工程师胡森给大家带来这样一个故事：&lt;/p&gt;
+
+&lt;p&gt;“半年前，有这样一个项目。客户说：“我希望提供一个工具，可以让人事，财务，后勤自己开发自己的网站”，客户说：“使用这个工具应该像使用Excel一样，因为IT及文职人员都非常善于使用Excel”，客户说：“使用这个工具的人不会写代码”&amp;hellip;..拿到这个项目，我第一时间想问的问题是，这个软件都有哪些功能，基于什么平台，使用哪些技术，可是没人能告诉我，因为客户自己也不知道。好在，我抓住了敏捷开发过程这一救命稻草。每周一个Sprint，给客户发一个可以执行的Build，不断的获取反馈，基于反馈调整。半年过去了，离他走向市场的日子也越来越近，这个过程就像见证一个小孩子的成长&amp;hellip;“&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;&lt;img alt="Party" src="/images/post/party.png?1388933856" /&gt;&lt;/p&gt;
+
+&lt;p&gt;2013年12月，连续半个月的阴霾，让西安的朋友们心头蒙上了一层灰，时间进入到2014年，我大西安终于告别了雾霾，开始了晴空万里，阳光普照的好日子，与此同时，我们西安GDG也迎来了2014年的第一场活动，我们精心策划，精选场地，精编活动主题，为了使所有西安IT圈子的朋友们能在春节前有一次有趣的聚会，我们还为大家准备了零食和饮料，以及GDG的精美礼品，赶快报名来参加我们周末(2014年1月12日)的活动吧，新年开个好头，一年都充满好运。&lt;/p&gt;
+
+&lt;p&gt;本次活动地点我们选在&lt;a href="http://weibo.com/grapecityxian"&gt;葡萄城&lt;/a&gt;，时间是2014年1月12日，当日下午1:30准时开始，我们为大家准备了四件“干货”：&lt;/p&gt;
+
+&lt;p&gt;干货一：【移动互联网的安全之困】&lt;/p&gt;
+
+&lt;p&gt;移动互联网成为2013年度最热门的话题之一，正因为热门，我们才更需要注安全问题，这一期我们的演讲嘉宾会为大家分享移动互联网中的隐私安全、业务安全方面的心得，会跟大家讲伪基站和补卡攻击等常见的安全问题。&lt;/p&gt;
+
+&lt;p&gt;干货二：【You are the director, the world is your movie】&lt;/p&gt;
+
+&lt;p&gt;神秘老外嘉宾的新年馈赠，教你成为IT圈的“大导演”，导出不一样的“产品大戏”，欢迎到现场领略不一样的IT思维。&lt;/p&gt;
+
+&lt;p&gt;干货三：【Chrome扩展中那些迷人的特性】&lt;/p&gt;
+
+&lt;p&gt;GDG的老朋友&lt;a href="http://weibo.com/greatghoul"&gt;邱健&lt;/a&gt;为大家准备了一期Chrome开发相关的新年特别演讲，他会讲什么迷人特性呢？他会演示最近的什么“新玩具”呢？让我们拭目以待。&lt;/p&gt;
+
+&lt;p&gt;干货四：【持续演进的产品开发】&lt;/p&gt;
+
+&lt;p&gt;葡萄城的软件工程师胡森给大家带来这样一个故事：&lt;/p&gt;
+
+&lt;p&gt;“半年前，有这样一个项目。客户说：“我希望提供一个工具，可以让人事，财务，后勤自己开发自己的网站”，客户说：“使用这个工具应该像使用Excel一样，因为IT及文职人员都非常善于使用Excel”，客户说：“使用这个工具的人不会写代码”&amp;hellip;..拿到这个项目，我第一时间想问的问题是，这个软件都有哪些功能，基于什么平台，使用哪些技术，可是没人能告诉我，因为客户自己也不知道。好在，我抓住了敏捷开发过程这一救命稻草。每周一个Sprint，给客户发一个可以执行的Build，不断的获取反馈，基于反馈调整。半年过去了，离他走向市场的日子也越来越近，这个过程就像见证一个小孩子的成长&amp;hellip;“&lt;/p&gt;
+
+&lt;p&gt;一个产品是如何一步一步演进的呢？让我们一起关注这第四件“干货”。&lt;/p&gt;
+
+&lt;p&gt;周末怎么过？还犹豫什么？来和GDG西安的开发者一期度过一个美妙的下午吧。我们一定不会让你失望。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;span class="footnotes"&gt;
+  Google Developer Group (GDG) Xi&amp;#39;an is based in a city full of history, that many universities and colleges located here. It is the 10th Google Developer Group in China, both English and Chinese languages are accepted here. This group is full of developers, administrators, fans and students. Everyone in this group can share with others and learn from others. We really look forward everyone can gain what need here.
+  &lt;br /&gt;&lt;br /&gt;
+  GDG是一个开放的开源社区, 旨在为大家提供一个开放的, 积极的, 优秀的技术社区. GDG西安是GDG在中国的第十个本地社区, 背靠文化古城-西安. 西安是国内少有的学校云集的城市之一, 同时也拥有国家发展级软件产业基地-西安软件园. 这些优势使得GDG西安的发展更加如鱼得水, 相信GDG的加入, 会为西安的IT社区带来新的生机! 也欢迎所有爱好技术, 喜欢技术的童鞋, 积极加入到我们这个大集体中来!&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash; &lt;a href="https://developers.google.com/groups/chapter/114935565019424673192/"&gt;西安GDG官方介绍&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>感恩•1314</title>
     <link rel="alternate" href="/2013/12/31/we-1314.html"/>
@@ -291,54 +363,6 @@
 &lt;p&gt;&lt;span class="footnotes"&gt;
 西安本地做IT的童鞋，欢迎关注每月第三个周六下午的&lt;a href="http://weibo.com/rubyists"&gt;Rubyists聚会&lt;/a&gt;，还有每月的&lt;a href="https://plus.google.com/114935565019424673192"&gt;GDG活动&lt;/a&gt;，希望结识到更多西安本地IT圈子的小伙伴们，结交各种有趣的朋友，我们一起分享技术和读书体验，除了技术方面的探讨以外，我们也可以通过其它共有的兴趣或爱好集结在一起，为生活积累正能量，一起向前。
 &lt;/span&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>如何逆袭？</title>
-    <link rel="alternate" href="/2013/12/18/be-different.html"/>
-    <id>/2013/12/18/be-different.html</id>
-    <published>2013-12-18T11:55:00Z</published>
-    <updated>2013-12-18T11:55:00Z</updated>
-    <author>
-      <name>Dingding Ye</name>
-    </author>
-    <summary type="html">&lt;p&gt;&lt;img alt="与众不同" src="/images/post/different.jpg?1387368840" /&gt;&lt;/p&gt;
-
-&lt;p&gt;通常大家一说逆袭，总会联想到屌丝，这里我说逆袭，却和屌丝无关。&lt;/p&gt;
-
-&lt;p&gt;前阵子一个朋友来家里聊天，说是压力巨大，心里各种焦灼，仔细一听，原来因为有些事情用力过猛，没有得到预期的结果，所以困惑，所以不开心。人常有不开心，也常有不如意，这里所说的逆袭，就是换种方式，让自己心情平复，让自己淡定。&lt;/p&gt;
-
-&lt;p&gt;看看身边的人，但凡爱和别人作简单粗暴的比较的人，常常都会不开心，但是永远不和别人作比较的人，会显得毫无生机。寡淡不是灵丹妙药，你再寡淡，还有可能会不开心，除非遁入空门，否则常人如你我，怎可能超脱的没有一丝杂念。&lt;/p&gt;
-
-&lt;p&gt;所以说，人要有所比，有所不比，每个人都有自己的卖点和特色，万万不能陷入牛角尖，和他人比得你死我来，这样做只是自虐而已。比方在当前的中国大环境下，人们喜欢比车子，比房子，比票子，比谁更土豪，如果你也一定要和别人比这些东西，你往往会力不从心，因此闷闷不乐，普世价值扭曲，导致大多数人的价值也跟着扭曲，和他人比扭曲，心里自然端直不到什么地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;aside class="aside"&gt;
-  &lt;img src="/images/post/cat-diff.jpg?1387368840" /&gt;
-&lt;/aside&gt;&lt;/p&gt;
-
-&lt;p&gt;那到底要和别人比什么？如果你没有车子，没有房子，也没有票子可比，那你该在什么方向逆袭？在我看来，你只要做到一些别人做不到或者很难做到的事情，做一些与大多数人不同的事情，你就很牛逼，你就值得别人尊重。比方很多人都不读书，你每周读一本书，那你在我眼里比开宝马的土豪帅几条街；比方很多人天天吃大餐晒腰围，而你经常参加体育锻炼，每年还能跑一两次马拉松，那你在我眼里比住在别墅里的大款要潇洒几层楼；比方你懂画画，懂得音乐，懂一切美的东西，那么，就算你口袋里没有票子，你也是富豪。&lt;/p&gt;
-
-&lt;p&gt;我们这个社会有很多毒瘤，太不尊重个体的个性，太过大同，人们喜欢蜂拥而上，哪里资源稀缺，哪里就有中国人在拥挤争抢，大部分人一辈子都在为别人的眼光而活，为虚妄的荣誉而忙碌，很少有人懂得慢下来静静的品味自己的生活，很少有人真的懂得欣赏自己以及和自己一样的普通人。&lt;/p&gt;
-</summary>
-    <content type="html">&lt;p&gt;&lt;img alt="与众不同" src="/images/post/different.jpg?1387368840" /&gt;&lt;/p&gt;
-
-&lt;p&gt;通常大家一说逆袭，总会联想到屌丝，这里我说逆袭，却和屌丝无关。&lt;/p&gt;
-
-&lt;p&gt;前阵子一个朋友来家里聊天，说是压力巨大，心里各种焦灼，仔细一听，原来因为有些事情用力过猛，没有得到预期的结果，所以困惑，所以不开心。人常有不开心，也常有不如意，这里所说的逆袭，就是换种方式，让自己心情平复，让自己淡定。&lt;/p&gt;
-
-&lt;p&gt;看看身边的人，但凡爱和别人作简单粗暴的比较的人，常常都会不开心，但是永远不和别人作比较的人，会显得毫无生机。寡淡不是灵丹妙药，你再寡淡，还有可能会不开心，除非遁入空门，否则常人如你我，怎可能超脱的没有一丝杂念。&lt;/p&gt;
-
-&lt;p&gt;所以说，人要有所比，有所不比，每个人都有自己的卖点和特色，万万不能陷入牛角尖，和他人比得你死我来，这样做只是自虐而已。比方在当前的中国大环境下，人们喜欢比车子，比房子，比票子，比谁更土豪，如果你也一定要和别人比这些东西，你往往会力不从心，因此闷闷不乐，普世价值扭曲，导致大多数人的价值也跟着扭曲，和他人比扭曲，心里自然端直不到什么地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;aside class="aside"&gt;
-  &lt;img src="/images/post/cat-diff.jpg?1387368840" /&gt;
-&lt;/aside&gt;&lt;/p&gt;
-
-&lt;p&gt;那到底要和别人比什么？如果你没有车子，没有房子，也没有票子可比，那你该在什么方向逆袭？在我看来，你只要做到一些别人做不到或者很难做到的事情，做一些与大多数人不同的事情，你就很牛逼，你就值得别人尊重。比方很多人都不读书，你每周读一本书，那你在我眼里比开宝马的土豪帅几条街；比方很多人天天吃大餐晒腰围，而你经常参加体育锻炼，每年还能跑一两次马拉松，那你在我眼里比住在别墅里的大款要潇洒几层楼；比方你懂画画，懂得音乐，懂一切美的东西，那么，就算你口袋里没有票子，你也是富豪。&lt;/p&gt;
-
-&lt;p&gt;我们这个社会有很多毒瘤，太不尊重个体的个性，太过大同，人们喜欢蜂拥而上，哪里资源稀缺，哪里就有中国人在拥挤争抢，大部分人一辈子都在为别人的眼光而活，为虚妄的荣誉而忙碌，很少有人懂得慢下来静静的品味自己的生活，很少有人真的懂得欣赏自己以及和自己一样的普通人。&lt;/p&gt;
-
-&lt;p&gt;说“如何逆袭”，倒不如说“如何不同”，这个社会同质化严重，一百个人里面，如果大家都比谁票子多，那只有一个人能获胜，如果比点不同的东西，那或许每个人都是赢家。所以说一百个人有一百种逆袭的方式。做一个与众不同的人，才不枉来这世间走一遭。&lt;/p&gt;
 </content>
   </entry>
 </feed>

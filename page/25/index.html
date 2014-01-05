@@ -74,6 +74,59 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/09/rails-best-practices.html">Rails Best Practices</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 09, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Quote from Gary&#39;s weekly code review post, thanks to Gary Zhang.
+<blockquote>
+all advises on Ruby on Rails code:</p>
+<pre class="highlight plaintext">* Lesson 1. Move code from Controller to Model
+  1. Move finder to named_scope
+  2. Use model association
+  3. Use scope access
+  4. Add model virtual attribute
+  5. Use model callback
+  6. Replace Complex Creation with Factory Method
+  7. Move Model Logic into the Model
+  8. model.collection_model_ids (many-to-many)
+  9. Nested Model Forms (one-to-one)
+  10. Nested Model Forms (one-to-many)
+
+* Lesson 2. RESTful Conventions
+  1. Overuse route customizations
+  2. Needless deep nesting
+  3. Not use default route
+
+* Lesson 3. Model
+  1. Keep Finders on Their Own Model
+  2. Love named_scope # same as Move finder to named_scope
+</pre>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/09/rails-best-practices.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/08/学车.html">学车</a>
   </h2>
 </header>
@@ -341,48 +394,6 @@ Tried something new for RoR testing yesterday, it&#39;s factory<em>girl(fixtures
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/03/ssh-turnl-script.html">SSH tunnel script</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 03, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Why SSH tunneling?</p>
-
-<p>Obviously, if you live in Chxna or some other place where you are restricted to access free network, and if you luckily own a ssh accessible account on a server that is hosted in a free country, congratulations, you can use ssh tunnel to fuck the wall.</p>
-
-<p>Seriously, you just need to install ssh tool on your PC, (it will be much easier to setup a ssh tunnel if you are using a *nix OS), putty is a good choose if you are on Windows. I will show the script to explain what you should do on Ubuntu 9.04.
-<pre name="code" class="ruby">
-   ssh -qTfnN -D LocalPort remotehost(dreamhost)
-</pre>
-<code>
-All the added options are for a ssh session that’s used for tunneling.
--q :- be very quite, we are acting only as a tunnel.
--T :- Do not allocate a pseudo tty, we are only acting a tunnel.</p>
- 
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/03/ssh-turnl-script.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2009/11/03/polymorphic-association-in-factory_girl.html">Polymorphic association in factory_girl</a>
   </h2>
 </header>
@@ -436,6 +447,48 @@ But actually, this does not work to associate @study<em>record with @item, the p
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/03/ssh-turnl-script.html">SSH tunnel script</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 03, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Why SSH tunneling?</p>
+
+<p>Obviously, if you live in Chxna or some other place where you are restricted to access free network, and if you luckily own a ssh accessible account on a server that is hosted in a free country, congratulations, you can use ssh tunnel to fuck the wall.</p>
+
+<p>Seriously, you just need to install ssh tool on your PC, (it will be much easier to setup a ssh tunnel if you are using a *nix OS), putty is a good choose if you are on Windows. I will show the script to explain what you should do on Ubuntu 9.04.
+<pre name="code" class="ruby">
+   ssh -qTfnN -D LocalPort remotehost(dreamhost)
+</pre>
+<code>
+All the added options are for a ssh session that’s used for tunneling.
+-q :- be very quite, we are acting only as a tunnel.
+-T :- Do not allocate a pseudo tty, we are only acting a tunnel.</p>
+ 
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/03/ssh-turnl-script.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/08/22/寂寞是一座花园.html">寂寞是一座花园</a>
   </h2>
 </header>
@@ -460,37 +513,6 @@ But actually, this does not work to associate @study<em>record with @item, the p
   </p>
   <p>
     <a href="/2009/08/22/寂寞是一座花园.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/08/05/八月.html">八月</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Aug 05, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><span>&ldquo;习惯就是习惯，扔不出窗外，只能步步引下楼。&rdquo;<br /><br />人们总以为自己变得更好，却不知道处在那一点才是真的好，于是人生的后退也一样华丽。<br />碰到感动的场面开始平静而泰然，愤怒的时候热切，思念的时候寡淡。<br /><br />遇见对手是一件豪迈的事情，酒剩下一杯，心事两份。<br />旅途延伸，背包里是我向往的心。只要一个谎言，我成全了你所有的美丽。<br /><br />最后，我告诉她，一个人经常说自己如何忙，那是无能的表现。<br /></span></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/08/05/八月.html">Read more →</a>
   </p>
 </div>
     </article>

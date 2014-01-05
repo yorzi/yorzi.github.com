@@ -74,6 +74,95 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/15/色音吉日呼.html">色音吉日呼</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 15, 2009
+    </li>
+    <li class="tags">
+      
+        <a href="/tags/joy.html">joy</a>
+      
+        <a href="/tags/.html">周末</a>
+      
+        <a href="/tags/.html">学车</a>
+      
+        <a href="/tags/.html">杂谈</a>
+      
+        <a href="/tags/.html">法培</a>
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>本周最具喜感的收获在于，上课的时候，老师点名，若干出乎意料的人名冒了出来，不得不感慨这些年认识的人里面，竟然没什么人的名字如此有突破，其实这些年一直被朋友开玩笑我的名字，也比较留意别人的名字，名字本来只是一个符号，不用过多的言论，这次权当跟大家普及一个姓氏，另外分享几个这两天听到的名字。万一名字在此文中的同学看到了这篇帖子，千万不要对号入座，我兴许说的不是你。。(其实这回真有点不地道)</p>
+
+<p>一哥们儿名叫：色音吉日呼。<br />
+在网上查了一下，“‘色’作为姓氏使用时读作‘shǎi’，而大多数人遇见它都读‘sè’， 据我了解大连姓‘色’的只有我一个呢。”现在在大连某房地产公司做置业顾问的色淼女士老家在吉林白城。色淼的父亲对记者说，在白城共有近30户色姓人家，他们家世代在那居住，属于满族的古老姓氏，“色”姓在当地都被读作“shǎi”。参考连接：<a href="http://news.lnd.com.cn/htm/2008-05/16/content_175599.htm">稀有姓氏</a></p>
+
+<p>另外有个粗犷的哥们儿，名叫“宝宝”。还有两个哥们儿一个叫“裴胖盼”一个叫“马国孬”。</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/15/色音吉日呼.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Run cron job in Ruby way</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>目前最常用的方法是利用Unix自身的<a href="http://en.wikipedia.org/wiki/Cron">cron</a>功能来实现定时任务，但是cron的语法比较麻烦(个人感觉)，今天为了执行一个定时任务发现了一个很好的RubyGem可以让你用Ruby的方式定义定时任务，这就是<a href="http://github.com/javan/whenever/tree/master">Whenever</a>。</p>
+
+<p>Whenever可以让你写出类似下面的定时任务：
+<pre name="code" class="ruby">
+ set :cron<em>log, &quot;/path/to/my/cron</em>log.log&quot;</p>
+
+<p>every 2.hours do
+   command &quot;/usr/bin/some<em>great</em>command&quot;
+   runner &quot;MyModel.some_method&quot;
+   rake &quot;some:great:rake:task&quot;
+ end
+</pre>
+赶快去Github看看文档和代码吧<a href="http://github.com/javan/whenever"><a href="http://github.com/javan/whenever">http://github.com/javan/whenever</a></a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/13/在ror中执行定时任务.html">在ROR中执行定时任务</a>
   </h2>
 </header>
@@ -118,49 +207,6 @@
   </p>
   <p>
     <a href="/2009/11/13/在ror中执行定时任务.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Run cron job in Ruby way</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 13, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>目前最常用的方法是利用Unix自身的<a href="http://en.wikipedia.org/wiki/Cron">cron</a>功能来实现定时任务，但是cron的语法比较麻烦(个人感觉)，今天为了执行一个定时任务发现了一个很好的RubyGem可以让你用Ruby的方式定义定时任务，这就是<a href="http://github.com/javan/whenever/tree/master">Whenever</a>。</p>
-
-<p>Whenever可以让你写出类似下面的定时任务：
-<pre name="code" class="ruby">
- set :cron<em>log, &quot;/path/to/my/cron</em>log.log&quot;</p>
-
-<p>every 2.hours do
-   command &quot;/usr/bin/some<em>great</em>command&quot;
-   runner &quot;MyModel.some_method&quot;
-   rake &quot;some:great:rake:task&quot;
- end
-</pre>
-赶快去Github看看文档和代码吧<a href="http://github.com/javan/whenever"><a href="http://github.com/javan/whenever">http://github.com/javan/whenever</a></a></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -471,59 +517,6 @@ $ cheat strftime</i></p>
   </p>
   <p>
     <a href="/2009/11/10/the-art-of-community.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/09/rails-best-practices.html">Rails Best Practices</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 09, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Quote from Gary&#39;s weekly code review post, thanks to Gary Zhang.
-<blockquote>
-all advises on Ruby on Rails code:</p>
-<pre class="highlight plaintext">* Lesson 1. Move code from Controller to Model
-  1. Move finder to named_scope
-  2. Use model association
-  3. Use scope access
-  4. Add model virtual attribute
-  5. Use model callback
-  6. Replace Complex Creation with Factory Method
-  7. Move Model Logic into the Model
-  8. model.collection_model_ids (many-to-many)
-  9. Nested Model Forms (one-to-one)
-  10. Nested Model Forms (one-to-many)
-
-* Lesson 2. RESTful Conventions
-  1. Overuse route customizations
-  2. Needless deep nesting
-  3. Not use default route
-
-* Lesson 3. Model
-  1. Keep Finders on Their Own Model
-  2. Love named_scope # same as Move finder to named_scope
-</pre>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/09/rails-best-practices.html">Read more →</a>
   </p>
 </div>
     </article>
