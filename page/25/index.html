@@ -74,6 +74,54 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/11/cheat-sheet-in-terminal.html">Cheat sheet in terminal</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 11, 2009
+    </li>
+    <li class="tags">
+      
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>I found a cool gem called &ldquo;cheat&rdquo;, it&#39;s pretty handy and convenient when you wanna see a brief help/introduction of some &ldquo;stuff&rdquo; in command line, cheat out the website for more <a href="http://cheat.errtheblog.com/b">wiki-versioned cheat sheet</a>.</p>
+
+<p><blockquote>
+Get started:
+<i style="color:yellow">$ sudo gem install cheat
+$ cheat strftime</i></p>
+
+<p>A magnificent cheat sheet for Ruby&#39;s strftime method will be printed to your terminal.</p>
+
+<p>To get some help on cheat itself:
+<i style="color:yellow">$ cheat cheat</i></p>
+
+<p>How meta.</p>
+
+<p>Cheat sheets are basically wiki pages accessible from the command line. You can browse, add, or edit cheat sheets. Try to keep them concise. For a style guide, check out the cheat cheat sheet.</p>
+
+<p>To access a cheat sheet, simply pass the program the desired sheet&#39;s name:
+<i style="color:yellow">$ cheat <sheet name></i></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/11/cheat-sheet-in-terminal.html">Read more →</a>
+  </p>
+</div>
+    </article>
+  
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/10/冬雷阵阵.html">冬雷阵阵</a>
   </h2>
 </header>
@@ -479,59 +527,6 @@ Tried something new for RoR testing yesterday, it&#39;s factory<em>girl(fixtures
   </p>
   <p>
     <a href="/2009/11/04/a-discussion-on-testing.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/03/polymorphic-association-in-factory_girl.html">Polymorphic association in factory_girl</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 03, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>I tried factroy<em>girl yesterday to work with rspec framework, It&#39;s excellent way to support testing, however, the polymorphic association in factroy</em>girl almost defeated me.
-The factory definition in my code is as:
-<pre name='code' class='ruby'>
-Factory.define :item do |i|
-    i.status 0
-    i.related<em>with</em>id 1
-    i.association :unit
-end</p>
-
-<p>Factory.define :study<em>record do |sr|
-    sr.association :content, :factory =&gt; :item
-    sr.add</em>attribute :interaction<em>id
-    sr.add</em>attribute :finished_at
-end
-</pre>
-Then I did this:
-<pre name="code" class="ruby"></p>
-<pre class="highlight plaintext">@item = Factory(:item)
-@study_record = Factory(:study_record)
-@item.study_records &lt;&lt; @study_record
-</pre>
-<p></pre>
-But actually, this does not work to associate @study<em>record with @item, the problem is that @study</em>record.content is totally a new instance of Item rather than @item. It seems that &ldquo;&lt;&lt;&rdquo; doesn&#39;t work in this case.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/03/polymorphic-association-in-factory_girl.html">Read more →</a>
   </p>
 </div>
     </article>
