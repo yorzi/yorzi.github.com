@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Install Jenkins and Set Up Jenkins CI for Rails Projects - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2013 2013_05 2013_05_23 2013_05_23_install-jenkins-and-set-up-jenkins-ci-for-rails-projects">
+  <body class="x2013 x2013_05 x2013_05_23 x2013_05_23_install-jenkins-and-set-up-jenkins-ci-for-rails-projects">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,7 +98,6 @@
       May 23, 2013
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
@@ -124,9 +108,10 @@
 <h3>OS Assumption</h3>
 
 <p>Assume that you are running an EC2 instance with a Ubuntu system as below:</p>
-<pre class="highlight plaintext">Ubuntu 12.04.2 LTS (GNU/Linux 3.2.0-40-virtual x86_64)
-</pre>
-<p>BTW, there is an Amazon <a href="http://aws.amazon.com/ec2/pricing/">free tier</a> that is recommended if you don&#39;t have any VPS to use yet. </p>
+<pre class="highlight plaintext"><code>Ubuntu 12.04.2 LTS (GNU/Linux 3.2.0-40-virtual x86_64)
+</code></pre>
+
+<p>BTW, there is an Amazon <a href="http://aws.amazon.com/ec2/pricing/">free tier</a> that is recommended if you don&rsquo;t have any VPS to use yet. </p>
 
 <h3>Install Rails Environment</h3>
 
@@ -135,56 +120,65 @@
 <h5>- Install RVM and Ruby</h5>
 
 <p>We need to have git core and curl for <a href="https://rvm.io/">RVM</a> installation, so install them like this:</p>
-<pre class="highlight plaintext">sudo apt-get install build-essential git-core
+<pre class="highlight plaintext"><code>sudo apt-get install build-essential git-core
 sudo apt-get install curl
-</pre>
+</code></pre>
+
 <p>And install <a href="https://rvm.io/">RVM</a> with ruby as user <code>jenkins</code>:</p>
-<pre class="highlight plaintext">#remember to switch to user `jenkins` first
+<pre class="highlight plaintext"><code>#remember to switch to user `jenkins` first
 sudo su jenkins
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 sudo apt-get install libmysqlclient-dev ruby-dev
-</pre>
+</code></pre>
+
 <h5>- Install Possible Databases</h5>
 
 <h6><strong>MySQL</strong></h6>
-<pre class="highlight plaintext">sudo apt-get install mysql-client mysql-server libmysql-ruby libmysqlclient-dev
-</pre>
+<pre class="highlight plaintext"><code>sudo apt-get install mysql-client mysql-server libmysql-ruby libmysqlclient-dev
+</code></pre>
+
 <h6>Postgres</h6>
-<pre class="highlight plaintext">sudo aptitude install libpq-dev
+<pre class="highlight plaintext"><code>sudo aptitude install libpq-dev
 sudo apt-get install postgresql
 sudo apt-get install postgresql-client
-</pre>
+</code></pre>
+
 <p>If you had a problem with UTF-8 take a look at <a href="http://wiki.gentoo.org/wiki/PostgreSQL">http://wiki.gentoo.org/wiki/PostgreSQL</a></p>
 
 <h6>MongoDB</h6>
-<pre class="highlight plaintext">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
-echo &#39;deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen&#39; | sudo tee /etc/apt/sources.list.d/10gen.list
+<pre class="highlight plaintext"><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/10gen.list
 sudo apt-get update
 sudo apt-get install mongodb-10gen
-</pre>
+</code></pre>
+
 <h3>Install Jenkins</h3>
 
 <p>Installation:</p>
-<pre class="highlight plaintext">wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
-sudo sh -c &#39;echo deb http://pkg.jenkins-ci.org/debian binary/ &gt; /etc/apt/sources.list.d/jenkins.list&#39;
+<pre class="highlight plaintext"><code>wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ &gt; /etc/apt/sources.list.d/jenkins.list'
 sudo aptitude update
 sudo aptitude install jenkins
-</pre>
+</code></pre>
+
 <p>Uninstall Jenkins is easy too, just:</p>
-<pre class="highlight plaintext">sudo apt-get remove jenkins
-</pre>
+<pre class="highlight plaintext"><code>sudo apt-get remove jenkins
+</code></pre>
+
 <p>There is also detailed <a href="https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu">guide</a> for installing Jenkins on Ubuntu. FYI.</p>
 
 <h3>Run Jenkins on Port 80</h3>
 
 <p>Default Jenkins runs on port 8080, you need to reverse proxy port 80 to port 8080 for Jenkins, it makes the CI server public to the world. To install nginx, open terminal and type in:</p>
-<pre class="highlight plaintext">sudo apt-get install nginx
+<pre class="highlight plaintext"><code>sudo apt-get install nginx
 sudo /etc/init.d/nginx start
-</pre>
+</code></pre>
+
 <p>In order to Open up the config file in vim, and update it.</p>
-<pre class="highlight plaintext">sudo vim /etc/nginx/nginx.conf
-</pre><pre class="highlight plaintext">http {
+<pre class="highlight plaintext"><code>sudo vim /etc/nginx/nginx.conf
+</code></pre>
+<pre class="highlight plaintext"><code>http {
 
         # ...Omitted Parts…
 
@@ -202,12 +196,13 @@ sudo /etc/init.d/nginx start
                 }
         }
 } 
-</pre>
-<p><strong>Notice:</strong> Jenkins shows build histories and other information, to keep the whole CI server private, you&#39;d better use <a href="https://gist.github.com/yorzi/5590462">this guide</a> to add basic auth for your Jenkins CI, it is strongly recommended.</p>
+</code></pre>
+
+<p><strong>Notice:</strong> Jenkins shows build histories and other information, to keep the whole CI server private, you&rsquo;d better use <a href="https://gist.github.com/yorzi/5590462">this guide</a> to add basic auth for your Jenkins CI, it is strongly recommended.</p>
 
 <h3>Install valuable plugins for Jenkins</h3>
 
-<p>Well, after above installations are done, you are able to visit your Jenkins CI server with your domain. Now it&#39;s time to install below plugins from <code>JenkinsPlugin &gt; Manager</code> section:</p>
+<p>Well, after above installations are done, you are able to visit your Jenkins CI server with your domain. Now it&rsquo;s time to install below plugins from <code>JenkinsPlugin &gt; Manager</code> section:</p>
 
 <ul>
 <li><a href="http://wiki.jenkins-ci.org/display/JENKINS/Github+OAuth+Plugin">Github Authentication plugin</a> is used for github OAuth. (This plugin has a bug that you can not logout some times.)</li>
@@ -236,19 +231,20 @@ sudo /etc/init.d/nginx start
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

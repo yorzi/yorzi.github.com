@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Learn From Renren API - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2010 2010_05 2010_05_19 2010_05_19_learn-from-renren-api">
+  <body class="x2010 x2010_05 x2010_05_19 x2010_05_19_learn-from-renren-api">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,13 +98,12 @@
       May 19, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Been working on Renren Connect application for a while, when talking about its API, I think every coin has two sides, so let&#39;s see its sides:</p>
+  <p>Been working on Renren Connect application for a while, when talking about its API, I think every coin has two sides, so let&rsquo;s see its sides:</p>
 
 <p>A(davantage) side :
 1. Configure cross domain file to resolve JS cross-domain issue between application domain and renren domain. Not sure if a similar solution can solve our ajax load cross domain-issue.. or meet our other future use. The file as below:
@@ -136,7 +120,7 @@
 </code></p>
 
 <ol>
-<li>Learn from Renren &ldquo;markable language&rdquo;, it&#39;s an clear way to capsule complex code block. It may help us to build standard function/display lib in future, I guess its a good way to reuse component among applications. sample is:
+<li>Learn from Renren &ldquo;markable language&rdquo;, it&rsquo;s an clear way to capsule complex code block. It may help us to build standard function/display lib in future, I guess its a good way to reuse component among applications. sample is:
 <code lang="html">
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</a>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:xn="http:///www.renren.com/2009/xnml">
@@ -160,10 +144,10 @@ Above two technologies are a bit impressive to me, we may use it in future to or
 </ol>
 
 <p>D(isadvantage) side:
-1. I think the first &ldquo;D&rdquo;, which is also bad, is the development document. It&#39;s partially out-of-date, that results in many stupid tries for their API. So we should learn the lesson and plan to write handful document in a clear way..</p>
+1. I think the first &ldquo;D&rdquo;, which is also bad, is the development document. It&rsquo;s partially out-of-date, that results in many stupid tries for their API. So we should learn the lesson and plan to write handful document in a clear way..</p>
 
 <ol>
-<li>The second &ldquo;D&rdquo; is Renren doesn&#39;t have convenient sandbox for testing the third party application, we can&#39;t easily test or improve it when it&#39;s released, cause Renren only has one single configuration for each one application, that also means we have to take risk for further development which may change your application directly when it&#39;s released.</li>
+<li>The second &ldquo;D&rdquo; is Renren doesn&rsquo;t have convenient sandbox for testing the third party application, we can&rsquo;t easily test or improve it when it&rsquo;s released, cause Renren only has one single configuration for each one application, that also means we have to take risk for further development which may change your application directly when it&rsquo;s released.</li>
 </ol>
 
 <p>Summary:
@@ -175,19 +159,20 @@ Great Technology + Clear Convenience = Comfortable Awesome</p>
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

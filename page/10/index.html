@@ -62,7 +62,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -70,7 +70,6 @@
     <section class="main">
       <div class="container">
         <div id="posts">
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -84,23 +83,21 @@
       Aug 04, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Firstly, what&#39;s the results in title? For example, the results may be learners who will be alive in coming two weeks, or the results may be study times of one learner, etc. Generally, results should be some data coming from analyzing other data.</p>
+  <p>Firstly, what’s the results in title? For example, the results may be learners who will be alive in coming two weeks, or the results may be study times of one learner, etc. Generally, results should be some data coming from analyzing other data.</p>
 
 <p>Here my question is, how can we get certain results much faster and easily?</p>
 
 <p><strong>Case 1:</strong>
 We want to pick up a name list, all people in the list should be under certain condition, say, condition A, condition B, condition C, so normally, we just select the results which obey the rule(condition). Right? It depends.</p>
 
-<p>If name list is always dynamically different in condition A,B,C, it&#39;s really hard to store the results set, we have to calculate instantly to make sure the results is accurate.</p>
+<p>If name list is always dynamically different in condition A,B,C, it’s really hard to store the results set, we have to calculate instantly to make sure the results is accurate.</p>
 
-<p>If name list is very difficult to figure out in condition A,B,C, we should store the stable part of the result set, so that we will not get stuck when calculate tons of data very time.</p>
-
+<p>If name list is very difficult to figure out in condition A,B...</p>
 
   <p>
     ......
@@ -110,49 +107,46 @@ We want to pick up a name list, all people in the list should be under certain c
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Study Note : serialize object in ActiveRecord</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Jul 30, 2010
+      Aug 04, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p><strong><em>This post is just copied from </em></strong><a href="http://rustammamedov.wordpress.com/2009/12/27/capistrano-nginx-mongrel-deployment/"><strong><em>this page</em></strong></a><strong><em>. As a study notes, I re-share this manual here. Please check out original one if you wanna have a whole view of other involving topics. Thanks to the </em></strong><a href="http://rustammamedov.wordpress.com/"><strong><em>author</em></strong></a><strong><em> :)</em></strong>
-<div>
-<div>
-<ol>
-    <li>Install capistrano gem. if you use <a href="http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today">bundler</a> you need to add just one line to Gemfile
-<code>
-gem &quot;capistrano&quot;
-</code>
-and then run
-<code>gem bundle
-</code></li>
-    <li>after capistrano installed you need to make Capfile and default deploy.rb, run such from the root of your application</p>
+  <h2><span style="color: #444444; line-height: 24px; font-size: 16px;">Copied from <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html#M001799" target="_blank">Ruby on Rails API doc</a>. Store here as a study notes for myself.
 
+Active Record can <a href="Base.html#M001799">serialize</a> any object in text <a href="Base.html#M001809">columns</a> using YAML. To do so, you must specify this with a call to the class method <tt><a href="Base.html#M001799">serialize</a></tt>. This makes it possible to store arrays, hashes, and other non-mappable objects without doing any additional work. Example:</span></h2>
+
+<pre>  class User &lt; ActiveRecord::Base
+    serialize :preferences
+  end
+
+  user = User.create(:preferences =&gt; { "background" =&gt; "black", "display" =&gt; large })
+  User.find(user.id).preferences # =&gt; { "background" =&gt; "black", "display" =&gt; large }</pre>
+
+<p>You can also specify a class option as the second parameter that‘ll raise an exception if a serialized object is retrieved as a descendant of a class not in the hierarchy. Example:
+</p><pre>  class User &lt; ActiveRecord::Base...</pre>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Read more →</a>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Read more →</a>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -166,7 +160,6 @@ and then run
       Jul 30, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
@@ -185,7 +178,65 @@ and then run
   </p>
 </div>
     </article>
-  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 30, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong><em>This post is just copied from </em></strong><a href="http://rustammamedov.wordpress.com/2009/12/27/capistrano-nginx-mongrel-deployment/"><strong><em>this page</em></strong></a><strong><em>. As a study notes, I re-share this manual here. Please check out original one if you wanna have a whole view of other involving topics. Thanks to the </em></strong><a href="http://rustammamedov.wordpress.com/"><strong><em>author</em></strong></a><strong><em> :)</em></strong>
+</p><div>
+<div>
+<ol>
+    <li>Install capistrano gem. if you use <a href="http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today">bundler</a> you need to add just one line to Gemfile
+<code>
+gem "capistrano"
+</code>
+and then run
+<code>gem bundle
+</code>
+</li>
+    <li>after capistrano installed you need to make Capfile and default deploy.rb, run such from the root of your application
+<code>capify .</code>
+</li>
+    <li>create user for deployments in remote machine (let’s say ‘deploy’ user)
+<code>adduser deploy</code>
+</li>
+    <li>add sudo privileges to this user. add one line in your /etc/sudoers file
+<code>deploy ALL=(ALL) NOPASSWD: ALL</code>
+</li>
+    <li>adjust deploy.rb for you. I used example from this <a href="http://jimneath.org/2008/05/10/using-capistrano-with-passenger-mod_rails/">link</a>
+<code lang="ruby">
+
+<h1>Application</h1>
+
+<p>set :application, "test"
+set :deploy_to, "/var/www/#{application...</p></code>
+</li>
+</ol>
+</div>
+</div>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Read more →</a>
+  </p>
+</div>
+    </article>
     <article class="post">
       <header>
   <h2 class="title">
@@ -199,15 +250,10 @@ and then run
       Jul 29, 2010
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">健康博客</a>
-      
-        <a href="/tags/.html">天气</a>
-      
-        <a href="/tags/.html">媳妇</a>
-      
-        <a href="/tags/.html">闷热</a>
-      
+        <a href="/tags/健康博客.html">健康博客</a>
+        <a href="/tags/天气.html">天气</a>
+        <a href="/tags/媳妇.html">媳妇</a>
+        <a href="/tags/闷热.html">闷热</a>
     </li>
   </ul>
 </aside>
@@ -232,7 +278,6 @@ and then run
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -246,47 +291,49 @@ and then run
       Jul 28, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Rails3 RC1 was released yesterday, that&#39;s really awesome, I can&#39;t help experimenting a sample of Rails3 new features. I want to share my Gemfile to list all application gem stack, which may be useful for those who don&#39;t wanna create wheels themselves. Below is the list:
-<code lang='ruby'></p>
+  <p>Rails3 RC1 was released yesterday, that’s really awesome, I can’t help experimenting a sample of Rails3 new features. I want to share my Gemfile to list all application gem stack, which may be useful for those who don’t wanna create wheels themselves. Below is the list:
+<code lang="ruby"></code></p>
 
 <h1>Bundle edge Rails instead:</h1>
 
-<p>gem &#39;rails&#39;, :git =&gt; &#39;git://github.com/rails/rails.git&#39;</p>
+<p>gem 'rails', :git =&gt; 'git://github.com/rails/rails.git'</p>
 
-<p>gem &#39;mysql&#39;</p>
+<p>gem 'mysql'</p>
 
 <h1>devise for auth</h1>
 
-<p>gem &#39;devise&#39;, &#39;1.1.rc2&#39;</p>
+<p>gem 'devise', '1.1.rc2'</p>
 
 <h1>show_for is a helper for showing objects</h1>
 
-<p>gem &#39;show_for&#39;</p>
+<p>gem 'show_for'</p>
 
 <h1>pageinate</h1>
 
-<p>gem &#39;will_paginate&#39;, &#39;3.0.pre&#39;</p>
+<p>gem 'will_paginate', '3.0.pre'</p>
 
 <h1>A set of responders modules to dry up your Rails 3 app</h1>
 
-<p>gem &#39;responders&#39;</p>
+<p>gem 'responders'</p>
 
 <h1>Cron job in Rails</h1>
 
-<p>gem &#39;whenever&#39;, :git =&gt; &#39;git://github.com/javan/whenever.git&#39;</p>
+<p>gem 'whenever', :git =&gt; 'git://github.com/javan/whenever.git'</p>
 
 <h1>for creating navigations</h1>
 
-<p>gem &#39;simple-navigation&#39;, &#39;2.6.0&#39;</p>
+<p>gem 'simple-navigation', '2.6.0'</p>
 
 <h1>for backup db to s3/remote server</h1>
- 
+
+<p>gem 'backup', '2.3.2.pre3'</p>
+
+<h1>Editor...</h1>
 
   <p>
     ......
@@ -296,7 +343,38 @@ and then run
   </p>
 </div>
     </article>
-  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Beta Salon - Rails Developer Meetup</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 27, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <div>
+
+<a href="http://developer.idapted.com/about/">Engineers at Idapted</a> are famous and cool. They are eager to join the technical activities. At the very beginning of this June, <a href="http://jonathonpalley.com">Jonathon Palley</a> and Guolei went to US to attend the <a href="http://en.oreilly.com/rails2010">Railsconf2010</a>, which is the top level and the largest official Ruby on Rails conference, where the most successful Rails experts and companies share their experience and skill.
+
+Yeah, Jonathon and Guolei did a great job to present Idapted technology to the Rails community and gained a big success to introduce Idapted platform to the world. Since they came back to Beijing, they’ve been preparing for a similar local presentation for Chinese Rails community. Finally, with <a href="http://club.blogbeta.com/" target="_blank">Beta Salon</a>’s help, in last Saturday evening, Idapted technology team organized a Ruby on Rails activity in <a href="http://storygarden.me/" target="_blank">Story Garden</a>, which is a famous Cafe...</div>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Read more →</a>
+  </p>
+</div>
+    </article>
     <article class="post">
       <header>
   <h2 class="title">
@@ -310,15 +388,10 @@ and then run
       Jul 27, 2010
     </li>
     <li class="tags">
-      
-        <a href="/tags/it.html">IT男</a>
-      
+        <a href="/tags/it男.html">IT男</a>
         <a href="/tags/sherry.html">sherry</a>
-      
-        <a href="/tags/.html">健康</a>
-      
-        <a href="/tags/.html">营养</a>
-      
+        <a href="/tags/健康.html">健康</a>
+        <a href="/tags/营养.html">营养</a>
     </li>
   </ul>
 </aside>
@@ -345,42 +418,6 @@ and then run
   </p>
 </div>
     </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Beta Salon - Rails Developer Meetup</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 27, 2010
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><div></p>
-
-<p><a href="http://developer.idapted.com/about/">Engineers at Idapted</a> are famous and cool. They are eager to join the technical activities. At the very beginning of this June, <a href="http://jonathonpalley.com">Jonathon Palley</a> and Guolei went to US to attend the <a href="http://en.oreilly.com/rails2010">Railsconf2010</a>, which is the top level and the largest official Ruby on Rails conference, where the most successful Rails experts and companies share their experience and skill.</p>
-
-<p>Yeah, Jonathon and Guolei did a great job to present Idapted technology to the Rails community and gained a big success to introduce Idapted platform to the world. Since they came back to Beijing, they&#39;ve been preparing for a similar local presentation for Chinese Rails community. Finally, with <a href="http://club.blogbeta.com/" target="_blank">Beta Salon</a>&#39;s help, in last Saturday evening, Idapted technology team organized a Ruby on Rails activity in <a href="http://storygarden.me/" target="_blank">Story Garden</a>, which is a famous Cafe House where different people in different community open different salons.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -394,21 +431,19 @@ and then run
       Jul 27, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>I&#39;ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
+  <p>I’ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
 
-<p><strong>What&#39;s a Survey? </strong>
+<p><strong>What’s a Survey? </strong>
 Here is a brief look at the similarities and differences between forms, surveys, questionnaires and quizzes.</p>
 
 <p>Forms are a series of fields to be filled out by a user. Some forms are highly structured (such as a User form, or an Address form). Those highly structured forms can be created beforehand by a developer because they can map directly to models in the database. Other forms are highly unstructured, such as a questionnaire about your favorite types of food which are volatile. So form is simple structured format.</p>
 
-<p>A Survey is a type of Form. Surveys are semi-structured data, in that we want to formulate the questions so they have “mineable” data, but they are not so structured as to be directly mappable to database tables (unless we desired to have one table per survey, do we?). Also If a survey field is not appropriately filled out (such as a misformatting), the user should be prompted to correct his/her answer. According to this needs, surveys should not prevent the user from completing them if they miss an answer, however. A Questionnaire is a type of Survey and meanwhile, a Quiz is also a type of Survey.</p>
-
+<p>A Survey is a type of Form. Surveys are semi-structured data, in that we want to formulate the questions so they have “mineable” data, but they are...</p>
 
   <p>
     ......
@@ -418,7 +453,6 @@ Here is a brief look at the similarities and differences between forms, surveys,
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -432,21 +466,13 @@ Here is a brief look at the similarities and differences between forms, surveys,
       Jul 25, 2010
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">健康</a>
-      
-        <a href="/tags/.html">开博</a>
-      
-        <a href="/tags/.html">感冒</a>
-      
-        <a href="/tags/.html">杀人</a>
-      
-        <a href="/tags/.html">活动</a>
-      
-        <a href="/tags/.html">腐败</a>
-      
-        <a href="/tags/.html">营养</a>
-      
+        <a href="/tags/健康.html">健康</a>
+        <a href="/tags/开博.html">开博</a>
+        <a href="/tags/感冒.html">感冒</a>
+        <a href="/tags/杀人.html">杀人</a>
+        <a href="/tags/活动.html">活动</a>
+        <a href="/tags/腐败.html">腐败</a>
+        <a href="/tags/营养.html">营养</a>
     </li>
   </ul>
 </aside>
@@ -473,63 +499,11 @@ Here is a brief look at the similarities and differences between forms, surveys,
   </p>
 </div>
     </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/21/386路和740路.html">386路和740路</a>
-  </h2>
-</header>
 
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 21, 2010
-    </li>
-    <li class="tags">
-      
-        <a href="/tags/.html">公交</a>
-      
-        <a href="/tags/.html">安全行驶</a>
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>这几天坐公交车心惊胆战。</p>
-
-<p>我特别想说的是，386路和740路。这两路的公交车太牛逼了，我觉得这两路车的司机一定开过飞机，而且还很有可能是战斗机。</p>
-
-<p>话说有一日从海淀剧院那站坐386回亚运村这边，司机一路玩漂移，媳妇拉着我的手目瞪口呆，她平时可不胆小，我其实心里也是异常恐惧，这哪是在坐公交车，简直在玩过山车。另外740的作风也很虎，常常在拥堵的北四环玩凌波微步，让人心有余悸。</p>
-
-<p>自从去年撞车以后，每次坐车总是替司机操心，总觉得车都开得太快了，也不知道人们都急着干什么。最近这两年，几乎每次过红绿灯都有行人抢灯，也几乎每次都有车辆强行压迫路边行人，还有那些大喇叭的电动三轮摩托，整个就是一群亡命之徒。</p>
-
-<p>还好，我的朋友和家人都知道关于走路这件事情我脾气火爆，只要谁违反交通规则或者走路神游都会被我教育一顿，后来他们过马路小心多了。</p>
-
-<p>希望大家注意安全，抢那几分钟不值。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/21/386路和740路.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-
-  
     <ul class="pager">
-      
         <li class="next"><a href="/page/11/">更旧的 &rarr;</a></li>
-      
-      
         <li class="previous"><a href="/page/9/">&larr; 更新的</a></li>
-      
     </ul>
-  
 </div>
 
       </div>

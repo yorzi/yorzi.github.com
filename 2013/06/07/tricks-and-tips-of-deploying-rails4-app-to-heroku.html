@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Tricks and Tips of Deploying Rails4 App to Heroku - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2013 2013_06 2013_06_07 2013_06_07_tricks-and-tips-of-deploying-rails4-app-to-heroku">
+  <body class="x2013 x2013_06 x2013_06_07 x2013_06_07_tricks-and-tips-of-deploying-rails4-app-to-heroku">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,73 +98,80 @@
       Jun 07, 2013
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Recently, I deployed a client project to Heroku and made the Heroku instance as an internal demo server. The project is based on Ruby2.0 and Rails4, unexpectedly, the deployment to Heroku is not as smooth as before. Below I&#39;d like to share some tricks and tips that I came across. </p>
+  <p>Recently, I deployed a client project to Heroku and made the Heroku instance as an internal demo server. The project is based on Ruby2.0 and Rails4, unexpectedly, the deployment to Heroku is not as smooth as before. Below I&rsquo;d like to share some tricks and tips that I came across. </p>
 
 <h5>Rails4 Specific Tricks</h5>
 
 <ul>
-<li>Heroku forces you to specify your ruby version in Gemfile, it&#39;s supported by bundler from <a href="http://gembundler.com/v1.2/whats_new.html">1.2 version</a>, so just add below line into your Gemfile:</li>
+<li>Heroku forces you to specify your ruby version in Gemfile, it&rsquo;s supported by bundler from <a href="http://gembundler.com/v1.2/whats_new.html">1.2 version</a>, so just add below line into your Gemfile:</li>
 </ul>
 
 <p>{% codeblock ruby %}</p>
 
 <h1>specify ruby version to enable the deploy to Heroku instance.</h1>
 
-<p>ruby &#39;2.0.0&#39;
+<p>ruby &lsquo;2.0.0&rsquo;
 {% endcodeblock %}</p>
 
 <ul>
 <li>Rails4 gets rid of plugin system. In order to use features such as static asset serving and logging on Heroku, you should add the following gems to your Gemfile:</li>
 </ul>
-<pre class="highlight plaintext">gem &#39;rails_log_stdout&#39;,           github: &#39;Heroku/rails_log_stdout&#39;
-gem &#39;rails3_serve_static_assets&#39;, github: &#39;Heroku/rails3_serve_static_assets&#39;
-</pre>
+<pre class="highlight plaintext"><code>gem 'rails_log_stdout',           github: 'Heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'Heroku/rails3_serve_static_assets'
+</code></pre>
+
 <ul>
 <li>Use <a href="http://puma.io/">puma</a> as the web server, you want to add a <code>Procfile</code> file and add below line in it:</li>
 </ul>
-<pre class="highlight plaintext">web: bundle exec puma -p $PORT
-</pre>
+<pre class="highlight plaintext"><code>web: bundle exec puma -p $PORT
+</code></pre>
+
 <ul>
-<li>Below http basic auth doesn&#39;t work as what I did before for non-rails4 app on Heroku.</li>
+<li>Below http basic auth doesn&rsquo;t work as what I did before for non-rails4 app on Heroku.</li>
 </ul>
-<pre class="highlight plaintext">config.middleware.insert_after(::Rack::Lock, &quot;::Rack::Auth::Basic&quot;, &quot;Production&quot;) do |u, p|
+<pre class="highlight plaintext"><code>config.middleware.insert_after(::Rack::Lock, "::Rack::Auth::Basic", "Production") do |u, p|
   [u, p] == [USER, PASSWORD]
 end
-</pre><pre class="highlight plaintext"># Error message when pushing to Heroku...
+</code></pre>
+<pre class="highlight plaintext"><code># Error message when pushing to Heroku...
 -----&gt; Preparing app for Rails asset pipeline
        Running: rake assets:precompile
        rake aborted!
        No such middleware to insert after: Rack::Lock
-</pre>
+</code></pre>
+
 <ul>
 <li>Actually, Rails4 is thread safe by default, you do not have the overhead of including the <code>Rack::Lock</code> middleware in each request. So just use <code>Rack::Auth::Basic</code> directly as there is no Rack::Lock middleware any more when you using a web server such as <code>puma</code>:</li>
 </ul>
-<pre class="highlight plaintext">config.middleware.use &#39;::Rack::Auth::Basic&#39; do |u, p|
+<pre class="highlight plaintext"><code>config.middleware.use '::Rack::Auth::Basic' do |u, p|
   [u, p] == [USER, PASSWORD]
 end
-</pre>
+</code></pre>
+
 <h5>Heroku Related Tips</h5>
 
 <p>In my case, I need to transfer PG database between local and Heroku. Firstly, I need to find the URL to my db on Heroku:</p>
-<pre class="highlight plaintext">$ heroku config:get DATABASE_URL
+<pre class="highlight plaintext"><code>$ heroku config:get DATABASE_URL
 postgres://bla:sth@ec2-17-21-12-11.compute-1.amazonaws.com:5432/123
-</pre>
+</code></pre>
+
 <p>Then transfer from the Heroku db to your local db (switch -t <code>to</code> and -f <code>from</code> versus):</p>
-<pre class="highlight plaintext">$ heroku plugins:install https://github.com/ddollar/heroku-pg-transfer
+<pre class="highlight plaintext"><code>$ heroku plugins:install https://github.com/ddollar/heroku-pg-transfer
 $ heroku pg:transfer -t postgres://localhost/dbname -f postgres://bla:sth@ec2-17-21-12-11.compute-1.amazonaws.com:5432/123
-</pre>
-<p>Since the <a href="https://github.com/ddollar/heroku-pg-transfer">heroku-pg-transfer</a> tool utilizes postgres&#39;s native pg_dump facility it is a much more predictable and resilient tool. Check out a related blog <a href="http://www.ryandaigle.com/a/pgtransfer-is-the-new-taps">for more details</a>.</p>
+</code></pre>
+
+<p>Since the <a href="https://github.com/ddollar/heroku-pg-transfer">heroku-pg-transfer</a> tool utilizes postgres&rsquo;s native pg_dump facility it is a much more predictable and resilient tool. Check out a related blog <a href="http://www.ryandaigle.com/a/pgtransfer-is-the-new-taps">for more details</a>.</p>
 
 <p>There is another needs in my case, I have to deploy <code>development</code> branch to Heroku, but Heroku default is to deploy master branch to their instance, use below command to specify a branch for deployment.</p>
-<pre class="highlight plaintext"># deploy a specific branch to Heroku
+<pre class="highlight plaintext"><code># deploy a specific branch to Heroku
 git push heroku other-barnch:master
-</pre>
+</code></pre>
+
 <h4>Resources</h4>
 
 <p><a href="https://devcenter.heroku.com/articles/rails4">https://devcenter.heroku.com/articles/rails4</a><br />
@@ -191,19 +183,20 @@ git push heroku other-barnch:master
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

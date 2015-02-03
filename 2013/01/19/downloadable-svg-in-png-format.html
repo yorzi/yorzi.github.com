@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Downloadable SVG in PNG Format - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2013 2013_01 2013_01_19 2013_01_19_downloadable-svg-in-png-format">
+  <body class="x2013 x2013_01 x2013_01_19 x2013_01_19_downloadable-svg-in-png-format">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,15 +98,14 @@
       Jan 19, 2013
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Recently, I worked on some interesting features, we use <a href="http://www.highcharts.com/">Highcharts</a> and/or <a href="http://raphaeljs.com/">Raphaeljs</a> to build complex charts, including bar chart, scatter chart or heat map, etc. In an extreme sample, we build a complicated one-page charting engine by which user is able to compose a group of conditions and then render a meaningful chart according to what are selected. It&#39;s pretty cool. </p>
+  <p>Recently, I worked on some interesting features, we use <a href="http://www.highcharts.com/">Highcharts</a> and/or <a href="http://raphaeljs.com/">Raphaeljs</a> to build complex charts, including bar chart, scatter chart or heat map, etc. In an extreme sample, we build a complicated one-page charting engine by which user is able to compose a group of conditions and then render a meaningful chart according to what are selected. It&rsquo;s pretty cool. </p>
 
-<p>Meanwhile, client is willing to download these generated charts on individual chart level. They also want to have an ability to share the individual chart as a link or even as a piece of HTML code. What&#39;s the best solution to add these functionalities? Well, we did try many solutions for the features, let me show you how we make it finally.</p>
+<p>Meanwhile, client is willing to download these generated charts on individual chart level. They also want to have an ability to share the individual chart as a link or even as a piece of HTML code. What&rsquo;s the best solution to add these functionalities? Well, we did try many solutions for the features, let me show you how we make it finally.</p>
 
 <h4>Start from a HTML template</h4>
 
@@ -131,15 +115,15 @@
 
 <h4>Deal with SVG via HTML5 Canvas</h4>
 
-<p>HighCharts and Rapheal are JS libaries by which you are able to generate complex <a href="http://www.w3.org/TR/SVG11/">SVG</a> charts, normally, people can not download a svg file directly, and it&#39;s also not a popular image format for sharing around. We&#39;d better convert it to a PNG or JPG image, as PNG and JPG format is downloadable from web page. I will take PNG format as a sample in this post.</p>
+<p>HighCharts and Rapheal are JS libaries by which you are able to generate complex <a href="http://www.w3.org/TR/SVG11/">SVG</a> charts, normally, people can not download a svg file directly, and it&rsquo;s also not a popular image format for sharing around. We&rsquo;d better convert it to a PNG or JPG image, as PNG and JPG format is downloadable from web page. I will take PNG format as a sample in this post.</p>
 
-<p>How to convert a SVG image to a PNG image? Mainly, you can do the convertion job from server side. There is a SVG toolkit provided by Apache which is named as <a href="http://xmlgraphics.apache.org/batik/#download">Batik</a>. But I don&#39;t like this solution, it&#39;s a bit comoplex to install Batik and make it work with Ruby on Rails. I&#39;d like to work the convertion out via pure javascript. Yes, use <a href="http://code.google.com/p/canvg/">canvg</a> to move all SVG information to a HTML5 Canvas object.</p>
+<p>How to convert a SVG image to a PNG image? Mainly, you can do the convertion job from server side. There is a SVG toolkit provided by Apache which is named as <a href="http://xmlgraphics.apache.org/batik/#download">Batik</a>. But I don&rsquo;t like this solution, it&rsquo;s a bit comoplex to install Batik and make it work with Ruby on Rails. I&rsquo;d like to work the convertion out via pure javascript. Yes, use <a href="http://code.google.com/p/canvg/">canvg</a> to move all SVG information to a HTML5 Canvas object.</p>
 
 <script src="https://gist.github.com/4452589.js"></script>
 
 <p>Using the HTML5 canvas element, you can create all sorts of cool graphics client-side on the fly using Javascript. There is a neat function on the the canvas object called toDataURL(). This functions encodes the image data as a base64 encoded PNG file and returns it as a <a href="http://en.wikipedia.org/wiki/Data:_URI_scheme">data: URI</a>. By using the data:URI string, you can make it a downloadable PNG file. </p>
 
-<p>There is also a libary to help you do so, it&#39;s <a href="http://www.nihilogic.dk/labs/canvas2image/">Canvas2Image</a> that can convert canvas to image as BMP, PNG or JPEG format.</p>
+<p>There is also a libary to help you do so, it&rsquo;s <a href="http://www.nihilogic.dk/labs/canvas2image/">Canvas2Image</a> that can convert canvas to image as BMP, PNG or JPEG format.</p>
 
 <script src="https://gist.github.com/4467012.js"></script> 
 
@@ -155,11 +139,11 @@
 
 <script src="https://gist.github.com/4467051.js"></script>
 
-<p>Pay attention to above <code>html2canvas([$(&quot;.hidden_container&quot;)[0]],{ … })</code> parts. It helps to convert whole HTML code to a canvas based on <a href="http://html2canvas.hertzen.com/">html2canvas</a> lib, that&#39;s our case as we have to wrap up some HTML code out side the the charts.</p>
+<p>Pay attention to above <code>html2canvas([$(&quot;.hidden_container&quot;)[0]],{ … })</code> parts. It helps to convert whole HTML code to a canvas based on <a href="http://html2canvas.hertzen.com/">html2canvas</a> lib, that&rsquo;s our case as we have to wrap up some HTML code out side the the charts.</p>
 
 <h4>A trick to overcome IE9 issue</h4>
 
-<p>When you work on IE9, the canvg fails to translate the SVG to Canvas, it seems IE9&#39;s <code>DOMParser()</code> is not able to parse the SVG successfully. After some search from Google, we found only one line code will resove the SVG parser issue. Just replace some invalid string in SVG data as below: </p>
+<p>When you work on IE9, the canvg fails to translate the SVG to Canvas, it seems IE9&rsquo;s <code>DOMParser()</code> is not able to parse the SVG successfully. After some search from Google, we found only one line code will resove the SVG parser issue. Just replace some invalid string in SVG data as below: </p>
 
 <script src="https://gist.github.com/4467165.js"></script>
 
@@ -173,19 +157,20 @@
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

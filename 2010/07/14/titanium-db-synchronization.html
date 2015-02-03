@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Titanium : DB Synchronization - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2010 2010_07 2010_07_14 2010_07_14_titanium-db-synchronization">
+  <body class="x2010 x2010_07 x2010_07_14 x2010_07_14_titanium-db-synchronization">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,16 +98,15 @@
       Jul 14, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
   <p><strong>Header Notes:</strong>
-1. Static data should be released with app, just don&#39;t do db synchronization.
+1. Static data should be released with app, just don&rsquo;t do db synchronization.
 2. Just embed sync background when ppl looking at some instructions/tips etc.
-3. Don&#39;t update db all the time.</p>
+3. Don&rsquo;t update db all the time.</p>
 
 <p>App Start:
 <em><strong>app.js</strong></em>
@@ -203,10 +187,11 @@ var ACTION_LANGUAGE = 0;</p>
 <p>tableview.addEventListener(&#39;click&#39;, function(e) {
   var rowdata = e.rowData;
   if (rowdata.action == ACTION_LANGUAGE) {</p>
-<pre class="highlight plaintext">// show language selection dialog
+<pre class="highlight plaintext"><code>// show language selection dialog
 
 L10N.showLanguageSelectionDialog();
-</pre>
+</code></pre>
+
 <p>}
 });</p>
 
@@ -231,11 +216,11 @@ tabGroup.addTab(tab</em>setting);  </p>
 win</em>tips.orientationModes = omodes;
 win_weibo.orientationModes = omodes;</p>
 
-<p>Titanium.Analytics.featureEvent(&#39;app.feature.blah&#39;,{product:&#39;killer&#39;});</p>
+<p>Titanium.Analytics.featureEvent(&lsquo;app.feature.blah&rsquo;,{product:&#39;killer&rsquo;});</p>
 
-<p>tabGroup.addEventListener(&#39;open&#39;,function()
+<p>tabGroup.addEventListener(&#39;open&rsquo;,function()
 {
-    Titanium.UI.setBackgroundColor(&#39;#fff&#39;);
+    Titanium.UI.setBackgroundColor(&rsquo;#fff&rsquo;);
 });</p>
 
 <p>tabGroup.setActiveTab(0);
@@ -244,10 +229,10 @@ tabGroup.open({
 });</p>
 
 <p>// add top level introduction of 31 formulas
-Ti.include(&quot;introduction.js&quot;);</p>
+Ti.include(&ldquo;introduction.js&rdquo;);</p>
 
 <p>// synchronize db
-Ti.include(&quot;synchronize.js&quot;);</p>
+Ti.include(&ldquo;synchronize.js&rdquo;);</p>
 
 <p></code></p>
 
@@ -256,50 +241,51 @@ Ti.include(&quot;synchronize.js&quot;);</p>
 <code lang="javascript">
 (function(){
     var db = Titanium.Database.open(&#39;eq31formulas&#39;);</p>
-<pre class="highlight plaintext">    // JS test
+<pre class="highlight plaintext"><code>    // JS test
 var currentTime = new Date();
 var month = currentTime.getMonth() + 1;
 var day = currentTime.getDate();
 var year = currentTime.getFullYear();
 
-Titanium.API.info(&#39;JS TIME:&#39; + currentTime);
-// lesson = db.execute(&#39;SELECT * FROM LESSONS ORDER BY ID LIMIT 1&#39;)
+Titanium.API.info('JS TIME:' + currentTime);
+// lesson = db.execute('SELECT * FROM LESSONS ORDER BY ID LIMIT 1')
 
 if (Titanium.Network.online == true)
 {
-    Titanium.API.info(&#39;Online--update lessons!&#39;);
-    var src = &#39;http://www.veecue.com/eq31formulas/data_service/lessons&#39;;
+    Titanium.API.info('Online--update lessons!');
+    var src = 'http://www.veecue.com/eq31formulas/data_service/lessons';
     c = Titanium.Network.createHTTPClient();
 
     c.onload = function()
     {   
         var json_data = JSON.parse(this.responseText);
 
-        Titanium.API.info(&#39;lesson count:&#39; + json_data.length);
+        Titanium.API.info('lesson count:' + json_data.length);
 
         for(var i=0; i&lt;json_data.length; i++)
         {
-            Titanium.API.info(&quot;updating lesson:&quot; + i);
+            Titanium.API.info("updating lesson:" + i);
             var record = json_data[i].lesson;
             // add different control for UPDATE or INSERTION here
-            db.execute(&#39;CREATE TABLE IF NOT EXISTS LESSONS (ID INTEGER, TITLE TEXT, AIMS TEXT, ANSWER_ORDER TEXT, LANG_STEP TEXT, MODEL_ANSWER TEXT)&#39;);
-            db.execute(&#39;DELETE FROM LESSONS&#39;);
-            db.execute(&quot;INSERT INTO LESSONS (ID, TITLE, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?)&quot;, record.id, record.title, record.aims, record.answer_order, record.lang_step, record.model_answer);   
+            db.execute('CREATE TABLE IF NOT EXISTS LESSONS (ID INTEGER, TITLE TEXT, AIMS TEXT, ANSWER_ORDER TEXT, LANG_STEP TEXT, MODEL_ANSWER TEXT)');
+            db.execute('DELETE FROM LESSONS');
+            db.execute("INSERT INTO LESSONS (ID, TITLE, AIMS, ANSWER_ORDER, LANG_STEP, MODEL_ANSWER) VALUES(?,?,?,?,?,?)", record.id, record.title, record.aims, record.answer_order, record.lang_step, record.model_answer);   
         }
     };
 
     // open the client
-    c.open(&#39;GET&#39;, src);
+    c.open('GET', src);
 
     // send the data
     c.send();
 }
 else
 {
-    Titanium.API.info(&#39;Offline--&#39;);
+    Titanium.API.info('Offline--');
     return;
 }   
-</pre>
+</code></pre>
+
 <p>})();
 </code></p>
 
@@ -309,19 +295,20 @@ else
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Performance Practice On Rails - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2010 2010_03 2010_03_14 2010_03_14_performance-practice-on-rails">
+  <body class="x2010 x2010_03 x2010_03_14 x2010_03_14_performance-practice-on-rails">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,20 +98,19 @@
       Mar 14, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>﻿﻿﻿Last few days, I&#39;ve been mainly struggling with performance issue which was sent to me on Monday. On Rails side, I didn&#39;t add enough necessary cache before I was told about the performance issue. Then I spent two days to improve it by adding cache every where I missed to do that before.</p>
+  <p>﻿﻿﻿Last few days, I&rsquo;ve been mainly struggling with performance issue which was sent to me on Monday. On Rails side, I didn&rsquo;t add enough necessary cache before I was told about the performance issue. Then I spent two days to improve it by adding cache every where I missed to do that before.</p>
 
 <p>Some shares and confusions as below:</p>
 
 <p>Shares:
 1&gt; A very useful educational website about scaling Rails where there are <a href="http://railslab.newrelic.com/2009/01/22/introduction">Scaling Rails Screencast Series</a> produced by Gregg Pollack and supported by New Relic.
 2&gt; Fragment cache.
-      If you add many fragment cache in view, it&#39;s really a pain when you expire your cache, so I found there is a better way to expire your cache: if the cached block involves a model, for example, learner&#39;s sidebar involves &ldquo;User&rdquo; model&#39;s change, so I just name the cache with User model&#39;s &ldquo;updated<em>at&rdquo;, so I don&#39;t need to expire this cache, it will be done automatically.
+      If you add many fragment cache in view, it&rsquo;s really a pain when you expire your cache, so I found there is a better way to expire your cache: if the cached block involves a model, for example, learner&rsquo;s sidebar involves &ldquo;User&rdquo; model&rsquo;s change, so I just name the cache with User model&rsquo;s &ldquo;updated<em>at&rdquo;, so I don&rsquo;t need to expire this cache, it will be done automatically.
 <code lang="ruby">
   &lt;% cache(&quot;sidebar-profile-avatar-#{current</em>user.id}-#{current<em>user.updated</em>at.to<em>i}&quot;) do -%&gt;
     &lt;div class=&quot;sbb</em>title&quot;&gt;&lt;%= t :my<em>profile %&gt;</div>
@@ -160,14 +144,14 @@
 </code></p>
 
 <p>Confusions:
-1&gt; It takes much time to render a partial view. that&#39;s pretty confusing to me. Some logs as below:
+1&gt; It takes much time to render a partial view. that&rsquo;s pretty confusing to me. Some logs as below:
 <code lang="ruby">
 Cached fragment hit: views/sidebar-profile-roadmap-1268271150 (0.9ms)
 Rendered shared/<em>sidebar</em>profile (109.8ms)
 </code>
 It seems like even the cached fragment is found, there still needs much time to render the partial..</p>
 
-<p>2&gt; From the log, I saw every request to &ldquo;roadmap&rdquo; index action will do the following stuff first, It&#39;s slow. But what that?
+<p>2&gt; From the log, I saw every request to &ldquo;roadmap&rdquo; index action will do the following stuff first, It&rsquo;s slow. But what that?
 <code lang="ruby">
 <a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#<a href="actionView::Base:0xb5a0e348">actionView::Base:0xb5a0e348</a>#
 </code></p>
@@ -180,19 +164,20 @@ It seems like even the cached fragment is found, there still needs much time to 
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

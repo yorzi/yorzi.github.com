@@ -62,7 +62,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -70,7 +70,50 @@
     <section class="main">
       <div class="container">
         <div id="posts">
-  
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/11/set-static-ip-on-ubuntu.html">Set static IP on Ubuntu</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 11, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Edit:
+<code>sudo vim /etc/network/interfaces</code></p>
+
+<p>Then change the content, assuming you want to set your IP as &ldquo;192.168.1.66&rdquo;
+<code># The primary network interface
+auto eth0
+iface eth0 inet static
+        address 192.168.1.66
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+        gateway 192.168.1.1
+</code></p>
+
+<p>Then to restart your network.
+<code>sudo /etc/init.d/networking restart</code></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/11/set-static-ip-on-ubuntu.html">Read more →</a>
+  </p>
+</div>
+    </article>
     <article class="post">
       <header>
   <h2 class="title">
@@ -84,30 +127,32 @@
       Nov 11, 2009
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>I found a cool gem called &ldquo;cheat&rdquo;, it&#39;s pretty handy and convenient when you wanna see a brief help/introduction of some &ldquo;stuff&rdquo; in command line, cheat out the website for more <a href="http://cheat.errtheblog.com/b">wiki-versioned cheat sheet</a>.</p>
+  <p>I found a cool gem called &ldquo;cheat&rdquo;, it&rsquo;s pretty handy and convenient when you wanna see a brief help/introduction of some &ldquo;stuff&rdquo; in command line, cheat out the website for more <a href="http://cheat.errtheblog.com/b">wiki-versioned cheat sheet</a>.</p>
 
-<p><blockquote>
+<blockquote>
 Get started:
 <i style="color:yellow">$ sudo gem install cheat
-$ cheat strftime</i></p>
+$ cheat strftime</i>
 
-<p>A magnificent cheat sheet for Ruby&#39;s strftime method will be printed to your terminal.</p>
+A magnificent cheat sheet for Ruby&rsquo;s strftime method will be printed to your terminal.
 
-<p>To get some help on cheat itself:
-<i style="color:yellow">$ cheat cheat</i></p>
+To get some help on cheat itself:
+<i style="color:yellow">$ cheat cheat</i>
 
-<p>How meta.</p>
+How meta.
 
-<p>Cheat sheets are basically wiki pages accessible from the command line. You can browse, add, or edit cheat sheets. Try to keep them concise. For a style guide, check out the cheat cheat sheet.</p>
+Cheat sheets are basically wiki pages accessible from the command line. You can browse, add, or edit cheat sheets. Try to keep them concise. For a style guide, check out the cheat cheat sheet.
 
-<p>To access a cheat sheet, simply pass the program the desired sheet&#39;s name:
-<i style="color:yellow">$ cheat <sheet name></i></p>
+To access a cheat sheet, simply pass the program the desired sheet&rsquo;s name:
+<i style="color:yellow">$ cheat <sheet name></i>
+</blockquote>
+
+<p>Reference : <a href="http://cheat.errtheblog.com/">CLICK HERE</a>!</p>
 
 
   <p>
@@ -118,7 +163,6 @@ $ cheat strftime</i></p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -132,13 +176,9 @@ $ cheat strftime</i></p>
       Nov 10, 2009
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">午夜</a>
-      
-        <a href="/tags/.html">胡侃</a>
-      
-        <a href="/tags/.html">阅读</a>
-      
+        <a href="/tags/午夜.html">午夜</a>
+        <a href="/tags/胡侃.html">胡侃</a>
+        <a href="/tags/阅读.html">阅读</a>
     </li>
   </ul>
 </aside>
@@ -165,7 +205,6 @@ $ cheat strftime</i></p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -179,15 +218,10 @@ $ cheat strftime</i></p>
       Nov 10, 2009
     </li>
     <li class="tags">
-      
         <a href="/tags/book.html">book</a>
-      
         <a href="/tags/community.html">community</a>
-      
         <a href="/tags/reading.html">reading</a>
-      
         <a href="/tags/translate.html">translate</a>
-      
     </li>
   </ul>
 </aside>
@@ -201,6 +235,7 @@ $ cheat strftime</i></p>
 
 <p><i>Every software project, online site, or company has to manage the community of interested people surrounding it. The community is the source of new ideas, a reliable support network, and the best marketing tool. When money is tight, making the best use of the community is even more critical.</i></p>
 
+<p>每...</p>
 
   <p>
     ......
@@ -210,7 +245,6 @@ $ cheat strftime</i></p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -224,16 +258,15 @@ $ cheat strftime</i></p>
       Nov 09, 2009
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Quote from Gary&#39;s weekly code review post, thanks to Gary Zhang.
-<blockquote>
-all advises on Ruby on Rails code:</p>
-<pre class="highlight plaintext">* Lesson 1. Move code from Controller to Model
+  <p>Quote from Gary’s weekly code review post, thanks to Gary Zhang.
+</p><blockquote>
+all advises on Ruby on Rails code:
+<pre class="highlight plaintext"><code>* Lesson 1. Move code from Controller to Model
   1. Move finder to named_scope
   2. Use model association
   3. Use scope access
@@ -253,7 +286,10 @@ all advises on Ruby on Rails code:</p>
 * Lesson 3. Model
   1. Keep Finders on Their Own Model
   2. Love named_scope # same as Move finder to named_scope
-</pre>
+  3. the Law of Demeter
+  4. DRY: metaprogramming
+  5. Extract into...</code></pre>
+</blockquote>
 
   <p>
     ......
@@ -263,7 +299,6 @@ all advises on Ruby on Rails code:</p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -277,15 +312,10 @@ all advises on Ruby on Rails code:</p>
       Nov 08, 2009
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">冬天</a>
-      
-        <a href="/tags/.html">学车</a>
-      
-        <a href="/tags/.html">忧虑</a>
-      
-        <a href="/tags/.html">生活</a>
-      
+        <a href="/tags/冬天.html">冬天</a>
+        <a href="/tags/学车.html">学车</a>
+        <a href="/tags/忧虑.html">忧虑</a>
+        <a href="/tags/生活.html">生活</a>
     </li>
   </ul>
 </aside>
@@ -308,7 +338,6 @@ all advises on Ruby on Rails code:</p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -322,13 +351,9 @@ all advises on Ruby on Rails code:</p>
       Nov 07, 2009
     </li>
     <li class="tags">
-      
         <a href="/tags/blue.html">blue</a>
-      
         <a href="/tags/game.html">game</a>
-      
         <a href="/tags/photo.html">photo</a>
-      
     </li>
   </ul>
 </aside>
@@ -347,6 +372,10 @@ all advises on Ruby on Rails code:</p>
 <p>Something about BLUE:
 <p style="text-align: center;"><img class="size-full wp-image-35 aligncenter" style="border: 3px solid white;" title="BLUE" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/CIMG0404.JPG" alt="BLUE" width="500" height="375" /></p>
 
+<p style="text-align: center;">另一张我喜欢的图片：</p>
+
+<p style="text-align: center;"><img class="size-full wp-image-36 aligncenter" style="border: 3px solid white;" title="blue" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/SDC10635.JPG" alt="Blue" width="500" height="375" /></p></p>
+
 
   <p>
     ......
@@ -356,7 +385,6 @@ all advises on Ruby on Rails code:</p>
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -370,13 +398,12 @@ all advises on Ruby on Rails code:</p>
       Nov 06, 2009
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>I&#39;m a little shamed that I ask Sonic for a mysql dump command several times, I rarely dump db myself, that&#39;s why I forget the way dealing with it.. Ok, the commands are:
+  <p>I&rsquo;m a little shamed that I ask Sonic for a mysql dump command several times, I rarely dump db myself, that&rsquo;s why I forget the way dealing with it.. Ok, the commands are:
 <pre name="code" class="mysql">
 mysqldump -u root user<em>production &gt; user</em>production.sql
 bzip2 user_production.sql</p>
@@ -399,7 +426,6 @@ or extracts the backup files, to create db directly.
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -413,11 +439,8 @@ or extracts the backup files, to create db directly.
       Nov 05, 2009
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">台球</a>
-      
-        <a href="/tags/.html">放松</a>
-      
+        <a href="/tags/台球.html">台球</a>
+        <a href="/tags/放松.html">放松</a>
     </li>
   </ul>
 </aside>
@@ -440,7 +463,6 @@ or extracts the backup files, to create db directly.
   </p>
 </div>
     </article>
-  
     <article class="post">
       <header>
   <h2 class="title">
@@ -454,15 +476,10 @@ or extracts the backup files, to create db directly.
       Nov 04, 2009
     </li>
     <li class="tags">
-      
-        <a href="/tags/.html">心情</a>
-      
-        <a href="/tags/.html">思绪</a>
-      
-        <a href="/tags/.html">生活</a>
-      
-        <a href="/tags/.html">黑色</a>
-      
+        <a href="/tags/心情.html">心情</a>
+        <a href="/tags/思绪.html">思绪</a>
+        <a href="/tags/生活.html">生活</a>
+        <a href="/tags/黑色.html">黑色</a>
     </li>
   </ul>
 </aside>
@@ -489,59 +506,11 @@ or extracts the backup files, to create db directly.
   </p>
 </div>
     </article>
-  
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/04/a-discussion-on-testing.html">A discussion on testing</a>
-  </h2>
-</header>
 
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 04, 2009
-    </li>
-    <li class="tags">
-      
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>In this week code review meeting, I open a discussion about testing code of Ruby on Rails. Actually I think the test for a complex system is not that easy if you wanna do it gracefully, but it&#39;s still worth starting in small steps, that&#39;s what&#39;s important. I&#39;d like to share the ideas people contributed, and the included contents are as following:
-Andy:
-<blockquote>
-Tried something new for RoR testing yesterday, it&#39;s factory<em>girl(fixtures replacement solution. &lt;a href=&#39;<a href="http://github.com/thoughtbot/factory">http://github.com/thoughtbot/factory</a></em>girl&#39;&gt;see more details</a>). In this week code review, I show the testing code, and also have questions about test:</p>
-
-<ol>
-<li>How to make sure that you test all(99.5%) situations.</li>
-<li>If you test before you code, how to control/ensure the function points properly?</li>
-</ol>
-
-<p>feel free to comment here if you have any thoughts on it.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/04/a-discussion-on-testing.html">Read more →</a>
-  </p>
-</div>
-    </article>
-  
-
-  
     <ul class="pager">
-      
         <li class="next"><a href="/page/26/">更旧的 &rarr;</a></li>
-      
-      
         <li class="previous"><a href="/page/24/">&larr; 更新的</a></li>
-      
     </ul>
-  
 </div>
 
       </div>

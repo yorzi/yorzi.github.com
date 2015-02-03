@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      JS note: setTimeout and setInterval - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2011 2011_03 2011_03_09 2011_03_09_settimeout-and-setinterval">
+  <body class="x2011 x2011_03 x2011_03_09 x2011_03_09_settimeout-and-setinterval">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,17 +98,16 @@
       Mar 09, 2011
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Yesterday, I discussed a JS issue with <a href="http://www.yakjuly.com/">Blade</a>, that I have to set up an automatic photo-switch effect on an existing page. I don&#39;t want to change anything except adding a piece of javascript for doing that job because this page is already messy up by another engineer. Blade suggested I should use <strong><a href="https://developer.mozilla.org/en/DOM/window.setTimeout">setTimeout</a></strong> for this effect.</p>
+  <p>Yesterday, I discussed a JS issue with <a href="http://www.yakjuly.com/">Blade</a>, that I have to set up an automatic photo-switch effect on an existing page. I don&rsquo;t want to change anything except adding a piece of javascript for doing that job because this page is already messy up by another engineer. Blade suggested I should use <strong><a href="https://developer.mozilla.org/en/DOM/window.setTimeout">setTimeout</a></strong> for this effect.</p>
 
 <h4><strong>* Case Study</strong></h4>
 
-<p>The basic case is something like below(there are some other effects based on the structure and style, so don&#39;t affect others):
+<p>The basic case is something like below(there are some other effects based on the structure and style, so don&rsquo;t affect others):
 <code lang='html'>
 <div id="tab_ls">
         <a class="active" id="haikou"></a>
@@ -174,12 +158,12 @@ Now the task is to write a js to roll the cities and regarding images, how to ma
     var pause = false;
     var timer1;
     var timer2 ;</p>
-<pre class="highlight plaintext">function showNextImage()
+<pre class="highlight plaintext"><code>function showNextImage()
 {           
     if (pause) {
         // do nothing
     } else {
-        console.log(&quot;show next image&quot;);
+        console.log("show next image");
         console.log(currentCity);
         if(cities.last() == currentCity) {
             currentCity = currentCity.first();
@@ -193,33 +177,34 @@ Now the task is to write a js to roll the cities and regarding images, how to ma
         cityImages.hide();
         console.log(cityImages.get(index));
         $(cityImages.get(index)).show();
-        cities.removeClass(&quot;active&quot;)
-        currentCity.addClass(&quot;active&quot;);
+        cities.removeClass("active")
+        currentCity.addClass("active");
     }
-    timer1 = window.setTimeout(&quot;showNextImage()&quot;, 2000);
+    timer1 = window.setTimeout("showNextImage()", 2000);
 }
 
 function repeatPlay()
 {   
-    console.log(&quot;repeat play&quot;);
+    console.log("repeat play");
     showNextImage();
     if (timer2 != null){
         clearTimeout(timer2);
         timer2 = null;
     }
 }
-</pre>
+</code></pre>
+
 <p>$(window).load(function(){
-    cities = $(&quot;#tab<em>ls a&quot;);
-    cityImages = $(&quot;#tab</em>con div#fk&quot;);
+    cities = $(&ldquo;#tab<em>ls a&rdquo;);
+    cityImages = $(&ldquo;#tab</em>con div#fk&rdquo;);
     currentCity = cities.first()
     console.log(cities);
-    console.log(&quot;window load&quot;);
+    console.log(&ldquo;window load&rdquo;);
     repeatPlay();
-    $(&quot;#tab_ls a&quot;).click(function(){
+    $(&ldquo;#tab_ls a&rdquo;).click(function(){
                 clearTimeout(timer1);
         timer1 = null;
-            timer2 = window.setTimeout(&quot;repeatPlay()&quot;, 6000);
+            timer2 = window.setTimeout(&ldquo;repeatPlay()&rdquo;, 6000);
     });
   });
 </script>
@@ -240,19 +225,20 @@ Actually, you can figure out this effect with <strong><a href="https://developer
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

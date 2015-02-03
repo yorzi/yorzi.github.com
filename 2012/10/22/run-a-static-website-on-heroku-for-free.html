@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Run a Static Website on Heroku for Free - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2012 2012_10 2012_10_22 2012_10_22_run-a-static-website-on-heroku-for-free">
+  <body class="x2012 x2012_10 x2012_10_22 x2012_10_22_run-a-static-website-on-heroku-for-free">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,7 +98,6 @@
       Oct 22, 2012
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
@@ -123,7 +107,7 @@
 
 <p>Recently, I plan to update my personal information on internet, I also plan to have a professional personal website on which I can show my introduction, skills and working experiences. I guess it will introduce me to the world in a cool way.</p>
 
-<p>Well, first of all, I bought an awesome template on <a href="https://wrapbootstrap.com/">wrapbootstrap</a>, where all pretty templates are built on <a href="http://twitter.github.com/bootstrap/">Twitter&#39;s BootStrap</a>, I guess everyone loves BootStrap, who doesn&#39;t?</p>
+<p>Well, first of all, I bought an awesome template on <a href="https://wrapbootstrap.com/">wrapbootstrap</a>, where all pretty templates are built on <a href="http://twitter.github.com/bootstrap/">Twitter&rsquo;s BootStrap</a>, I guess everyone loves BootStrap, who doesn&rsquo;t?</p>
 
 <p>Once I get the simple static HTML template for website, I am going to deploy it to Heroku for free. We know <a href="http://heroku.com">Heroku</a> deliveries their popular cloud hosting for <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://nodejs.org/">Node.js</a> and other framework. How does it work for static HTML website hosting?</p>
 
@@ -132,37 +116,40 @@
 <ul>
 <li>Add <code>Gemfile</code> to require the <code>rack</code> gem for the website.</li>
 </ul>
-<pre class="highlight plaintext">source &#39;http://rubygems.org&#39;
-gem &#39;rack&#39;
-</pre>
+<pre class="highlight plaintext"><code>source 'http://rubygems.org'
+gem 'rack'
+</code></pre>
+
 <ul>
 <li>Add <code>config.ru</code> file in root folder of the website, this will enable the Rack handlings. </li>
 </ul>
-<pre class="highlight plaintext">$stdout.sync = true
+<pre class="highlight plaintext"><code>$stdout.sync = true
 
 use Rack::Static,
-  :urls =&gt; [&quot;/font-awesome&quot;, &quot;/js&quot;, &quot;/img&quot;, &quot;/style&quot;],
-  :root =&gt; &quot;.&quot;
+  :urls =&gt; ["/font-awesome", "/js", "/img", "/style"],
+  :root =&gt; "."
 
 run lambda { |env|
   [
     200,
     {
-      &#39;Content-Type&#39;  =&gt; &#39;text/html&#39;,
-      &#39;Cache-Control&#39; =&gt; &#39;public, max-age=86400&#39;
+      'Content-Type'  =&gt; 'text/html',
+      'Cache-Control' =&gt; 'public, max-age=86400'
     },
-    File.open(&#39;index.html&#39;, File::RDONLY)
+    File.open('index.html', File::RDONLY)
   ]
 }
-</pre>
+</code></pre>
+
 <ul>
 <li>Add <code>Procfile</code> in root folder to config the heroku web server and worker(if there is any).</li>
 </ul>
-<pre class="highlight plaintext">web: bundle exec rackup -p $PORT
-</pre>
-<p>Ok, now it&#39;s ready to deploy the whole website to Heroku, <a href="https://devcenter.heroku.com/articles/git">here</a> is a detailed document that can help you to deploy a codebase to Heroku. Meanwhile, you are allow to customize your domain for any app running on Heroku, <a href="https://devcenter.heroku.com/articles/custom-domains">here</a> is also a docment for this purpose on heroku help center.</p>
+<pre class="highlight plaintext"><code>web: bundle exec rackup -p $PORT
+</code></pre>
 
-<p>Easy, right? I&#39;ve run my awesome personal website on <a href="wangyaodi.com">wangyaodi.com</a> according to above steps, give it a look if you are interested in it. You are also welcomed to fork its <a href="https://github.com/yorzi/cv-andywang">source code</a> on github. Enjoy it!</p>
+<p>Ok, now it&rsquo;s ready to deploy the whole website to Heroku, <a href="https://devcenter.heroku.com/articles/git">here</a> is a detailed document that can help you to deploy a codebase to Heroku. Meanwhile, you are allow to customize your domain for any app running on Heroku, <a href="https://devcenter.heroku.com/articles/custom-domains">here</a> is also a docment for this purpose on heroku help center.</p>
+
+<p>Easy, right? I&rsquo;ve run my awesome personal website on <a href="wangyaodi.com">wangyaodi.com</a> according to above steps, give it a look if you are interested in it. You are also welcomed to fork its <a href="https://github.com/yorzi/cv-andywang">source code</a> on github. Enjoy it!</p>
 
 </div>
 
@@ -170,19 +157,20 @@ run lambda { |env|
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

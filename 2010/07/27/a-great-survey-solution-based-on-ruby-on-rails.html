@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      A Great Survey Solution Based On Ruby on Rails - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2010 2010_07 2010_07_27 2010_07_27_a-great-survey-solution-based-on-ruby-on-rails">
+  <body class="x2010 x2010_07 x2010_07_27 x2010_07_27_a-great-survey-solution-based-on-ruby-on-rails">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,15 +98,14 @@
       Jul 27, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>I&#39;ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
+  <p>I&rsquo;ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
 
-<p><strong>What&#39;s a Survey? </strong>
+<p><strong>What&rsquo;s a Survey? </strong>
 Here is a brief look at the similarities and differences between forms, surveys, questionnaires and quizzes.</p>
 
 <p>Forms are a series of fields to be filled out by a user. Some forms are highly structured (such as a User form, or an Address form). Those highly structured forms can be created beforehand by a developer because they can map directly to models in the database. Other forms are highly unstructured, such as a questionnaire about your favorite types of food which are volatile. So form is simple structured format.</p>
@@ -129,7 +113,7 @@ Here is a brief look at the similarities and differences between forms, surveys,
 <p>A Survey is a type of Form. Surveys are semi-structured data, in that we want to formulate the questions so they have “mineable” data, but they are not so structured as to be directly mappable to database tables (unless we desired to have one table per survey, do we?). Also If a survey field is not appropriately filled out (such as a misformatting), the user should be prompted to correct his/her answer. According to this needs, surveys should not prevent the user from completing them if they miss an answer, however. A Questionnaire is a type of Survey and meanwhile, a Quiz is also a type of Survey.</p>
 
 <p><strong>How To Set Up Surveys Via Surveyor?</strong>
-There is already a clear manual for helping people to use Surveyor <a href="http://github.com/breakpointer/surveyor">here</a>. You can find most of what you want directly in <a href="http://wiki.github.com/breakpointer/surveyor/">Surveyor&#39;s official wiki</a>. However, I still want to share my experience on using Surveyor.</p>
+There is already a clear manual for helping people to use Surveyor <a href="http://github.com/breakpointer/surveyor">here</a>. You can find most of what you want directly in <a href="http://wiki.github.com/breakpointer/surveyor/">Surveyor&rsquo;s official wiki</a>. However, I still want to share my experience on using Surveyor.</p>
 
 <p><strong>Install Surveyor.</strong>
 As a plugin:
@@ -156,7 +140,7 @@ The rake surveyor task overwrites previous surveys by default, but can append in
 <p>Now start your Rails server, you will see the demo survey &ldquo;kitchen sink&rdquo; on localhost:3000/surveys. This demo is pretty useful for you when you generate your own survey pattern. Because in kitchen sink demo, most of &ldquo;Survey API&rdquo; are there.</p>
 
 <p><strong>Survey Sample</strong>
-Well, let&#39;s create our first survey. I paste my first as below, we can take a look at the way Surveyor support.
+Well, let&rsquo;s create our first survey. I paste my first as below, we can take a look at the way Surveyor support.
 <code lang='ruby'></p>
 
 <h1>/surveys/salon_survey.rb</h1>
@@ -166,60 +150,61 @@ Well, let&#39;s create our first survey. I paste my first as below, we can take 
 <p>section &quot;[Rails系统重构最佳实践]@beta-salon 2010/07/24&quot; do
     # A label is a question that accepts no answers
     label &quot;<b>希望您填写自己的个人信息，我们会为您提供最快速和专业的Ruby on Rails技术活动资讯！</b>&quot;</p>
-<pre class="highlight plaintext"># When :pick isn&#39;t specified, the default is :none (no checkbox or radio button)
-q_1 &quot;请填写您的姓名(中英文名均可)&quot;
+<pre class="highlight plaintext"><code># When :pick isn't specified, the default is :none (no checkbox or radio button)
+q_1 "请填写您的姓名(中英文名均可)"
 a_1 :string
 
-q_3 &quot;请填写您的电话(如果我们有更多后续的技术交流活动，我们会发短信通知您:))&quot;
+q_3 "请填写您的电话(如果我们有更多后续的技术交流活动，我们会发短信通知您:))"
 a_3 :string
 
-q_3 &quot;请填写您的邮箱(如果我们有更多后续的技术交流活动，我们也会发邮件通知您:))&quot;
+q_3 "请填写您的邮箱(如果我们有更多后续的技术交流活动，我们也会发邮件通知您:))"
 a_3 :string
 
 # A basic question with checkboxes
-# &quot;question&quot; and &quot;answer&quot; may be abbreviated as &quot;q&quot; and &quot;a&quot;
-q_2 &quot;我们公司(Idapted)的产品涉及到以下几种技术，请选择您喜欢的主题，我们的研发团队会根据大家的反馈继续开展相关技术交流活动！&quot;, :pick =&gt; :any
-a_1 &quot;Ruby on Rails&quot;
-a_2 &quot;Flex/Flash&quot;
-a_3 &quot;VoIP/FreeSwitch&quot;
-a_4 &quot;Erlang&quot;
-a_5 &quot;Titanium/iPhone/iTouch/iPad Development&quot;
+# "question" and "answer" may be abbreviated as "q" and "a"
+q_2 "我们公司(Idapted)的产品涉及到以下几种技术，请选择您喜欢的主题，我们的研发团队会根据大家的反馈继续开展相关技术交流活动！", :pick =&gt; :any
+a_1 "Ruby on Rails"
+a_2 "Flex/Flash"
+a_3 "VoIP/FreeSwitch"
+a_4 "Erlang"
+a_5 "Titanium/iPhone/iTouch/iPad Development"
 
 # A dependent question, with conditions and rule to logically join them  
-# the question&#39;s reference identifier is &quot;2a&quot;, and the answer&#39;s reference_identifier is &quot;1&quot;
+# the question's reference identifier is "2a", and the answer's reference_identifier is "1"
 # question reference identifiers used in conditions need to be unique on a survey for the lookups to work
-q_2a &quot;请简单说明为什么您对所选择的技术感兴趣:)&quot;
-a_1 &quot;说明：&quot;, :text
-dependency :rule =&gt; &quot;A or B or C or D&quot;
-condition_A :q_2, &quot;==&quot;, :a_1
-condition_B :q_2, &quot;==&quot;, :a_2
-condition_C :q_2, &quot;==&quot;, :a_3
-condition_D :q_2, &quot;==&quot;, :a_4
-condition_E :q_2, &quot;==&quot;, :a_5
+q_2a "请简单说明为什么您对所选择的技术感兴趣:)"
+a_1 "说明：", :text
+dependency :rule =&gt; "A or B or C or D"
+condition_A :q_2, "==", :a_1
+condition_B :q_2, "==", :a_2
+condition_C :q_2, "==", :a_3
+condition_D :q_2, "==", :a_4
+condition_E :q_2, "==", :a_5
 
-q_4 &quot;您使用Ruby on Rails开发有多长时间了？&quot;, :pick =&gt; :one, :display_type =&gt; :slider
-[&quot;刚开始&quot;, &quot;半年&quot;, &quot;一年&quot;, &quot;两年&quot;, &quot;两年以上&quot;].each{|level| a level}
+q_4 "您使用Ruby on Rails开发有多长时间了？", :pick =&gt; :one, :display_type =&gt; :slider
+["刚开始", "半年", "一年", "两年", "两年以上"].each{|level| a level}
 
 # Surveys, sections, questions, groups, and answers also take a custom css class for covenience in custom styling
-q_6 &quot;请介绍一下您自己的工作和感兴趣的技术&quot;, :custom_class =&gt; &#39;address&#39;
-a :text, :custom_class =&gt; &#39;mapper&#39;
+q_6 "请介绍一下您自己的工作和感兴趣的技术", :custom_class =&gt; 'address'
+a :text, :custom_class =&gt; 'mapper'
 # validations can use regexp values
-validation :rule =&gt; &quot;A&quot;
-condition_A &quot;=~&quot;, :regexp =&gt; /[0-9a-zA-z\. #]/
-</pre>
+validation :rule =&gt; "A"
+condition_A "=~", :regexp =&gt; /[0-9a-zA-z\. #]/
+</code></pre>
+
 <p>end
 end
 </code>
-In above sample, I create a &ldquo;survey&rdquo;, then I also create a &ldquo;section&rdquo; inside a survey. Yeah, you can define many section for a survey to make the whole survey being like a wizard, that&#39;s pretty interesting. In on survey, there are more than 15 types of question, you can define a survey as using plain English, what you should obey is to refer to Kitchen Sink sample, it means you can only define a question type according to the certain rule, don&#39;t worry, the rule is simple.</p>
+In above sample, I create a &ldquo;survey&rdquo;, then I also create a &ldquo;section&rdquo; inside a survey. Yeah, you can define many section for a survey to make the whole survey being like a wizard, that&rsquo;s pretty interesting. In on survey, there are more than 15 types of question, you can define a survey as using plain English, what you should obey is to refer to Kitchen Sink sample, it means you can only define a question type according to the certain rule, don&rsquo;t worry, the rule is simple.</p>
 
 <p>Once you finished defining the survey, it means you now have a ruby file, say salon<em>survey.rb, you should run the following commend in your terminal to migrate all your survey items into your application, remember the append command, it will let you not to delete previous survey which stored in the same application.
 <pre>rake surveyor FILE=surveys/salon</em>survey.rb FIXTURES=surveys/fixtures APPEND=true</pre>
 Wow, you now have your new survey list in the Survey root path after you restart your server. I guess you will like it.</p>
 
 <p><strong>Customize Survey</strong>
-All go well so far, But, there is a big weakness of this survey solution if you only use it as above. Because the Surveyor doesn&#39;t support any easy way to manage the survey results. You should add the administration side in your application by yourself. I will also give you some hints on doing this.</p>
+All go well so far, But, there is a big weakness of this survey solution if you only use it as above. Because the Surveyor doesn&rsquo;t support any easy way to manage the survey results. You should add the administration side in your application by yourself. I will also give you some hints on doing this.</p>
 
-<p>Before your create management part for survey results, I remind you take a look at the survey configure file where you can do some really simple config for specific survey, such as define welcome page and finish page, or the survey title you want to customize. It&#39;s something as below:
+<p>Before your create management part for survey results, I remind you take a look at the survey configure file where you can do some really simple config for specific survey, such as define welcome page and finish page, or the survey title you want to customize. It&rsquo;s something as below:
 <code lang='ruby'></p>
 
 <h1>Initializers/surveyor.rb</h1>
@@ -238,7 +223,7 @@ end
 </code></p>
 
 <p><strong>Survey Results Statistics</strong>
-OK, last hints about adding management part of survey, here we should know clearly what&#39;s the survey&#39;s structure. So what&#39;s Survey&#39;s data structure? It&#39;s like this:
+OK, last hints about adding management part of survey, here we should know clearly what&rsquo;s the survey&rsquo;s structure. So what&rsquo;s Survey&rsquo;s data structure? It&rsquo;s like this:
 <pre></p>
 
 <h1>Survey structure</h1>
@@ -331,19 +316,20 @@ end
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

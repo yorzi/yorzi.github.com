@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
+<!--[if gt IE 8]<!-->
+<html class="no-js" lang="zh">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+
+    <title>
+      @yorzi
+    </title>
+
+    <meta name="description" content="安迪的思考和分享">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
+    <meta name="author" content="Andy Wang">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/wangyaodi.png">
+    <link rel="shortcut icon" sizes="16x16" href="/wangyaodi.png">
+    <link rel="alternate" type="application/rss+xml" title="@yorzi's Homepage" href="/feed.xml" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <script src="/javascripts/all.js"></script>
+  </head>
+  <body class="tags tags_----">
+    <aside class="sidebar">
+      <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="/profile.html">About</a></li>
+          <li><a href="/presentations.html">Presentations</a></li>
+          <li><a href="/files/2013-Andy-Wang-Resume-Via-Linkedin.pdf">Resume</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social-connect">
+        <ul>
+          <li><a href="//github.com/yorzi"><i class="icon-github"></i></a></li>
+          <li><a href="//weibo.com/yorzi"><i class="icon-weibo"></i></a></li>
+          <li><a href="//twitter.com/yorzi"><i class="icon-twitter"></i></a></li>
+          <li><a href="//cn.linkedin.com/in/yorzi"><i class="icon-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- Ad -->
+      <div class="block ad">
+        <p class="block-cnt">A Theme By</p>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
+      </div>
+
+    </aside>
+
+    <section class="main">
+      <div class="container">
+        <h1 class="tag-page-title">Articles tagged '<em>定时任务</em>'</h1>
+
+<div id="posts">
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/13/在ror中执行定时任务.html">在ROR中执行定时任务</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/cron.html">cron</a>
+        <a href="/tags/gem.html">gem</a>
+        <a href="/tags/ruby.html">ruby</a>
+        <a href="/tags/定时任务.html">定时任务</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>目前最常用的方法是利用Unix自身的<a href="http://en.wikipedia.org/wiki/Cron">cron</a>功能来实现定时任务，但是cron的语法比较麻烦(个人感觉)，今天为了执行一个定时任务发现了一个很好的RubyGem可以让你用Ruby的方式定义定时任务，这就是<a href="http://github.com/javan/whenever/tree/master">Whenever</a>。</p>
+
+<p>Whenever可以让你写出类似下面的定时任务：
+<pre name="code" class="ruby">
+ set :cron_log, "/path/to/my/cron_log.log"</pre></p>
+
+<p> every 2.hours do<br />
+   command &ldquo;/usr/bin/some_great_command&rdquo;<br />
+   runner &ldquo;MyModel.some_method&rdquo;<br />
+   rake &ldquo;some:great:rake:task&rdquo;<br />
+ end
+
+赶快去Github看看文档和代码吧<a href="http://github.com/javan/whenever">http://github.com/javan/whenever</a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/13/在ror中执行定时任务.html">Read more →</a>
+  </p>
+</div>
+    </article>
+
+    <ul class="pager">
+    </ul>
+</div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy;2013 Andy Wang</a></p>
+      </div>
+    </footer>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-11967621-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>

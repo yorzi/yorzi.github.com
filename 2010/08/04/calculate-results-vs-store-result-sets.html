@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      calculate results VS. store result sets - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2010 2010_08 2010_08_04 2010_08_04_calculate-results-vs-store-result-sets">
+  <body class="x2010 x2010_08 x2010_08_04 x2010_08_04_calculate-results-vs-store-result-sets">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,30 +98,29 @@
       Aug 04, 2010
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Firstly, what&#39;s the results in title? For example, the results may be learners who will be alive in coming two weeks, or the results may be study times of one learner, etc. Generally, results should be some data coming from analyzing other data.</p>
+  <p>Firstly, what&rsquo;s the results in title? For example, the results may be learners who will be alive in coming two weeks, or the results may be study times of one learner, etc. Generally, results should be some data coming from analyzing other data.</p>
 
 <p>Here my question is, how can we get certain results much faster and easily?</p>
 
 <p><strong>Case 1:</strong>
 We want to pick up a name list, all people in the list should be under certain condition, say, condition A, condition B, condition C, so normally, we just select the results which obey the rule(condition). Right? It depends.</p>
 
-<p>If name list is always dynamically different in condition A,B,C, it&#39;s really hard to store the results set, we have to calculate instantly to make sure the results is accurate.</p>
+<p>If name list is always dynamically different in condition A,B,C, it&rsquo;s really hard to store the results set, we have to calculate instantly to make sure the results is accurate.</p>
 
 <p>If name list is very difficult to figure out in condition A,B,C, we should store the stable part of the result set, so that we will not get stuck when calculate tons of data very time.</p>
 
 <p><strong>Case 2.</strong>
 We want to show study times of a learner, how can we do that? Should we store the study times as one attributor of study record or should we just make one study record as one-time study? Obviously, it depends on the complication of study record and the definition of one-time study. </p>
 
-<p>In our case, one study record is instantly changed when it&#39;s in different status, so storing study times in study record is not a good idea because the results might be locked when status changes. But if we calculate study times based on its status, it will be more reliable and accurate. and also it will not be locked when status is with exception.</p>
+<p>In our case, one study record is instantly changed when it&rsquo;s in different status, so storing study times in study record is not a good idea because the results might be locked when status changes. But if we calculate study times based on its status, it will be more reliable and accurate. and also it will not be locked when status is with exception.</p>
 
 <p><strong>Conclusion:</strong>
-To store result set, is a way to cache results, but some times it&#39;s not easy to maintain the result sets, for instance, if there are too many conditions when getting a results set, it&#39;s always in heavy load to update result sets, you have to listen to every condition level changes. If the situation is complex, remember to cache your result set and maintain it carefully.</p>
+To store result set, is a way to cache results, but some times it&rsquo;s not easy to maintain the result sets, for instance, if there are too many conditions when getting a results set, it&rsquo;s always in heavy load to update result sets, you have to listen to every condition level changes. If the situation is complex, remember to cache your result set and maintain it carefully.</p>
 
 <p>To calculate results instantly lets you ignore the real data, you just need to use the rule carefully, that will be more accurate, because you very time select what the rule defines. However the disadvantage is, when the data sets is large, you have to pay more to do that instantly, so you want to do a cron job or just cache the stable part of previous result sets.  </p>
 
@@ -146,19 +130,20 @@ To store result set, is a way to cache results, but some times it&#39;s not easy
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>

@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
@@ -17,22 +19,7 @@
     </title>
 
     <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="zh"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="zh"><![endif]-->
-<!--[if gt IE 8]<!-->
-<html class="no-js" lang="zh">
-  <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-
-    <title>
-      Erlang - @yorzi
-    </title>
-
-    <meta name="description" content="安迪的思考和分享">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Remote Working,Project Management,Team Collaboration,Startup,Entrepreneurship,Ruby/Rails,Web Development,生活">
     <meta name="author" content="Andy Wang">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,7 +45,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css">
     <script src="/javascripts/all.js"></script>
   </head>
-  <body class="2009 2009_11 2009_11_19 2009_11_19_erlang">
+  <body class="x2009 x2009_11 x2009_11_19 x2009_11_19_erlang">
     <aside class="sidebar">
       <h1 class="site-name"><a href="/" style='color:rgb(162, 9, 9);'>@yorzi</a></h1>
       <nav class="global-nav">
@@ -81,7 +68,7 @@
       <!-- Ad -->
       <div class="block ad">
         <p class="block-cnt">A Theme By</p>
-        <h4 class="block-title"><a href="//pragmatic.ly/">Pragmatic.ly</a></h4>
+        <h4 class="block-title"><a href="//fengche.co">风车</a></h4>
       </div>
 
     </aside>
@@ -91,11 +78,9 @@
         
   <div class="announcement">
     <p>
-      
         <img class="avatar" src="/images/wangyaodi.png" alt="Andy Wang" />
 
 
-      
     </p>
   </div>
 
@@ -113,7 +98,6 @@
       Nov 19, 2009
     </li>
     <li class="tags">
-      
     </li>
   </ul>
 </aside>
@@ -182,7 +166,7 @@ index.html      默认的项目首页</div>
 <div>make
 ./start-dev.sh</div>
 </div>
-这会打开一个 erlang shell ，输出的信息表明在 8000 端口开了一个 web 服务，此时用浏览器访问 http://localhost:8000 （或者其它正确的地址）就能看到“MochiWeb running.”，这表明 mochiweb 配置正确，运行良好。注意，我们上面是用 start-dev.sh 来启动的，它打开了 reloader 特性。</p>
+这会打开一个 erlang shell ，输出的信息表明在 8000 端口开了一个 web 服务，此时用浏览器访问 <a href="http://localhost:8000">http://localhost:8000</a> （或者其它正确的地址）就能看到“MochiWeb running.”，这表明 mochiweb 配置正确，运行良好。注意，我们上面是用 start-dev.sh 来启动的，它打开了 reloader 特性。</p>
 
 <p>现在修改一下 test<em>web.erl 的代码，加点料。因为我们上面已经打开了 reloader 所以，不用关掉这个 erlang shell ，我们可以直接修改和编译，然后刷新就能看到效果（有点 PHP 编程的意思了）。把 test</em>web.erl 改成这样，看看会有什么情况发生：
 <div>下载: <a href="http://erlang-china.org/wordpress/wp-content/plugins/coolcode/coolcode.php?p=151&amp;download=test_web.erl">test<em>web.erl</a></div>
@@ -194,7 +178,7 @@ index.html      默认的项目首页</div>
     <li><span style="color: #ffa500;">%% @doc Web server for test.</span></li>
     <li><span style="color: Gray;"> </span></li>
     <li><span style="color: Gray;">-</span><span style="color: Blue;">module</span><span style="color: Olive;">(</span><span style="color: Blue;">test</em>web</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
-    <li><span style="color: Gray;">-</span><span style="color: Blue;">author</span><span style="color: Olive;">(</span><span style="color: #8b0000;">&#39;</span><span style="color: Red;">author &lt;<a href="mailto:author@example.com">author@example.com</a>&gt;</span><span style="color: #8b0000;">&#39;</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
+    <li><span style="color: Gray;">-</span><span style="color: Blue;">author</span><span style="color: Olive;">(</span><span style="color: #8b0000;">&rsquo;</span><span style="color: Red;">author &lt;<a href="mailto:author@example.com">author@example.com</a>&gt;</span><span style="color: #8b0000;">&rsquo;</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
     <li><span style="color: Gray;"> </span></li>
     <li><span style="color: Gray;">-</span><span style="color: Blue;">export</span><span style="color: Olive;">([</span><span style="color: Blue;">start</span><span style="color: Gray;">/</span><span style="color: Maroon;">1</span><span style="color: Gray;">, </span><span style="color: Blue;">stop</span><span style="color: Gray;">/</span><span style="color: Maroon;">0</span><span style="color: Gray;">, </span><span style="color: Blue;">loop</span><span style="color: Gray;">/</span><span style="color: Maroon;">2</span><span style="color: Olive;">])</span><span style="color: Gray;">.</span></li>
     <li><span style="color: Gray;"> </span></li>
@@ -213,7 +197,7 @@ index.html      默认的项目首页</div>
     <li><span style="color: Blue;">loop</span><span style="color: Olive;">(</span><span style="color: Blue;">Req</span><span style="color: Gray;">, </span><span style="color: Blue;">DocRoot</span><span style="color: Olive;">)</span><span style="color: Gray;"> -&gt;</span></li>
     <li><span style="color: Gray;"> </span><span style="color: #8b0000;">&ldquo;</span><span style="color: Red;">/</span><span style="color: #8b0000;">&rdquo;</span><span style="color: Gray;"> ++ </span><span style="color: Blue;">Path</span><span style="color: Gray;"> = </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">get</span><span style="color: Olive;">(</span><span style="color: Blue;">path</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">get</span><span style="color: Olive;">(</span><span style="color: Blue;">method</span><span style="color: Olive;">)</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
-    <li><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> </span><span style="color: Green;">when</span><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">&#39;</span><span style="color: Red;">GET</span><span style="color: #8b0000;">&#39;</span><span style="color: Gray;">; </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">&#39;</span><span style="color: Red;">HEAD</span><span style="color: #8b0000;">&#39;</span><span style="color: Gray;"> -&gt;</span></li>
+    <li><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> </span><span style="color: Green;">when</span><span style="color: Gray;"> </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">&rsquo;</span><span style="color: Red;">GET</span><span style="color: #8b0000;">&rsquo;</span><span style="color: Gray;">; </span><span style="color: Blue;">Method</span><span style="color: Gray;"> =:= </span><span style="color: #8b0000;">&rsquo;</span><span style="color: Red;">HEAD</span><span style="color: #8b0000;">&rsquo;</span><span style="color: Gray;"> -&gt;</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Path</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
     <li><span style="color: Gray;"> </span><span style="color: #8b0000;">&ldquo;</span><span style="color: Red;">timer</span><span style="color: #8b0000;">&rdquo;</span><span style="color: Gray;"> -&gt; </span><span style="color: #ffa500;">%% 新增了 /timer 这个 URL，它是一个 HTTP Chunked 的例子</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Blue;">Response</span><span style="color: Gray;"> = </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">ok</span><span style="color: Olive;">(</span><span style="color: Gray;">{</span><span style="color: #8b0000;">&ldquo;</span><span style="color: Red;">text/plain</span><span style="color: #8b0000;">&rdquo;</span><span style="color: Gray;">, </span><span style="color: Blue;">chunked</span><span style="color: Gray;">}</span><span style="color: Olive;">)</span><span style="color: Gray;">,</span></li>
@@ -221,7 +205,7 @@ index.html      默认的项目首页</div>
     <li><span style="color: Gray;"> </span><span style="color: Blue;"></em></span><span style="color: Gray;"> -&gt;</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">serve<em>file</span><span style="color: Olive;">(</span><span style="color: Blue;">Path</span><span style="color: Gray;">, </span><span style="color: Blue;">DocRoot</span><span style="color: Olive;">)</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Green;">end</span><span style="color: Gray;">;</span></li>
-    <li><span style="color: Gray;"> </span><span style="color: #8b0000;">&#39;</span><span style="color: Red;">POST</span><span style="color: #8b0000;">&#39;</span><span style="color: Gray;"> -&gt;</span></li>
+    <li><span style="color: Gray;"> </span><span style="color: #8b0000;">&rsquo;</span><span style="color: Red;">POST</span><span style="color: #8b0000;">&rsquo;</span><span style="color: Gray;"> -&gt;</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Green;">case</span><span style="color: Gray;"> </span><span style="color: Blue;">Path</span><span style="color: Gray;"> </span><span style="color: Green;">of</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Blue;"></em></span><span style="color: Gray;"> -&gt;</span></li>
     <li><span style="color: Gray;"> </span><span style="color: Blue;">Req</span><span style="color: Gray;">:</span><span style="color: Blue;">not<em>found</span><span style="color: Olive;">()</span></li>
@@ -243,7 +227,7 @@ index.html      默认的项目首页</div>
     <li><span style="color: Gray;"> </span><span style="color: Blue;">timer</span><span style="color: Olive;">(</span><span style="color: Blue;">Response</span><span style="color: Olive;">)</span><span style="color: Gray;">.</span></li>
 </ol>
 </div>
-编译之前，先访问一下 http://localhost:8000/timer ，是“Not found.”。此时，不要中断之前的 erlang shell 而是直接再次 make ：
+编译之前，先访问一下 <a href="http://localhost:8000/timer">http://localhost:8000/timer</a> ，是“Not found.”。此时，不要中断之前的 erlang shell 而是直接再次 make ：
 <div>
 <div>make</div>
 </div>
@@ -251,7 +235,7 @@ index.html      默认的项目首页</div>
 <div>
 <div>1&gt; Reloading test</em>web &hellip; ok.</div>
 </div>
-此时，再次访问 http://localhost:8000/timer （耐心些 HTTP chunked 获得的数据要积累到一定的字节浏览器才会显示），你会发现这是一个不会“下载结束”的页面，不断会有新的内容出现在下面。你也许可以利用这个特性实现传说 中的“无刷新聊天室”。</p>
+此时，再次访问 <a href="http://localhost:8000/timer">http://localhost:8000/timer</a> （耐心些 HTTP chunked 获得的数据要积累到一定的字节浏览器才会显示），你会发现这是一个不会“下载结束”的页面，不断会有新的内容出现在下面。你也许可以利用这个特性实现传说 中的“无刷新聊天室”。</p>
 
 <p>值得留意的是这样的代码：
 <div>
@@ -283,19 +267,20 @@ Response:write</em>chunk(io<em>lib:format(&ldquo;The time is: ~p~n&rdquo;,
 
   <div class="comments">
     <div id="disqus_thread"></div>
-              <script type="text/javascript">
-              //<![CDATA[
-                  var disqus_shortname = 'andyspersonalblog'; // required: replace example with your forum shortname
-                  (function() {
-                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                  })();
-              //]]>
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </script>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'andyspersonalblog';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
 
       </div>
