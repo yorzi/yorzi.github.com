@@ -73,6 +73,66 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Comparing Equality (==, eql?, equal?) and Case Equality (===) in Ruby</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 09, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>In weekly code review, GL mentioned a weird issues :
+<code lang="ruby">
+def self.test(obj)
+    case obj.class
+    when Student, TrialPlan
+      puts "1"
+    when Call
+      puts "2"
+    else
+      puts "3"
+    end
+end
+</code>
+This doesn’t behave as expected. When we run test(Student.first), it prints out “3”!</p>
+
+<p>but this works fine.
+<code lang="ruby">
+def self.test(obj)
+    case obj.class.to_s
+    when "Student", "TrialPlan"
+      puts "1"
+    when "Call"
+      puts "2"
+    else
+      puts "3"
+    end
+end
+</code></p>
+
+<p>Then I searched around for explaining this, I found the <em>case statement</em> in Ruby is very different with what in other languages. Ruby implements the Case statement according to its special operator “===”, which is not the same as “==”.</p>
+
+<p>what’s difference? See below explainations:
+<a href="http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/">how-a-ruby-case-statement-works-and-what-you-can-do...</a></p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/07/love-named_scope.html">Love named_scope</a>
   </h2>
 </header>
@@ -482,50 +542,6 @@ end
   </p>
   <p>
     <a href="/2009/11/22/time-as-friend.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/19/erlang.html">Erlang</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 19, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>本篇是完全转载的一篇文章，<a href="http://www.dujingfang.com">7哥</a>昨天利用这个例子给team讲了一下erlang，在这里做个备份，免得以后要用时候找不到了。<a href="http://erlang-china.org/start/mochiweb_intro.html">原文链接</a></p>
-
-<hr>
-
-<p><a href="http://code.google.com/p/mochiweb" target="_blank">MochiWeb</a>是<a href="http://www.mochibot.com/" target="_blank">mochibot.com</a>的<a href="http://bob.pythonmac.org/" target="_blank">Bob Ippolito</a>贡献的开源项目[在<a href="http://undefined.org/c4-1/" target="_blank">这里</a>有一个介绍它的Slide]。</p>
-
-<p>MochiBot.com 提供 Flash 内容的访问统计和用户跟踪服务（大致上，可以理解为针对 flash 的 google Analytics 服务），他们在 mochiweb 之上构建了一个定制化的 web server ，并通过这个 web server 获取用户的访问数据（在这一点上有点象 <a href="http://code.google.com/p/erlana/" target="_blank">Erlana</a> 项目）。可以想象，这个定制的 web server 需要很高的并发支持，精简和牢固的底层架构，以及对于 http 协议的完备支持（乃至对于 socket 的直接操控）。如果可以的话，最好还有更为精简的 API ，易于定制的 URL 扩展方式，以及易于理解的底层框架。幸运的是，这些 mochiweb 都已经提供，而且还是开源的。</p>
-
-<p>需要说明的是，相比 yaws / inets httpd 而言，它的目标并不是 apache 之类的软件，它并不是一个完整的 web server （没有cache等机制，因而也不做任何加速动作），它只是一个实现 web server 的工具包（这也就意味着，它直接通过代码来扩展，你可以在它的基础上做任何事）。正因为此，在“需要定制 Web Server”的情况下，它成为一个非常不错的选择（比如，配置在 enginx 的后面，专门用于动态内容的生成）。在 erlang 的世界里，有几个项目已经开始转而使用 mochiweb 。</p>
-
-<p>下面是对这个项目代码的一些粗浅实战。</p>
-
-<p>首先遵循它的提示，通过svn获取代码：
-</p><div>
-<div>svn checkout <a href="http://mochiweb.googlecode.com/svn/trunk/">http://mochiweb.googlecode...</a>
-</div>
-</div>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/19/erlang.html">Read more →</a>
   </p>
 </div>
     </article>

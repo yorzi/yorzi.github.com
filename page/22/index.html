@@ -73,6 +73,40 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Chrome On Ubuntu9.04</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 17, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Chrome刚出来的时候，没有支持Ubuntu的版本，所以一直没有用，前几天出了<a href="http://www.google.com/chrome/index.html?hl=zh_cn&brand=CHMA&utm_campaign=zh_cn&utm_source=zh_cn-ha-apac-zh_cn-bk&utm_medium=ha">支持Linux/Mac的版本</a>，这几天太忙没顾上尝试一下，今天上午装上一看，简直太帅了。</p>
+
+<p>如果你是一个Google的Fans，那你一定会喜欢Chrome，它的扩展相较<a href="http://www.mozillaonline.com/">FF</a>虽然还不是很丰富，但是我很喜欢的几款应用都有相应的Extention，比方：<a href="http://www.shareaholic.com/">shareaholic</a>, <a href="http://www.evernote.com/">Evernot</a>, <a href="http://www.rememberthemilk.com/">RTM</a>, <a href="http://www.aviary.com">Aviary</a>等等。除了这些，Chrome和GMail/GR/GC的结合还都不错，简直方便极了。</p>
+
+<p>重要的是，突然感觉屏幕大了很多，上面至少省出来150PX。
+现在我通常就得开三种浏览器了，工作的事情用FF，测试的时候用Galeon，自己的页面都转移到Chrome上面来。Oyeah！</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/16/seo工具.html">SEO工具</a>
   </h2>
 </header>
@@ -459,66 +493,6 @@ file 'config/database.yml', &lt;&lt;-CODE...</p>
   </p>
   <p>
     <a href="/2009/12/09/fucked-up.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Comparing Equality (==, eql?, equal?) and Case Equality (===) in Ruby</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Dec 09, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>In weekly code review, GL mentioned a weird issues :
-<code lang="ruby">
-def self.test(obj)
-    case obj.class
-    when Student, TrialPlan
-      puts "1"
-    when Call
-      puts "2"
-    else
-      puts "3"
-    end
-end
-</code>
-This doesn’t behave as expected. When we run test(Student.first), it prints out “3”!</p>
-
-<p>but this works fine.
-<code lang="ruby">
-def self.test(obj)
-    case obj.class.to_s
-    when "Student", "TrialPlan"
-      puts "1"
-    when "Call"
-      puts "2"
-    else
-      puts "3"
-    end
-end
-</code></p>
-
-<p>Then I searched around for explaining this, I found the <em>case statement</em> in Ruby is very different with what in other languages. Ruby implements the Case statement according to its special operator “===”, which is not the same as “==”.</p>
-
-<p>what’s difference? See below explainations:
-<a href="http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/">how-a-ruby-case-statement-works-and-what-you-can-do...</a></p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Read more →</a>
   </p>
 </div>
     </article>

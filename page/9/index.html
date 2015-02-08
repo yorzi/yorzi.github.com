@@ -73,6 +73,42 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">How to keep a space in your iPhone App name?</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 31, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>The answer is, <strong>you can’t submit your iPhone App with <em>whitespace</em> in its name</strong>. But you do <strong>be able to add space in your App display name</strong> under icon. I guess your purpose is the second one, you only want to display the space under app icon on device, don’t you?</p>
+
+<p>OK, just name your app as whatever name with space before you setup the distribution package, e.g. “Example Name.app”. Then,</p>
+
+<p>1) In Xcode Organizer right click on the build date of the app and select “Reveal Archived App in Finder”
+2) Open ArchiveInfo.plist in a text editor, edit the attribute “<strong><em><string>Example Name.app</string></em></strong>”
+Change that to ExampleName.app and save the file.
+4) In Finder remove the space in the file names on both the .app and the .app.dSYM files
+5) Once you get back to Xcode Organizer, you should be able to submitting app to itunesconnect...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/08/31/andy-sherry-pics-1.html">Andy & Sherry Pics [1]</a>
   </h2>
 </header>
@@ -456,45 +492,6 @@ Well, in order to become an iPhone developer,...
   </p>
   <p>
     <a href="/2010/08/06/瓶子的故事.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/08/06/游泳.html">游泳</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Aug 06, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/休息.html">休息</a>
-        <a href="/tags/宜家.html">宜家</a>
-        <a href="/tags/游泳.html">游泳</a>
-        <a href="/tags/美食.html">美食</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>早上起床，发现脖子疼得厉害，几乎没法活动了。随后请年假一天，也许稍微休息一下能有好转。</p>
-
-<p>媳妇看我请假，耍赖皮也不想&quot;上课&quot;去了，考虑到今天的课程被她说得很不重要，我就放任她一次好了。后来才知道，她的阴谋是游泳和吃大餐──在一个多月之前，她买了金隅健身休闲会所的优惠券，而我一直也没有时间陪她去。今天刚好可以去放松一下。</p>
-
-<p>其实我想说的只有一个重点：我学会游泳了！哈哈！</p>
-
-<p>在我写这篇博客的时候，媳妇已经在她的博文中记录了这充实的一天。欲知详情，请<a href="http://www.sherrytips.com/2010/08/06/%E7%BE%8E%E9%A3%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E3%80%81%E8%B4%AD%E7%89%A9/">点击这里</a>。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/08/06/游泳.html">Read more →</a>
   </p>
 </div>
     </article>
