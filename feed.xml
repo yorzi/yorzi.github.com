@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>The Voice of Dingding Ye</title>
-  <subtitle>Share Fun, Life and Thoughts in Pragmatic.ly</subtitle>
-  <id>http://yedingding.com</id>
-  <link href="http://yedingding.com/"/>
-  <link href="http://yedingding.com/feed.xml" rel="self"/>
+  <title>@yorzi</title>
+  <subtitle>wangyaodi.com</subtitle>
+  <id>http://wangyaodi.com</id>
+  <link href="http://wangyaodi.com/"/>
+  <link href="http://wangyaodi.com/feed.xml" rel="self"/>
   <updated>2015-02-08T14:26:00+08:00</updated>
   <author>
     <name>Blog Author</name>
@@ -16,7 +16,7 @@
     <published>2015-02-08T14:26:00+08:00</published>
     <updated>2015-02-08T14:26:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;&lt;img alt="美国作家，1840.4.13-1924.3.21" src="/images/post/samiuer1.jpeg?1423378377"&gt;&lt;/p&gt;
 
@@ -75,7 +75,7 @@
     <published>2015-02-03T23:21:00+08:00</published>
     <updated>2015-02-03T23:21:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;&lt;img alt="平凡之路" src="/images/post/pingfanzhilu.png?1423008842" /&gt;&lt;/p&gt;
 
@@ -121,7 +121,7 @@
     <published>2014-09-02T22:52:00+08:00</published>
     <updated>2014-09-02T22:52:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;多年以前，把自己邮件的签名换成“Never too late to learn!”，那时候不知道是受什么影响，突然顿悟出这个道理，也正是这句话，在后来很多个迷茫或者失落的场景里带我走出困境。古人讲“活到老学到老”，便是这句话极好的翻译。&lt;/p&gt;
 
@@ -160,7 +160,7 @@
     <published>2014-09-01T18:47:00+08:00</published>
     <updated>2014-09-01T18:47:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;&lt;img alt="一直奔跑" src="/images/post/nikerunning.png?1409584568" /&gt;&lt;/p&gt;
 
@@ -190,7 +190,7 @@
     <published>2014-01-10T13:41:00+08:00</published>
     <updated>2014-01-10T13:41:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;&lt;img alt="毛豆" src="/images/post/baby-sick.png?1389334288"&gt;&lt;/p&gt;
 
@@ -256,7 +256,7 @@
     <published>2014-01-05T22:46:00+08:00</published>
     <updated>2014-01-05T22:46:00+08:00</updated>
     <author>
-      <name>Dingding Ye</name>
+      <name>Andy Wang</name>
     </author>
     <summary type="html">&lt;p&gt;&lt;img alt="Party" src="/images/post/party.png?1388933856"&gt;&lt;/p&gt;
 
