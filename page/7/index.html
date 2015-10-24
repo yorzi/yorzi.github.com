@@ -73,6 +73,58 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2011/01/22/dalli-on-rails3.html">Dalli on Rails3</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jan 22, 2011
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Today I tried a new pure Ruby <a href="http://memcached.org/" target="_blank">memcahed</a> client in one of my Rails3 projects, it’s named as “<a href="https://github.com/mperham/dalli" target="_blank">Dalli</a>”. It’s an excellent memcached client as <a href="http://www.mikeperham.com/">Mike Perham</a> announced in August last year. You can detect more details about it on its code. Dalli is just faster performance than memcache-client and easy to use in Rails3 or on <a href="http://heroku.com" target="_blank">Heroku</a>.</p>
+
+<p>Make sure you’ve installed 1.4+ memcached on your machine, then you can configure Dalli as what you did with memcache-client before:
+1. add gem in Gemfile
+<code lang="ruby">
+gem 'dalli'
+</code>
+2. Config the underlying cache store as dalli_store in production.rb
+<code lang="ruby"></code></p>
+
+<h1>Memcached is delaulted on port 11211.</h1>
+
+<p>config.cache<em>store = :dalli</em>store, 'localhost:11211'
+
+3. Now you will find the Rails.cache class is changed to Rails.cache.class:
+<code lang="ruby"></code></p>
+
+<blockquote>
+<blockquote>
+<p>Rails.cache.class
+== ActiveSupport::Cache::DalliStore
+
+4. You...</p>
+</blockquote>
+</blockquote>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2011/01/22/dalli-on-rails3.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2011/01/21/love-git-love-coding.html">Love Git, Love Coding</a>
   </h2>
 </header>
@@ -424,52 +476,6 @@
   </p>
   <p>
     <a href="/2010/11/07/节奏.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/11/02/时光宝藏.html">时光宝藏</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 02, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/冬天.html">冬天</a>
-        <a href="/tags/忙碌.html">忙碌</a>
-        <a href="/tags/时光.html">时光</a>
-        <a href="/tags/生活.html">生活</a>
-        <a href="/tags/畅想.html">畅想</a>
-        <a href="/tags/茶.html">茶</a>
-        <a href="/tags/锻炼.html">锻炼</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>[caption id=&ldquo;attachment_10210&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;550&rdquo; caption=&ldquo;Sunshine In Winter&rdquo;]<a href="http://blog.wangyaodi.com/wp-content/uploads/2010/11/winter_sunshine.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/11/winter_sunshine.jpg" alt="" title="Sunshine In Winter" width="550" height="413" class="size-full wp-image-10210" /></a>[/caption]</p>
-
-<p>进入十一月，便闻到了冬天的气味。</p>
-
-<p>重新开始晨跑，每日的锻炼仅仅一刻钟，却让我渐渐摆脱了前一阵子的低迷状态。不由得感叹身体的奇妙，如果你不重视它，它也会不重视你，而且会给你制造重重麻烦。</p>
-
-<p>慢慢习惯不抽烟，不喝酒，也不吃半点辛辣的食物。仿佛回到了小时候，不受任何东西的约束和诱惑，只需要静静的体会如水般的清淡。不过，现在也还是有爱好的，比方每天喝茶，在普洱和莓茶间来回切换，一边惺瑟，一边甘甜，其实这便是生活的全部味道。</p>
-
-<p>日复一日的忙碌，我自觉是上进的，是充实的，因而也不会感觉寡淡，很久以前，我会认为这样的节奏充满危险，也许正是因为少了当初的迷茫和浮躁，此刻的我，才比以往任何时候都更加愿意脚踏实地，更加希望稳步向前。</p>
-
-<p>多希望能有些间隙，拿本书，去感受冬天的暖阳。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/11/02/时光宝藏.html">Read more →</a>
   </p>
 </div>
     </article>

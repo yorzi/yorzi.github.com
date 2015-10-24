@@ -73,6 +73,45 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/22/time-as-friend.html">把时间当作朋友</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 22, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/book.html">book</a>
+        <a href="/tags/reading.html">reading</a>
+        <a href="/tags/time.html">time</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>今天Gary把一大包蘑菇放在锅里，等到发现不对劲的时候，锅里的蘑菇已经增长了好几倍，并且把锅盖几乎顶了起来，God.</p>
+
+<p>本来收拾完屋子打算看看书，或者干脆把GR里面的Unread干掉，或者把手头这几个活简单计划一下，但是我还是过于相信自己的控制能力，所以最后，我只是看了一晚上系统，并且和朋友们Skype聊了三个多小时。最后直到嗓子有点哑掉。</p>
+
+<p>&ldquo;人们都问人民币会不会升值我也不知道什么时候但是一定会升值。&rdquo;<br />
+最近开始对一些自己之前并不感兴趣的领域多了一些关注，惊讶于自己竟然开始考虑汇率，考虑投资，考虑房子。还好重点依然是考虑技术，考虑英语学习，考虑长远发展和自我价值实现。所以，我一如既往的忙碌而平静。</p>
+
+<p><a href="http://www.douban.com/subject/3609132/">《把时间当作朋友》</a>是一本好书，重点推荐一番。<a href="http://blog.wangyaodi.com/2009/11/22/time-as-friend/%e3%80%8a%e6%8a%8a%e6%97%b6%e9%97%b4%e5%bd%93%e4%bd%9c%e6%9c%8b%e5%8f%8b%e3%80%8b%e2%80%94%e2%80%94%e8%bf%90%e7%94%a8%e5%bf%83%e6%99%ba%e8%8e%b7%e5%be%97/" rel="attachment wp-att-112">点击下载电子版</a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/22/time-as-friend.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/19/erlang.html">Erlang</a>
   </h2>
 </header>
@@ -408,49 +447,6 @@ Now we can install the gem:
   </p>
   <p>
     <a href="/2009/11/13/feed-parser-in-ruby.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/12/primary_key-and-foreign_key-in-rails-association.html">primary_key and foreign_key in Rails association</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 12, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>The has<em>many and belongs</em>to association in Rails are with many optional parameters, they are actually the parameters for DB relationship, see more details by <a href="http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html">clicking here</a>.</p>
-
-<p>As a reminder to myself, I misunderstood the primary<em>key an foreign</em>key conditions in association, it should be set in both sides in some case, for instance:
-</p><pre name="code" class="ruby">
-class Student &lt; ActiveRecord::Base
-  has<em>many :trial</em>lessons, :foreign<em>key =&gt; :user</em>id, :primary<em>key =&gt; :profile</em>id
-end
-</pre>
-Above code will let you invoke the student.trial<em>lessons, but if you want to use trial</em>lesson.student, you have to define the association as below:
-<pre name="code" class="ruby">
-class TrialLesson &lt; ActiveRecord::Base
-  belongs<em>to :student, :primary</em>key =&gt; :profile<em>id, :foreign</em>key =&gt; :user<em>id
-end
-</em></pre>
-<blockquote>
-<strong>Notice that</strong>: you actually set the same :primarykey and :foreign_key in both sides, it’s because...</blockquote>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/12/primary_key-and-foreign_key-in-rails-association.html">Read more →</a>
   </p>
 </div>
     </article>
