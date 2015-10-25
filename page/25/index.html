@@ -73,6 +73,41 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/13/feed-parser-in-ruby.html">Feed parser in Ruby</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <blockquote>There are a number of ways of parsing an RSS feed in Ruby, but one of the best is a gem called <a href="http://github.com/pauldix/feedzirra/tree/master">Feedzirra</a>. The main advantage of Feedzirra is its speed; it parses feeds very quickly, but it is also useful as it can parse many different types of feed.
+</blockquote>
+
+<p>To install Feedzirra we first need to make sure that <code><a href="http://gems.github.com">http://gems.github.com</a></code> is in our list of gem sources. If not we’ll need to add it.
+</p><pre>gem sources -a <a href="http://gems.github.com">http://gems.github.com</a></pre>
+Now we can install the gem:
+<pre>sudo gem install pauldix-feedzirra</pre>
+<strong><em>Notice:</em></strong> When I was installing the gem, there are several libs needed, including <em>libcurl4-gnutls-dev libcurl3-gnutls libxslt1-dev</em>, you may not meet this issue, it’s not a big deal, just install what it rely on. Several dependencies will also be installed alongside the gem. Once everything’s installed we’ll need...
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/13/feed-parser-in-ruby.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/12/primary_key-and-foreign_key-in-rails-association.html">primary_key and foreign_key in Rails association</a>
   </h2>
 </header>
@@ -463,47 +498,6 @@ all advises on Ruby on Rails code:
   </p>
   <p>
     <a href="/2009/11/07/a-game-about-photo.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/06/mysql-dump.html">mysql dump</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 06, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>I&rsquo;m a little shamed that I ask Sonic for a mysql dump command several times, I rarely dump db myself, that&rsquo;s why I forget the way dealing with it.. Ok, the commands are:
-<pre name="code" class="mysql">
-mysqldump -u root user<em>production &gt; user</em>production.sql
-bzip2 user_production.sql</p>
-
-<p>scp from server to local.</p>
-
-<p>bunzip2 user<em>production.sql.bz2
-bzcat user</em>production.sql.bz2 | mysql -u root user_production
-or extracts the backup files, to create db directly.
-</pre></p>
-
-<p>Thanks Sonic.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/06/mysql-dump.html">Read more →</a>
   </p>
 </div>
     </article>

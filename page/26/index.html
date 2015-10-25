@@ -73,6 +73,47 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/06/mysql-dump.html">mysql dump</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 06, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>I&rsquo;m a little shamed that I ask Sonic for a mysql dump command several times, I rarely dump db myself, that&rsquo;s why I forget the way dealing with it.. Ok, the commands are:
+<pre name="code" class="mysql">
+mysqldump -u root user<em>production &gt; user</em>production.sql
+bzip2 user_production.sql</p>
+
+<p>scp from server to local.</p>
+
+<p>bunzip2 user<em>production.sql.bz2
+bzcat user</em>production.sql.bz2 | mysql -u root user_production
+or extracts the backup files, to create db directly.
+</pre></p>
+
+<p>Thanks Sonic.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/06/mysql-dump.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/05/黑球落袋.html">黑球落袋</a>
   </h2>
 </header>
@@ -394,35 +435,6 @@ All the added options are for a ssh session that’s used for tunneling.
   </p>
   <p>
     <a href="/2009/07/28/你的生日让我想起一个很久以前的朋友.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/07/20/洪水猛兽.html">洪水猛兽</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 20, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><font color="#595959"><b>突然意识到自己失眠了。<br />躺下一个小时，翻来覆去。接着窗外开始有淅淅沥沥的雨声，像是在与我倾诉。<br />从床上坐起来，点一跟烟，走到窗前。雨声密密麻麻，像是我的心事。<br /><br />脑子空白了很久，表情恐怕也凝固在黑暗中，而却无力去调整，那怕一个姿势，或者仅仅是将凝视的眼神转一个方向。<br />半年的时间里，还未曾如此溺爱自己，让夜尽情穿透理智，爱这样的夜，我也憎恨它。<br /><br />我不是在思念，是寂寞。<br /><br />鲜活和狰狞同时装点着故事的每一个细节，温润是个骗局，而信任终究无解。<br />跋涉夸大了美景，无知永远无敌。<br /><br />有一天，以正义正名。<br />而所有剧终，都满是惶恐。</b></font></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/07/20/洪水猛兽.html">Read more →</a>
   </p>
 </div>
     </article>

@@ -73,6 +73,56 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/29/session-in-ruby-on-rails.html">Session in Ruby on Rails</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 29, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>session</strong>: a way to store information across pages.</p>
+
+<p><strong>set value as:</strong>
+        session[:person] = ＠user</p>
+
+<p><strong>read values as:</strong>
+        Hello #{session[:person]}</p>
+
+<p><strong>set as nil:</strong>
+        session[:person] = nil</p>
+
+<p><strong>reset all sessions</strong>
+        reset_session</p>
+
+<p>There are many solutions to store session in ruby on rails, including
+<strong>PStore</strong> [it&rsquo;s the default way in rails]
+<strong>ActiveRecordStore</strong> [to use ActiveRecord, better to share information across apps in this way]
+<strong>DRbStore</strong>
+<strong>FileStore</strong>
+<strong>MemoryStore</strong></p>
+
+<p>Much more compares on above solutions : check out <a href="http://scott.elitists.net/sessions.html">Ruby on Rails Session Container Performance</a> see the details.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/29/session-in-ruby-on-rails.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/28/乐死我了.html">乐死我了</a>
   </h2>
 </header>
@@ -424,38 +474,6 @@ Watch your character, for it becomes your destiny.</em></strong></blockquote></p
   </p>
   <p>
     <a href="/2009/12/24/merry-christmas.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/12/23/yodao.html">哈，看这判断</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Dec 23, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/blog.html">blog</a>
-        <a href="/tags/fun.html">fun</a>
-        <a href="/tags/yodao.html">yodao</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><table style="background-color: #FFFFFF;border: 1px solid #E7E7E7;" border="0" cellpadding="0" cellspacing="7" width="225"><tbody><tr><td align="center">Refactoring Thoughts</td></tr><tr><td><table style="background-color: #F6F9FF;text-align: center;font-size: 12px;color: #323232;" border="0" cellpadding="0" cellspacing="0" height="74" width="100%"><tbody><tr><td valign="bottom">100.0%男性倾向,0.0%女性倾向</td></tr><tr><td align="center"><table style="background-color: #F6F9FF;text-align: center;font-size: 12px;color: #323232;" border="0" cellpadding="0" cellspacing="0" width="165"><tbody><tr><td bgcolor="#91cdff" height="9" width="165"></td><td bgcolor="#ffb1cd" height="9" width="0"></td></tr></tbody></table></td></tr><tr><td align="left">评点：您的文风冷静而镇定，言语间展现出强悍的思辨能力与恢宏的胸襟，一个男子汉的阳刚形象跃然纸上。</td></tr><tr><td><a style="color: #799DCE;text-decoration: none;" href="http://www.youdao.com/" target="_blank">有道搜索</a> | <a style="color: #799DCE;text-decoration: none;" href="http://www.youdao.com/blogender/" target="_blank">博客男女</a></td></tr></tbody></table></td></tr></tbody></table></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/12/23/yodao.html">Read more →</a>
   </p>
 </div>
     </article>
