@@ -73,6 +73,92 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Run cron job in Ruby way</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>目前最常用的方法是利用Unix自身的<a href="http://en.wikipedia.org/wiki/Cron">cron</a>功能来实现定时任务，但是cron的语法比较麻烦(个人感觉)，今天为了执行一个定时任务发现了一个很好的RubyGem可以让你用Ruby的方式定义定时任务，这就是<a href="http://github.com/javan/whenever/tree/master">Whenever</a>。</p>
+
+<p>Whenever可以让你写出类似下面的定时任务：
+<pre name="code" class="ruby">
+ set :cron<em>log, &quot;/path/to/my/cron</em>log.log&quot;</p>
+
+<p>every 2.hours do
+   command &quot;/usr/bin/some<em>great</em>command&quot;
+   runner &quot;MyModel.some_method&quot;
+   rake &quot;some:great:rake:task&quot;
+ end
+</pre>
+赶快去Github看看文档和代码吧<a href="http://github.com/javan/whenever"><a href="http://github.com/javan/whenever">http://github.com/javan/whenever</a></a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/13/run-corn-job-in-ruby-way.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/13/在ror中执行定时任务.html">在ROR中执行定时任务</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 13, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/cron.html">cron</a>
+        <a href="/tags/gem.html">gem</a>
+        <a href="/tags/ruby.html">ruby</a>
+        <a href="/tags/定时任务.html">定时任务</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>目前最常用的方法是利用Unix自身的<a href="http://en.wikipedia.org/wiki/Cron">cron</a>功能来实现定时任务，但是cron的语法比较麻烦(个人感觉)，今天为了执行一个定时任务发现了一个很好的RubyGem可以让你用Ruby的方式定义定时任务，这就是<a href="http://github.com/javan/whenever/tree/master">Whenever</a>。</p>
+
+<p>Whenever可以让你写出类似下面的定时任务：
+<pre name="code" class="ruby">
+ set :cron_log, "/path/to/my/cron_log.log"</pre></p>
+
+<p> every 2.hours do<br />
+   command &ldquo;/usr/bin/some_great_command&rdquo;<br />
+   runner &ldquo;MyModel.some_method&rdquo;<br />
+   rake &ldquo;some:great:rake:task&rdquo;<br />
+ end
+
+赶快去Github看看文档和代码吧<a href="http://github.com/javan/whenever">http://github.com/javan/whenever</a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/13/在ror中执行定时任务.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/13/feed-parser-in-ruby.html">Feed parser in Ruby</a>
   </h2>
 </header>
@@ -412,92 +498,6 @@ all advises on Ruby on Rails code:
   </p>
   <p>
     <a href="/2009/11/09/rails-best-practices.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/08/学车.html">学车</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 08, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/冬天.html">冬天</a>
-        <a href="/tags/学车.html">学车</a>
-        <a href="/tags/忧虑.html">忧虑</a>
-        <a href="/tags/生活.html">生活</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>一直想学开车，由于09年安排得满满当当的，所以一直拖到现在，虽然感觉天气变冷了周末要大早起床去驾校会是一件极度挑战的事情，但是估计过了这阵子说不定有会没有时间，干脆学了算了。</p>
-
-<p>今天海淀驾校的人上门服务，所以报名变得很简单，当时那人带的相机没有电了，我就用Iphone照了几张做为将来驾照上面的照片，后来<a href="http://www.chenzhonghao.com">Gary</a>看见照片语重心长的说，真是老了啊。这家伙的言外之意是说，赶紧找媳妇过日子吧，免得他不在的时候，一把年纪了连个说话的人都没有。靠，我会有这么惨？</p>
-
-<p>很久没什么事情搞的我心神不宁了，但是最近却睡不好觉，身体也开始悄起了警钟，这让我多少有些忧虑，毕竟一年多时间里面，除了抽烟喝酒熬夜和不参加锻练，似乎剩下来时间都在电脑边度过的，据说这就是传说中的自取灭亡。</p>
-
-<p>好吧，谁来陪我？</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/08/学车.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/07/a-game-about-photo.html">照片的故事</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 07, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/blue.html">blue</a>
-        <a href="/tags/game.html">game</a>
-        <a href="/tags/photo.html">photo</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>下午本来要研究<a href="http://rspec.info">Rspec</a>和<a href="http://cukes.info">Cucumber</a>，谁知道无意间登上了公司的VPN，看这两年间发生在Idapted的故事，笑得我前仰后合。</p>
-
-<p>在Idapted有一个关于照片的游戏，游戏的规则概括起只有一句话：&quot;Something about (&hellip;)&ldquo;</p>
-
-<p>到Idapted的两年里一共玩了两次，第一次是第一名，第二次是第二名。第一名的时候，好像得了一个飞镖盘，后来放在公司和大家一块共享了。这第二次得了团体第二名，每个队员发了一个精致的小瓷器，有人说可以做笔筒，有人说那分明是放在厨房里放筷子的，其实我第一看到那个“奖品”的时候，就觉得它是个牙缸，后来被大家痛骂没有所谓的情趣和艺术细胞。还好有人用她的的奖品——一条围巾把那个牙缸给还走了，阿弥陀佛。</p>
-
-<p>言归正传继续说游戏，大家分组以后，就分头按照指定的主题去摄影，必须突发奇想的紧扣主题，里面还必须至少有一名队员。有山有水有创意，照片自然比较好玩。然后晚上在一起评比和宣讲，最后就能筛选出得分最高的”作品“。直到今天看了几乎所有的照片，才觉得游戏评比的时候规则还是太过于约束了，因为还有很多很精彩的照片并没有机会得到大家的评价，自然也就很难胜出，不过毕竟是玩耍，大家到并不是很在乎比赛结果。</p>
-
-<p>Okay，挑几张share一下咯。</p>
-
-<p>Something about BLUE:
-<p style="text-align: center;"><img class="size-full wp-image-35 aligncenter" style="border: 3px solid white;" title="BLUE" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/CIMG0404.JPG" alt="BLUE" width="500" height="375" /></p>
-
-<p style="text-align: center;">另一张我喜欢的图片：</p>
-
-<p style="text-align: center;"><img class="size-full wp-image-36 aligncenter" style="border: 3px solid white;" title="blue" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/SDC10635.JPG" alt="Blue" width="500" height="375" /></p></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/07/a-game-about-photo.html">Read more →</a>
   </p>
 </div>
     </article>

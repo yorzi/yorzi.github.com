@@ -73,6 +73,104 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/26/install-sqlite3-ruby-on-centos.html">install sqlite3-ruby on CentOS</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 26, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Normally you would get an error if you try to install or to update your sqlite3-ruby gems. But you need this gem when there is other dependence. Here’s the solution to get it running:</p>
+
+<p>Go to sqlite.org and get the amalgamation package or wget directly (below is my way):
+</p><pre>
+
+<h1>cd into my source tarball folder</h1>
+
+<p>cd /usr/src</p>
+
+<h1>get the amalgation package</h1>
+
+<p>wget <a href="http://sqlite.org/sqlite-amalgamation-3.6.23.1.tar.gz">http://sqlite.org/sqlite-amalgamation-3.6.23.1.tar.gz</a></p>
+
+<h1>unpack it</h1>
+
+<p>tar xvzf sqlite-amalgamation-3.6.23.1.tar.gz</p>
+
+<h1>cd into the created folder</h1>
+
+<p>cd sqlite-amalgamation-3.6.23.1</p>
+
+<h1>run configuration</h1>
+
+<p>./configure</p>
+
+<h1>make and intall the package</h1>
+
+<p>make &amp;&amp; sudo make install
+</p></pre>
+After successfully install the installer will tell where the library files have been stored in. In my case this was “/usr/local/lib”.
+
+<p>So I can install the gem now with:
+</p><pre>
+gem install sqlite3...</pre>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/26/install-sqlite3-ruby-on-centos.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">iPhone App : Debug and Release through Titanium</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 25, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Once people develop an iPhone App using <a href="http://www.appcelerator.com/">Titanium1.4</a>, they must be very happy when the App is running on iPhone simulator. They feel great until they decide to debug their app on their devices or even release their app to AppleAppStore. This happens specially to these who firstly do this. Why? There are many reasons that you will hate Apple during the debug or release process. I bat you are like me then.</p>
+
+<p>Assume that: You’ve already finished coding an iPhone app in Titanium 1.4 framework. Now you want to install your app on your device. If you do this first time, guess what will happen to you? Let me tell you my story.</p>
+
+<p>You will be blocked by Titanium certificates detections when you want to install your app to your device. see below image:
+</p><div class="thumbnail">
+<a href="http://skitch.com/yorzi/dut81/mail-1320x770"><img src="http://img.skitch.com/20100825-fuf9q1dac5ir21f5g4im2h93gi.jpg" alt="mail (1320շ70)"></a><br>
+</div>
+<br>
+Well, in order to become an iPhone developer,...
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/25/iphone-app-debug-and-release-via-titanium.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/08/21/你在哪一边?.html">你在哪一边？</a>
   </h2>
 </header>
@@ -280,37 +378,6 @@ We want to pick up a name list, all people in the list should be under certain c
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/07/30/start-working-on-titanium.html">Start working on Titanium</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 30, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Been working on Titanium for a while, I find a must read PPT to guide you smoothly getting start on <a href="http://developer.appcelerator.com/get_started">Titanium Mobile Development</a>. </p>
-
-<div style="width:425px" id="__ss_4793534"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kwhinnery/oscon-titanium-tutorial" title="OSCON Titanium Tutorial">OSCON Titanium Tutorial</a></strong><object id="__sse4793534" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4793534" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/kwhinnery">Kevin Whinnery</a>.</div></div>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/30/start-working-on-titanium.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
   </h2>
 </header>
@@ -370,6 +437,37 @@ set :deploy_to, "/var/www/#{application...</p></code>
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/07/30/start-working-on-titanium.html">Start working on Titanium</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 30, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Been working on Titanium for a while, I find a must read PPT to guide you smoothly getting start on <a href="http://developer.appcelerator.com/get_started">Titanium Mobile Development</a>. </p>
+
+<div style="width:425px" id="__ss_4793534"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/kwhinnery/oscon-titanium-tutorial" title="OSCON Titanium Tutorial">OSCON Titanium Tutorial</a></strong><object id="__sse4793534" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4793534" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titaniumtutorial-100719215658-phpapp02&stripped_title=oscon-titanium-tutorial" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/kwhinnery">Kevin Whinnery</a>.</div></div>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/07/30/start-working-on-titanium.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/07/29/天气.html">天气</a>
   </h2>
 </header>
@@ -405,103 +503,6 @@ set :deploy_to, "/var/www/#{application...</p></code>
   </p>
   <p>
     <a href="/2010/07/29/天气.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/28/rails3-app-gem-stack.html">Rails3 App Gem Stack</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 28, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Rails3 RC1 was released yesterday, that’s really awesome, I can’t help experimenting a sample of Rails3 new features. I want to share my Gemfile to list all application gem stack, which may be useful for those who don’t wanna create wheels themselves. Below is the list:
-<code lang="ruby"></code></p>
-
-<h1>Bundle edge Rails instead:</h1>
-
-<p>gem 'rails', :git =&gt; 'git://github.com/rails/rails.git'</p>
-
-<p>gem 'mysql'</p>
-
-<h1>devise for auth</h1>
-
-<p>gem 'devise', '1.1.rc2'</p>
-
-<h1>show_for is a helper for showing objects</h1>
-
-<p>gem 'show_for'</p>
-
-<h1>pageinate</h1>
-
-<p>gem 'will_paginate', '3.0.pre'</p>
-
-<h1>A set of responders modules to dry up your Rails 3 app</h1>
-
-<p>gem 'responders'</p>
-
-<h1>Cron job in Rails</h1>
-
-<p>gem 'whenever', :git =&gt; 'git://github.com/javan/whenever.git'</p>
-
-<h1>for creating navigations</h1>
-
-<p>gem 'simple-navigation', '2.6.0'</p>
-
-<h1>for backup db to s3/remote server</h1>
-
-<p>gem 'backup', '2.3.2.pre3'</p>
-
-<h1>Editor...</h1>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/28/rails3-app-gem-stack.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Beta Salon - Rails Developer Meetup</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 27, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <div>
-
-<a href="http://developer.idapted.com/about/">Engineers at Idapted</a> are famous and cool. They are eager to join the technical activities. At the very beginning of this June, <a href="http://jonathonpalley.com">Jonathon Palley</a> and Guolei went to US to attend the <a href="http://en.oreilly.com/rails2010">Railsconf2010</a>, which is the top level and the largest official Ruby on Rails conference, where the most successful Rails experts and companies share their experience and skill.
-
-Yeah, Jonathon and Guolei did a great job to present Idapted technology to the Rails community and gained a big success to introduce Idapted platform to the world. Since they came back to Beijing, they’ve been preparing for a similar local presentation for Chinese Rails community. Finally, with <a href="http://club.blogbeta.com/" target="_blank">Beta Salon</a>’s help, in last Saturday evening, Idapted technology team organized a Ruby on Rails activity in <a href="http://storygarden.me/" target="_blank">Story Garden</a>, which is a famous Cafe...</div>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/27/beta-salon-rails-developer-meetup.html">Read more →</a>
   </p>
 </div>
     </article>
