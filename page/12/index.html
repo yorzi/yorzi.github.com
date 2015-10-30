@@ -73,6 +73,46 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/07/17/install-mysql-on-centos5-5.html">Install mysql on centOS5.5</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jul 17, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>STUDY NOTES(<a href="http://library.linode.com/databases/mysql/centos-5" target="_blank">Linode VPS Doc Copy</a></strong><strong>):</strong>
+</p><div id="installing-mysql">
+<h2>Installing MySQL</h2>
+Issue the following commands to update your system and install MySQL:
+<pre>yum update
+yum install mysql-server
+/sbin/chkconfig --levels 235 mysqld on</pre>
+The MySQL server package will be installed on your server, along with dependencies and client libraries. Start MySQL by running the following  command:
+<pre>service mysqld start</pre>
+</div>
+<div id="configuring-mysql">
+<h2>Configuring MySQL</h2>
+After installing MySQL, it’s recommended that you run <tt>mysql<em>secure</em>installation</tt>, a program that helps secure MySQL. While running <tt>mysql<em>secure</em>installation</tt>, you will be presented with the opportunity to change the MySQL root  password, remove anonymous user accounts, disable root logins outside of  localhost, and remove test databases. It is recommended that you answer yes to  these options. If you are prompted...</div>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/07/17/install-mysql-on-centos5-5.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/07/16/searchbar-in-titanium.html">SearchBar in Titanium</a>
   </h2>
 </header>
@@ -462,38 +502,6 @@ Ti.include('content/tab_weibo.js');</p>
   </p>
   <p>
     <a href="/2010/07/01/岁月神偷.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/06/30/iphone-android-application-based-on-titanium-and-html5.html">iPhone/Android application based on Titanium and HTML5</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jun 30, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>After a two-day experiment on <a href="http://www.appcelerator.com/">Titanium framework</a> and HTML5 technology, I finally found, we can quickly move into iPhone/iPad application development if we have enough extra time to refactor our Rails core application into HTML5 version.</p>
-
-<p>I’ve made a Titanium based app demo to show how to structure the application according to our current system. Titanium framework includes plenty of powerful <a href="http://developer.appcelerator.com/doc/kitchensink">APIs</a> for us to generate cool “application container”, then we embed our content/system into this container. I think the Titanium can be organized clearly if we have clearly structured Rails/HTML5 application.</p>
-
-<p>Talking about HTML5, I just want to share with everyone the resources I found, Google just started a HTML5 support website named <a href="http://www.html5rocks.com/">html5rocks</a>, it has a <a href="http://www.html5rocks.com/resources.html">html5 resources page</a> where it includes almost...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/06/30/iphone-android-application-based-on-titanium-and-html5.html">Read more →</a>
   </p>
 </div>
     </article>

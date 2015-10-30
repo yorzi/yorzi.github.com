@@ -5,10 +5,48 @@
   <id>http://wangyaodi.com</id>
   <link href="http://wangyaodi.com/"/>
   <link href="http://wangyaodi.com/feed.xml" rel="self"/>
-  <updated>2015-10-27T13:55:00+08:00</updated>
+  <updated>2015-10-30T13:15:00+08:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>请叫我R先生</title>
+    <link rel="alternate" href="/2015/10/30/call-me-mr-r.html"/>
+    <id>/2015/10/30/call-me-mr-r.html</id>
+    <published>2015-10-30T13:15:00+08:00</published>
+    <updated>2015-10-30T13:15:00+08:00</updated>
+    <author>
+      <name>Andy Wang</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;img alt="R" src="/images/post/R3.jpg?1446182837"&gt;&lt;/p&gt;
+
+&lt;p&gt;因为工作的原因，最近在研究一些新的有趣的技术，比方React、Redux和Relay，要把他们集成到Ruby/Rails项目中去，随之发现这些玩意儿竟然都是R开头，于是在朋友圈戏言，R开头的技术对我都有天然的吸引力，希望大家能推荐一些有趣有用的R开头的技术，于是就有了Redis/R/Rust这些建议，很好，有这样一堆有趣的东西学习，都不怕接下来几年饿肚子了。&lt;/p&gt;
+
+&lt;p&gt;如果你看不懂上面的这些“单词”，不要紧，你知道我靠这些东西吃饭就好了。除了工作相关的技术之外，还有两个R开头的词和我关系密切。Remote &amp;amp; Reliable，远程工作接近5年，提供可靠的“服务”，大小项目做了不少，Remote变成自己的标签也一点都不为过。Remote Working这种模式或许会越来越被人们认可，软件行业的行业特征决定了我们可以比较早的体验这种与众不同的工作方式，远程工作虽然也有争议，但是带来的好处也很多，比方高效率、全球化人才整合、生活和工作最佳的平衡状态，等等。不过想要做独立的Freelancer或者过Remote Working这种生活的人，也要做好心理准备，有可能这是一条不归路。：）&lt;/p&gt;
+
+&lt;p&gt;工作和生活状态方面的R之外，兴趣爱好里面也有很多是R开头，Reading/Running/Relaxing，坦白的讲，这些都是我愿意积极践行，坚持一直去做的事情，生活嘛，细水长流，花点时间做点看似没有暴利的事情，让自己变得正常点，让身心状态稳定的接近自然，这时候，再看看周围燥热的人群，看各种火热朝天的躁动场面，就会觉得于己无关，也会心甘情愿的慢生活。&lt;/p&gt;
+
+&lt;p&gt;最后还有两个R开头的词：Refactoring &amp;amp; Repeating，Refactoring是指重构，重构各种认识，逐渐更新身体和精神状态，重构的目的只是为了持续的更新，不被潮流所淹没，而Repeating指重复，其实重复这种动作是有神力的，所...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;img alt="R" src="/images/post/R3.jpg?1446182837" /&gt;&lt;/p&gt;
+
+&lt;p&gt;因为工作的原因，最近在研究一些新的有趣的技术，比方React、Redux和Relay，要把他们集成到Ruby/Rails项目中去，随之发现这些玩意儿竟然都是R开头，于是在朋友圈戏言，R开头的技术对我都有天然的吸引力，希望大家能推荐一些有趣有用的R开头的技术，于是就有了Redis/R/Rust这些建议，很好，有这样一堆有趣的东西学习，都不怕接下来几年饿肚子了。&lt;/p&gt;
+
+&lt;p&gt;如果你看不懂上面的这些“单词”，不要紧，你知道我靠这些东西吃饭就好了。除了工作相关的技术之外，还有两个R开头的词和我关系密切。Remote &amp;amp; Reliable，远程工作接近5年，提供可靠的“服务”，大小项目做了不少，Remote变成自己的标签也一点都不为过。Remote Working这种模式或许会越来越被人们认可，软件行业的行业特征决定了我们可以比较早的体验这种与众不同的工作方式，远程工作虽然也有争议，但是带来的好处也很多，比方高效率、全球化人才整合、生活和工作最佳的平衡状态，等等。不过想要做独立的Freelancer或者过Remote Working这种生活的人，也要做好心理准备，有可能这是一条不归路。：）&lt;/p&gt;
+
+&lt;p&gt;工作和生活状态方面的R之外，兴趣爱好里面也有很多是R开头，Reading/Running/Relaxing，坦白的讲，这些都是我愿意积极践行，坚持一直去做的事情，生活嘛，细水长流，花点时间做点看似没有暴利的事情，让自己变得正常点，让身心状态稳定的接近自然，这时候，再看看周围燥热的人群，看各种火热朝天的躁动场面，就会觉得于己无关，也会心甘情愿的慢生活。&lt;/p&gt;
+
+&lt;p&gt;最后还有两个R开头的词：Refactoring &amp;amp; Repeating，Refactoring是指重构，重构各种认识，逐渐更新身体和精神状态，重构的目的只是为了持续的更新，不被潮流所淹没，而Repeating指重复，其实重复这种动作是有神力的，所谓水滴石穿，便是常年累月的重复所造就的，对每个人而言，有很多事情都值得花很长时间去重复，日复一日，突然有一天，你不经意件发现你重复的事情有了变化，你自己内在有了变化，倘若真的想试着验证一番，建议以十年记，去重复做一件有意义的小事吧。&lt;/p&gt;
+
+&lt;p&gt;用R做引子，说了很多和自己相关的事情，本意不在于牵强的成全这种近乎迷信的关联，而是梳理思路的时候，通常可以选取一些线索，有线索，便不怕混乱。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;span class="footnotes"&gt;
+为了练习写作，我开了一个微信公众号【爱成长】，每篇Blog都会同步在该公众号中发布，请感兴趣的朋友关注我的微信公众号。【 微信ID：&lt;strong&gt;i-chengzhang&lt;/strong&gt; 】&lt;br /&gt;
+&lt;img alt="爱成长二维码" src="/images/post/i-chengzhang.jpg?1445747023" /&gt;
+&lt;/span&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>『爱•成长』：一个普通人的习作和思悟</title>
     <link rel="alternate" href="/2015/10/27/love-and-growth.html"/>
@@ -265,52 +303,6 @@
 &lt;p&gt;&lt;em&gt;When the aerials are down, and your spirit is coveredwith snows of cynicism and the ice of pessimism, then you are grown old, evenat twenty, but as long as your aerials are up, to catch the waves of optimism,there is hope you may die young at eighty.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="塞缪尔·厄尔曼" src="/images/post/samiuer.jpeg?1423378377" /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>平凡之路</title>
-    <link rel="alternate" href="/2015/02/03/tough-road.html"/>
-    <id>/2015/02/03/tough-road.html</id>
-    <published>2015-02-03T23:21:00+08:00</published>
-    <updated>2015-02-03T23:21:00+08:00</updated>
-    <author>
-      <name>Andy Wang</name>
-    </author>
-    <summary type="html">&lt;p&gt;&lt;img alt="平凡之路" src="/images/post/pingfanzhilu.png?1423008842" /&gt;&lt;/p&gt;
-
-&lt;p&gt;距上一篇日志已有小半年，期间没写Blog，并非无事可写，只不过思路零散，心绪不畅，事情琐碎，所以不足为道。&lt;/p&gt;
-
-&lt;p&gt;记得2014年最后几个月，过得极不整顿，事情揽了一大堆，忙前忙后忙里忙外，到头来诸事皆不顺利，劳心劳神，即使如此折腾，也并未见到什么实质的回报。&lt;/p&gt;
-
-&lt;p&gt;索性2015年伊始，先带老婆孩子三亚游览一圈，名为游览，其实不过是切换一个场景，整顿思路，枕戈待发。家庭是我们组建的最重要的团队，团队建设自然必不可少，家庭是伟大的基业，不可稍有怠慢。&lt;/p&gt;
-
-&lt;p&gt;出游期间，有幸加入&lt;a href="http://www.yangzhiping.com/"&gt;老阳&lt;/a&gt;的【开智青年故事会】的微信群，接着受到各种青年轻年的熏陶刺激，同辈压力是最好的催化剂，促使我看到多元化的人生可能，看他们引经据典读书写字，听他们分享一流的心智讲座，深感自身之浮躁和浅薄，知耻而后勇，桑榆非晚。&lt;/p&gt;
-
-&lt;p&gt;33岁，春上春树也才开始跑步，那时候他写小说时间也不长，而之后的20多年，他一直在坚持做这两件事情。时间是牛逼的唯一量度，我不为牛逼，只为不输给时间。于是去除杂念，推掉各种应酬，甚至先搁置钱途和虚名。从2015年开始，走一段新的旅途。&lt;/p&gt;
-
-&lt;p&gt;工作十年之后，决定来一次&lt;a href="http://baike.baidu.com/view/1637881.htm"&gt;职业间隔年&lt;/a&gt;，此后，希望未来十年不在因为职业产生困惑，恰好放慢脚步，不简单粗暴按部就班地急着继续工作赚钱，做一点跟“金钱”看似没有关系的事情，比方看书、跑步或者思考人生&amp;hellip; 想起刚上小学时候，教室后面贴的几个大字：德、智、体、美、劳。返璞归真，这几个字又一次成为我的人生理想。&lt;/p&gt;
-
-&lt;p&gt;有点惊讶，&lt;strong&gt;德智体美劳&lt;/strong&gt;，竟然如此完美的描述了一个健全的人，一个亮晶晶的人，一个脱离了低级趣味的人。提升德行，开启心智，强身健体永葆青春，知美为美，热爱劳动&amp;hellip;三十几年，我第一次从中国教育的线索当中找到了真善美。&lt;/p&gt;
-
-&lt;p&gt;平凡之路，也不能忘记用独立之思考，开自由之心智，由此投入一件长久的事业当中，获得真正的&lt;a href="http://baike.baidu.com/view/113421.htm"&gt;心流体验&lt;/a&gt;。&lt;/p&gt;
-</summary>
-    <content type="html">&lt;p&gt;&lt;img alt="平凡之路" src="/images/post/pingfanzhilu.png?1423008842" /&gt;&lt;/p&gt;
-
-&lt;p&gt;距上一篇日志已有小半年，期间没写Blog，并非无事可写，只不过思路零散，心绪不畅，事情琐碎，所以不足为道。&lt;/p&gt;
-
-&lt;p&gt;记得2014年最后几个月，过得极不整顿，事情揽了一大堆，忙前忙后忙里忙外，到头来诸事皆不顺利，劳心劳神，即使如此折腾，也并未见到什么实质的回报。&lt;/p&gt;
-
-&lt;p&gt;索性2015年伊始，先带老婆孩子三亚游览一圈，名为游览，其实不过是切换一个场景，整顿思路，枕戈待发。家庭是我们组建的最重要的团队，团队建设自然必不可少，家庭是伟大的基业，不可稍有怠慢。&lt;/p&gt;
-
-&lt;p&gt;出游期间，有幸加入&lt;a href="http://www.yangzhiping.com/"&gt;老阳&lt;/a&gt;的【开智青年故事会】的微信群，接着受到各种青年轻年的熏陶刺激，同辈压力是最好的催化剂，促使我看到多元化的人生可能，看他们引经据典读书写字，听他们分享一流的心智讲座，深感自身之浮躁和浅薄，知耻而后勇，桑榆非晚。&lt;/p&gt;
-
-&lt;p&gt;33岁，春上春树也才开始跑步，那时候他写小说时间也不长，而之后的20多年，他一直在坚持做这两件事情。时间是牛逼的唯一量度，我不为牛逼，只为不输给时间。于是去除杂念，推掉各种应酬，甚至先搁置钱途和虚名。从2015年开始，走一段新的旅途。&lt;/p&gt;
-
-&lt;p&gt;工作十年之后，决定来一次&lt;a href="http://baike.baidu.com/view/1637881.htm"&gt;职业间隔年&lt;/a&gt;，此后，希望未来十年不在因为职业产生困惑，恰好放慢脚步，不简单粗暴按部就班地急着继续工作赚钱，做一点跟“金钱”看似没有关系的事情，比方看书、跑步或者思考人生&amp;hellip; 想起刚上小学时候，教室后面贴的几个大字：德、智、体、美、劳。返璞归真，这几个字又一次成为我的人生理想。&lt;/p&gt;
-
-&lt;p&gt;有点惊讶，&lt;strong&gt;德智体美劳&lt;/strong&gt;，竟然如此完美的描述了一个健全的人，一个亮晶晶的人，一个脱离了低级趣味的人。提升德行，开启心智，强身健体永葆青春，知美为美，热爱劳动&amp;hellip;三十几年，我第一次从中国教育的线索当中找到了真善美。&lt;/p&gt;
-
-&lt;p&gt;平凡之路，也不能忘记用独立之思考，开自由之心智，由此投入一件长久的事业当中，获得真正的&lt;a href="http://baike.baidu.com/view/113421.htm"&gt;心流体验&lt;/a&gt;。&lt;/p&gt;
 </content>
   </entry>
 </feed>
