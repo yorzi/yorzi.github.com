@@ -73,6 +73,50 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/01/06/cms-formtastic-routing-cache-in-rails.html">A note for building a simple Rails application</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Jan 06, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>最近花了一些时间改造公司的网站（<a href="http://www.eqenglish.com">EQV2</a>），这个网站是一个偏重内容和设计的信息类主站，并没有太多功能性的要求，所以在使用<a href="http://rubyonrails.org/">Ruby on Rails</a>开发这个网站的时候，尝试了一些之前涉及不多的技术。最初这个网站利用<a href="http://radiantcms.org/">Radiant</a>（RoR的开源CMS系统）搭建，考虑到没有专门的技术人员来管理和研究<a href="http://radiantcms.org/">Radiant</a>，而且和我们自己的系统平台的集成也会有些麻烦，最终决定放弃这把牛刀，仅仅做一个简单而且结构清晰的网站就OK。</p>
+
+<p>我简单列一下这次改造过程中的一些比较典型的处理方法和技术：</p>
+
+<ul>
+<li><p><a href="http://blog.wangyaodi.com/2009/12/22/formtastic-for-rails/">Formtastic</a> + nifty_scaffold
+用这两招可以方便的产生后台的CRUD管理部分，不知道为什么我第一反应没有使用<a href="http://activescaffold.com/">ActiveScaffold</a>，可能是从Rails2.3+以后Denny老说使用起来有问题有冲突，我就本能的绕开它了。
+参考： <a href="http://asciicasts.com/episodes/184-formtastic-part-1"></a><a href="http://asciicasts.com/episodes/184-formtastic-part-1">http://asciicasts.com/episodes/184-formtastic-part-1</a></p></li>
+<li><p><a href="http://blog.wangyaodi.com/2009/11/13/feed-parser-in-ruby/">feedzirra</a> + <a href="http://blog.wangyaodi.com/2009/11/13/%E5%9C%A8ror%E4%B8%AD%E6%89%A7%E8%A1%8C%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">whenever</a>
+feedzirra是一个方便易用的RSS分析器，很不错，结合whenever就可以自动更新源RSS，在我们的系统中我用它们更新Blog中的内容到网站上面来。
+参考： <a href="http://github.com/pauldix/feedzirra"></a><a href="http://github.com/pauldix/feedzirra">http://github.com/pauldix/feedzirra</a>
+          <a href="http://github.com/javan/whenever/"></a><a href="http://github.com/javan/whenever/">http://github.com/javan/whenever/</a></p></li>
+<li><p><a href="http://code.google.com/p/rubycas-server/">cas</a>
+<a href="http://www.dujinfang.com">7哥</a>搭建了一个idp_cas的server，我就结合这个做了一个单点登录的控制，用来对后台内容管理做权限控制。这个方案很轻量级，避免了直接集成复杂的idp用户验证系统。</p></li>
+<li><p>Routing
+此次最想突出介绍的是ROR的<a href="http://api.rubyonrails.org/classes/ActionController/Routing.html">Routing</a>机制，强大的Routing可以将URL改写成任何形式，以适应SEO的需要，同时也可以做坏链的容错处理。很好很强大，就是不知道效率如何，这个有待...</p></li>
+</ul>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/01/06/cms-formtastic-routing-cache-in-rails.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/01/04/album-2008-2009.html">Album 2008 & 2009</a>
   </h2>
 </header>
@@ -434,63 +478,6 @@ IDP_V2。WPC。车祸。穿越。Party。Google。iPhone。Ruby on Rails。朋�
   </p>
   <p>
     <a href="/2009/12/26/时过境迁,再无灵感.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/12/25/技术-vs-业务.html">技术 VS 业务</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Dec 25, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/业务.html">业务</a>
-        <a href="/tags/交流.html">交流</a>
-        <a href="/tags/倾听.html">倾听</a>
-        <a href="/tags/技术.html">技术</a>
-        <a href="/tags/沟通.html">沟通</a>
-        <a href="/tags/目标.html">目标</a>
-        <a href="/tags/谈话.html">谈话</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>今天和Angela(我们的课程经理)讨论了一个问题，很明显，这个讨论中我们双方都有不同的困惑，之后我们简单总结了一下这次沟通。</p>
-
-<p>问题的背景是：我需要弄清楚一个业务问题，即我们需要做什么事情，然后我会想办法，完成对应的功能来处理相应的事情。我需要找Angela确认，或者说弄明白我们到底想要做什么。于是就有了一次大概20分钟的沟通，之后我们在MSN上面一块简单总结了一下，谈话内容如下：
-</p><blockquote>(15:50:43) Andy: 针对刚才的沟通，简单总结一下如何，我希望对自己的沟通能力进行改善:)<br>
-(15:51:15) Andy: 说说为什么我们会说那么长时间。。<br>
-(15:51:18) Angela: active listening<br>
-(15:51:27) Angela: 我觉得我们都应该改进<br>
-(15:51:36) Angela: 我喜欢抢话说<br>
-(15:51:38) Angela: 哈哈<br>
-(15:51:38) Andy: 刚才咱们谁说的多，听的少？<br>
-(15:51:45) Angela: sorry…我<br>
-(15:51:56) Andy: 这种情况下谁应该说的多一点？<br>
-(15:52:27) Andy: 呵呵 没问题 我只是想回放一下<br>
-(15:52:28) Angela: 我是觉得我们刚才沟通的时候掺杂了别的东西<br>
-(15:52:45) Andy: 比方说呢<br>
-(15:52:46) Angela: 技术。。。<br>
-(15:53:02) Angela: 你想解决除了讨论问题的其他问题<br>
-(15:53:14) Andy: 其实技术人员经常被认为不善于交流<br>
-(15:53:55) Andy: 我觉得刚才的场景 谈话目标不同<br>
-(15:54:28) Angela: 恩<br>
-(15:54:48) Angela: 这个问题我觉得，我关注的是业务<br>
-(15:54:57) Angela: 你关注的是交流<br>
-(15:55:07...</blockquote>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/12/25/技术-vs-业务.html">Read more →</a>
   </p>
 </div>
     </article>

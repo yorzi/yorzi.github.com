@@ -73,6 +73,52 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/04/06/对话.html">对话</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Apr 06, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/对话.html">对话</a>
+        <a href="/tags/思考.html">思考</a>
+        <a href="/tags/纪念.html">纪念</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>一</strong>
+-  “大哥 我想去爬华山 赞助些 谢谢”<br />
+&ndash; “时间 地点 人物 费用 帐号”<br />
+-  “4月17下午到18下午 宿舍成员和我男朋友 二百元 卡号中午发给你”<br />
+&ndash; “OK 注意安全 btw 男朋友不是分了吗”<br />
+-  “上次不是告诉你我们是吵架了 后来气消了就原谅了”<br />
+&ndash; “好吧 科学的吵架不是一件坏事 好自为之”</p>
+
+<p><strong>二</strong>
+-  “她们都挺好的你为什么选我”<br />
+&ndash; “她们太敏感 我不能做错任何一件事情 也不能说错任何一句话”<br />
+-  “怎么讲”<br />
+&ndash; “我脾气比较差 有时候说话也很不注意 这样他们感到我伤害了她们的感情和体面 当我低头认错的时候 她们已经刻骨铭心的记恨了”<br />
+-  “那是有点累”<br />
+&ndash; “所以你比较坚强:p 我喜欢坚强而善良的人”</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/04/06/对话.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/04/02/且“慢”.html">且“慢”</a>
   </h2>
 </header>
@@ -548,54 +594,6 @@
   </p>
   <p>
     <a href="/2010/03/17/创业的历程——seo宣讲会.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/03/17/find_in_batches-is-not-working.html">find_in_batches is not working</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Mar 17, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Days ago, I came across a situation in which <a href="http://api.rubyonrails.org/classes/ActiveRecord/Batches/ClassMethods.html">find<em>in</em>batches</a> does not work correctly, the sample code is as below:
-<code lang="ruby"></code></p>
-
-<h1>NOT WORKING AS EXPECTED.</h1>
-
-<p>namespace :studycenter do
-  desc 'generate item extra items'
-  task :update<em>extra</em>items =&gt; :environment do
-    puts "starting at #{@time = Time.now}......"
-    Item.find<em>in</em>batches(:conditions =&gt; {:content<em>type =&gt; "Scenario"}) do |items|
-      items.each do |item|
-        begin
-          if item.extra</em>items.blank?
-            item.related<em>lessons.each do |extra|
-              @item = ItemExtraItem.create({:item</em>id =&gt; item.id, :extra<em>item</em>id =&gt; extra.id})
-              puts "=============================================#{@item.id}"
-            end
-          end
-          puts "finished item with ID:#{item.id}"
-        rescue Exception =&gt; e
-          puts "something...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/03/17/find_in_batches-is-not-working.html">Read more →</a>
   </p>
 </div>
     </article>
