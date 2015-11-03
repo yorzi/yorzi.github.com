@@ -73,6 +73,46 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/03/ssh-turnl-script.html">SSH tunnel script</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 03, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Why SSH tunneling?</p>
+
+<p>Obviously, if you live in Chxna or some other place where you are restricted to access free network, and if you luckily own a ssh accessible account on a server that is hosted in a free country, congratulations, you can use ssh tunnel to fuck the wall.</p>
+
+<p>Seriously, you just need to install ssh tool on your PC, (it will be much easier to setup a ssh tunnel if you are using a *nix OS), putty is a good choose if you are on Windows. I will show the script to explain what you should do on Ubuntu 9.04.
+</p><pre name="code" class="ruby">
+   ssh -qTfnN -D LocalPort remotehost(dreamhost)
+</pre>
+<code>
+All the added options are for a ssh session that’s used for tunneling.
+-q :- be very quite, we are acting only as a tunnel.
+-T :- Do not allocate a pseudo tty, we are only acting a tunnel.
+-f :- move the ssh process to background...</code>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/03/ssh-turnl-script.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/08/22/寂寞是一座花园.html">寂寞是一座花园</a>
   </h2>
 </header>
@@ -328,43 +368,6 @@
   </p>
   <p>
     <a href="/2009/06/26/无题-9.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/06/25/无题-8.html">无题</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jun 25, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>神经边缘是悲怆和绝望<br />
-而夏天滋养着火焰和热血涌动<br />
-待我淡定的退隐<br />
-山林一眼混乱<br />
-<br />
-笑和哭的距离<br />
-是命悬一线的倔强<br />
-<br />
-Night, Earth!</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/06/25/无题-8.html">Read more →</a>
   </p>
 </div>
     </article>

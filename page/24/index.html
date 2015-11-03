@@ -73,6 +73,49 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/06/weekly-key-words.html">Weekly Key Words</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 06, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/key-words.html">key-words</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>*<strong>11针</strong></p>
+
+<p>如果没有看见伤口，每个听说我眼睛附近缝了11针的朋友都会瞬间一懵，但是看见伤口的人又会开始觉得我是多么的幸运，因为即使情况那样子复杂，我的眼睛仍然安然无恙，所以每个人几乎都很开心，ss竟然带着香槟前来看望我。</p>
+
+<p>*<strong>8斤</strong></p>
+
+<p>当天晚上在医院等待的片刻，我站在秤上面，当时是72KG。（God，去年这个时候只有64KG）更离谱的是，昨天下午去拆线，我又站上去看了看，这一次是76KG。（God，首次突破150，我需要忏悔）</p>
+
+<p>*<strong>9天</strong>
+这一次又像是长假，在家里一直这么呆着，每天从这个屋子走到那个屋子，再从那个屋子走到这个屋子，再走过去，再走过来，再走过去，再走过来。其实闲的时候，也会好烦。</p>
+
+<p>这一个周要感谢很多人，那些过来做饭的，那些送好吃的，那些给我洗头的，那些陪我说话的，谢谢你们。（其实上次好像谢过一回了，这几天有人说我变的太客气了，其实那不是客气，那是我的福气）</p>
+
+<p>明天开始减肥，所以明天开始上班。</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/06/weekly-key-words.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/03/car-crashing.html">Car Crash</a>
   </h2>
 </header>
@@ -105,6 +148,58 @@
   </p>
   <p>
     <a href="/2009/12/03/car-crashing.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/26/law-of-demeter.html">Law of Demeter</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 26, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Rails Best Practice Snippet: Model refactor.
+Reference link to the PDF.<a href='http://tech.wangyaodi.com/?attachment_id=125' rel='attachment wp-att-125'>Rails-best-practices.</a></p>
+
+<p>Before:
+<code lang="ruby">
+class Invoice &lt; ActiveRecord::Base
+  belongs<em>to :user
+end
+&lt;%= @invoice.user.name %&gt;
+&lt;%= @invoice.user.address %&gt;
+&lt;%= @invoice.user.cellphone %&gt;
+</code>
+After:
+<code lang="rails">
+class Invoice &lt; ActiveRecord::Base
+  belongs</em>to :user
+  delegate :name, :address, :cellphone, :to =&gt; :user, :prefix =&gt; true
+end
+&lt;%= @invoice.user<em>name %&gt;
+&lt;%= @invoice.user</em>address %&gt;
+&lt;%= @invoice.user_cellphone %&gt;
+</code></p>
+
+<p>See more details about <a href="http://api.rubyonrails.org/classes/Module.html#M000110">Delegate</a> in rails doc.</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/26/law-of-demeter.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -165,52 +260,42 @@ Recommended as the browser can then cache the libraries instead...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/26/law-of-demeter.html">Law of Demeter</a>
+    <a href="/2009/11/23/inconvenience-happens.html">Inconvenience happens</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Nov 26, 2009
+      Nov 23, 2009
     </li>
     <li class="tags">
+        <a href="/tags/deployment.html">deployment</a>
+        <a href="/tags/issues.html">issues</a>
+        <a href="/tags/matter.html">matter</a>
+        <a href="/tags/upset.html">upset</a>
+        <a href="/tags/work.html">work</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Rails Best Practice Snippet: Model refactor.
-Reference link to the PDF.<a href='http://tech.wangyaodi.com/?attachment_id=125' rel='attachment wp-att-125'>Rails-best-practices.</a></p>
+  <p></p><blockquote>Dear Colleagues,</blockquote>
 
-<p>Before:
-<code lang="ruby">
-class Invoice &lt; ActiveRecord::Base
-  belongs<em>to :user
-end
-&lt;%= @invoice.user.name %&gt;
-&lt;%= @invoice.user.address %&gt;
-&lt;%= @invoice.user.cellphone %&gt;
-</code>
-After:
-<code lang="rails">
-class Invoice &lt; ActiveRecord::Base
-  belongs</em>to :user
-  delegate :name, :address, :cellphone, :to =&gt; :user, :prefix =&gt; true
-end
-&lt;%= @invoice.user<em>name %&gt;
-&lt;%= @invoice.user</em>address %&gt;
-&lt;%= @invoice.user_cellphone %&gt;
-</code></p>
+<p>I am so sorry to tell that our deployment of new extra content is really not going well this afternoon, so that the whole Study Center is broken somehow, as it’s been unluckily facing some unexpected errors while deploying such new features on product environment. Now <a href="http://www.dujinfang.com">seven</a>, gary and me are working on it, please wait for its being resolved..</p>
 
-<p>See more details about <a href="http://api.rubyonrails.org/classes/Module.html#M000110">Delegate</a> in rails doc.</p>
+<p>Sorry for the inconvenience!</p>
 
+<p>Today afternoon, I was upset when the deployment encountering issues. I thought I had been preparing carefully during last few days, but errors still came out. I summarize this lesson as following:</p>
+
+<p>1.  Keep code as well as the deployment revertible.<br>
+    I fall into a situation when I can not go forward and can not go backward. it’s pretty bad case which makes me feel nervous somehow. unless, I can revert...</p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2009/11/26/law-of-demeter.html">Read more →</a>
+    <a href="/2009/11/23/inconvenience-happens.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -254,48 +339,6 @@ end
   </p>
   <p>
     <a href="/2009/11/23/一周小疯狂.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/23/inconvenience-happens.html">Inconvenience happens</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 23, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/deployment.html">deployment</a>
-        <a href="/tags/issues.html">issues</a>
-        <a href="/tags/matter.html">matter</a>
-        <a href="/tags/upset.html">upset</a>
-        <a href="/tags/work.html">work</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p></p><blockquote>Dear Colleagues,</blockquote>
-
-<p>I am so sorry to tell that our deployment of new extra content is really not going well this afternoon, so that the whole Study Center is broken somehow, as it’s been unluckily facing some unexpected errors while deploying such new features on product environment. Now <a href="http://www.dujinfang.com">seven</a>, gary and me are working on it, please wait for its being resolved..</p>
-
-<p>Sorry for the inconvenience!</p>
-
-<p>Today afternoon, I was upset when the deployment encountering issues. I thought I had been preparing carefully during last few days, but errors still came out. I summarize this lesson as following:</p>
-
-<p>1.  Keep code as well as the deployment revertible.<br>
-    I fall into a situation when I can not go forward and can not go backward. it’s pretty bad case which makes me feel nervous somehow. unless, I can revert...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/23/inconvenience-happens.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -385,35 +428,6 @@ end
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/17/jquery-for-rails-developer.html">JQuery for Rails developer</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 17, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <div style="width:425px;text-align:left" id="__ss_110063"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/wycats/jquery-presentation-to-rails-developers-110063" title="jQuery Presentation to Rails Developers">jQuery Presentation to Rails Developers</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=jquery-presentation-to-rails-developers3264&stripped_title=jquery-presentation-to-rails-developers-110063" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=jquery-presentation-to-rails-developers3264&stripped_title=jquery-presentation-to-rails-developers-110063" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/wycats">Yehuda Katz</a>.</div></div>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/17/jquery-for-rails-developer.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2009/11/17/ui-framework.html">UI Framework</a>
   </h2>
 </header>
@@ -450,36 +464,29 @@ end
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/16/北京2009-2012年地铁规划图.html">北京2009-2012年地铁规划图</a>
+    <a href="/2009/11/17/jquery-for-rails-developer.html">JQuery for Rails developer</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Nov 16, 2009
+      Nov 17, 2009
     </li>
     <li class="tags">
-        <a href="/tags/beijing.html">beijing</a>
-        <a href="/tags/city.html">city</a>
-        <a href="/tags/life.html">life</a>
-        <a href="/tags/map.html">map</a>
-        <a href="/tags/subway.html">subway</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>如果这个图是可靠的，有些人也可以开始规划他的一部分人生了，比如住房。</p>
-
-<p>[caption id=&ldquo;attachment_89&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;512&rdquo; caption=&ldquo;BeiJing Subway Map in 2012&rdquo;]<a href="http://blog.wangyaodi.com/wp-content/uploads/2009/11/beijing-subway-2020.jpeg" target="_blank"><img class="size-large wp-image-89" style="border: 2px solid black;" title="beijing-subway-2020" src="http://blog.wangyaodi.com/wp-content/uploads/2009/11/beijing-subway-2020-1024x896.jpg" alt="BeiJing Subway Map in 2020" width="512" height="448" /></a>[/caption] </p>
+  <div style="width:425px;text-align:left" id="__ss_110063"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/wycats/jquery-presentation-to-rails-developers-110063" title="jQuery Presentation to Rails Developers">jQuery Presentation to Rails Developers</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=jquery-presentation-to-rails-developers3264&stripped_title=jquery-presentation-to-rails-developers-110063" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=jquery-presentation-to-rails-developers3264&stripped_title=jquery-presentation-to-rails-developers-110063" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/wycats">Yehuda Katz</a>.</div></div>
 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2009/11/16/北京2009-2012年地铁规划图.html">Read more →</a>
+    <a href="/2009/11/17/jquery-for-rails-developer.html">Read more →</a>
   </p>
 </div>
     </article>
