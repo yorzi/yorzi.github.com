@@ -73,6 +73,106 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2011/03/21/weekly-updates-javascript-rocks.html">Weekly Updates : Javascript Rocks!</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Mar 21, 2011
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>After quit from Idapted/Eleutian, I’d like to have a long term plan for writing blogs. However, as everything starts, it’s always hard. I thought it around, and finally decided to open my mind, and just try to start with a strong belief : Sharing! Then an idea comes out.  </p>
+
+<p>First of all, I think my weekly updates will help to share great things I came across or even I started to use, it has much fun to replay all these stuff, so I will do that in the weekend, that’s also part of my study review.</p>
+
+<p>Ok, turn to the points:</p>
+
+<ol>
+<li>Now you must know <a href="http://www.javascriptlint.com/index.htm">JSLint</a>. JSlint is a Javascript checker, which can help you ensure your JS’ quality. There are many great open source projects helping you to program in Javascript.</li>
+</ol>
+
+<p>Sources:
+Github Proj: <a href="https://github.com/douglascrockford/JSLint"></a><a href="https://github.com/douglascrockford/JSLint">https://github.com/douglascrockford/JSLint</a>
+Add JSLint to you TextMate...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2011/03/21/weekly-updates-javascript-rocks.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2011/03/09/settimeout-and-setinterval.html">JS note: setTimeout and setInterval</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Mar 09, 2011
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Yesterday, I discussed a JS issue with <a href="http://www.yakjuly.com/">Blade</a>, that I have to set up an automatic photo-switch effect on an existing page. I don’t want to change anything except adding a piece of javascript for doing that job because this page is already messy up by another engineer. Blade suggested I should use <strong><a href="https://developer.mozilla.org/en/DOM/window.setTimeout">setTimeout</a></strong> for this effect.</p>
+
+<h4><strong>* Case Study</strong></h4>
+
+<p>The basic case is something like below(there are some other effects based on the structure and style, so don’t affect others):
+<code lang="html">
+<div id="tab_ls">
+        <a class="active" id="haikou"></a>
+    <a id="dalian"></a><br>
+        <a id="changsha"></a> 
+</div></code></p>
+
+<div id="tab_con">
+    <div style="display: block;" id="fk">   
+        <div id="end"></div>
+        <div id="ctt">
+            <img src="http://www.2011roadshow.com/images/haikou.jpg">
+                    <h3>会议城市：海口</h3>
+            <p>时间：8月26日 14：00-18：00</p>
+                    <p>地点：海口鑫源温泉大酒店</p>
+        </div>
+    </div>
+        
+    <div id="fk" style="display:none">
+        <div id="end"></div>
+            <div id="ctt">
+            <img src="http://www.2011roadshow.com/images/dalian.jpg">
+                    <h3>会议城市：大连</h3>
+            <p>时间：9月3日 14：00-18：00</p>
+                    <p>地点：香洲花园酒店 </p>
+        </div>
+    </div>
+...</div>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2011/03/09/settimeout-and-setinterval.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2011/03/08/我们这一天.html">我们这一天</a>
   </h2>
 </header>
@@ -466,94 +566,6 @@ gem 'dalli'
   </p>
   <p>
     <a href="/2011/01/21/love-git-love-coding.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2011/01/20/deploy-rails3-app-in-sub-directory.html">Deploy Rails3 App in Sub-directory</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jan 20, 2011
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Last weekend, <a href="http://www.dujinfang.com">seven</a> and <a href="http://blog.sonitech.org/">sonic</a> did a great job to move all Idapted servers to a new datacenter, that&rsquo;s really a fabulous movement. Seven just wrote it out on <a href="http://www.dujinfang.com/past/2011/1/18/rails-fu-wu-qi-qian-yi-dian-di/">his blog</a>, if you want to know more about this migration, please go through his post. Anyway, in this post I wanna share a simple but valuable tip about deploying Rails3 app in sub directory.</p>
-
-<script src="https://gist.github.com/787610.js"></script>
-
-<p>More resources:
-1. Rails 3, Unicorn and RAILS<em>RELATIVE</em>URL<em>ROOT: <br />&lt;a href=&ldquo;<a href="http://summit360.co.uk/2010/09/rails">http://summit360.co.uk/2010/09/rails</a></em>3<em>unicorn.html&rdquo;&gt;<a href="http://summit360.co.uk/2010/09/rails">http://summit360.co.uk/2010/09/rails</a></em>3_unicorn.html</a>
-2. Enabling Rails 3 for your application: <br /><a href="http://www.nirvaat.com/ruby-on-rails/enabling-rails-3-for-your-application/"><a href="http://www.nirvaat.com/ruby-on-rails/enabling-rails-3-for-your-application/">http://www.nirvaat.com/ruby-on-rails/enabling-rails-3-for-your-application/</a></a>
-3. Rails 3 routes in subdirectory: <br /><a href="http://community.webfaction.com/questions/1364/rails-3-routes-in-subdirectory"><a href="http://community.webfaction.com/questions/1364/rails-3-routes-in-subdirectory">http://community.webfaction.com/questions/1364/rails-3-routes-in-subdirectory</a></a></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2011/01/20/deploy-rails3-app-in-sub-directory.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2011/01/10/关于阅读.html">关于阅读</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jan 10, 2011
-    </li>
-    <li class="tags">
-        <a href="/tags/37signals.html">37signals</a>
-        <a href="/tags/gettingreal.html">gettingreal</a>
-        <a href="/tags/reading.html">reading</a>
-        <a href="/tags/rework.html">rework</a>
-        <a href="/tags/读书.html">读书</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><table>
-<tbody>
-<tr>
-<td><img class="alignright" title="Rework" src="http://img3.douban.com/lpic/s4242326.jpg" alt="" width="294" height="450" /></td>
-<td><img class="alignleft" title="Getting Real" src="http://img3.douban.com/lpic/s4126286.jpg" alt="" width="297" height="447" /></td>
-</tr>
-</tbody>
-</table>
-很久没有翻书了，这是我内心的疼痛。</p>
-
-<p>最近在看<a href="http://book.douban.com/subject/3889178/">Rework</a>和<a href="http://book.douban.com/subject/3567853/">Getting Real</a>（因为这两本书，37signals又一次变成我心中的超级大神！），很享受这种阅读的乐趣，如同结交到各路大牛一般的朋友，或者听他们神侃，或者自己静静体味，对我而言，这便是生活中暖心的满足感。</p>
-
-<p>翻看了<a href="http://book.douban.com/">Douban</a>的读书记录，09年开始就没怎么好好完整读过什么书，内心一直有这样的向往，但是工作越来越忙，于是遗忘了精神层面的快慰。</p>
-
-<p>回头看来路，感觉多少有些偏离生活的初衷，我需要一番自省，需要和我的青春进行一次深入的谈话，告别浮躁，静水流深。</p>
-
-<p>接下来会和大家分享一些<a href="http://book.douban.com/people/yorzi/reviews?cat_id=1001">过往的读书笔记</a>或者评论，一来鼓励自己延续以前阅读和写字的好习惯，一来也和朋友们分享一些好的书籍。</p>
-
-<p>一直用一句话来鞭策自己，那就是”伟大的人分享知识！(Great People Share Knowledge!)“，现在写出来，与各位共勉。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2011/01/10/关于阅读.html">Read more →</a>
   </p>
 </div>
     </article>

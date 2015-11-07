@@ -73,48 +73,100 @@
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/03/17/find_in_batches-is-not-working.html">find_in_batches is not working</a>
+    <a href="/2010/03/21/为什么早上空腹不能吃香蕉.html">为什么早上空腹不能吃香蕉</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Mar 17, 2010
+      Mar 21, 2010
     </li>
     <li class="tags">
+        <a href="/tags/科普.html">科普</a>
+        <a href="/tags/空腹不能吃香蕉.html">空腹不能吃香蕉</a>
+        <a href="/tags/通便.html">通便</a>
+        <a href="/tags/降血压.html">降血压</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Days ago, I came across a situation in which <a href="http://api.rubyonrails.org/classes/ActiveRecord/Batches/ClassMethods.html">find<em>in</em>batches</a> does not work correctly, the sample code is as below:
-<code lang="ruby"></code></p>
+  <p>十万个为什么之［<a href="http://www.google.cn/search?hl=zh-CN&amp;source=hp&amp;q=%E4%B8%BA%E4%BB%80%E4%B9%88%E6%97%A9%E4%B8%8A%E7%A9%BA%E8%85%B9%E4%B8%8D%E8%83%BD%E5%90%83%E9%A6%99%E8%95%89&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai="><em>为什么早上空腹不能吃香蕉</em></a>］</p>
 
-<h1>NOT WORKING AS EXPECTED.</h1>
+<p><strong>* Digest</strong>
+空腹吃香蕉<br>
+可诱发心肌梗塞</p>
 
-<p>namespace :studycenter do
-  desc 'generate item extra items'
-  task :update<em>extra</em>items =&gt; :environment do
-    puts "starting at #{@time = Time.now}......"
-    Item.find<em>in</em>batches(:conditions =&gt; {:content<em>type =&gt; "Scenario"}) do |items|
-      items.each do |item|
-        begin
-          if item.extra</em>items.blank?
-            item.related<em>lessons.each do |extra|
-              @item = ItemExtraItem.create({:item</em>id =&gt; item.id, :extra<em>item</em>id =&gt; extra.id})
-              puts "=============================================#{@item.id}"
-            end
-          end
-          puts "finished item with ID:#{item.id}"
-        rescue Exception =&gt; e
-          puts "something...</p>
+<p>宜选择不饿或饭后食用</p>
+
+<p>专家说，香蕉内含有丰富的糖和纤维物质，有利于消化和通便等功效。但空腹吃香蕉不利于健康，因为空腹时，胃肠内几乎没有可供消化的食物，此时若是吃香蕉，将会加快肠胃的运动，促进血液循环，增加心脏负荷，易导致心肌梗塞。专家提醒，不要空腹时吃香蕉，一般应选择在饭后或不是饥饿状态时吃香蕉比</p>
+
+<p>常吃香蕉能治疗抑郁症<br>
+新加坡营养师陈宝琳说，演出前吃香蕉“压惊”具有一定的道理。因为，香蕉中含有色氨酸和丰富的维生素B6，它们是合成血清素的重要成分，而血清素具有镇痛、催眠、安神等作用。因此，吃香蕉确实能够减少紧张、缓解压力。有关研究认为，缺少色氨酸是引起情感性精神障碍的基础，可造成抑郁症体质的发病倾向。香蕉中的色氨酸则能使人心情愉快，从而起到预防和治疗抑郁症的作用。</p>
+
+<p>每天两个香蕉可降血压<br>
+常吃香蕉，还能使人体保持电解质平衡及酸碱代谢平衡，让神经肌肉兴奋性维持常态，心肌收缩与舒张功能协调，起到维持血压稳定和预防血管疾病的作用。<br>
+香蕉属于高钾食品，镁的含量也很丰富。钾能维持正常血压与心跳，防止血压上升及肌肉痉挛；而镁则具有消除疲劳的效果，人会紧张与缺镁有一定关系。因此，多吃香蕉可降低血压，预防高血压和心血管疾病。研究显示，每天吃两只香蕉，可有效降低血压。<br>
+2003年日本癌症学会的一项报告，也证明了香蕉具有提高免疫力、预防癌症的作用。该报告说，一天吃两个香蕉，能有效地改善体质。<br>
+另外，香蕉的卡路里含量很低，常吃也不会发胖，对减肥非常有效。</p>
+
+<p>有肾病的人别吃香蕉<br>
+从营养学角度看，香蕉是淀粉质丰富的水果，而从中医角度分析，香蕉味甘、性寒、可清热润肠，促进肠胃蠕动，但脾虚者应避免食用；根据“热者寒之”的原理，它最适合体内有燥热的人，如痔疮出血者食用。<br>
+新加坡李金龙中医师说：“香蕉分寒和...</p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/03/17/find_in_batches-is-not-working.html">Read more →</a>
+    <a href="/2010/03/21/为什么早上空腹不能吃香蕉.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/03/19/the-paradox-of-our-life.html">The Paradox of Our Life</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Mar 19, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/life.html">life</a>
+        <a href="/tags/paradox.html">Paradox</a>
+        <a href="/tags/thinkings.html">thinkings</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p></p><blockquote>The paradox of our time in history is that we have taller buildings but shorter tempers, wider highways, but narrower viewpoints.</blockquote>
+
+<p>We spend more, but have less, we buy more, but enjoy less.</p>
+
+<p>We have bigger houses and smaller families, more conveniences, but less time.</p>
+
+<p>We have more degrees but less sense, more knowledge, but less judgment, more experts, yet more problems, more medicine, but less wellness.</p>
+
+<p>We drink too much, smoke too much, spend too recklessly, laugh too little, drive too fast, get too angry, stay up too late, get up too tired, read too little, watch TV too much, and pray too seldom.</p>
+
+<p>We have multiplied our possessions, but reduced our values.</p>
+
+<p>We talk too much, love too seldom, and hate too often.</p>
+
+<p>We’ve learned how to make a living, but not a life.</p>
+
+<p>We’ve added years...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/03/19/the-paradox-of-our-life.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -199,6 +251,54 @@
   </p>
   <p>
     <a href="/2010/03/17/创业的历程——seo宣讲会.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/03/17/find_in_batches-is-not-working.html">find_in_batches is not working</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Mar 17, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Days ago, I came across a situation in which <a href="http://api.rubyonrails.org/classes/ActiveRecord/Batches/ClassMethods.html">find<em>in</em>batches</a> does not work correctly, the sample code is as below:
+<code lang="ruby"></code></p>
+
+<h1>NOT WORKING AS EXPECTED.</h1>
+
+<p>namespace :studycenter do
+  desc 'generate item extra items'
+  task :update<em>extra</em>items =&gt; :environment do
+    puts "starting at #{@time = Time.now}......"
+    Item.find<em>in</em>batches(:conditions =&gt; {:content<em>type =&gt; "Scenario"}) do |items|
+      items.each do |item|
+        begin
+          if item.extra</em>items.blank?
+            item.related<em>lessons.each do |extra|
+              @item = ItemExtraItem.create({:item</em>id =&gt; item.id, :extra<em>item</em>id =&gt; extra.id})
+              puts "=============================================#{@item.id}"
+            end
+          end
+          puts "finished item with ID:#{item.id}"
+        rescue Exception =&gt; e
+          puts "something...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/03/17/find_in_batches-is-not-working.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -439,173 +539,6 @@ Through the difficult and the easy...</em></p>
   </p>
   <p>
     <a href="/2010/02/04/给自己的歌.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/02/01/tweets-20100201.html">Tweets 2010/02/01</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Feb 01, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/nb-tweets.html">NB Tweets</a>
-        <a href="/tags/shares.html">shares</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p></p><table style="border-collapse: collapse;" border="0">
-<tbody>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;" colspan="2"><small style="color: #555555;"><strong>Monday 1st February 2010</strong></small></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8503006928">23:47</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/arthur369">arthur369</a>: 每日设计三推：可用性web表单的设计开发指南。表单在web设计中引发的讨论已经持续了10年，本文中罗列了多条原则，包括布局，验证，代码可读性，使用jquery来改良表单等。<a style="color: #dd1122;" href="http://is.gd/7tokO" target="_blank">http://is.gd/7tokO</a><a style="color: #dd1122;" href="hash/3dt">#3dt</a> <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8502946209">23:45</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/dupola">dupola</a>: 网络牛人模仿15个明星演唱《狮子座》 <a style="color: #dd1122;" href="http://u.dupola.net/30" target="_blank">http://u.dupola.net/30</a> 很好很强大。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8502608070">23:36</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/Alice7vong">Alice7vong</a> RT @<a style="color: #dd1122;" href="http://twitter.com/xgjames">xgjames</a>: “爱情，往往不是从天而降一个现成的好男人或好女人，让之成为我们的伴侣，而是在天时地利之际遇见一个普通人，我们相互发掘了彼此身上好的那一面，相互成为对方生命中的好男人和好女人，并好好相爱下去。” <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8492232450">17:19</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/xiaolai">xiaolai</a>: 据说最长的英文单词：pneumonoultramicroscopicsilicovolcanoconiosis <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8488643291">14:32</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/zhutouinfo">zhutouinfo</a> RT @<a style="color: #dd1122;" href="http://twitter.com/nuo">nuo</a>: 转某同学的状态：今年的2月14号是考验一个男人要亲情还是要爱情还是要自己的日子：大年初一，情人节，NBA全明星周末 三合一…… 比妈和老婆同时掉河里救谁的选择还要难.<small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8485347841">12:40</a></small>
-试用了一上午mac,还真是不习惯…于是又退回到ubuntu <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8485095551">12:34</a></small>
-@<a style="color: #dd1122;" href="http://twitter.com/_dz">_dz</a> 我去的是中关村金逸国际，开始是去北三环那个华星，结果所有时段都爆满了。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8480740574">11:04</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/_dz">_dz</a>: 周末去看了阿凡达，电影院里巨火爆啊，非常不理解的是，竟然还有人真的去看孔子！// 你也是这...</td>
-</tr>
-</tbody>
-</table>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/02/01/tweets-20100201.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/01/31/tweets-100131.html">Tweets 100131</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jan 31, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/nb-tweets.html">NB Tweets</a>
-        <a href="/tags/shares.html">shares</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p></p><table style="border-collapse: collapse;" border="0">
-<tbody>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;" colspan="2"><small style="color: #555555;"><strong>Sunday 31st January 2010</strong></small></td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8451612858">21:14</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/Fenng">Fenng</a>: 如果单兵作战的话，很多程序高手会说，"用什么语言都是无所谓的"。但是如果是团队协作开发的话，用什么语言，影响则是不一样的。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8448546193">18:47</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/jason2be">jason2be</a>: 今天才翻《GQ》里韩寒的采访，当即笑死。GQ：如果给你一次改变历史的机会你会拿来干什么？ 韩寒：这个问题太反动了。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8448392907">18:38</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/yujie89">yujie89</a>: @<a style="color: #dd1122;" href="http://twitter.com/qlx0808">qlx0808</a> 李敖笑里藏刀，李含笑与余含泪堪称两岸两大小丑 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8447893772">18:13</a></small>
-咖啡喝多了的确会有强迫症。。自从买了咖啡机，周末好像变得焦躁了，不知道有没有联系。。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8443009868">14:30</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/diaogaojie">diaogaojie</a> RT @<a style="color: #dd1122;" href="http://twitter.com/qiumazha">qiumazha</a>: 贵州枪击案有感：一名police，两个村民，三种说法，四方质疑，五颗子弹，六天已过，七大疑点，八风不动，酒后袭警，十分扯淡，百般抵赖，千刀万剐，亿他祖宗。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8442775425">14:21</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/sofish">sofish</a> RT @<a style="color: #dd1122;" href="http://twitter.com/ZH_CEXO">ZH_CEXO</a>: 要知道，“沉鱼落雁，闭月羞花”不单可以形容人美，还能形容人丑……当然，形容人丑最厉害的一句莫过于“千山鸟飞绝，万径人踪灭”了…… <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #ffffff; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8433590813">09:40</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/rtmeme">rtmeme</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/dawaiwai">dawaiwai</a>: 爱情跟钱一样，你一天一天又一天留着不花掉，你就不知道它最终属于谁。 <small style="color: #555555;">from <a style="color: #555555;" rel="nofollow" href="http://dabr.co.uk">dabr</a></small>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; padding: 0.3em;">
-<small style="color: #555555;"><a style="color: #555555;" href="status/8433559660">09:40</a></small>
-RT @<a style="color: #dd1122;" href="http://twitter.com/delphij">delphij</a>: RT @<a style="color: #dd1122;" href="http://twitter.com/yuishy">yuishy</a>: 马克思说：“外语是人生斗争的一种武器”（A foreign language is a weapon in the struggle of life）。 ── 网络时代的你们，明白么？ <small style="color: #555555;">from...</small>
-</td>
-</tr>
-</tbody>
-</table>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/01/31/tweets-100131.html">Read more →</a>
   </p>
 </div>
     </article>

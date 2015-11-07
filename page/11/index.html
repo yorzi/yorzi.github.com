@@ -73,6 +73,83 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Study Note : serialize object in ActiveRecord</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 04, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <h2><span style="color: #444444; line-height: 24px; font-size: 16px;">Copied from <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html#M001799" target="_blank">Ruby on Rails API doc</a>. Store here as a study notes for myself.
+
+Active Record can <a href="Base.html#M001799">serialize</a> any object in text <a href="Base.html#M001809">columns</a> using YAML. To do so, you must specify this with a call to the class method <tt><a href="Base.html#M001799">serialize</a></tt>. This makes it possible to store arrays, hashes, and other non-mappable objects without doing any additional work. Example:</span></h2>
+
+<pre>  class User &lt; ActiveRecord::Base
+    serialize :preferences
+  end
+
+  user = User.create(:preferences =&gt; { "background" =&gt; "black", "display" =&gt; large })
+  User.find(user.id).preferences # =&gt; { "background" =&gt; "black", "display" =&gt; large }</pre>
+
+<p>You can also specify a class option as the second parameter that‘ll raise an exception if a serialized object is retrieved as a descendant of a class not in the hierarchy. Example:
+</p><pre>  class User &lt; ActiveRecord::Base...</pre>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/04/serialize-object-in-activerecord.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/08/04/calculate-results-vs-store-result-sets.html">calculate results VS. store result sets</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Aug 04, 2010
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Firstly, what’s the results in title? For example, the results may be learners who will be alive in coming two weeks, or the results may be study times of one learner, etc. Generally, results should be some data coming from analyzing other data.</p>
+
+<p>Here my question is, how can we get certain results much faster and easily?</p>
+
+<p><strong>Case 1:</strong>
+We want to pick up a name list, all people in the list should be under certain condition, say, condition A, condition B, condition C, so normally, we just select the results which obey the rule(condition). Right? It depends.</p>
+
+<p>If name list is always dynamically different in condition A,B,C, it’s really hard to store the results set, we have to calculate instantly to make sure the results is accurate.</p>
+
+<p>If name list is very difficult to figure out in condition A,B...</p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/08/04/calculate-results-vs-store-result-sets.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/07/30/study-notes-passenger-capistrano-nginx-rails-2-3-4-ubuntu-9-04-10-steps.html">Study Notes: Passenger + Capistrano + Nginx + Rails 2.3.4 + Ubuntu 9.04 (10 steps)</a>
   </h2>
 </header>
@@ -269,7 +346,7 @@ set :deploy_to, "/var/www/#{application...</p></code>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/07/27/sherry的健康小贴士.html">Sherry的健康小贴士</a>
+    <a href="/2010/07/27/a-great-survey-solution-based-on-ruby-on-rails.html">A Great Survey Solution Based On Ruby on Rails</a>
   </h2>
 </header>
 
@@ -279,33 +356,25 @@ set :deploy_to, "/var/www/#{application...</p></code>
       Jul 27, 2010
     </li>
     <li class="tags">
-        <a href="/tags/it男.html">IT男</a>
-        <a href="/tags/sherry.html">sherry</a>
-        <a href="/tags/健康.html">健康</a>
-        <a href="/tags/营养.html">营养</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>Sherry是俺媳妇。</p>
+  <p>I’ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
 
-<p>Sherry也是一名立志成为一流营养师的勤奋滴同学。</p>
+<p><strong>What’s a Survey? </strong>
+Here is a brief look at the similarities and differences between forms, surveys, questionnaires and quizzes.</p>
 
-<p>Sherry说了，她要把俺这个IT男当成营养实验的小白鼠、健康方案的实验标本，总之，我就要轰轰烈烈的被sherry同学好吃好喝伺候叻～～</p>
+<p>Forms are a series of fields to be filled out by a user. Some forms are highly structured (such as a User form, or an Address form). Those highly structured forms can be created beforehand by a developer because they can map directly to models in the database. Other forms are highly unstructured, such as a questionnaire about your favorite types of food which are volatile. So form is simple structured format.</p>
 
-<p>不管怎么说，健康是每个人都要重视的人生标线，没有健康的体魄，就没有快乐的心情，没有扯天淡地的资本，没有大鱼大肉的豪迈，没有旺盛的精力和彪悍的爱，所以，大家一定要订阅<a href="http://www.sherrytips.com">Sherry童鞋的健康小贴士</a>，要多留言多鼓励她。</p>
-
-<p>再重复一遍，赶紧用GoogleReader订阅Sherry的健康小贴士：<a href="http://www.sherrytips.com">http://www.sherrytips.com</a></p>
-
-<p>Cheers！</p>
-
+<p>A Survey is a type of Form. Surveys are semi-structured data, in that we want to formulate the questions so they have “mineable” data, but they are...</p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/07/27/sherry的健康小贴士.html">Read more →</a>
+    <a href="/2010/07/27/a-great-survey-solution-based-on-ruby-on-rails.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -344,7 +413,7 @@ Yeah, Jonathon and Guolei did a great job to present Idapted technology to the R
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2010/07/27/a-great-survey-solution-based-on-ruby-on-rails.html">A Great Survey Solution Based On Ruby on Rails</a>
+    <a href="/2010/07/27/sherry的健康小贴士.html">Sherry的健康小贴士</a>
   </h2>
 </header>
 
@@ -354,25 +423,33 @@ Yeah, Jonathon and Guolei did a great job to present Idapted technology to the R
       Jul 27, 2010
     </li>
     <li class="tags">
+        <a href="/tags/it男.html">IT男</a>
+        <a href="/tags/sherry.html">sherry</a>
+        <a href="/tags/健康.html">健康</a>
+        <a href="/tags/营养.html">营养</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>I’ve been always looking for a powerful and flexible survey solution for a while, now I find it : <a href="http://github.com/breakpointer/surveyor">Surveyor</a>.</p>
+  <p>Sherry是俺媳妇。</p>
 
-<p><strong>What’s a Survey? </strong>
-Here is a brief look at the similarities and differences between forms, surveys, questionnaires and quizzes.</p>
+<p>Sherry也是一名立志成为一流营养师的勤奋滴同学。</p>
 
-<p>Forms are a series of fields to be filled out by a user. Some forms are highly structured (such as a User form, or an Address form). Those highly structured forms can be created beforehand by a developer because they can map directly to models in the database. Other forms are highly unstructured, such as a questionnaire about your favorite types of food which are volatile. So form is simple structured format.</p>
+<p>Sherry说了，她要把俺这个IT男当成营养实验的小白鼠、健康方案的实验标本，总之，我就要轰轰烈烈的被sherry同学好吃好喝伺候叻～～</p>
 
-<p>A Survey is a type of Form. Surveys are semi-structured data, in that we want to formulate the questions so they have “mineable” data, but they are...</p>
+<p>不管怎么说，健康是每个人都要重视的人生标线，没有健康的体魄，就没有快乐的心情，没有扯天淡地的资本，没有大鱼大肉的豪迈，没有旺盛的精力和彪悍的爱，所以，大家一定要订阅<a href="http://www.sherrytips.com">Sherry童鞋的健康小贴士</a>，要多留言多鼓励她。</p>
+
+<p>再重复一遍，赶紧用GoogleReader订阅Sherry的健康小贴士：<a href="http://www.sherrytips.com">http://www.sherrytips.com</a></p>
+
+<p>Cheers！</p>
+
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2010/07/27/a-great-survey-solution-based-on-ruby-on-rails.html">Read more →</a>
+    <a href="/2010/07/27/sherry的健康小贴士.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -419,96 +496,6 @@ Here is a brief look at the similarities and differences between forms, surveys,
   </p>
   <p>
     <a href="/2010/07/25/一周简报010725.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/21/386路和740路.html">386路和740路</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 21, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/公交.html">公交</a>
-        <a href="/tags/安全行驶.html">安全行驶</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>这几天坐公交车心惊胆战。</p>
-
-<p>我特别想说的是，386路和740路。这两路的公交车太牛逼了，我觉得这两路车的司机一定开过飞机，而且还很有可能是战斗机。</p>
-
-<p>话说有一日从海淀剧院那站坐386回亚运村这边，司机一路玩漂移，媳妇拉着我的手目瞪口呆，她平时可不胆小，我其实心里也是异常恐惧，这哪是在坐公交车，简直在玩过山车。另外740的作风也很虎，常常在拥堵的北四环玩凌波微步，让人心有余悸。</p>
-
-<p>自从去年撞车以后，每次坐车总是替司机操心，总觉得车都开得太快了，也不知道人们都急着干什么。最近这两年，几乎每次过红绿灯都有行人抢灯，也几乎每次都有车辆强行压迫路边行人，还有那些大喇叭的电动三轮摩托，整个就是一群亡命之徒。</p>
-
-<p>还好，我的朋友和家人都知道关于走路这件事情我脾气火爆，只要谁违反交通规则或者走路神游都会被我教育一顿，后来他们过马路小心多了。</p>
-
-<p>希望大家注意安全，抢那几分钟不值。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/21/386路和740路.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/07/19/一周简报010719.html">一周简报[010719]</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Jul 19, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/31formulas.html">31Formulas</a>
-        <a href="/tags/app.html">app</a>
-        <a href="/tags/lie2me.html">lie2me</a>
-        <a href="/tags/vps.html">VPS</a>
-        <a href="/tags/天气.html">天气</a>
-        <a href="/tags/美剧.html">美剧</a>
-        <a href="/tags/营养师.html">营养师</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p><strong>鬼天气</strong>
-最近一个礼拜的天气很挠墙，今天则彻底进入歇斯底里的二级桑拿天，我的嗓子已经干涩了几天了，媳妇最近也是清鼻嗒嗒滴，所有一切的元凶，都是这鬼天气。于是心里面希望，还是快点晴起来吧，干巴利脆的晴一阵子，哪怕巨热无比我都忍了，总比这半死不活的天气来得舒坦。</p>
-
-<p><strong>VPS</strong>
-周末买了linode的VPS，折腾了整整一天，配置环境，学习Linux服务器端的技术，忙得不亦乐乎，想起来刚毕业那会，总是想干很多事情，却总是能找到借口拖沓行事，那时候年轻的不知道什么是得什么是失，却总是失去机会，却得来一堆无所适从的闲适时光。</p>
-
-<p><strong>营养师</strong>
-如果不出意外，再过一阵子我家里就会有一个营养师，她不是别人，正是我那个可奈滴媳妇。我有个朋友做营养师培训，媳妇最近刚好休假在家，于是她告诉我说干脆把营养师考下来，免得以后关于营养的话题我跟她顶嘴。前几天还批评这个媳妇不求上进不知道学习，三日不见当刮目相看，现在人家天天学习新概念英语，学习营养师，真得让我佩服。</p>
-
-<p><strong>31Formulas</strong>
-花了一个多周的时间，终于搞定了我的第一个iPhone手机程序：<a href="http://www.31formulas.com">EQ31Formulas</a>. 虽然是替公司开发的一个app，但是仍然让人激动不已，过几天就可以在Apple Store上架了，欢迎有iPhone/iTouch的人免费使用。最后我不得不说的一句就是：Titanium太好用了，我喜欢的不得了。</p>
-
-<p><strong>Lie to me</strong>
-最近也看了几集美剧《Lie to me》,虽然Sherry很喜欢这个剧，但是我觉得无法跟《Friends》相提并论，尽管题材和内容与老友记十万八千里，但是我还是想做这个比较。话说回来，比起前阵子sherry看得那些个韩剧啊日剧啊粤语台湾剧啊，我觉得Lie to me已经实属上乘之作。</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/07/19/一周简报010719.html">Read more →</a>
   </p>
 </div>
     </article>

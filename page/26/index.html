@@ -73,6 +73,99 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/11/11/set-static-ip-on-ubuntu.html">Set static IP on Ubuntu</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 11, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>Edit:
+<code>sudo vim /etc/network/interfaces</code></p>
+
+<p>Then change the content, assuming you want to set your IP as &ldquo;192.168.1.66&rdquo;
+<code># The primary network interface
+auto eth0
+iface eth0 inet static
+        address 192.168.1.66
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+        gateway 192.168.1.1
+</code></p>
+
+<p>Then to restart your network.
+<code>sudo /etc/init.d/networking restart</code></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/11/set-static-ip-on-ubuntu.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/11/11/cheat-sheet-in-terminal.html">Cheat sheet in terminal</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 11, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>I found a cool gem called &ldquo;cheat&rdquo;, it&rsquo;s pretty handy and convenient when you wanna see a brief help/introduction of some &ldquo;stuff&rdquo; in command line, cheat out the website for more <a href="http://cheat.errtheblog.com/b">wiki-versioned cheat sheet</a>.</p>
+
+<blockquote>
+Get started:
+<i style="color:yellow">$ sudo gem install cheat
+$ cheat strftime</i>
+
+A magnificent cheat sheet for Ruby&rsquo;s strftime method will be printed to your terminal.
+
+To get some help on cheat itself:
+<i style="color:yellow">$ cheat cheat</i>
+
+How meta.
+
+Cheat sheets are basically wiki pages accessible from the command line. You can browse, add, or edit cheat sheets. Try to keep them concise. For a style guide, check out the cheat cheat sheet.
+
+To access a cheat sheet, simply pass the program the desired sheet&rsquo;s name:
+<i style="color:yellow">$ cheat <sheet name></i>
+</blockquote>
+
+<p>Reference : <a href="http://cheat.errtheblog.com/">CLICK HERE</a>!</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/11/11/cheat-sheet-in-terminal.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/11/10/冬雷阵阵.html">冬雷阵阵</a>
   </h2>
 </header>
@@ -410,97 +503,6 @@ or extracts the backup files, to create db directly.
   </p>
   <p>
     <a href="/2009/11/04/黑色.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/04/a-discussion-on-testing.html">A discussion on testing</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 04, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>In this week code review meeting, I open a discussion about testing code of Ruby on Rails. Actually I think the test for a complex system is not that easy if you wanna do it gracefully, but it’s still worth starting in small steps, that’s what’s important. I’d like to share the ideas people contributed, and the included contents are as following:
-Andy:
-</p><blockquote>
-Tried something new for RoR testing yesterday, it’s factory<em>girl(fixtures replacement solution. &lt;a href=’<a href="http://github.com/thoughtbot/factory">http://github.com/thoughtbot/factory</a></em>girl’&gt;see more details). In this week code review, I show the testing code, and also have questions about test:
-
-<ol>
-<li>How to make sure that you test all(99.5%) situations.</li>
-<li>If you test before you code, how to control/ensure the function points properly?</li>
-</ol>
-
-<p>feel free to comment here if you have any thoughts...</p>
-</blockquote>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/04/a-discussion-on-testing.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/03/polymorphic-association-in-factory_girl.html">Polymorphic association in factory_girl</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 03, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>I tried factroy<em>girl yesterday to work with rspec framework, It’s excellent way to support testing, however, the polymorphic association in factroy</em>girl almost defeated me.
-The factory definition in my code is as:
-</p><pre name="code" class="ruby">
-Factory.define :item do |i|
-    i.status 0
-    i.related<em>with</em>id 1
-    i.association :unit
-end
-
-<p>Factory.define :study<em>record do |sr|
-    sr.association :content, :factory =&gt; :item
-    sr.add</em>attribute :interaction<em>id
-    sr.add</em>attribute :finished_at
-end
-</p></pre>
-Then I did this:
-<pre name="code" class="ruby">
-<pre class="highlight plaintext"><code>@item = Factory(:item)
-@study_record = Factory(:study_record)
-@item.study_records &lt;&lt; @study_record
-</code></pre>
-
-<p></p></pre>
-But actually, this does not work to associate @study<em>record with @item, the problem is that @study</em>record.content is totally a new instance of Item rather than @item. It seems that “&lt;&lt;” doesn’t work in this case.
-The...
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/03/polymorphic-association-in-factory_girl.html">Read more →</a>
   </p>
 </div>
     </article>

@@ -73,6 +73,103 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/04/12/js-select-all-checkbox-and-submit-form-via-js.html">JS: select all checkbox and submit form via js</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Apr 12, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/checkbox.html">checkbox</a>
+        <a href="/tags/form.html">form</a>
+        <a href="/tags/js.html">js</a>
+        <a href="/tags/tips.html">tips</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p><strong>TIPS:</strong></p>
+
+<p><code lang="js">
+<script type="text/javascript">
+  function SetAllCheckBoxes(FormName, FieldName, CheckValue)<br>
+  {<br>
+    if(!document.forms[FormName])<br>
+      return;<br>
+    var objCheckBoxes = document.forms[FormName].elements[FieldName];<br>
+    if(!objCheckBoxes)<br>
+      return;<br>
+    var countCheckBoxes = objCheckBoxes.length;<br>
+    if(!countCheckBoxes)<br>
+      objCheckBoxes.checked = CheckValue;<br>
+    else<br>
+    // set the check value for all check boxes<br>
+      for(var i = 0; i < countCheckBoxes; i++)<br>
+        objCheckBoxes[i].checked = CheckValue;<br>
+  }</p>
+
+<p>  function SendForm(FormName, ActionName)<br>
+  {<br>
+    if(!document.forms[FormName])<br>
+      return;<br>
+    if(ActionName == 'unread')<br>
+      document.forms[FormName].action = '<%= batch_update_notifications_path(:type => "unread...</script></code></p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/04/12/js-select-all-checkbox-and-submit-form-via-js.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/04/12/更新.html">更新</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Apr 12, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/1604错误.html">1604错误</a>
+        <a href="/tags/iphone.html">iphone</a>
+        <a href="/tags/tips.html">tips</a>
+        <a href="/tags/刷机.html">刷机</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>我的一代小i从08年挺到现在，昨天刷机至3.1.2OS以后焕然一新，随后爱不释手，一直玩到深夜。不管是从性能还是整体的感觉，这个版本的一代iphone真是帅到极致。</p>
+
+<p>两年前夏天的一个下午，我从两点到凌晨两点，一直再研究刷机，即使到现在我也一直弄不明白破解和越狱有什么区别，那次我花了12个小时，开始对复杂的刷机过程心生惧怕。随后过了大概一年，就是现在的一年之前，很好奇iphone能不能在ubuntu上面同步itunes，结果机子就横在哪里，不得已，花了大概三个小时刷机并且试图回复所有的联系人和照片，即便那次更新成功，心里仍然留下了不小的伤痕，这叫一个麻烦。更要命的是后来的机子一直不稳定，经常crash。</p>
+
+<p>而这一次，我仅仅用了30分钟，并且在这三十分钟里面我还解决了一个比较奇怪的问题，感叹科技的进步，渐渐的，生活只需要一个action，action背后的逻辑似乎越来越不需要暴露出来。</p>
+
+<p>刷机TIPS: 解决刷机时候1604错误的方法。(同时秀一下新刷的iphone下面使用twitbird的截图 :))
+<a href="http://blog.wangyaodi.com/wp-content/uploads/2010/04/20100412.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/04/20100412.jpg" alt="" title="TwitBird" width="320" height="480" class="aligncenter size-full wp-image-452" /></a></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/04/12/更新.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/04/09/三个问题.html">三个问题</a>
   </h2>
 </header>
@@ -464,106 +561,6 @@
   </p>
   <p>
     <a href="/2010/03/23/春天的故事.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/03/21/为什么早上空腹不能吃香蕉.html">为什么早上空腹不能吃香蕉</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Mar 21, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/科普.html">科普</a>
-        <a href="/tags/空腹不能吃香蕉.html">空腹不能吃香蕉</a>
-        <a href="/tags/通便.html">通便</a>
-        <a href="/tags/降血压.html">降血压</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>十万个为什么之［<a href="http://www.google.cn/search?hl=zh-CN&amp;source=hp&amp;q=%E4%B8%BA%E4%BB%80%E4%B9%88%E6%97%A9%E4%B8%8A%E7%A9%BA%E8%85%B9%E4%B8%8D%E8%83%BD%E5%90%83%E9%A6%99%E8%95%89&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai="><em>为什么早上空腹不能吃香蕉</em></a>］</p>
-
-<p><strong>* Digest</strong>
-空腹吃香蕉<br>
-可诱发心肌梗塞</p>
-
-<p>宜选择不饿或饭后食用</p>
-
-<p>专家说，香蕉内含有丰富的糖和纤维物质，有利于消化和通便等功效。但空腹吃香蕉不利于健康，因为空腹时，胃肠内几乎没有可供消化的食物，此时若是吃香蕉，将会加快肠胃的运动，促进血液循环，增加心脏负荷，易导致心肌梗塞。专家提醒，不要空腹时吃香蕉，一般应选择在饭后或不是饥饿状态时吃香蕉比</p>
-
-<p>常吃香蕉能治疗抑郁症<br>
-新加坡营养师陈宝琳说，演出前吃香蕉“压惊”具有一定的道理。因为，香蕉中含有色氨酸和丰富的维生素B6，它们是合成血清素的重要成分，而血清素具有镇痛、催眠、安神等作用。因此，吃香蕉确实能够减少紧张、缓解压力。有关研究认为，缺少色氨酸是引起情感性精神障碍的基础，可造成抑郁症体质的发病倾向。香蕉中的色氨酸则能使人心情愉快，从而起到预防和治疗抑郁症的作用。</p>
-
-<p>每天两个香蕉可降血压<br>
-常吃香蕉，还能使人体保持电解质平衡及酸碱代谢平衡，让神经肌肉兴奋性维持常态，心肌收缩与舒张功能协调，起到维持血压稳定和预防血管疾病的作用。<br>
-香蕉属于高钾食品，镁的含量也很丰富。钾能维持正常血压与心跳，防止血压上升及肌肉痉挛；而镁则具有消除疲劳的效果，人会紧张与缺镁有一定关系。因此，多吃香蕉可降低血压，预防高血压和心血管疾病。研究显示，每天吃两只香蕉，可有效降低血压。<br>
-2003年日本癌症学会的一项报告，也证明了香蕉具有提高免疫力、预防癌症的作用。该报告说，一天吃两个香蕉，能有效地改善体质。<br>
-另外，香蕉的卡路里含量很低，常吃也不会发胖，对减肥非常有效。</p>
-
-<p>有肾病的人别吃香蕉<br>
-从营养学角度看，香蕉是淀粉质丰富的水果，而从中医角度分析，香蕉味甘、性寒、可清热润肠，促进肠胃蠕动，但脾虚者应避免食用；根据“热者寒之”的原理，它最适合体内有燥热的人，如痔疮出血者食用。<br>
-新加坡李金龙中医师说：“香蕉分寒和...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/03/21/为什么早上空腹不能吃香蕉.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/03/19/the-paradox-of-our-life.html">The Paradox of Our Life</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Mar 19, 2010
-    </li>
-    <li class="tags">
-        <a href="/tags/life.html">life</a>
-        <a href="/tags/paradox.html">Paradox</a>
-        <a href="/tags/thinkings.html">thinkings</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p></p><blockquote>The paradox of our time in history is that we have taller buildings but shorter tempers, wider highways, but narrower viewpoints.</blockquote>
-
-<p>We spend more, but have less, we buy more, but enjoy less.</p>
-
-<p>We have bigger houses and smaller families, more conveniences, but less time.</p>
-
-<p>We have more degrees but less sense, more knowledge, but less judgment, more experts, yet more problems, more medicine, but less wellness.</p>
-
-<p>We drink too much, smoke too much, spend too recklessly, laugh too little, drive too fast, get too angry, stay up too late, get up too tired, read too little, watch TV too much, and pray too seldom.</p>
-
-<p>We have multiplied our possessions, but reduced our values.</p>
-
-<p>We talk too much, love too seldom, and hate too often.</p>
-
-<p>We’ve learned how to make a living, but not a life.</p>
-
-<p>We’ve added years...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/03/19/the-paradox-of-our-life.html">Read more →</a>
   </p>
 </div>
     </article>

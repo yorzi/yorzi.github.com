@@ -73,6 +73,122 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/22/formtastic-for-rails.html">Formtastic for Rails</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 22, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <div>
+
+I’ve been working on EQ portal during these days, I wanna share a useful gem which I used, it is called <a href="http://github.com/justinfrench/formtastic/tree/0.9.7">Formtastic</a>. it’s a nice way to create form via formtastic, so the finial form is something like:
+<code lang="ruby">
+admin_landings_path do |form| %&gt;
+  <p>
+    
+       'Title' %&gt;
+       'Url slug' %&gt;
+       'Meta' %&gt;
+       'Content' %&gt;
+    
+  </p>
+  <p></p>
+
+</code>
+
+Then it will generate HTML like this:
+<code lang="ruby">
+<form action="/admin/landings" class="formtastic landing" id="new_landing" method="post">
+<div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="EC9WF1oK80Iq6X4NegSkBfVx5gLiYWvBEd7VeNKWHio="></div>
+
+<p></p>
+<p>
+    </p>
+<fieldset class="inputs"><ol>
+      <li class="string required" id="landing_title_input">
+<label for="landing_title">Title<abbr title="required"><em></em></abbr></label><input id="landing_title" maxlength="255" name="landing[title]" size="30" type="text">
+</li>
+      <li class="string required" id="landing_url_slug_input">
+<label for="landing_url_slug">Url slug<abbr title="required"></abbr></label><input id="landing_url_slug" maxlength="255" name="landing[url_slug]" size="30" type="text">
+</li>
+      <li class="text required" id="landing_meta_input">
+<label for="landing_meta">Meta<abbr title="required"><em></em></abbr></label><textarea cols="40" id="landing_meta" name="landing[meta]" rows="20"></textarea>
+</li>
+      <li class="text required" id="landing_content_input">
+<label for="landing_content">Content<abbr title="required"></abbr></label><textarea cols="40" id="landing_content" name="landing[content]" rows="20"></textarea>
+</li>
+<pre class="highlight plaintext"><code>&lt;/ol&gt;&lt;/fieldset&gt;
+</code></pre>
+
+<p></p>
+  <p></p>
+<fieldset class="buttons"><ol><li class="commit"><input class="create" id="landing_submit" name="commit" type="submit" value="Create Landing"></li></ol></fieldset>
+</ol></fieldset>
+</form>
+</code>
+Also, it can be configured well in display style(not try yet), as well as working with this <a href="http://github.com/redinger/validation_reflection">validation plugin</a>
+
+<p>There is a more detailed Doc at: <a href="http://rdoc.info/rdoc/justinfrench/formtastic/blob/35eadf9a0f3e30101993419c3dd3327fb2fdd0b6/Formtastic/SemanticFormBuilder.html"></a><a href="http://rdoc.info/rdoc/justinfrench/formtastic/blob/35eadf9a0f3e30101993419c3dd3327fb2fdd0b6/Formtastic/SemanticFormBuilder.html">http://rdoc.info/rdoc/justinfrench/formtastic/blob/35eadf9a0f3e30101993419c3dd3327fb2fdd0b6/Formtastic/SemanticFormBuilder.html</a>.  And samples at: <a href="http://asciicasts.com/episodes/184-formtastic-part-1"></a><a href="http://asciicasts.com/episodes/184-formtastic-part-1">http://asciicasts.com/episodes/184-formtastic-part...</a></p>
+</div>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/22/formtastic-for-rails.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/12/21/精彩签名档.html">精彩签名档</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 21, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/msn.html">msn</a>
+        <a href="/tags/精彩签名.html">精彩签名</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>今天MSN齐刷刷上线，突然觉得有几个朋友的签名比较帅呆了。</p>
+
+<p>比方：<br />
+“很多事情介于“不说憋屈”和“说了矫情”之间” —— Heather<br />
+“生活就像超级女声，走到最后的都是纯爷们”  —— hua<br />
+“我的男人我做主” —— mona<br />
+&ldquo;站在人生的米字路口&rdquo; —— Holly<br />
+“世界上最恐怖的不是一个人看恐怖片，而是和一个女人一起看恐怖片。比和一个女人看恐怖片更恐怖的就是和一个慢半拍的女人看恐怖片” —— 夜风</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/21/精彩签名档.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/21/this-week-key-words-12202009.html">This Week Key Words 12/20/2009</a>
   </h2>
 </header>
@@ -380,40 +496,6 @@ If you’ve ever seen a one armed man then...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Chrome On Ubuntu9.04</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Dec 17, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Chrome刚出来的时候，没有支持Ubuntu的版本，所以一直没有用，前几天出了<a href="http://www.google.com/chrome/index.html?hl=zh_cn&brand=CHMA&utm_campaign=zh_cn&utm_source=zh_cn-ha-apac-zh_cn-bk&utm_medium=ha">支持Linux/Mac的版本</a>，这几天太忙没顾上尝试一下，今天上午装上一看，简直太帅了。</p>
-
-<p>如果你是一个Google的Fans，那你一定会喜欢Chrome，它的扩展相较<a href="http://www.mozillaonline.com/">FF</a>虽然还不是很丰富，但是我很喜欢的几款应用都有相应的Extention，比方：<a href="http://www.shareaholic.com/">shareaholic</a>, <a href="http://www.evernote.com/">Evernot</a>, <a href="http://www.rememberthemilk.com/">RTM</a>, <a href="http://www.aviary.com">Aviary</a>等等。除了这些，Chrome和GMail/GR/GC的结合还都不错，简直方便极了。</p>
-
-<p>重要的是，突然感觉屏幕大了很多，上面至少省出来150PX。
-现在我通常就得开三种浏览器了，工作的事情用FF，测试的时候用Galeon，自己的页面都转移到Chrome上面来。Oyeah！</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2009/12/17/key-results-in-q4-2009.html">Key Results in Q4 2009</a>
   </h2>
 </header>
@@ -452,61 +534,14 @@ If you’ve ever seen a one armed man then...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/12/16/seo工具.html">SEO工具</a>
+    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Chrome On Ubuntu9.04</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Dec 16, 2009
-    </li>
-    <li class="tags">
-        <a href="/tags/seo.html">SEO</a>
-        <a href="/tags/seotool.html">seotool</a>
-        <a href="/tags/tool.html">tool</a>
-        <a href="/tags/website.html">website</a>
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>友情链接检测工具：<a href="http://link.chinaz.com/">http://link.chinaz.com/</a></p>
-
-<p>关键词排名查询工具：<a href="http://tool.chinaz.com/KeyWords/">http://tool.chinaz.com/KeyWords/</a></p>
-
-<p>关键词密度查询：<a href="http://tool.chinaz.com/Tools/Density.aspx">http://tool.chinaz.com/Tools/Density.aspx</a></p>
-
-<p>模拟搜索引擎抓取工具：<a href="http://tool.chinaz.com/Tools/Robot.aspx">http://tool.chinaz.com/Tools/Robot.aspx</a></p>
-
-<p>网页MATA信息检测：<a href="http://tool.chinaz.com/Tools/MetaCheck.aspx">http://tool.chinaz.com/Tools/MetaCheck.aspx</a></p>
-
-<p>百度近日收录查询：<a href="http://tool.chinaz.com/baidu/">http://tool.chinaz.com/baidu/</a></p>
-
-<p>Google网站管理员工具：<a href="http://www.google.com/webmasters/tools/?hl=zh_CN">http://www.google.com/webmasters/tools/?hl=zh_CN</a></p>
-
-<p>雅虎站长工具：<a href="http://sitemap.cn.yahoo.com/">http://sitemap.cn.yahoo.com/</a></p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/12/16/seo工具.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/12/16/seo-tools.html">SEO Tools</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Dec 16, 2009
+      Dec 17, 2009
     </li>
     <li class="tags">
     </li>
@@ -514,28 +549,19 @@ If you’ve ever seen a one armed man then...</p>
 </aside>
 
 <div class="content">
-  <p>友情链接检测工具：<a href="http://link.chinaz.com/"><a href="http://link.chinaz.com/">http://link.chinaz.com/</a></a></p>
+  <p>Chrome刚出来的时候，没有支持Ubuntu的版本，所以一直没有用，前几天出了<a href="http://www.google.com/chrome/index.html?hl=zh_cn&brand=CHMA&utm_campaign=zh_cn&utm_source=zh_cn-ha-apac-zh_cn-bk&utm_medium=ha">支持Linux/Mac的版本</a>，这几天太忙没顾上尝试一下，今天上午装上一看，简直太帅了。</p>
 
-<p>关键词排名查询工具：<a href="http://tool.chinaz.com/KeyWords/"><a href="http://tool.chinaz.com/KeyWords/">http://tool.chinaz.com/KeyWords/</a></a></p>
+<p>如果你是一个Google的Fans，那你一定会喜欢Chrome，它的扩展相较<a href="http://www.mozillaonline.com/">FF</a>虽然还不是很丰富，但是我很喜欢的几款应用都有相应的Extention，比方：<a href="http://www.shareaholic.com/">shareaholic</a>, <a href="http://www.evernote.com/">Evernot</a>, <a href="http://www.rememberthemilk.com/">RTM</a>, <a href="http://www.aviary.com">Aviary</a>等等。除了这些，Chrome和GMail/GR/GC的结合还都不错，简直方便极了。</p>
 
-<p>关键词密度查询：<a href="http://tool.chinaz.com/Tools/Density.aspx"><a href="http://tool.chinaz.com/Tools/Density.aspx">http://tool.chinaz.com/Tools/Density.aspx</a></a></p>
-
-<p>模拟搜索引擎抓取工具：<a href="http://tool.chinaz.com/Tools/Robot.aspx"><a href="http://tool.chinaz.com/Tools/Robot.aspx">http://tool.chinaz.com/Tools/Robot.aspx</a></a></p>
-
-<p>网页MATA信息检测：<a href="http://tool.chinaz.com/Tools/MetaCheck.aspx"><a href="http://tool.chinaz.com/Tools/MetaCheck.aspx">http://tool.chinaz.com/Tools/MetaCheck.aspx</a></a></p>
-
-<p>百度近日收录查询：<a href="http://tool.chinaz.com/baidu/"><a href="http://tool.chinaz.com/baidu/">http://tool.chinaz.com/baidu/</a></a></p>
-
-<p>Google网站管理员工具：<a href="http://www.google.com/webmasters/tools/?hl=zh_CN"><a href="http://www.google.com/webmasters/tools/?hl=zh_CN">http://www.google.com/webmasters/tools/?hl=zh_CN</a></a></p>
-
-<p>雅虎站长工具：<a href="http://sitemap.cn.yahoo.com/"><a href="http://sitemap.cn.yahoo.com/">http://sitemap.cn.yahoo.com/</a></a></p>
+<p>重要的是，突然感觉屏幕大了很多，上面至少省出来150PX。
+现在我通常就得开三种浏览器了，工作的事情用FF，测试的时候用Galeon，自己的页面都转移到Chrome上面来。Oyeah！</p>
 
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2009/12/16/seo-tools.html">Read more →</a>
+    <a href="/2009/12/17/chrome-on-ubuntu9-04.html">Read more →</a>
   </p>
 </div>
     </article>
