@@ -73,6 +73,84 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2010/11/02/时光宝藏.html">时光宝藏</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Nov 02, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/冬天.html">冬天</a>
+        <a href="/tags/忙碌.html">忙碌</a>
+        <a href="/tags/时光.html">时光</a>
+        <a href="/tags/生活.html">生活</a>
+        <a href="/tags/畅想.html">畅想</a>
+        <a href="/tags/茶.html">茶</a>
+        <a href="/tags/锻炼.html">锻炼</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>[caption id=&ldquo;attachment_10210&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;550&rdquo; caption=&ldquo;Sunshine In Winter&rdquo;]<a href="http://blog.wangyaodi.com/wp-content/uploads/2010/11/winter_sunshine.jpg"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/11/winter_sunshine.jpg" alt="" title="Sunshine In Winter" width="550" height="413" class="size-full wp-image-10210" /></a>[/caption]</p>
+
+<p>进入十一月，便闻到了冬天的气味。</p>
+
+<p>重新开始晨跑，每日的锻炼仅仅一刻钟，却让我渐渐摆脱了前一阵子的低迷状态。不由得感叹身体的奇妙，如果你不重视它，它也会不重视你，而且会给你制造重重麻烦。</p>
+
+<p>慢慢习惯不抽烟，不喝酒，也不吃半点辛辣的食物。仿佛回到了小时候，不受任何东西的约束和诱惑，只需要静静的体会如水般的清淡。不过，现在也还是有爱好的，比方每天喝茶，在普洱和莓茶间来回切换，一边惺瑟，一边甘甜，其实这便是生活的全部味道。</p>
+
+<p>日复一日的忙碌，我自觉是上进的，是充实的，因而也不会感觉寡淡，很久以前，我会认为这样的节奏充满危险，也许正是因为少了当初的迷茫和浮躁，此刻的我，才比以往任何时候都更加愿意脚踏实地，更加希望稳步向前。</p>
+
+<p>多希望能有些间隙，拿本书，去感受冬天的暖阳。</p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/11/02/时光宝藏.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2010/10/21/我们俩.html">我们俩</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Oct 21, 2010
+    </li>
+    <li class="tags">
+        <a href="/tags/2010.html">2010</a>
+        <a href="/tags/纪念.html">纪念</a>
+        <a href="/tags/结婚照.html">结婚照</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>[caption id=&ldquo;attachment_10205&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;414&rdquo; caption=&ldquo;Andy & Sherry&rdquo;]<a href="http://blog.wangyaodi.com/wp-content/uploads/2010/10/Screen-shot-2010-10-21-at-8.26.49-PM.png"><img src="http://blog.wangyaodi.com/wp-content/uploads/2010/10/Screen-shot-2010-10-21-at-8.26.49-PM.png" alt="" title="Andy &amp; Sherry" width="414" height="620" class="size-full wp-image-10205" /></a>[/caption] </p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2010/10/21/我们俩.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2010/10/21/倒叙精彩.html">倒叙精彩</a>
   </h2>
 </header>
@@ -400,86 +478,6 @@ Also, I’d like to note down the ruby Time format rule:
   </p>
   <p>
     <a href="/2010/09/01/macports-is-a-monster.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/09/01/script-fetch-parameter-value-from-url.html">Script: Fetch parameter value from url</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Sep 01, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>I wanna get the query string value, and set it to specific element, how to do that by javascript?
-Say, <a href="http://sample.com?author=andy">http://sample.com?author=andy</a>, how to get author value which can be lately used. see the script below:
-<pre><code land='javascript'>
-        function fetch<em>value(name)
-        {
-          name = name.replace(/[[]/,&#39;\[&#39;).replace(/[]]/,&#39;\]&#39;);
-          var regexS = &#39;[\?&amp;]&#39; + name+&#39;=([^&amp;#]*)&#39;;
-          var regex = new RegExp( regexS );
-          var results = regex.exec( window.location.href );
-          if( results == null )
-            return &#39;&#39;;
-          else
-            return results[1];
-        }
-</code></pre>
-Then you should use this function as fetch</em>value(&ldquo;author&rdquo;), it will return the &ldquo;andy&rdquo;.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/09/01/script-fetch-parameter-value-from-url.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">How to keep a space in your iPhone App name?</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Aug 31, 2010
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>The answer is, <strong>you can’t submit your iPhone App with <em>whitespace</em> in its name</strong>. But you do <strong>be able to add space in your App display name</strong> under icon. I guess your purpose is the second one, you only want to display the space under app icon on device, don’t you?</p>
-
-<p>OK, just name your app as whatever name with space before you setup the distribution package, e.g. “Example Name.app”. Then,</p>
-
-<p>1) In Xcode Organizer right click on the build date of the app and select “Reveal Archived App in Finder”
-2) Open ArchiveInfo.plist in a text editor, edit the attribute “<strong><em><string>Example Name.app</string></em></strong>”
-Change that to ExampleName.app and save the file.
-4) In Finder remove the space in the file names on both the .app and the .app.dSYM files
-5) Once you get back to Xcode Organizer, you should be able to submitting app to itunesconnect...</p>
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2010/08/31/how-to-keep-a-space-in-your-iphone-app-name.html">Read more →</a>
   </p>
 </div>
     </article>

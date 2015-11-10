@@ -73,6 +73,102 @@
     <article class="post">
       <header>
   <h2 class="title">
+    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Comparing Equality (==, eql?, equal?) and Case Equality (===) in Ruby</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 09, 2009
+    </li>
+    <li class="tags">
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>In weekly code review, GL mentioned a weird issues :
+<code lang="ruby">
+def self.test(obj)
+    case obj.class
+    when Student, TrialPlan
+      puts "1"
+    when Call
+      puts "2"
+    else
+      puts "3"
+    end
+end
+</code>
+This doesn’t behave as expected. When we run test(Student.first), it prints out “3”!</p>
+
+<p>but this works fine.
+<code lang="ruby">
+def self.test(obj)
+    case obj.class.to_s
+    when "Student", "TrialPlan"
+      puts "1"
+    when "Call"
+      puts "2"
+    else
+      puts "3"
+    end
+end
+</code></p>
+
+<p>Then I searched around for explaining this, I found the <em>case statement</em> in Ruby is very different with what in other languages. Ruby implements the Case statement according to its special operator “===”, which is not the same as “==”.</p>
+
+<p>what’s difference? See below explainations:
+<a href="http://www.skorks.com/2009/08/how-a-ruby-case-statement-works-and-what-you-can-do-with-it/">how-a-ruby-case-statement-works-and-what-you-can-do...</a></p>
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/09/comparing-equality-eql-equal-and-case-equality-in-ruby.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
+    <a href="/2009/12/09/fucked-up.html">法科特阿婆</a>
+  </h2>
+</header>
+
+<aside class="aside-block">
+  <ul class="meta">
+    <li class="date">
+      Dec 09, 2009
+    </li>
+    <li class="tags">
+        <a href="/tags/fuck163.html">fuck163</a>
+        <a href="/tags/gfw.html">gfw</a>
+    </li>
+  </ul>
+</aside>
+
+<div class="content">
+  <p>瞄准网易。<br />
+首屈一指的破网站居然把校友录从主页还有通行证的目录里面干掉了，上了8年的校友录，居然得从<a href="http://www.google.com/search?q=%E7%BD%91%E6%98%93%E6%A0%A1%E5%8F%8B%E5%BD%95&ie=utf-8&oe=utf-8&aq=t&rls=com.ubuntu:en-US:unofficial&client=firefox-a">google里面搜索</a>才能得到。邮箱里面更是百十来封垃圾邮件，再看那些乱七八糟的抄袭和扭捏，俄的神，赶紧把所有连接都指向马桶吧，方便用户把你冲掉。</p>
+
+<p>今天为了找回几年前自己的flickr帐户，废了我九牛二百五虎之力，烦呐，这两年除了Google的帐户，其它似乎都渐渐的但忘了，当然遗忘里面也分为两类，一类是被GFW干掉的优秀网站，一类就是国内众多的2网站。</p>
+
+<p>一想起来GFW我就一肚子火，来让我们一起大声说：<strong>F-U-C-K&mdash;G-F-W&mdash;U-P!</strong></p>
+
+
+  <p>
+    ......
+  </p>
+  <p>
+    <a href="/2009/12/09/fucked-up.html">Read more →</a>
+  </p>
+</div>
+    </article>
+    <article class="post">
+      <header>
+  <h2 class="title">
     <a href="/2009/12/07/love-named_scope.html">Love named_scope</a>
   </h2>
 </header>
@@ -258,58 +354,6 @@ yellow book 黄皮书（法国政府报告...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/26/law-of-demeter.html">Law of Demeter</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 26, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>Rails Best Practice Snippet: Model refactor.
-Reference link to the PDF.<a href='http://tech.wangyaodi.com/?attachment_id=125' rel='attachment wp-att-125'>Rails-best-practices.</a></p>
-
-<p>Before:
-<code lang="ruby">
-class Invoice &lt; ActiveRecord::Base
-  belongs<em>to :user
-end
-&lt;%= @invoice.user.name %&gt;
-&lt;%= @invoice.user.address %&gt;
-&lt;%= @invoice.user.cellphone %&gt;
-</code>
-After:
-<code lang="rails">
-class Invoice &lt; ActiveRecord::Base
-  belongs</em>to :user
-  delegate :name, :address, :cellphone, :to =&gt; :user, :prefix =&gt; true
-end
-&lt;%= @invoice.user<em>name %&gt;
-&lt;%= @invoice.user</em>address %&gt;
-&lt;%= @invoice.user_cellphone %&gt;
-</code></p>
-
-<p>See more details about <a href="http://api.rubyonrails.org/classes/Module.html#M000110">Delegate</a> in rails doc.</p>
-
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/26/law-of-demeter.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
     <a href="/2009/11/26/ajax-support-in-rails.html">Ajax Support in Rails</a>
   </h2>
 </header>
@@ -364,42 +408,52 @@ Recommended as the browser can then cache the libraries instead...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/23/inconvenience-happens.html">Inconvenience happens</a>
+    <a href="/2009/11/26/law-of-demeter.html">Law of Demeter</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Nov 23, 2009
+      Nov 26, 2009
     </li>
     <li class="tags">
-        <a href="/tags/deployment.html">deployment</a>
-        <a href="/tags/issues.html">issues</a>
-        <a href="/tags/matter.html">matter</a>
-        <a href="/tags/upset.html">upset</a>
-        <a href="/tags/work.html">work</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p></p><blockquote>Dear Colleagues,</blockquote>
+  <p>Rails Best Practice Snippet: Model refactor.
+Reference link to the PDF.<a href='http://tech.wangyaodi.com/?attachment_id=125' rel='attachment wp-att-125'>Rails-best-practices.</a></p>
 
-<p>I am so sorry to tell that our deployment of new extra content is really not going well this afternoon, so that the whole Study Center is broken somehow, as it’s been unluckily facing some unexpected errors while deploying such new features on product environment. Now <a href="http://www.dujinfang.com">seven</a>, gary and me are working on it, please wait for its being resolved..</p>
+<p>Before:
+<code lang="ruby">
+class Invoice &lt; ActiveRecord::Base
+  belongs<em>to :user
+end
+&lt;%= @invoice.user.name %&gt;
+&lt;%= @invoice.user.address %&gt;
+&lt;%= @invoice.user.cellphone %&gt;
+</code>
+After:
+<code lang="rails">
+class Invoice &lt; ActiveRecord::Base
+  belongs</em>to :user
+  delegate :name, :address, :cellphone, :to =&gt; :user, :prefix =&gt; true
+end
+&lt;%= @invoice.user<em>name %&gt;
+&lt;%= @invoice.user</em>address %&gt;
+&lt;%= @invoice.user_cellphone %&gt;
+</code></p>
 
-<p>Sorry for the inconvenience!</p>
+<p>See more details about <a href="http://api.rubyonrails.org/classes/Module.html#M000110">Delegate</a> in rails doc.</p>
 
-<p>Today afternoon, I was upset when the deployment encountering issues. I thought I had been preparing carefully during last few days, but errors still came out. I summarize this lesson as following:</p>
-
-<p>1.  Keep code as well as the deployment revertible.<br>
-    I fall into a situation when I can not go forward and can not go backward. it’s pretty bad case which makes me feel nervous somehow. unless, I can revert...</p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2009/11/23/inconvenience-happens.html">Read more →</a>
+    <a href="/2009/11/26/law-of-demeter.html">Read more →</a>
   </p>
 </div>
     </article>
@@ -449,83 +503,42 @@ Recommended as the browser can then cache the libraries instead...</p>
     <article class="post">
       <header>
   <h2 class="title">
-    <a href="/2009/11/22/time-as-friend.html">把时间当作朋友</a>
+    <a href="/2009/11/23/inconvenience-happens.html">Inconvenience happens</a>
   </h2>
 </header>
 
 <aside class="aside-block">
   <ul class="meta">
     <li class="date">
-      Nov 22, 2009
+      Nov 23, 2009
     </li>
     <li class="tags">
-        <a href="/tags/book.html">book</a>
-        <a href="/tags/reading.html">reading</a>
-        <a href="/tags/time.html">time</a>
+        <a href="/tags/deployment.html">deployment</a>
+        <a href="/tags/issues.html">issues</a>
+        <a href="/tags/matter.html">matter</a>
+        <a href="/tags/upset.html">upset</a>
+        <a href="/tags/work.html">work</a>
     </li>
   </ul>
 </aside>
 
 <div class="content">
-  <p>今天Gary把一大包蘑菇放在锅里，等到发现不对劲的时候，锅里的蘑菇已经增长了好几倍，并且把锅盖几乎顶了起来，God.</p>
+  <p></p><blockquote>Dear Colleagues,</blockquote>
 
-<p>本来收拾完屋子打算看看书，或者干脆把GR里面的Unread干掉，或者把手头这几个活简单计划一下，但是我还是过于相信自己的控制能力，所以最后，我只是看了一晚上系统，并且和朋友们Skype聊了三个多小时。最后直到嗓子有点哑掉。</p>
+<p>I am so sorry to tell that our deployment of new extra content is really not going well this afternoon, so that the whole Study Center is broken somehow, as it’s been unluckily facing some unexpected errors while deploying such new features on product environment. Now <a href="http://www.dujinfang.com">seven</a>, gary and me are working on it, please wait for its being resolved..</p>
 
-<p>&ldquo;人们都问人民币会不会升值我也不知道什么时候但是一定会升值。&rdquo;<br />
-最近开始对一些自己之前并不感兴趣的领域多了一些关注，惊讶于自己竟然开始考虑汇率，考虑投资，考虑房子。还好重点依然是考虑技术，考虑英语学习，考虑长远发展和自我价值实现。所以，我一如既往的忙碌而平静。</p>
+<p>Sorry for the inconvenience!</p>
 
-<p><a href="http://www.douban.com/subject/3609132/">《把时间当作朋友》</a>是一本好书，重点推荐一番。<a href="http://blog.wangyaodi.com/2009/11/22/time-as-friend/%e3%80%8a%e6%8a%8a%e6%97%b6%e9%97%b4%e5%bd%93%e4%bd%9c%e6%9c%8b%e5%8f%8b%e3%80%8b%e2%80%94%e2%80%94%e8%bf%90%e7%94%a8%e5%bf%83%e6%99%ba%e8%8e%b7%e5%be%97/" rel="attachment wp-att-112">点击下载电子版</a></p>
+<p>Today afternoon, I was upset when the deployment encountering issues. I thought I had been preparing carefully during last few days, but errors still came out. I summarize this lesson as following:</p>
 
-
-  <p>
-    ......
-  </p>
-  <p>
-    <a href="/2009/11/22/time-as-friend.html">Read more →</a>
-  </p>
-</div>
-    </article>
-    <article class="post">
-      <header>
-  <h2 class="title">
-    <a href="/2009/11/19/erlang.html">Erlang</a>
-  </h2>
-</header>
-
-<aside class="aside-block">
-  <ul class="meta">
-    <li class="date">
-      Nov 19, 2009
-    </li>
-    <li class="tags">
-    </li>
-  </ul>
-</aside>
-
-<div class="content">
-  <p>本篇是完全转载的一篇文章，<a href="http://www.dujingfang.com">7哥</a>昨天利用这个例子给team讲了一下erlang，在这里做个备份，免得以后要用时候找不到了。<a href="http://erlang-china.org/start/mochiweb_intro.html">原文链接</a></p>
-
-<hr>
-
-<p><a href="http://code.google.com/p/mochiweb" target="_blank">MochiWeb</a>是<a href="http://www.mochibot.com/" target="_blank">mochibot.com</a>的<a href="http://bob.pythonmac.org/" target="_blank">Bob Ippolito</a>贡献的开源项目[在<a href="http://undefined.org/c4-1/" target="_blank">这里</a>有一个介绍它的Slide]。</p>
-
-<p>MochiBot.com 提供 Flash 内容的访问统计和用户跟踪服务（大致上，可以理解为针对 flash 的 google Analytics 服务），他们在 mochiweb 之上构建了一个定制化的 web server ，并通过这个 web server 获取用户的访问数据（在这一点上有点象 <a href="http://code.google.com/p/erlana/" target="_blank">Erlana</a> 项目）。可以想象，这个定制的 web server 需要很高的并发支持，精简和牢固的底层架构，以及对于 http 协议的完备支持（乃至对于 socket 的直接操控）。如果可以的话，最好还有更为精简的 API ，易于定制的 URL 扩展方式，以及易于理解的底层框架。幸运的是，这些 mochiweb 都已经提供，而且还是开源的。</p>
-
-<p>需要说明的是，相比 yaws / inets httpd 而言，它的目标并不是 apache 之类的软件，它并不是一个完整的 web server （没有cache等机制，因而也不做任何加速动作），它只是一个实现 web server 的工具包（这也就意味着，它直接通过代码来扩展，你可以在它的基础上做任何事）。正因为此，在“需要定制 Web Server”的情况下，它成为一个非常不错的选择（比如，配置在 enginx 的后面，专门用于动态内容的生成）。在 erlang 的世界里，有几个项目已经开始转而使用 mochiweb 。</p>
-
-<p>下面是对这个项目代码的一些粗浅实战。</p>
-
-<p>首先遵循它的提示，通过svn获取代码：
-</p><div>
-<div>svn checkout <a href="http://mochiweb.googlecode.com/svn/trunk/">http://mochiweb.googlecode...</a>
-</div>
-</div>
+<p>1.  Keep code as well as the deployment revertible.<br>
+    I fall into a situation when I can not go forward and can not go backward. it’s pretty bad case which makes me feel nervous somehow. unless, I can revert...</p>
 
   <p>
     ......
   </p>
   <p>
-    <a href="/2009/11/19/erlang.html">Read more →</a>
+    <a href="/2009/11/23/inconvenience-happens.html">Read more →</a>
   </p>
 </div>
     </article>
