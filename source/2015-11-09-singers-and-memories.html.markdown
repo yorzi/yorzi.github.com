@@ -12,7 +12,7 @@ tags: 歌曲, 回憶, 成長, MD24, 2015
 
 音乐于我而言，承载着很重要的一部分记忆，总是能记起来一些歌曲，当歌声响起，便会进入某个特定的场景，在那场景里，颜色、温度、情绪和气味，全部都真真切切，每一个音符都能够敲开一扇大门，大门里面，青春荡漾，还有成长的各种滋味。
 
-[微信公眾號原文鏈接](http://mp.weixin.qq.com/s?__biz=MzAwODI5MTQzNA==&mid=400539712&idx=1&sn=d16e053b557ae4030479d7659095502a&scene=1&srcid=1110FxCSbFJnMsx76lEmRdhx&key=d4b25ade3662d643198f6a356d0bbe98268320ca048754576b330de2656c28267914c27d54d04118af46951bcd4f4c94&ascene=0&uin=MTA4NzE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=jAYVgX7JLNANVSBErWmNb0dSldZt34sFV4X%2B3KUI9Yc%3D)
+>>> [微信公眾號原文鏈接](http://mp.weixin.qq.com/s?__biz=MzAwODI5MTQzNA==&mid=400539712&idx=1&sn=d16e053b557ae4030479d7659095502a&scene=1&srcid=1110FxCSbFJnMsx76lEmRdhx&key=d4b25ade3662d643198f6a356d0bbe98268320ca048754576b330de2656c28267914c27d54d04118af46951bcd4f4c94&ascene=0&uin=MTA4NzE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=jAYVgX7JLNANVSBErWmNb0dSldZt34sFV4X%2B3KUI9Yc%3D)
 
 ***
 <span class="footnotes">
